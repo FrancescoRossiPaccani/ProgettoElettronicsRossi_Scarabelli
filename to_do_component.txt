@@ -1,0 +1,7 @@
+==== Zona salvataggio ===
+Sommatore
+Comparatore
+And a N ingressi
+Multiplexer
+Demultipexer
+Memoria RAM a D Flip-Flop
