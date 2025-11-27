@@ -1,6 +1,7 @@
 library IEEE;
 use IEEE.std_logic_1164.all;
 use IEEE.numeric_std.all;
+use work.Utils.all; 
 
 entity tb_memory is
 end entity;
@@ -21,7 +22,7 @@ architecture tb of tb_memory is
             clk      : in  std_logic;
             resetn   : in  std_logic;
             en       : in  std_logic;
-            selector : in  std_logic_vector(Ncell/Nbit_in downto 0);
+            selector : in  std_logic_vector(clog2((Ncell + Nbit_in -1)/Nbit_in)-1 downto 0);
             d_in     : in  std_logic_vector(Nbit_in-1 downto 0);
             d_out    : out std_logic_vector(Ncell-1 downto 0)
         );
@@ -31,7 +32,7 @@ architecture tb of tb_memory is
     signal clk_ext      : std_logic := '0';
     signal resetn_ext   : std_logic := '0';
     signal en_aus       : std_logic := '0';
-    signal selector_ext : std_logic_vector(Ncell/Nbit_in downto 0) := (others => '0');
+    signal selector_ext : std_logic_vector(clog2((Ncell + Nbit_in -1)/Nbit_in)-1 downto 0) := (others => '0');
     signal d_in_ext     : std_logic_vector(Nbit_in-1 downto 0) := (others => '0');
     signal d_out_ext    : std_logic_vector(Ncell-1 downto 0);
 
@@ -90,7 +91,7 @@ begin
         -- TEST 2: Scrivo secondo blocco (selector = 1) - caso limite
         ----------------------------------------------------------------------
         report "TEST 2: selector = 1 -> ultimo blocco (parziale)";
-        selector_ext <= "01";             -- sel_int = 1
+        selector_ext <= "1";             -- sel_int = 1
         d_in_ext <= "00000001";           -- scrivi solo ultimo bit
         wait until rising_edge(clk_ext);
 
@@ -98,7 +99,7 @@ begin
         -- TEST 3: Cambio dati nello stesso blocco
         ----------------------------------------------------------------------
         report "TEST 3: cambio dati selector=1";
-        selector_ext <= "01";
+        selector_ext <= "1";
         d_in_ext <= "01110000";
         wait until rising_edge(clk_ext);
 
@@ -106,7 +107,7 @@ begin
         -- TEST 4: Ritorno al primo blocco
         ----------------------------------------------------------------------
         report "TEST 4: ritorno a selector=0";
-        selector_ext <= "00";
+        selector_ext <= "0";
         d_in_ext <= "00001111";
         wait until rising_edge(clk_ext);
 
@@ -115,7 +116,7 @@ begin
         ----------------------------------------------------------------------
         report "TEST 5: en='0' blocco inattivo";
         en_aus <= '0';
-        selector_ext <= "00";
+        selector_ext <= "0";
         d_in_ext <= "11111111";
         wait until rising_edge(clk_ext);
 

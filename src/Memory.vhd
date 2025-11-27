@@ -1,6 +1,7 @@
 library IEEE;
 use IEEE.std_logic_1164.all;
 use IEEE.numeric_std.all;
+use work.Utils.all; 
 
 entity Memory is
     generic(
@@ -11,7 +12,7 @@ entity Memory is
         clk         : in  std_logic;
         resetn      : in  std_logic;
         en          : in  std_logic;
-        selector    : in  std_logic_vector(Ncell/Nbit_in   downto 0);
+        selector    : in  std_logic_vector(clog2((Ncell + Nbit_in -1)/Nbit_in)-1 downto 0);
         d_in        : in  std_logic_vector(Nbit_in-1 downto 0);
         d_out       : out std_logic_vector(Ncell-1   downto 0)
     );
