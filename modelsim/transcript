@@ -1,0 +1,174 @@
+# Loading project test_memory
+# Compile of As_Counter.vhd was successful.
+# Compile of D_Flip_Flop.vhd was successful.
+# Compile of fullAdder.vhd was successful.
+# Compile of Memory.vhd failed with 11 errors.
+# Compile of RippleCarryAdder.vhd was successful.
+# Compile of tb_memory.vhd was successful.
+# 6 compiles, 1 failed with 11 errors.
+# Compile of As_Counter.vhd was successful.
+# Compile of D_Flip_Flop.vhd was successful.
+# Compile of fullAdder.vhd was successful.
+# Compile of Memory.vhd failed with 12 errors.
+# Compile of RippleCarryAdder.vhd was successful.
+# Compile of tb_memory.vhd was successful.
+# 6 compiles, 1 failed with 12 errors.
+# Compile of As_Counter.vhd was successful.
+# Compile of D_Flip_Flop.vhd was successful.
+# Compile of fullAdder.vhd was successful.
+# Compile of Memory.vhd failed with 2 errors.
+# Compile of RippleCarryAdder.vhd was successful.
+# Compile of tb_memory.vhd was successful.
+# 6 compiles, 1 failed with 2 errors.
+# Compile of As_Counter.vhd was successful.
+# Compile of D_Flip_Flop.vhd was successful.
+# Compile of fullAdder.vhd was successful.
+# Compile of Memory.vhd failed with 2 errors.
+# Compile of RippleCarryAdder.vhd was successful.
+# Compile of tb_memory.vhd was successful.
+# 6 compiles, 1 failed with 2 errors.
+# Compile of As_Counter.vhd was successful.
+# Compile of D_Flip_Flop.vhd was successful.
+# Compile of fullAdder.vhd was successful.
+# Compile of Memory.vhd failed with 1 errors.
+# Compile of RippleCarryAdder.vhd was successful.
+# Compile of tb_memory.vhd was successful.
+# 6 compiles, 1 failed with 1 error.
+# Compile of As_Counter.vhd was successful.
+# Compile of D_Flip_Flop.vhd was successful.
+# Compile of fullAdder.vhd was successful.
+# Compile of Memory.vhd was successful.
+# Compile of RippleCarryAdder.vhd was successful.
+# Compile of tb_memory.vhd was successful.
+# 6 compiles, 0 failed with no errors.
+# Compile of As_Counter.vhd was successful.
+# Compile of D_Flip_Flop.vhd was successful.
+# Compile of fullAdder.vhd was successful.
+# Compile of Memory.vhd was successful.
+# Compile of RippleCarryAdder.vhd was successful.
+# Compile of tb_memory.vhd was successful.
+# 6 compiles, 0 failed with no errors.
+vsim work.tb_memory
+# vsim work.tb_memory 
+# Start time: 10:38:45 on Nov 27,2025
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.tb_memory(tb)
+# Loading work.memory(mem)
+# Loading work.d_flip_flop(dff)
+add wave -position insertpoint  \
+sim:/tb_memory/clk_ext \
+sim:/tb_memory/resetn_ext \
+sim:/tb_memory/en_aus \
+sim:/tb_memory/selector_ext \
+sim:/tb_memory/d_in_ext \
+sim:/tb_memory/d_out_ext \
+sim:/tb_memory/testing \
+sim:/tb_memory/Ncell \
+sim:/tb_memory/Nbit_in \
+sim:/tb_memory/clk_period
+add wave -position insertpoint  \
+sim:/tb_memory/clk_ext \
+sim:/tb_memory/resetn_ext \
+sim:/tb_memory/en_aus \
+sim:/tb_memory/selector_ext \
+sim:/tb_memory/d_in_ext \
+sim:/tb_memory/d_out_ext \
+sim:/tb_memory/testing \
+sim:/tb_memory/Ncell \
+sim:/tb_memory/Nbit_in \
+sim:/tb_memory/clk_period
+# Unable to lock WLF file "vsim.wlf". Retrying 1 times, errno 11
+# Unable to lock WLF file "vsim.wlf". Retrying 2 times, errno 11
+# Unable to lock WLF file "vsim.wlf". Retrying 3 times, errno 11
+# Cannot lock WLF file: "vsim.wlf"
+#           errno 11: Resource temporarily unavailable.
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: pacca  Hostname: PaccaPc  ProcessID: 7391
+#           Attempting to use alternate WLF file "./wlftxO13KA".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftxO13KA
+run -all
+# ** Note: TEST 1: selector = 0 -> abilita primi Nbit_in bit
+#    Time: 250 ns  Iteration: 0  Instance: /tb_memory
+# ** Note: TEST 2: selector = 1 -> ultimo blocco (parziale)
+#    Time: 350 ns  Iteration: 0  Instance: /tb_memory
+# ** Note: TEST 3: cambio dati selector=1
+#    Time: 450 ns  Iteration: 0  Instance: /tb_memory
+# ** Note: TEST 4: ritorno a selector=0
+#    Time: 550 ns  Iteration: 0  Instance: /tb_memory
+# ** Note: TEST 5: en='0' blocco inattivo
+#    Time: 650 ns  Iteration: 0  Instance: /tb_memory
+# Compile of As_Counter.vhd was successful.
+# Compile of D_Flip_Flop.vhd was successful.
+# Compile of fullAdder.vhd was successful.
+# Compile of Memory.vhd was successful.
+# Compile of RippleCarryAdder.vhd was successful.
+# Compile of tb_memory.vhd failed with 1 errors.
+# 6 compiles, 1 failed with 1 error.
+# Compile of As_Counter.vhd was successful.
+# Compile of D_Flip_Flop.vhd was successful.
+# Compile of fullAdder.vhd was successful.
+# Compile of Memory.vhd was successful.
+# Compile of RippleCarryAdder.vhd was successful.
+# Compile of tb_memory.vhd was successful.
+# 6 compiles, 0 failed with no errors.
+vsim work.tb_memory
+# End time: 10:41:35 on Nov 27,2025, Elapsed time: 0:02:50
+# Errors: 0, Warnings: 12
+# vsim work.tb_memory 
+# Start time: 10:41:35 on Nov 27,2025
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.tb_memory(tb)
+# Loading work.memory(mem)
+# Loading work.d_flip_flop(dff)
+add wave -position insertpoint  \
+sim:/tb_memory/clk_ext \
+sim:/tb_memory/resetn_ext \
+sim:/tb_memory/en_aus \
+sim:/tb_memory/selector_ext \
+sim:/tb_memory/d_in_ext \
+sim:/tb_memory/d_out_ext \
+sim:/tb_memory/testing \
+sim:/tb_memory/Ncell \
+sim:/tb_memory/Nbit_in \
+sim:/tb_memory/clk_period
+add wave -position insertpoint  \
+sim:/tb_memory/clk_ext \
+sim:/tb_memory/resetn_ext \
+sim:/tb_memory/en_aus \
+sim:/tb_memory/selector_ext \
+sim:/tb_memory/d_in_ext \
+sim:/tb_memory/d_out_ext \
+sim:/tb_memory/testing \
+sim:/tb_memory/Ncell \
+sim:/tb_memory/Nbit_in \
+sim:/tb_memory/clk_period
+# Unable to lock WLF file "vsim.wlf". Retrying 1 times, errno 11
+# Unable to lock WLF file "vsim.wlf". Retrying 2 times, errno 11
+# Unable to lock WLF file "vsim.wlf". Retrying 3 times, errno 11
+# Cannot lock WLF file: "vsim.wlf"
+#           errno 11: Resource temporarily unavailable.
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: pacca  Hostname: PaccaPc  ProcessID: 7391
+#           Attempting to use alternate WLF file "./wlfticslwW".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlfticslwW
+run -all
+# ** Note: TEST 1: selector = 0 -> abilita primi Nbit_in bit
+#    Time: 250 ns  Iteration: 0  Instance: /tb_memory
+# ** Note: TEST 2: selector = 1 -> ultimo blocco (parziale)
+#    Time: 350 ns  Iteration: 0  Instance: /tb_memory
+# ** Note: TEST 3: cambio dati selector=1
+#    Time: 450 ns  Iteration: 0  Instance: /tb_memory
+# ** Note: TEST 4: ritorno a selector=0
+#    Time: 550 ns  Iteration: 0  Instance: /tb_memory
+# ** Note: TEST 5: en='0' blocco inattivo
+#    Time: 650 ns  Iteration: 0  Instance: /tb_memory
+# End time: 10:43:18 on Nov 27,2025, Elapsed time: 0:01:43
+# Errors: 0, Warnings: 3
