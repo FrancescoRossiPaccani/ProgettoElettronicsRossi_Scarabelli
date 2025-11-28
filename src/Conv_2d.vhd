@@ -20,7 +20,10 @@ entity Conv_2d_input is
         -- uniche   
         x_valid      : in std_logic;
         i_f          : in std_logic;
-        x            : in std_logic_vector(Nbit-1 downto 0)
+        x            : in std_logic_vector(Nbit-1 downto 0);
+
+        --debug 
+        stato        : out std_logic_vector( clog2((M*M+Nbit-1)/Nbit + (N*N+Nbit-1)/Nbit)-1 downto 0) 
     );
 end entity;
 
@@ -79,12 +82,13 @@ architecture C2D of Conv_2d_input is
     signal resetn_aus     : std_logic;
     signal end_filter_aus : std_logic;
     signal end_matrix_aus : std_logic;
+    signal x_valid_reg    : std_logic;
+    signal i_f_reg        : std_logic;
 
     begin 
 
         resetn_aus <= not reset;
-        end_filter_aus <= not end_filter;
-        end_matrix_aus <= not end_matrix;
+        end_filter_aus <= not end_filter and i_f and x_valid;
 
         in_aus <= i_f when end_filter = '0' else not i_f;
         count_in(0) <= x_valid and not end_matrix and in_aus;
@@ -102,12 +106,15 @@ architecture C2D of Conv_2d_input is
                     clk    => clk,
                     resetn => resetn_aus          
                 );
+        -- debug
+        stato <= count_out;
         -- end_filter <= '1' when count_out >= (M*M)/Nbit else '0';
         -- end_matrix <= '1' when count_out >= ((M*M)/Nbit) + ((N*N)/Nbit) else '0';
 
         end_filter <= '1' when unsigned(count_out) > ((M*M)/Nbit) else '0';
-        end_matrix <= '1' when unsigned(count_out) > (((M*M)/Nbit) + ((N*N)/Nbit)) else '0';
-        end_matrix_aus <= end_filter and (not end_matrix);
+        end_matrix <= '1' when unsigned(count_out) >= (((M*M + Nbit-1)/Nbit) + ((N*N + Nbit-1)/Nbit)) else '0';
+        end_matrix_aus <= end_filter and (not end_matrix) and (not i_f) and x_valid;
+        en_execution <= end_matrix;
         SUB_1: RippleCarryAdder
                generic map (
                     Nbit        => dim_bit_adder
@@ -142,7 +149,7 @@ architecture C2D of Conv_2d_input is
                 port map(
                     clk         => clk,
                     resetn      => resetn_aus,
-                    en          => end_filter,
+                    en          => end_matrix_aus,
                     selector    => fout_s1_aus(dim_matrix_selector-1 downto 0),
                     d_in        => x,
                     d_out       => matrix_out
