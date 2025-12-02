@@ -55,7 +55,7 @@ architecture C2D of Conv_2d is
             -- filter dimension
             M : positive := 3;
             -- number of bits required in order to rapresent one elemnt of the output matrix
-            Nbit : integer := 4 -- floor(log2(M*M)) + 1
+            Nbit_out : integer := 4 -- floor(log2(M*M)) + 1
         );
         port(
             -- clock port
@@ -71,10 +71,11 @@ architecture C2D of Conv_2d is
             en : in std_logic 
         );
     end component;
-    signal en_exe       : std_logic;
-    signal filter_link  : std_logic_vector(M*M - 1 downto 0);
-    signal matrix_link  : std_logic_vector(N*N - 1 downto 0); 
-    signal status       : std_logic_vector( clog2((M*M+Nbit-1)/Nbit + (N*N+Nbit-1)/Nbit)-1 downto 0);
+    constant Nbit_out     : natural := clog2(M*M);
+    signal   en_exe       : std_logic;
+    signal   filter_link  : std_logic_vector(M*M - 1 downto 0);
+    signal   matrix_link  : std_logic_vector(N*N - 1 downto 0); 
+    signal   status       : std_logic_vector( clog2((M*M+Nbit-1)/Nbit + (N*N+Nbit-1)/Nbit)-1 downto 0);
     begin
         C_INP:  Conv_2d_input
                     generic map(
@@ -97,7 +98,7 @@ architecture C2D of Conv_2d is
                     generic map(
                         N    => N,
                         M    => M,
-                        Nbit => Nbit
+                        Nbit_out => Nbit_out
                     )
                     port map(
                         clk         => clk,

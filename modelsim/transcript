@@ -408,3 +408,74 @@ vsim work.tb_conv_2d
 # Error loading design
 # End time: 17:16:00 on Dec 02,2025, Elapsed time: 0:00:00
 # Errors: 1, Warnings: 5
+# Compile of As_Counter.vhd was successful.
+# Compile of Conv_2d.vhdl was successful.
+# Compile of Conv_2d_input.vhd was successful.
+# Compile of Conv_2d_output.vhd failed with 26 errors.
+# Compile of counter.vhd was successful.
+# Compile of D_Flip_Flop.vhd was successful.
+# Compile of dff_n.vhd was successful.
+# Compile of full_adder.vhd was successful.
+# Compile of fullAdder.vhd was successful.
+# Compile of matrixMul.vhd was successful.
+# Compile of Memory.vhd was successful.
+# Compile of mux.vhd was successful.
+# Compile of ripple_carry_adder.vhd was successful.
+# Compile of RippleCarryAdder.vhd was successful.
+# Compile of testbench_conv2d_input.vhd was successful.
+# Compile of Utils.vhd was successful.
+# Compile of tb_memory.vhd was successful.
+# Compile of tb_Conv_2d.vhd was successful.
+# 18 compiles, 1 failed with 26 errors.
+# Compile of As_Counter.vhd was successful.
+# Compile of Conv_2d.vhdl was successful.
+# Compile of Conv_2d_input.vhd was successful.
+# Compile of Conv_2d_output.vhd was successful with warnings.
+# Compile of counter.vhd was successful.
+# Compile of D_Flip_Flop.vhd was successful.
+# Compile of dff_n.vhd was successful.
+# Compile of full_adder.vhd was successful.
+# Compile of fullAdder.vhd was successful.
+# Compile of matrixMul.vhd was successful.
+# Compile of Memory.vhd was successful.
+# Compile of mux.vhd was successful.
+# Compile of ripple_carry_adder.vhd was successful.
+# Compile of RippleCarryAdder.vhd was successful.
+# Compile of testbench_conv2d_input.vhd was successful.
+# Compile of Utils.vhd was successful.
+# Compile of tb_memory.vhd was successful.
+# Compile of tb_Conv_2d.vhd was successful.
+# 18 compiles, 0 failed with no errors.
+vsim work.tb_conv_2d
+# vsim work.tb_conv_2d 
+# Start time: 17:32:28 on Dec 02,2025
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.utils(body)
+# Loading work.tb_conv_2d(tb)
+# Loading work.conv_2d(c2d)
+# Loading work.conv_2d_input(c2d)
+# Loading work.as_counter(asc)
+# Loading work.ripplecarryadder(rca)
+# Loading work.fulladder(dataflow)
+# Loading work.d_flip_flop(dff)
+# Loading work.memory(mem)
+# Loading work.conv_2d_output(conv_bh)
+# ** Error: (vsim-3733) No default binding for component instance 'C_OUT'.
+#    The following component generic is not on the entity:
+#           Nbit
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d/UUT/C_OUT File: /home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/src/Conv_2d.vhdl Line: 110
+# Loading work.counter(counter_bh)
+# Loading ieee.fixed_float_types
+# Loading ieee.math_real(body)
+# Loading ieee.fixed_generic_pkg(body)
+# Loading ieee.fixed_pkg
+# Loading work.ripple_carry_adder(ripple_carry_adder_behaviour)
+# Loading work.full_adder(dataflow)
+# Loading work.dff_n(dff_n_bh)
+# Loading work.mux(mux_bh)
+# Error loading design
+# End time: 17:32:28 on Dec 02,2025, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 3

@@ -5,16 +5,9 @@ use work.Utils.all;
 
 entity Conv_2d_output is
     generic(
-        -- matrix dimension
-        N : integer := 5;
-        -- filter dimension
-        M : integer := 3;
-        -- number of bits required in order to rapresent one elemnt of the output matrix
-        Nbit : integer := 4 -- floor(log2(M*M)) + 1
-        -- number of bits required in order to control the middle multiplexers output
-        --ADDR_BITS : integer := 6; -- ceil(log2(N*N)) + 1
-        -- number of bits in order to count all the required interactions needed in order to complete the convolution
-        --OUT_CNT_BITS : integer := 4 -- floor(log2((N-M+1)*(N-M+1))) + 1
+        N    : positive := 5;
+        M    : positive := 3;
+        Nbit_out : positive := 4 
     );
     port(
         -- clock port
@@ -25,6 +18,7 @@ entity Conv_2d_output is
         matrix : in std_logic_vector(N*N - 1 downto 0);
         -- filter matrix (M*M elements, 1 bit each)
         filter : in std_logic_vector(M*M - 1 downto 0);
+        
         convolution : out std_logic_vector(((N - M + 1)*(N - M + 1) * clog2(M*M)) - 1 downto 0);
         -- enabler
         en : in std_logic 
@@ -37,23 +31,23 @@ architecture conv_bh of Conv_2d_output is
     -- number of output matrix's elements
     constant output_elements : integer := convolutionSize * convolutionSize;
 
-    type slv is array (natural range <>) of std_logic_vector(Nbit - 1 downto 0);
+    type slv is array (natural range <>) of std_logic_vector(Nbit_out - 1 downto 0);
 
-    constant ADDR_BITS   :natural := clog2(N*N);
-    constant OUT_CNT_BITS : natural := clog2((N-M+1)*(N-M+1));
+    constant ADDR_BITS          : natural := clog2(N*N);
+    constant OUT_CNT_BITS       : natural := clog2((N-M+1)*(N-M+1));
     -- segnali
-    signal convolution_s : std_logic_vector((output_elements * Nbit) - 1 downto 0);
-    signal output_counter : std_logic_vector(OUT_CNT_BITS - 1 downto 0);
-    signal rst_n : std_logic;
-    signal and_to_adder: std_logic_vector(M*M - 1 downto 0);
-    signal mux_to_and: std_logic_vector(M*M - 1 downto 0);
-    signal adder_out_adder_in : slv(M*M - 2 downto 0);
-    signal adder_to_dff : std_logic_vector(Nbit - 1 downto 0);
-    signal en_dff : std_logic_vector(output_elements - 1 downto 0);
+    signal convolution_s        : std_logic_vector((output_elements * Nbit_out) - 1 downto 0);
+    signal output_counter       : std_logic_vector(OUT_CNT_BITS - 1 downto 0);
+    signal rst_n                : std_logic;
+    signal and_to_adder         : std_logic_vector(M*M - 1 downto 0);
+    signal mux_to_and           : std_logic_vector(M*M - 1 downto 0);
+    signal adder_out_adder_in   : slv(M*M - 2 downto 0);
+    signal adder_to_dff         : std_logic_vector(Nbit_out - 1 downto 0);
+    signal en_dff               : std_logic_vector(output_elements - 1 downto 0);
 
-    signal counter_val : integer := 0;
-    signal current_row : integer := 0;
-    signal current_col : integer := 0;
+    signal counter_val          : integer := 0;
+    signal current_row          : integer := 0;
+    signal current_col          : integer := 0;
 
     -- n bit counter component
     component counter is
@@ -132,7 +126,7 @@ begin
         constant row_offset : integer := i / M;
         constant col_offset : integer := i mod M;
         signal mux_ctrl : std_logic_vector(ADDR_BITS - 1 downto 0);
-        -- **Rivedere
+        
         mux_ctrl <= std_logic_vector(to_unsigned((current_row + row_offset) * N + (current_col + col_offset), ADDR_BITS));
 
         mux_i: mux
@@ -153,12 +147,12 @@ begin
 
     -- adders
     adders_instances: for i in 0 to M*M - 1 generate
-        signal computed_a : std_logic_vector(Nbit - 1 downto 0);
-        computed_a <= std_logic_vector(to_unsigned(0, Nbit - 1)) & and_to_adder(i);
+        signal computed_a : std_logic_vector(Nbit_out - 1 downto 0);
+        computed_a <= std_logic_vector(to_unsigned(0, Nbit_out - 1)) & and_to_adder(i);
         adder_first: if i = 0 generate
             adder_i: ripple_carry_adder
             generic map(
-                N => Nbit
+                N => Nbit_out
             )
             port map(
                 a => computed_a,
@@ -172,7 +166,7 @@ begin
         adder_middle: if i > 0 and i < M*M - 1 generate
             adder_i: ripple_carry_adder
             generic map(
-                N => Nbit
+                N => Nbit_out
             )
             port map(
                 a => computed_a,
@@ -186,7 +180,7 @@ begin
         adder_last: if i = M*M - 1 generate
             adder_i: ripple_carry_adder
             generic map(
-                N => Nbit
+                N => Nbit_out
             )
             port map(
                 a => computed_a,
@@ -203,14 +197,14 @@ begin
     dff_istances: for i in 0 to output_elements - 1 generate
         dff_i: dff_n
             generic map(
-                N => Nbit
+                N => Nbit_out
             )
             port map(
                 clk => clk,
                 resetn => rst_n,
                 di => adder_to_dff,
                 en => en_dff(i),
-                do => convolution((i+1)*Nbit - 1 downto i*Nbit)
+                do => convolution((i+1)*Nbit_out - 1 downto i*Nbit_out)
             );
     end generate;
 
