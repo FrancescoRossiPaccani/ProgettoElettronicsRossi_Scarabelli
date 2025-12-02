@@ -68,22 +68,23 @@ architecture C2D of Conv_2d_input is
         );
     end component;
 
+    -- mettili in maiuscolo anche i generici
     constant dim_filter_selector    : natural := clog2((M*M + Nbit - 1)/Nbit);
     constant dim_matrix_selector    : natural := clog2((N*N + Nbit - 1)/Nbit);
     constant dim_bit_adder          : natural := clog2((M*M+Nbit-1)/Nbit + (N*N+Nbit-1)/Nbit);
    
     signal end_filter     :  std_logic;
     signal end_matrix     :  std_logic;
-    signal count_in       :  std_logic_vector(dim_bit_adder-1 downto 0) := (others => '0');
-    signal count_out      :  std_logic_vector(dim_bit_adder-1 downto 0) := (others => '0');
+    signal count_in       :  std_logic_vector(dim_bit_adder-1 downto 0);
+    signal count_out      :  std_logic_vector(dim_bit_adder-1 downto 0);
     signal in_aus         :  std_logic;
     signal cout_s1_aus    :  std_logic;
-    signal fout_s1_aus    :  std_logic_vector(dim_bit_adder-1 downto 0) := (others => '0');
-    signal resetn_aus     : std_logic;
-    signal end_filter_aus : std_logic;
-    signal end_matrix_aus : std_logic;
-    signal x_valid_reg    : std_logic;
-    signal i_f_reg        : std_logic;
+    signal fout_s1_aus    :  std_logic_vector(dim_bit_adder-1 downto 0);
+    signal resetn_aus     :  std_logic;
+    signal end_filter_aus :  std_logic;
+    signal end_matrix_aus :  std_logic;
+    signal x_valid_reg    :  std_logic;
+    signal i_f_reg        :  std_logic;
 
     begin 
 

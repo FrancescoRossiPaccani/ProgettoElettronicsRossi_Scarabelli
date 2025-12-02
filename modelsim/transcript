@@ -1,1532 +1,410 @@
 # Loading project test_memory
 # Compile of As_Counter.vhd was successful.
+# Compile of Conv_2d.vhdl failed with 1 errors.
+# Compile of Conv_2d_input.vhd was successful.
+# Compile of Conv_2d_output.vhd failed with 1 errors.
+# Compile of counter.vhd was successful.
 # Compile of D_Flip_Flop.vhd was successful.
+# Compile of dff_n.vhd was successful.
+# Compile of full_adder.vhd was successful.
 # Compile of fullAdder.vhd was successful.
+# Compile of matrixMul.vhd was successful.
 # Compile of Memory.vhd was successful.
+# Compile of mux.vhd was successful.
+# Compile of ripple_carry_adder.vhd was successful.
 # Compile of RippleCarryAdder.vhd was successful.
-# Compile of tb_memory.vhd was successful.
-# Compile of Utils.vhd was successful.
-# Compile of Conv_2d.vhd was successful.
-# Compile of testbench_conv2d_input.vhd failed with 14 errors.
-# 9 compiles, 1 failed with 14 errors.
-# Compile of As_Counter.vhd was successful.
-# Compile of D_Flip_Flop.vhd was successful.
-# Compile of fullAdder.vhd was successful.
-# Compile of Memory.vhd was successful.
-# Compile of RippleCarryAdder.vhd was successful.
-# Compile of tb_memory.vhd was successful.
-# Compile of Utils.vhd was successful.
-# Compile of Conv_2d.vhd was successful.
-# Compile of testbench_conv2d_input.vhd failed with 1 errors.
-# 9 compiles, 1 failed with 1 error.
-# Compile of As_Counter.vhd was successful.
-# Compile of D_Flip_Flop.vhd was successful.
-# Compile of fullAdder.vhd was successful.
-# Compile of Memory.vhd was successful.
-# Compile of RippleCarryAdder.vhd was successful.
-# Compile of tb_memory.vhd was successful.
-# Compile of Utils.vhd was successful.
-# Compile of Conv_2d.vhd was successful.
-# Compile of testbench_conv2d_input.vhd failed with 2 errors.
-# 9 compiles, 1 failed with 2 errors.
-# Compile of As_Counter.vhd was successful.
-# Compile of D_Flip_Flop.vhd was successful.
-# Compile of fullAdder.vhd was successful.
-# Compile of Memory.vhd was successful.
-# Compile of RippleCarryAdder.vhd was successful.
-# Compile of tb_memory.vhd was successful.
-# Compile of Utils.vhd was successful.
-# Compile of Conv_2d.vhd was successful.
 # Compile of testbench_conv2d_input.vhd was successful.
-# 9 compiles, 0 failed with no errors.
-vsim work.tb_conv_2d_input
-# vsim work.tb_conv_2d_input 
-# Start time: 09:22:15 on Nov 28,2025
+# Compile of Utils.vhd was successful.
+# Compile of tb_memory.vhd was successful.
+# Compile of testbench_conv2d.vhd failed with 6 errors.
+# 18 compiles, 3 failed with 8 errors.
+# Compile of As_Counter.vhd was successful.
+# Compile of Conv_2d.vhdl failed with 1 errors.
+# Compile of Conv_2d_input.vhd was successful.
+# Compile of Conv_2d_output.vhd failed with 1 errors.
+# Compile of counter.vhd was successful.
+# Compile of D_Flip_Flop.vhd was successful.
+# Compile of dff_n.vhd was successful.
+# Compile of full_adder.vhd was successful.
+# Compile of fullAdder.vhd was successful.
+# Compile of matrixMul.vhd was successful.
+# Compile of Memory.vhd was successful.
+# Compile of mux.vhd was successful.
+# Compile of ripple_carry_adder.vhd was successful.
+# Compile of RippleCarryAdder.vhd was successful.
+# Compile of testbench_conv2d_input.vhd was successful.
+# Compile of Utils.vhd was successful.
+# Compile of tb_memory.vhd was successful.
+# Compile of testbench_conv2d.vhd failed with 6 errors.
+# 18 compiles, 3 failed with 8 errors.
+# Compile of As_Counter.vhd was successful.
+# Compile of Conv_2d.vhdl failed with 1 errors.
+# Compile of Conv_2d_input.vhd was successful.
+# Compile of Conv_2d_output.vhd failed with 1 errors.
+# Compile of counter.vhd was successful.
+# Compile of D_Flip_Flop.vhd was successful.
+# Compile of dff_n.vhd was successful.
+# Compile of full_adder.vhd was successful.
+# Compile of fullAdder.vhd was successful.
+# Compile of matrixMul.vhd was successful.
+# Compile of Memory.vhd was successful.
+# Compile of mux.vhd was successful.
+# Compile of ripple_carry_adder.vhd was successful.
+# Compile of RippleCarryAdder.vhd was successful.
+# Compile of testbench_conv2d_input.vhd was successful.
+# Compile of Utils.vhd was successful.
+# Compile of tb_memory.vhd was successful.
+# Compile of testbench_conv2d.vhd failed with 6 errors.
+# 18 compiles, 3 failed with 8 errors.
+# Compile of As_Counter.vhd was successful.
+# Compile of Conv_2d.vhdl failed with 1 errors.
+# Compile of Conv_2d_input.vhd was successful.
+# Compile of Conv_2d_output.vhd failed with 1 errors.
+# Compile of counter.vhd was successful.
+# Compile of D_Flip_Flop.vhd was successful.
+# Compile of dff_n.vhd was successful.
+# Compile of full_adder.vhd was successful.
+# Compile of fullAdder.vhd was successful.
+# Compile of matrixMul.vhd was successful.
+# Compile of Memory.vhd was successful.
+# Compile of mux.vhd was successful.
+# Compile of ripple_carry_adder.vhd was successful.
+# Compile of RippleCarryAdder.vhd was successful.
+# Compile of testbench_conv2d_input.vhd was successful.
+# Compile of Utils.vhd was successful.
+# Compile of tb_memory.vhd was successful.
+# Compile of testbench_conv2d.vhd failed with 6 errors.
+# 18 compiles, 3 failed with 8 errors.
+# Compile of As_Counter.vhd was successful.
+# Compile of Conv_2d.vhdl failed with 1 errors.
+# Compile of Conv_2d_input.vhd was successful.
+# Compile of Conv_2d_output.vhd failed with 1 errors.
+# Compile of counter.vhd was successful.
+# Compile of D_Flip_Flop.vhd was successful.
+# Compile of dff_n.vhd was successful.
+# Compile of full_adder.vhd was successful.
+# Compile of fullAdder.vhd was successful.
+# Compile of matrixMul.vhd was successful.
+# Compile of Memory.vhd was successful.
+# Compile of mux.vhd was successful.
+# Compile of ripple_carry_adder.vhd was successful.
+# Compile of RippleCarryAdder.vhd was successful.
+# Compile of testbench_conv2d_input.vhd was successful.
+# Compile of Utils.vhd was successful.
+# Compile of tb_memory.vhd was successful.
+# Compile of testbench_conv2d.vhd failed with 4 errors.
+# 18 compiles, 3 failed with 6 errors.
+# Compile of As_Counter.vhd was successful.
+# Compile of Conv_2d.vhdl failed with 1 errors.
+# Compile of Conv_2d_input.vhd was successful.
+# Compile of Conv_2d_output.vhd failed with 1 errors.
+# Compile of counter.vhd was successful.
+# Compile of D_Flip_Flop.vhd was successful.
+# Compile of dff_n.vhd was successful.
+# Compile of full_adder.vhd was successful.
+# Compile of fullAdder.vhd was successful.
+# Compile of matrixMul.vhd was successful.
+# Compile of Memory.vhd was successful.
+# Compile of mux.vhd was successful.
+# Compile of ripple_carry_adder.vhd was successful.
+# Compile of RippleCarryAdder.vhd was successful.
+# Compile of testbench_conv2d_input.vhd was successful.
+# Compile of Utils.vhd was successful.
+# Compile of tb_memory.vhd was successful.
+# Compile of testbench_conv2d.vhd failed with 4 errors.
+# 18 compiles, 3 failed with 6 errors.
+# Compile of As_Counter.vhd was successful.
+# Compile of Conv_2d.vhdl failed with 1 errors.
+# Compile of Conv_2d_input.vhd was successful.
+# Compile of Conv_2d_output.vhd failed with 1 errors.
+# Compile of counter.vhd was successful.
+# Compile of D_Flip_Flop.vhd was successful.
+# Compile of dff_n.vhd was successful.
+# Compile of full_adder.vhd was successful.
+# Compile of fullAdder.vhd was successful.
+# Compile of matrixMul.vhd was successful.
+# Compile of Memory.vhd was successful.
+# Compile of mux.vhd was successful.
+# Compile of ripple_carry_adder.vhd was successful.
+# Compile of RippleCarryAdder.vhd was successful.
+# Compile of testbench_conv2d_input.vhd was successful.
+# Compile of Utils.vhd was successful.
+# Compile of tb_memory.vhd was successful.
+# Compile of testbench_conv2d.vhd failed with 4 errors.
+# 18 compiles, 3 failed with 6 errors.
+# Compile of As_Counter.vhd was successful.
+# Compile of Conv_2d.vhdl failed with 1 errors.
+# Compile of Conv_2d_input.vhd was successful.
+# Compile of Conv_2d_output.vhd failed with 1 errors.
+# Compile of counter.vhd was successful.
+# Compile of D_Flip_Flop.vhd was successful.
+# Compile of dff_n.vhd was successful.
+# Compile of full_adder.vhd was successful.
+# Compile of fullAdder.vhd was successful.
+# Compile of matrixMul.vhd was successful.
+# Compile of Memory.vhd was successful.
+# Compile of mux.vhd was successful.
+# Compile of ripple_carry_adder.vhd was successful.
+# Compile of RippleCarryAdder.vhd was successful.
+# Compile of testbench_conv2d_input.vhd was successful.
+# Compile of Utils.vhd was successful.
+# Compile of tb_memory.vhd was successful.
+# Compile of testbench_conv2d.vhd failed with 4 errors.
+# 18 compiles, 3 failed with 6 errors.
+# Compile of As_Counter.vhd was successful.
+# Compile of Conv_2d.vhdl failed with 1 errors.
+# Compile of Conv_2d_input.vhd was successful.
+# Compile of Conv_2d_output.vhd failed with 1 errors.
+# Compile of counter.vhd was successful.
+# Compile of D_Flip_Flop.vhd was successful.
+# Compile of dff_n.vhd was successful.
+# Compile of full_adder.vhd was successful.
+# Compile of fullAdder.vhd was successful.
+# Compile of matrixMul.vhd was successful.
+# Compile of Memory.vhd was successful.
+# Compile of mux.vhd was successful.
+# Compile of ripple_carry_adder.vhd was successful.
+# Compile of RippleCarryAdder.vhd was successful.
+# Compile of testbench_conv2d_input.vhd was successful.
+# Compile of Utils.vhd was successful.
+# Compile of tb_memory.vhd was successful.
+# Compile of testbench_conv2d.vhd failed with 4 errors.
+# 18 compiles, 3 failed with 6 errors.
+# Compile of As_Counter.vhd was successful.
+# Compile of Conv_2d.vhdl was successful.
+# Compile of Conv_2d_input.vhd was successful.
+# Compile of Conv_2d_output.vhd failed with 1 errors.
+# Compile of counter.vhd was successful.
+# Compile of D_Flip_Flop.vhd was successful.
+# Compile of dff_n.vhd was successful.
+# Compile of full_adder.vhd was successful.
+# Compile of fullAdder.vhd was successful.
+# Compile of matrixMul.vhd was successful.
+# Compile of Memory.vhd was successful.
+# Compile of mux.vhd was successful.
+# Compile of ripple_carry_adder.vhd was successful.
+# Compile of RippleCarryAdder.vhd was successful.
+# Compile of testbench_conv2d_input.vhd was successful.
+# Compile of Utils.vhd was successful.
+# Compile of tb_memory.vhd was successful.
+# Compile of testbench_conv2d.vhd failed with 4 errors.
+# 18 compiles, 2 failed with 5 errors.
+# Compile of As_Counter.vhd was successful.
+# Compile of Conv_2d.vhdl was successful.
+# Compile of Conv_2d_input.vhd was successful.
+# Compile of Conv_2d_output.vhd was successful with warnings.
+# Compile of counter.vhd was successful.
+# Compile of D_Flip_Flop.vhd was successful.
+# Compile of dff_n.vhd was successful.
+# Compile of full_adder.vhd was successful.
+# Compile of fullAdder.vhd was successful.
+# Compile of matrixMul.vhd was successful.
+# Compile of Memory.vhd was successful.
+# Compile of mux.vhd was successful.
+# Compile of ripple_carry_adder.vhd was successful.
+# Compile of RippleCarryAdder.vhd was successful.
+# Compile of testbench_conv2d_input.vhd was successful.
+# Compile of Utils.vhd was successful.
+# Compile of tb_memory.vhd was successful.
+# Compile of testbench_conv2d.vhd failed with 4 errors.
+# 18 compiles, 1 failed with 4 errors.
+# Compile of As_Counter.vhd was successful.
+# Compile of Conv_2d.vhdl was successful.
+# Compile of Conv_2d_input.vhd was successful.
+# Compile of Conv_2d_output.vhd was successful with warnings.
+# Compile of counter.vhd was successful.
+# Compile of D_Flip_Flop.vhd was successful.
+# Compile of dff_n.vhd was successful.
+# Compile of full_adder.vhd was successful.
+# Compile of fullAdder.vhd was successful.
+# Compile of matrixMul.vhd was successful.
+# Compile of Memory.vhd was successful.
+# Compile of mux.vhd was successful.
+# Compile of ripple_carry_adder.vhd was successful.
+# Compile of RippleCarryAdder.vhd was successful.
+# Compile of testbench_conv2d_input.vhd was successful.
+# Compile of Utils.vhd was successful.
+# Compile of tb_memory.vhd was successful.
+# Compile of testbench_conv2d.vhd failed with 2 errors.
+# 18 compiles, 1 failed with 2 errors.
+# Compile of As_Counter.vhd was successful.
+# Compile of Conv_2d.vhdl was successful.
+# Compile of Conv_2d_input.vhd was successful.
+# Compile of Conv_2d_output.vhd was successful with warnings.
+# Compile of counter.vhd was successful.
+# Compile of D_Flip_Flop.vhd was successful.
+# Compile of dff_n.vhd was successful.
+# Compile of full_adder.vhd was successful.
+# Compile of fullAdder.vhd was successful.
+# Compile of matrixMul.vhd was successful.
+# Compile of Memory.vhd was successful.
+# Compile of mux.vhd was successful.
+# Compile of ripple_carry_adder.vhd was successful.
+# Compile of RippleCarryAdder.vhd was successful.
+# Compile of testbench_conv2d_input.vhd was successful.
+# Compile of Utils.vhd was successful.
+# Compile of tb_memory.vhd was successful.
+# Compile of testbench_conv2d.vhd was successful.
+# 18 compiles, 0 failed with no errors.
+# Load canceled
+# Compile of As_Counter.vhd was successful.
+# Compile of Conv_2d.vhdl was successful.
+# Compile of Conv_2d_input.vhd was successful.
+# Compile of Conv_2d_output.vhd was successful with warnings.
+# Compile of counter.vhd was successful.
+# Compile of D_Flip_Flop.vhd was successful.
+# Compile of dff_n.vhd was successful.
+# Compile of full_adder.vhd was successful.
+# Compile of fullAdder.vhd was successful.
+# Compile of matrixMul.vhd was successful.
+# Compile of Memory.vhd was successful.
+# Compile of mux.vhd was successful.
+# Compile of ripple_carry_adder.vhd was successful.
+# Compile of RippleCarryAdder.vhd was successful.
+# Compile of testbench_conv2d_input.vhd was successful.
+# Compile of Utils.vhd was successful.
+# Compile of tb_memory.vhd was successful.
+# Compile of testbench_conv2d.vhd was successful.
+# 18 compiles, 0 failed with no errors.
+# Load canceled
+# Load canceled
+# Compile of As_Counter.vhd was successful.
+# Compile of Conv_2d.vhdl was successful.
+# Compile of Conv_2d_input.vhd was successful.
+# Compile of Conv_2d_output.vhd was successful with warnings.
+# Compile of counter.vhd was successful.
+# Compile of D_Flip_Flop.vhd was successful.
+# Compile of dff_n.vhd was successful.
+# Compile of full_adder.vhd was successful.
+# Compile of fullAdder.vhd was successful.
+# Compile of matrixMul.vhd was successful.
+# Compile of Memory.vhd was successful.
+# Compile of mux.vhd was successful.
+# Compile of ripple_carry_adder.vhd was successful.
+# Compile of RippleCarryAdder.vhd was successful.
+# Compile of testbench_conv2d_input.vhd was successful.
+# Compile of Utils.vhd was successful.
+# Compile of tb_memory.vhd was successful.
+# Compile of testbench_conv2d.vhd was successful.
+# 18 compiles, 0 failed with no errors.
+# Load canceled
+# Compile of As_Counter.vhd was successful.
+# Compile of Conv_2d.vhdl was successful.
+# Compile of Conv_2d_input.vhd was successful.
+# Compile of Conv_2d_output.vhd was successful with warnings.
+# Compile of counter.vhd was successful.
+# Compile of D_Flip_Flop.vhd was successful.
+# Compile of dff_n.vhd was successful.
+# Compile of full_adder.vhd was successful.
+# Compile of fullAdder.vhd was successful.
+# Compile of matrixMul.vhd was successful.
+# Compile of Memory.vhd was successful.
+# Compile of mux.vhd was successful.
+# Compile of ripple_carry_adder.vhd was successful.
+# Compile of RippleCarryAdder.vhd was successful.
+# Compile of testbench_conv2d_input.vhd was successful.
+# Compile of Utils.vhd was successful.
+# Compile of tb_memory.vhd was successful.
+# Compile of testbench_conv2d.vhd was successful.
+# 18 compiles, 0 failed with no errors.
+vsim work.tb_conv_2d
+# vsim work.tb_conv_2d 
+# Start time: 17:14:54 on Dec 02,2025
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
 # Loading ieee.numeric_std(body)
 # Loading work.utils(body)
-# Loading work.tb_conv_2d_input(tb)
+# Loading work.tb_conv_2d(tb)
+# Loading work.conv_2d(c2d)
 # Loading work.conv_2d_input(c2d)
 # Loading work.as_counter(asc)
 # Loading work.ripplecarryadder(rca)
 # Loading work.fulladder(dataflow)
 # Loading work.d_flip_flop(dff)
 # Loading work.memory(mem)
-add wave -position insertpoint  \
-sim:/tb_conv_2d_input/clk_ext \
-sim:/tb_conv_2d_input/reset_ext \
-sim:/tb_conv_2d_input/en_execution \
-sim:/tb_conv_2d_input/filter_out \
-sim:/tb_conv_2d_input/matrix_out \
-sim:/tb_conv_2d_input/x_valid \
-sim:/tb_conv_2d_input/i_f \
-sim:/tb_conv_2d_input/x \
-sim:/tb_conv_2d_input/testing \
-sim:/tb_conv_2d_input/N \
-sim:/tb_conv_2d_input/M \
-sim:/tb_conv_2d_input/Nbit \
-sim:/tb_conv_2d_input/clk_period
-run -all
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_input/UUT/M_MEM
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_input/UUT/F_MEM
-# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
-#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_input/UUT
-# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
-#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_input/UUT
-# ** Failure: FINE SIMULAZIONE
-#    Time: 411150 ns  Iteration: 0  Process: /tb_conv_2d_input/stim_proc File: /home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/src/testbench_conv2d_input.vhd
-# Break in Process stim_proc at /home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/src/testbench_conv2d_input.vhd line 120
+# Loading work.conv_2d_output(conv_bh)
+# Loading work.counter(counter_bh)
+# Loading ieee.fixed_float_types
+# Loading ieee.math_real(body)
+# Loading ieee.fixed_generic_pkg(body)
+# Loading ieee.fixed_pkg
+# Loading work.ripple_carry_adder(ripple_carry_adder_behaviour)
+# Loading work.full_adder(dataflow)
+# Loading work.dff_n(dff_n_bh)
+# Loading work.mux(mux_bh)
+# ** Fatal: (vsim-3471) Slice range (39 downto 32) does not belong to the prefix index range (35 downto 0).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d/UUT/C_OUT/dff_istances(4)/dff_i File: /home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/src/Conv_2d_output.vhd Line: 214
+# FATAL ERROR while loading design
+# Error loading design
+# End time: 17:14:54 on Dec 02,2025, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 23
 # Compile of As_Counter.vhd was successful.
+# Compile of Conv_2d.vhdl was successful.
+# Compile of Conv_2d_input.vhd was successful.
+# Compile of Conv_2d_output.vhd was successful with warnings.
+# Compile of counter.vhd was successful.
 # Compile of D_Flip_Flop.vhd was successful.
+# Compile of dff_n.vhd was successful.
+# Compile of full_adder.vhd was successful.
 # Compile of fullAdder.vhd was successful.
+# Compile of matrixMul.vhd was successful.
 # Compile of Memory.vhd was successful.
+# Compile of mux.vhd was successful.
+# Compile of ripple_carry_adder.vhd was successful.
 # Compile of RippleCarryAdder.vhd was successful.
-# Compile of tb_memory.vhd was successful.
-# Compile of Utils.vhd was successful.
-# Compile of Conv_2d.vhd was successful.
 # Compile of testbench_conv2d_input.vhd was successful.
-# 9 compiles, 0 failed with no errors.
-vsim work.tb_conv_2d_input
-# End time: 09:24:09 on Nov 28,2025, Elapsed time: 0:01:54
-# Errors: 1, Warnings: 10
-# vsim work.tb_conv_2d_input 
-# Start time: 09:24:09 on Nov 28,2025
+# Compile of Utils.vhd was successful.
+# Compile of tb_memory.vhd was successful.
+# 17 compiles, 1 failed with no errors.
+# Compile of As_Counter.vhd was successful.
+# Compile of Conv_2d.vhdl was successful.
+# Compile of Conv_2d_input.vhd was successful.
+# Compile of Conv_2d_output.vhd was successful with warnings.
+# Compile of counter.vhd was successful.
+# Compile of D_Flip_Flop.vhd was successful.
+# Compile of dff_n.vhd was successful.
+# Compile of full_adder.vhd was successful.
+# Compile of fullAdder.vhd was successful.
+# Compile of matrixMul.vhd was successful.
+# Compile of Memory.vhd was successful.
+# Compile of mux.vhd was successful.
+# Compile of ripple_carry_adder.vhd was successful.
+# Compile of RippleCarryAdder.vhd was successful.
+# Compile of testbench_conv2d_input.vhd was successful.
+# Compile of Utils.vhd was successful.
+# Compile of tb_memory.vhd was successful.
+# Compile of tb_Conv_2d.vhd was successful.
+# 18 compiles, 0 failed with no errors.
+vsim work.tb_conv_2d
+# vsim work.tb_conv_2d 
+# Start time: 17:16:00 on Dec 02,2025
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
 # Loading ieee.numeric_std(body)
 # Loading work.utils(body)
-# Loading work.tb_conv_2d_input(tb)
+# Loading work.tb_conv_2d(tb)
+# Loading work.conv_2d(c2d)
 # Loading work.conv_2d_input(c2d)
 # Loading work.as_counter(asc)
 # Loading work.ripplecarryadder(rca)
 # Loading work.fulladder(dataflow)
 # Loading work.d_flip_flop(dff)
 # Loading work.memory(mem)
-add wave -position insertpoint  \
-sim:/tb_conv_2d_input/clk_ext \
-sim:/tb_conv_2d_input/reset_ext \
-sim:/tb_conv_2d_input/en_execution \
-sim:/tb_conv_2d_input/filter_out \
-sim:/tb_conv_2d_input/matrix_out \
-sim:/tb_conv_2d_input/x_valid \
-sim:/tb_conv_2d_input/i_f \
-sim:/tb_conv_2d_input/x \
-sim:/tb_conv_2d_input/testing \
-sim:/tb_conv_2d_input/N \
-sim:/tb_conv_2d_input/M \
-sim:/tb_conv_2d_input/Nbit \
-sim:/tb_conv_2d_input/clk_period
-run -all
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_input/UUT/M_MEM
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_input/UUT/F_MEM
-# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
-#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_input/UUT
-# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
-#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_input/UUT
-# ** Failure: FINE SIMULAZIONE
-#    Time: 411250 ns  Iteration: 0  Process: /tb_conv_2d_input/stim_proc File: /home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/src/testbench_conv2d_input.vhd
-# Break in Process stim_proc at /home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/src/testbench_conv2d_input.vhd line 126
-# Compile of As_Counter.vhd was successful.
-# Compile of D_Flip_Flop.vhd was successful.
-# Compile of fullAdder.vhd was successful.
-# Compile of Memory.vhd was successful.
-# Compile of RippleCarryAdder.vhd was successful.
-# Compile of tb_memory.vhd was successful.
-# Compile of Utils.vhd was successful.
-# Compile of Conv_2d.vhd was successful.
-# Compile of testbench_conv2d_input.vhd was successful.
-# 9 compiles, 0 failed with no errors.
-# Compile of As_Counter.vhd was successful.
-# Compile of D_Flip_Flop.vhd was successful.
-# Compile of fullAdder.vhd was successful.
-# Compile of Memory.vhd was successful.
-# Compile of RippleCarryAdder.vhd was successful.
-# Compile of tb_memory.vhd was successful.
-# Compile of Utils.vhd was successful.
-# Compile of Conv_2d.vhd was successful.
-# Compile of testbench_conv2d_input.vhd was successful.
-# 9 compiles, 0 failed with no errors.
-restart -f
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-# Loading work.utils(body)
-# Loading work.tb_conv_2d_input(tb)
-# Loading work.conv_2d_input(c2d)
-# Loading work.as_counter(asc)
-# Loading work.ripplecarryadder(rca)
-# Loading work.fulladder(dataflow)
-# Loading work.d_flip_flop(dff)
-# Loading work.memory(mem)
-run -all
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_input/UUT/M_MEM
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_input/UUT/F_MEM
-# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
-#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_input/UUT
-# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
-#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_input/UUT
-# ** Failure: FINE SIMULAZIONE
-#    Time: 411250 ns  Iteration: 0  Process: /tb_conv_2d_input/stim_proc File: /home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/src/testbench_conv2d_input.vhd
-# Break in Process stim_proc at /home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/src/testbench_conv2d_input.vhd line 126
-vsim work.tb_conv_2d_input
-# End time: 09:35:41 on Nov 28,2025, Elapsed time: 0:11:32
+# Loading work.conv_2d_output(conv_bh)
+# Loading work.counter(counter_bh)
+# Loading ieee.fixed_float_types
+# Loading ieee.math_real(body)
+# Loading ieee.fixed_generic_pkg(body)
+# Loading ieee.fixed_pkg
+# Loading work.ripple_carry_adder(ripple_carry_adder_behaviour)
+# Loading work.full_adder(dataflow)
+# Loading work.dff_n(dff_n_bh)
+# Loading work.mux(mux_bh)
+# ** Fatal: (vsim-3471) Slice range (39 downto 32) does not belong to the prefix index range (35 downto 0).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d/UUT/C_OUT/dff_istances(4)/dff_i File: /home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/src/Conv_2d_output.vhd Line: 214
+# FATAL ERROR while loading design
+# Error loading design
+# End time: 17:16:00 on Dec 02,2025, Elapsed time: 0:00:00
 # Errors: 1, Warnings: 5
-# vsim work.tb_conv_2d_input 
-# Start time: 09:35:41 on Nov 28,2025
-# Loading std.standard
-# Loading std.textio(body)
-# Loading ieee.std_logic_1164(body)
-# Loading ieee.numeric_std(body)
-# Loading work.utils(body)
-# Loading work.tb_conv_2d_input(tb)
-# Loading work.conv_2d_input(c2d)
-# Loading work.as_counter(asc)
-# Loading work.ripplecarryadder(rca)
-# Loading work.fulladder(dataflow)
-# Loading work.d_flip_flop(dff)
-# Loading work.memory(mem)
-add wave -position insertpoint  \
-sim:/tb_conv_2d_input/clk_ext \
-sim:/tb_conv_2d_input/reset_ext \
-sim:/tb_conv_2d_input/en_execution \
-sim:/tb_conv_2d_input/filter_out \
-sim:/tb_conv_2d_input/matrix_out \
-sim:/tb_conv_2d_input/x_valid \
-sim:/tb_conv_2d_input/i_f \
-sim:/tb_conv_2d_input/x \
-sim:/tb_conv_2d_input/testing \
-sim:/tb_conv_2d_input/N \
-sim:/tb_conv_2d_input/M \
-sim:/tb_conv_2d_input/Nbit \
-sim:/tb_conv_2d_input/clk_period
-run -all
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_input/UUT/M_MEM
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_input/UUT/F_MEM
-# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
-#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_input/UUT
-# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
-#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_input/UUT
-# ** Failure: FINE SIMULAZIONE
-#    Time: 411250 ns  Iteration: 0  Process: /tb_conv_2d_input/stim_proc File: /home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/src/testbench_conv2d_input.vhd
-# Break in Process stim_proc at /home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/src/testbench_conv2d_input.vhd line 126
-# Compile of As_Counter.vhd was successful.
-# Compile of D_Flip_Flop.vhd was successful.
-# Compile of fullAdder.vhd was successful.
-# Compile of Memory.vhd was successful.
-# Compile of RippleCarryAdder.vhd was successful.
-# Compile of tb_memory.vhd was successful.
-# Compile of Utils.vhd was successful.
-# Compile of Conv_2d.vhd was successful.
-# Compile of testbench_conv2d_input.vhd was successful.
-# 9 compiles, 0 failed with no errors.
-vsim work.tb_conv_2d_input
-# End time: 09:40:08 on Nov 28,2025, Elapsed time: 0:04:27
-# Errors: 1, Warnings: 6
-# vsim work.tb_conv_2d_input 
-# Start time: 09:40:08 on Nov 28,2025
-# Loading std.standard
-# Loading std.textio(body)
-# Loading ieee.std_logic_1164(body)
-# Loading ieee.numeric_std(body)
-# Loading work.utils(body)
-# Loading work.tb_conv_2d_input(tb)
-# Loading work.conv_2d_input(c2d)
-# Loading work.as_counter(asc)
-# Loading work.ripplecarryadder(rca)
-# Loading work.fulladder(dataflow)
-# Loading work.d_flip_flop(dff)
-# Loading work.memory(mem)
-run -all
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_input/UUT/M_MEM
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_input/UUT/F_MEM
-# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
-#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_input/UUT
-# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
-#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_input/UUT
-# ** Failure: FINE SIMULAZIONE
-#    Time: 411250 ns  Iteration: 0  Process: /tb_conv_2d_input/stim_proc File: /home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/src/testbench_conv2d_input.vhd
-# Break in Process stim_proc at /home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/src/testbench_conv2d_input.vhd line 126
-run -all
-restart -f
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-add wave -position insertpoint  \
-sim:/tb_conv_2d_input/clk_ext \
-sim:/tb_conv_2d_input/reset_ext \
-sim:/tb_conv_2d_input/en_execution \
-sim:/tb_conv_2d_input/filter_out \
-sim:/tb_conv_2d_input/matrix_out \
-sim:/tb_conv_2d_input/x_valid \
-sim:/tb_conv_2d_input/i_f \
-sim:/tb_conv_2d_input/x \
-sim:/tb_conv_2d_input/testing \
-sim:/tb_conv_2d_input/N \
-sim:/tb_conv_2d_input/M \
-sim:/tb_conv_2d_input/Nbit \
-sim:/tb_conv_2d_input/clk_period
-run -all
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_input/UUT/M_MEM
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_input/UUT/F_MEM
-# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
-#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_input/UUT
-# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
-#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_input/UUT
-# ** Failure: FINE SIMULAZIONE
-#    Time: 411250 ns  Iteration: 0  Process: /tb_conv_2d_input/stim_proc File: /home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/src/testbench_conv2d_input.vhd
-# Break in Process stim_proc at /home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/src/testbench_conv2d_input.vhd line 126
-# Compile of As_Counter.vhd was successful.
-# Compile of D_Flip_Flop.vhd was successful.
-# Compile of fullAdder.vhd was successful.
-# Compile of Memory.vhd was successful.
-# Compile of RippleCarryAdder.vhd was successful.
-# Compile of tb_memory.vhd was successful.
-# Compile of Utils.vhd was successful.
-# Compile of Conv_2d.vhd was successful.
-# Compile of testbench_conv2d_input.vhd was successful.
-# 9 compiles, 0 failed with no errors.
-vsim work.tb_conv_2d_input
-# End time: 09:42:19 on Nov 28,2025, Elapsed time: 0:02:11
-# Errors: 1, Warnings: 6
-# vsim work.tb_conv_2d_input 
-# Start time: 09:42:19 on Nov 28,2025
-# Loading std.standard
-# Loading std.textio(body)
-# Loading ieee.std_logic_1164(body)
-# Loading ieee.numeric_std(body)
-# Loading work.utils(body)
-# Loading work.tb_conv_2d_input(tb)
-# Loading work.conv_2d_input(c2d)
-# Loading work.as_counter(asc)
-# Loading work.ripplecarryadder(rca)
-# Loading work.fulladder(dataflow)
-# Loading work.d_flip_flop(dff)
-# Loading work.memory(mem)
-run -all
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_input/UUT/M_MEM
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_input/UUT/F_MEM
-# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
-#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_input/UUT
-# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
-#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_input/UUT
-# ** Failure: FINE SIMULAZIONE
-#    Time: 411250 ns  Iteration: 0  Process: /tb_conv_2d_input/stim_proc File: /home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/src/testbench_conv2d_input.vhd
-# Break in Process stim_proc at /home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/src/testbench_conv2d_input.vhd line 136
-restart -f
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-add wave -position insertpoint  \
-sim:/tb_conv_2d_input/clk_ext \
-sim:/tb_conv_2d_input/reset_ext \
-sim:/tb_conv_2d_input/en_execution \
-sim:/tb_conv_2d_input/filter_out \
-sim:/tb_conv_2d_input/matrix_out \
-sim:/tb_conv_2d_input/x_valid \
-sim:/tb_conv_2d_input/i_f \
-sim:/tb_conv_2d_input/x \
-sim:/tb_conv_2d_input/testing \
-sim:/tb_conv_2d_input/N \
-sim:/tb_conv_2d_input/M \
-sim:/tb_conv_2d_input/Nbit \
-sim:/tb_conv_2d_input/clk_period
-run -all
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_input/UUT/M_MEM
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_input/UUT/F_MEM
-# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
-#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_input/UUT
-# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
-#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_input/UUT
-# ** Failure: FINE SIMULAZIONE
-#    Time: 411250 ns  Iteration: 0  Process: /tb_conv_2d_input/stim_proc File: /home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/src/testbench_conv2d_input.vhd
-# Break in Process stim_proc at /home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/src/testbench_conv2d_input.vhd line 136
-# Compile of As_Counter.vhd was successful.
-# Compile of D_Flip_Flop.vhd was successful.
-# Compile of fullAdder.vhd was successful.
-# Compile of Memory.vhd was successful.
-# Compile of RippleCarryAdder.vhd was successful.
-# Compile of tb_memory.vhd was successful.
-# Compile of Utils.vhd was successful.
-# Compile of Conv_2d.vhd was successful.
-# Compile of testbench_conv2d_input.vhd was successful.
-# 9 compiles, 0 failed with no errors.
-# Load canceled
-restart -f
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-# Loading work.utils(body)
-# Loading work.tb_conv_2d_input(tb)
-# Loading work.conv_2d_input(c2d)
-# Loading work.as_counter(asc)
-# Loading work.ripplecarryadder(rca)
-# Loading work.fulladder(dataflow)
-# Loading work.d_flip_flop(dff)
-# Loading work.memory(mem)
-run -all
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_input/UUT/M_MEM
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_input/UUT/F_MEM
-# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
-#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_input/UUT
-# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
-#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_input/UUT
-# ** Failure: FINE SIMULAZIONE
-#    Time: 411150 ns  Iteration: 0  Process: /tb_conv_2d_input/stim_proc File: /home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/src/testbench_conv2d_input.vhd
-# Break in Process stim_proc at /home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/src/testbench_conv2d_input.vhd line 136
-# Compile of As_Counter.vhd was successful.
-# Compile of D_Flip_Flop.vhd was successful.
-# Compile of fullAdder.vhd was successful.
-# Compile of Memory.vhd was successful.
-# Compile of RippleCarryAdder.vhd was successful.
-# Compile of tb_memory.vhd was successful.
-# Compile of Utils.vhd was successful.
-# Compile of Conv_2d.vhd was successful.
-# Compile of testbench_conv2d_input.vhd was successful.
-# 9 compiles, 0 failed with no errors.
-# Load canceled
-restart -f
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-# Loading work.utils(body)
-# Loading work.tb_conv_2d_input(tb)
-# Loading work.conv_2d_input(c2d)
-# Loading work.as_counter(asc)
-# Loading work.ripplecarryadder(rca)
-# Loading work.fulladder(dataflow)
-# Loading work.d_flip_flop(dff)
-# Loading work.memory(mem)
-run -all
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_input/UUT/M_MEM
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_input/UUT/F_MEM
-# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
-#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_input/UUT
-# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
-#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_input/UUT
-# ** Failure: FINE SIMULAZIONE
-#    Time: 411150 ns  Iteration: 0  Process: /tb_conv_2d_input/stim_proc File: /home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/src/testbench_conv2d_input.vhd
-# Break in Process stim_proc at /home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/src/testbench_conv2d_input.vhd line 136
-restart -f
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-run -all
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_input/UUT/M_MEM
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_input/UUT/F_MEM
-# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
-#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_input/UUT
-# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
-#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_input/UUT
-# ** Failure: FINE SIMULAZIONE
-#    Time: 411150 ns  Iteration: 0  Process: /tb_conv_2d_input/stim_proc File: /home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/src/testbench_conv2d_input.vhd
-# Break in Process stim_proc at /home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/src/testbench_conv2d_input.vhd line 136
-# Compile of As_Counter.vhd was successful.
-# Compile of D_Flip_Flop.vhd was successful.
-# Compile of fullAdder.vhd was successful.
-# Compile of Memory.vhd was successful.
-# Compile of RippleCarryAdder.vhd was successful.
-# Compile of tb_memory.vhd was successful.
-# Compile of Utils.vhd was successful.
-# Compile of Conv_2d.vhd was successful.
-# Compile of testbench_conv2d_input.vhd failed with 4 errors.
-# 9 compiles, 1 failed with 4 errors.
-# Compile of As_Counter.vhd was successful.
-# Compile of D_Flip_Flop.vhd was successful.
-# Compile of fullAdder.vhd was successful.
-# Compile of Memory.vhd was successful.
-# Compile of RippleCarryAdder.vhd was successful.
-# Compile of tb_memory.vhd was successful.
-# Compile of Utils.vhd was successful.
-# Compile of Conv_2d.vhd was successful.
-# Compile of testbench_conv2d_input.vhd was successful.
-# 9 compiles, 0 failed with no errors.
-restart -f
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-# Loading work.utils(body)
-# Loading work.tb_conv_2d_input(tb)
-# Loading work.conv_2d_input(c2d)
-# Loading work.as_counter(asc)
-# Loading work.ripplecarryadder(rca)
-# Loading work.fulladder(dataflow)
-# Loading work.d_flip_flop(dff)
-# Loading work.memory(mem)
-run -all
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_input/UUT/M_MEM
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_input/UUT/F_MEM
-# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
-#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_input/UUT
-# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
-#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_input/UUT
-# ** Failure: FINE SIMULAZIONE
-#    Time: 411350 ns  Iteration: 0  Process: /tb_conv_2d_input/stim_proc File: /home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/src/testbench_conv2d_input.vhd
-# Break in Process stim_proc at /home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/src/testbench_conv2d_input.vhd line 146
-# Compile of As_Counter.vhd was successful.
-# Compile of D_Flip_Flop.vhd was successful.
-# Compile of fullAdder.vhd was successful.
-# Compile of Memory.vhd was successful.
-# Compile of RippleCarryAdder.vhd was successful.
-# Compile of tb_memory.vhd was successful.
-# Compile of Utils.vhd was successful.
-# Compile of Conv_2d.vhd was successful.
-# Compile of testbench_conv2d_input.vhd was successful.
-# 9 compiles, 0 failed with no errors.
-restart -f
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-# Loading work.utils(body)
-# Loading work.tb_conv_2d_input(tb)
-# Loading work.conv_2d_input(c2d)
-# Loading work.as_counter(asc)
-# Loading work.ripplecarryadder(rca)
-# Loading work.fulladder(dataflow)
-# Loading work.d_flip_flop(dff)
-# Loading work.memory(mem)
-run -all
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_input/UUT/M_MEM
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_input/UUT/F_MEM
-# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
-#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_input/UUT
-# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
-#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_input/UUT
-# ** Failure: FINE SIMULAZIONE
-#    Time: 411350 ns  Iteration: 0  Process: /tb_conv_2d_input/stim_proc File: /home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/src/testbench_conv2d_input.vhd
-# Break in Process stim_proc at /home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/src/testbench_conv2d_input.vhd line 146
-# Compile of As_Counter.vhd was successful.
-# Compile of D_Flip_Flop.vhd was successful.
-# Compile of fullAdder.vhd was successful.
-# Compile of Memory.vhd was successful.
-# Compile of RippleCarryAdder.vhd was successful.
-# Compile of tb_memory.vhd was successful.
-# Compile of Utils.vhd was successful.
-# Compile of Conv_2d.vhd was successful.
-# Compile of testbench_conv2d_input.vhd was successful.
-# 9 compiles, 0 failed with no errors.
-restart -f
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-# Loading work.utils(body)
-# Loading work.tb_conv_2d_input(tb)
-# Loading work.conv_2d_input(c2d)
-# Loading work.as_counter(asc)
-# Loading work.ripplecarryadder(rca)
-# Loading work.fulladder(dataflow)
-# Loading work.d_flip_flop(dff)
-# Loading work.memory(mem)
-run -all
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_input/UUT/M_MEM
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_input/UUT/F_MEM
-# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
-#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_input/UUT
-# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
-#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_input/UUT
-# ** Failure: FINE SIMULAZIONE
-#    Time: 411350 ns  Iteration: 0  Process: /tb_conv_2d_input/stim_proc File: /home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/src/testbench_conv2d_input.vhd
-# Break in Process stim_proc at /home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/src/testbench_conv2d_input.vhd line 146
-# Compile of As_Counter.vhd was successful.
-# Compile of D_Flip_Flop.vhd was successful.
-# Compile of fullAdder.vhd was successful.
-# Compile of Memory.vhd was successful.
-# Compile of RippleCarryAdder.vhd was successful.
-# Compile of tb_memory.vhd was successful.
-# Compile of Utils.vhd was successful.
-# Compile of Conv_2d.vhd failed with 1 errors.
-# Compile of testbench_conv2d_input.vhd was successful.
-# 9 compiles, 1 failed with 1 error.
-# Compile of As_Counter.vhd was successful.
-# Compile of D_Flip_Flop.vhd was successful.
-# Compile of fullAdder.vhd was successful.
-# Compile of Memory.vhd was successful.
-# Compile of RippleCarryAdder.vhd was successful.
-# Compile of tb_memory.vhd was successful.
-# Compile of Utils.vhd was successful.
-# Compile of Conv_2d.vhd was successful.
-# Compile of testbench_conv2d_input.vhd was successful.
-# 9 compiles, 0 failed with no errors.
-restart -f
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-# Loading work.utils(body)
-# Loading work.tb_conv_2d_input(tb)
-# Loading work.conv_2d_input(c2d)
-# Loading work.as_counter(asc)
-# Loading work.ripplecarryadder(rca)
-# Loading work.fulladder(dataflow)
-# Loading work.d_flip_flop(dff)
-# Loading work.memory(mem)
-run -all
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_input/UUT/M_MEM
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_input/UUT/F_MEM
-# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
-#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_input/UUT
-# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
-#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_input/UUT
-# ** Failure: FINE SIMULAZIONE
-#    Time: 411350 ns  Iteration: 0  Process: /tb_conv_2d_input/stim_proc File: /home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/src/testbench_conv2d_input.vhd
-# Break in Process stim_proc at /home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/src/testbench_conv2d_input.vhd line 146
-# Compile of As_Counter.vhd was successful.
-# Compile of D_Flip_Flop.vhd was successful.
-# Compile of fullAdder.vhd was successful.
-# Compile of Memory.vhd was successful.
-# Compile of RippleCarryAdder.vhd was successful.
-# Compile of tb_memory.vhd was successful.
-# Compile of Utils.vhd was successful.
-# Compile of Conv_2d.vhd was successful.
-# Compile of testbench_conv2d_input.vhd was successful.
-# 9 compiles, 0 failed with no errors.
-restart -f
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-# Loading work.utils(body)
-# Loading work.tb_conv_2d_input(tb)
-# Loading work.conv_2d_input(c2d)
-# Loading work.as_counter(asc)
-# Loading work.ripplecarryadder(rca)
-# Loading work.fulladder(dataflow)
-# Loading work.d_flip_flop(dff)
-# Loading work.memory(mem)
-run -all
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_input/UUT/M_MEM
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_input/UUT/F_MEM
-# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
-#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_input/UUT
-# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
-#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_input/UUT
-# ** Failure: FINE SIMULAZIONE
-#    Time: 411350 ns  Iteration: 0  Process: /tb_conv_2d_input/stim_proc File: /home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/src/testbench_conv2d_input.vhd
-# Break in Process stim_proc at /home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/src/testbench_conv2d_input.vhd line 146
-# Compile of As_Counter.vhd was successful.
-# Compile of D_Flip_Flop.vhd was successful.
-# Compile of fullAdder.vhd was successful.
-# Compile of Memory.vhd was successful.
-# Compile of RippleCarryAdder.vhd was successful.
-# Compile of tb_memory.vhd was successful.
-# Compile of Utils.vhd was successful.
-# Compile of Conv_2d.vhd was successful.
-# Compile of testbench_conv2d_input.vhd was successful.
-# 9 compiles, 0 failed with no errors.
-restart -f
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-# Loading work.utils(body)
-# Loading work.tb_conv_2d_input(tb)
-# Loading work.conv_2d_input(c2d)
-# Loading work.as_counter(asc)
-# Loading work.ripplecarryadder(rca)
-# Loading work.fulladder(dataflow)
-# Loading work.d_flip_flop(dff)
-# Loading work.memory(mem)
-run -all
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_input/UUT/M_MEM
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_input/UUT/F_MEM
-# ** Warning: NUMERIC_STD.">=": metavalue detected, returning FALSE
-#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_input/UUT
-# ** Warning: NUMERIC_STD.">=": metavalue detected, returning FALSE
-#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_input/UUT
-# ** Failure: FINE SIMULAZIONE
-#    Time: 411350 ns  Iteration: 0  Process: /tb_conv_2d_input/stim_proc File: /home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/src/testbench_conv2d_input.vhd
-# Break in Process stim_proc at /home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/src/testbench_conv2d_input.vhd line 146
-restart -f
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-run -all
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_input/UUT/M_MEM
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_input/UUT/F_MEM
-# ** Warning: NUMERIC_STD.">=": metavalue detected, returning FALSE
-#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_input/UUT
-# ** Warning: NUMERIC_STD.">=": metavalue detected, returning FALSE
-#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_input/UUT
-# ** Failure: FINE SIMULAZIONE
-#    Time: 411350 ns  Iteration: 0  Process: /tb_conv_2d_input/stim_proc File: /home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/src/testbench_conv2d_input.vhd
-# Break in Process stim_proc at /home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/src/testbench_conv2d_input.vhd line 146
-restart -f
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-run -all
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_input/UUT/M_MEM
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_input/UUT/F_MEM
-# ** Warning: NUMERIC_STD.">=": metavalue detected, returning FALSE
-#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_input/UUT
-# ** Warning: NUMERIC_STD.">=": metavalue detected, returning FALSE
-#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_input/UUT
-# ** Failure: FINE SIMULAZIONE
-#    Time: 411350 ns  Iteration: 0  Process: /tb_conv_2d_input/stim_proc File: /home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/src/testbench_conv2d_input.vhd
-# Break in Process stim_proc at /home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/src/testbench_conv2d_input.vhd line 146
-# Compile of As_Counter.vhd was successful.
-# Compile of D_Flip_Flop.vhd was successful.
-# Compile of fullAdder.vhd was successful.
-# Compile of Memory.vhd was successful.
-# Compile of RippleCarryAdder.vhd was successful.
-# Compile of tb_memory.vhd was successful.
-# Compile of Utils.vhd was successful.
-# Compile of Conv_2d.vhd was successful.
-# Compile of testbench_conv2d_input.vhd was successful.
-# 9 compiles, 0 failed with no errors.
-restart -f
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-# Loading work.utils(body)
-# Loading work.tb_conv_2d_input(tb)
-# Loading work.conv_2d_input(c2d)
-# Loading work.as_counter(asc)
-# Loading work.ripplecarryadder(rca)
-# Loading work.fulladder(dataflow)
-# Loading work.d_flip_flop(dff)
-# Loading work.memory(mem)
-run -all
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_input/UUT/M_MEM
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_input/UUT/F_MEM
-# ** Warning: NUMERIC_STD.">=": metavalue detected, returning FALSE
-#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_input/UUT
-# ** Warning: NUMERIC_STD.">=": metavalue detected, returning FALSE
-#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_input/UUT
-# ** Failure: FINE SIMULAZIONE
-#    Time: 411450 ns  Iteration: 0  Process: /tb_conv_2d_input/stim_proc File: /home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/src/testbench_conv2d_input.vhd
-# Break in Process stim_proc at /home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/src/testbench_conv2d_input.vhd line 152
-# Compile of As_Counter.vhd was successful.
-# Compile of D_Flip_Flop.vhd was successful.
-# Compile of fullAdder.vhd was successful.
-# Compile of Memory.vhd was successful.
-# Compile of RippleCarryAdder.vhd was successful.
-# Compile of tb_memory.vhd was successful.
-# Compile of Utils.vhd was successful.
-# Compile of Conv_2d.vhd was successful.
-# Compile of testbench_conv2d_input.vhd was successful.
-# 9 compiles, 0 failed with no errors.
-restart -f
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-# Loading work.utils(body)
-# Loading work.tb_conv_2d_input(tb)
-# Loading work.conv_2d_input(c2d)
-# Loading work.as_counter(asc)
-# Loading work.ripplecarryadder(rca)
-# Loading work.fulladder(dataflow)
-# Loading work.d_flip_flop(dff)
-# Loading work.memory(mem)
-run -all
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_input/UUT/M_MEM
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_input/UUT/F_MEM
-# ** Warning: NUMERIC_STD.">=": metavalue detected, returning FALSE
-#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_input/UUT
-# ** Warning: NUMERIC_STD.">=": metavalue detected, returning FALSE
-#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_input/UUT
-# ** Failure: FINE SIMULAZIONE
-#    Time: 411450 ns  Iteration: 0  Process: /tb_conv_2d_input/stim_proc File: /home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/src/testbench_conv2d_input.vhd
-# Break in Process stim_proc at /home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/src/testbench_conv2d_input.vhd line 152
-restart -f
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-run -all
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_input/UUT/M_MEM
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_input/UUT/F_MEM
-# ** Warning: NUMERIC_STD.">=": metavalue detected, returning FALSE
-#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_input/UUT
-# ** Warning: NUMERIC_STD.">=": metavalue detected, returning FALSE
-#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_input/UUT
-# ** Failure: FINE SIMULAZIONE
-#    Time: 411450 ns  Iteration: 0  Process: /tb_conv_2d_input/stim_proc File: /home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/src/testbench_conv2d_input.vhd
-# Break in Process stim_proc at /home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/src/testbench_conv2d_input.vhd line 152
-# Compile of As_Counter.vhd was successful.
-# Compile of D_Flip_Flop.vhd was successful.
-# Compile of fullAdder.vhd was successful.
-# Compile of Memory.vhd was successful.
-# Compile of RippleCarryAdder.vhd was successful.
-# Compile of tb_memory.vhd was successful.
-# Compile of Utils.vhd was successful.
-# Compile of Conv_2d.vhd was successful.
-# Compile of testbench_conv2d_input.vhd failed with 2 errors.
-# 9 compiles, 1 failed with 2 errors.
-restart -f
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-# Loading work.utils(body)
-# Loading work.tb_conv_2d_input(tb)
-# Loading work.conv_2d_input(c2d)
-# Loading work.as_counter(asc)
-# Loading work.ripplecarryadder(rca)
-# Loading work.fulladder(dataflow)
-# Loading work.d_flip_flop(dff)
-# Loading work.memory(mem)
-run -all
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_input/UUT/M_MEM
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_input/UUT/F_MEM
-# ** Warning: NUMERIC_STD.">=": metavalue detected, returning FALSE
-#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_input/UUT
-# ** Warning: NUMERIC_STD.">=": metavalue detected, returning FALSE
-#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_input/UUT
-# ** Failure: FINE SIMULAZIONE
-#    Time: 411450 ns  Iteration: 0  Process: /tb_conv_2d_input/stim_proc File: /home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/src/testbench_conv2d_input.vhd
-# Break in Process stim_proc at /home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/src/testbench_conv2d_input.vhd line 152
-add wave -position insertpoint  \
-sim:/tb_conv_2d_input/UUT/ASC/out_reg
-run -all
-# Compile of As_Counter.vhd was successful.
-# Compile of D_Flip_Flop.vhd was successful.
-# Compile of fullAdder.vhd was successful.
-# Compile of Memory.vhd was successful.
-# Compile of RippleCarryAdder.vhd was successful.
-# Compile of tb_memory.vhd was successful.
-# Compile of Utils.vhd was successful.
-# Compile of Conv_2d.vhd was successful.
-# Compile of testbench_conv2d_input.vhd failed with 3 errors.
-# 9 compiles, 1 failed with 3 errors.
-# Compile of As_Counter.vhd was successful.
-# Compile of D_Flip_Flop.vhd was successful.
-# Compile of fullAdder.vhd was successful.
-# Compile of Memory.vhd was successful.
-# Compile of RippleCarryAdder.vhd was successful.
-# Compile of tb_memory.vhd was successful.
-# Compile of Utils.vhd was successful.
-# Compile of Conv_2d.vhd was successful.
-# Compile of testbench_conv2d_input.vhd failed with 4 errors.
-# 9 compiles, 1 failed with 4 errors.
-# Compile of As_Counter.vhd was successful.
-# Compile of D_Flip_Flop.vhd was successful.
-# Compile of fullAdder.vhd was successful.
-# Compile of Memory.vhd was successful.
-# Compile of RippleCarryAdder.vhd was successful.
-# Compile of tb_memory.vhd was successful.
-# Compile of Utils.vhd was successful.
-# Compile of Conv_2d.vhd was successful.
-# Compile of testbench_conv2d_input.vhd failed with 2 errors.
-# 9 compiles, 1 failed with 2 errors.
-# Compile of As_Counter.vhd was successful.
-# Compile of D_Flip_Flop.vhd was successful.
-# Compile of fullAdder.vhd was successful.
-# Compile of Memory.vhd was successful.
-# Compile of RippleCarryAdder.vhd was successful.
-# Compile of tb_memory.vhd was successful.
-# Compile of Utils.vhd was successful.
-# Compile of Conv_2d.vhd was successful.
-# Compile of testbench_conv2d_input.vhd was successful.
-# 9 compiles, 0 failed with no errors.
-restart -f
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-# Loading work.utils(body)
-# Loading work.tb_conv_2d_input(tb)
-# Loading work.conv_2d_input(c2d)
-# Loading work.as_counter(asc)
-# Loading work.ripplecarryadder(rca)
-# Loading work.fulladder(dataflow)
-# Loading work.d_flip_flop(dff)
-# Loading work.memory(mem)
-add wave -position insertpoint  \
-sim:/tb_conv_2d_input/clk_ext \
-sim:/tb_conv_2d_input/reset_ext \
-sim:/tb_conv_2d_input/en_execution \
-sim:/tb_conv_2d_input/filter_out \
-sim:/tb_conv_2d_input/matrix_out \
-sim:/tb_conv_2d_input/x_valid \
-sim:/tb_conv_2d_input/i_f \
-sim:/tb_conv_2d_input/x \
-sim:/tb_conv_2d_input/testing \
-sim:/tb_conv_2d_input/stato_aus \
-sim:/tb_conv_2d_input/N \
-sim:/tb_conv_2d_input/M \
-sim:/tb_conv_2d_input/Nbit \
-sim:/tb_conv_2d_input/clk_period
-add wave -position insertpoint  \
-sim:/tb_conv_2d_input/clk_ext \
-sim:/tb_conv_2d_input/reset_ext \
-sim:/tb_conv_2d_input/en_execution \
-sim:/tb_conv_2d_input/filter_out \
-sim:/tb_conv_2d_input/matrix_out \
-sim:/tb_conv_2d_input/x_valid \
-sim:/tb_conv_2d_input/i_f \
-sim:/tb_conv_2d_input/x \
-sim:/tb_conv_2d_input/testing \
-sim:/tb_conv_2d_input/stato_aus \
-sim:/tb_conv_2d_input/N \
-sim:/tb_conv_2d_input/M \
-sim:/tb_conv_2d_input/Nbit \
-sim:/tb_conv_2d_input/clk_period
-run -all
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_input/UUT/M_MEM
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_input/UUT/F_MEM
-# ** Warning: NUMERIC_STD.">=": metavalue detected, returning FALSE
-#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_input/UUT
-# ** Warning: NUMERIC_STD.">=": metavalue detected, returning FALSE
-#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_input/UUT
-# ** Failure: FINE SIMULAZIONE
-#    Time: 411750 ns  Iteration: 0  Process: /tb_conv_2d_input/stim_proc File: /home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/src/testbench_conv2d_input.vhd
-# Break in Process stim_proc at /home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/src/testbench_conv2d_input.vhd line 172
-vsim work.tb_conv_2d_input
-# End time: 10:15:01 on Nov 28,2025, Elapsed time: 0:32:42
-# Errors: 1, Warnings: 5
-# vsim work.tb_conv_2d_input 
-# Start time: 10:15:01 on Nov 28,2025
-# Loading std.standard
-# Loading std.textio(body)
-# Loading ieee.std_logic_1164(body)
-# Loading ieee.numeric_std(body)
-# Loading work.utils(body)
-# Loading work.tb_conv_2d_input(tb)
-# Loading work.conv_2d_input(c2d)
-# Loading work.as_counter(asc)
-# Loading work.ripplecarryadder(rca)
-# Loading work.fulladder(dataflow)
-# Loading work.d_flip_flop(dff)
-# Loading work.memory(mem)
-add wave -position insertpoint  \
-sim:/tb_conv_2d_input/clk_ext \
-sim:/tb_conv_2d_input/reset_ext \
-sim:/tb_conv_2d_input/en_execution \
-sim:/tb_conv_2d_input/filter_out \
-sim:/tb_conv_2d_input/matrix_out \
-sim:/tb_conv_2d_input/x_valid \
-sim:/tb_conv_2d_input/i_f \
-sim:/tb_conv_2d_input/x \
-sim:/tb_conv_2d_input/testing \
-sim:/tb_conv_2d_input/stato_aus \
-sim:/tb_conv_2d_input/N \
-sim:/tb_conv_2d_input/M \
-sim:/tb_conv_2d_input/Nbit \
-sim:/tb_conv_2d_input/clk_period
-run -all
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_input/UUT/M_MEM
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_input/UUT/F_MEM
-# ** Warning: NUMERIC_STD.">=": metavalue detected, returning FALSE
-#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_input/UUT
-# ** Warning: NUMERIC_STD.">=": metavalue detected, returning FALSE
-#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_input/UUT
-# ** Failure: FINE SIMULAZIONE
-#    Time: 411750 ns  Iteration: 0  Process: /tb_conv_2d_input/stim_proc File: /home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/src/testbench_conv2d_input.vhd
-# Break in Process stim_proc at /home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/src/testbench_conv2d_input.vhd line 172
-# Compile of As_Counter.vhd was successful.
-# Compile of D_Flip_Flop.vhd was successful.
-# Compile of fullAdder.vhd was successful.
-# Compile of Memory.vhd was successful.
-# Compile of RippleCarryAdder.vhd was successful.
-# Compile of tb_memory.vhd was successful.
-# Compile of Utils.vhd was successful.
-# Compile of Conv_2d.vhd was successful.
-# Compile of testbench_conv2d_input.vhd was successful.
-# 9 compiles, 0 failed with no errors.
-# Compile of As_Counter.vhd was successful.
-# Compile of D_Flip_Flop.vhd was successful.
-# Compile of fullAdder.vhd was successful.
-# Compile of Memory.vhd was successful.
-# Compile of RippleCarryAdder.vhd was successful.
-# Compile of tb_memory.vhd was successful.
-# Compile of Utils.vhd was successful.
-# Compile of Conv_2d.vhd was successful.
-# Compile of testbench_conv2d_input.vhd was successful.
-# 9 compiles, 0 failed with no errors.
-restart -f
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-# Loading work.utils(body)
-# Loading work.tb_conv_2d_input(tb)
-# Loading work.conv_2d_input(c2d)
-# Loading work.as_counter(asc)
-# Loading work.ripplecarryadder(rca)
-# Loading work.fulladder(dataflow)
-# Loading work.d_flip_flop(dff)
-# Loading work.memory(mem)
-run -all
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_input/UUT/M_MEM
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_input/UUT/F_MEM
-# ** Warning: NUMERIC_STD.">=": metavalue detected, returning FALSE
-#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_input/UUT
-# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
-#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_input/UUT
-# Compile of As_Counter.vhd was successful.
-# Compile of D_Flip_Flop.vhd was successful.
-# Compile of fullAdder.vhd was successful.
-# Compile of Memory.vhd was successful.
-# Compile of RippleCarryAdder.vhd was successful.
-# Compile of tb_memory.vhd was successful.
-# Compile of Utils.vhd was successful.
-# Compile of Conv_2d.vhd was successful.
-# Compile of testbench_conv2d_input.vhd was successful.
-# 9 compiles, 0 failed with no errors.
-# Compile of As_Counter.vhd was successful.
-# Compile of D_Flip_Flop.vhd was successful.
-# Compile of fullAdder.vhd was successful.
-# Compile of Memory.vhd was successful.
-# Compile of RippleCarryAdder.vhd was successful.
-# Compile of tb_memory.vhd was successful.
-# Compile of Utils.vhd was successful.
-# Compile of Conv_2d.vhd was successful.
-# Compile of testbench_conv2d_input.vhd was successful.
-# 9 compiles, 0 failed with no errors.
-restart -f
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-# Loading work.utils(body)
-# Loading work.tb_conv_2d_input(tb)
-# Loading work.conv_2d_input(c2d)
-# Loading work.as_counter(asc)
-# Loading work.ripplecarryadder(rca)
-# Loading work.fulladder(dataflow)
-# Loading work.d_flip_flop(dff)
-# Loading work.memory(mem)
-run -all
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_input/UUT/M_MEM
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_input/UUT/F_MEM
-# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
-#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_input/UUT
-# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
-#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_input/UUT
-# Compile of As_Counter.vhd was successful.
-# Compile of D_Flip_Flop.vhd was successful.
-# Compile of fullAdder.vhd was successful.
-# Compile of Memory.vhd was successful.
-# Compile of RippleCarryAdder.vhd was successful.
-# Compile of tb_memory.vhd was successful.
-# Compile of Utils.vhd was successful.
-# Compile of Conv_2d.vhd was successful.
-# Compile of testbench_conv2d_input.vhd was successful.
-# 9 compiles, 0 failed with no errors.
-restart -f
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-# Loading work.utils(body)
-# Loading work.tb_conv_2d_input(tb)
-# Loading work.conv_2d_input(c2d)
-# Loading work.as_counter(asc)
-# Loading work.ripplecarryadder(rca)
-# Loading work.fulladder(dataflow)
-# Loading work.d_flip_flop(dff)
-# Loading work.memory(mem)
-run -all
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_input/UUT/M_MEM
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_input/UUT/F_MEM
-# ** Warning: NUMERIC_STD.">=": metavalue detected, returning FALSE
-#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_input/UUT
-# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
-#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_input/UUT
-# Compile of As_Counter.vhd was successful.
-# Compile of D_Flip_Flop.vhd was successful.
-# Compile of fullAdder.vhd was successful.
-# Compile of Memory.vhd was successful.
-# Compile of RippleCarryAdder.vhd was successful.
-# Compile of tb_memory.vhd was successful.
-# Compile of Utils.vhd was successful.
-# Compile of Conv_2d.vhd was successful.
-# Compile of testbench_conv2d_input.vhd was successful.
-# 9 compiles, 0 failed with no errors.
-# Compile of As_Counter.vhd was successful.
-# Compile of D_Flip_Flop.vhd was successful.
-# Compile of fullAdder.vhd was successful.
-# Compile of Memory.vhd was successful.
-# Compile of RippleCarryAdder.vhd was successful.
-# Compile of tb_memory.vhd was successful.
-# Compile of Utils.vhd was successful.
-# Compile of Conv_2d.vhd was successful.
-# Compile of testbench_conv2d_input.vhd was successful.
-# 9 compiles, 0 failed with no errors.
-vsim work.tb_conv_2d_input
-# End time: 10:20:10 on Nov 28,2025, Elapsed time: 0:05:09
-# Errors: 0, Warnings: 7
-# vsim work.tb_conv_2d_input 
-# Start time: 10:20:10 on Nov 28,2025
-# Loading std.standard
-# Loading std.textio(body)
-# Loading ieee.std_logic_1164(body)
-# Loading ieee.numeric_std(body)
-# Loading work.utils(body)
-# Loading work.tb_conv_2d_input(tb)
-# Loading work.conv_2d_input(c2d)
-# Loading work.as_counter(asc)
-# Loading work.ripplecarryadder(rca)
-# Loading work.fulladder(dataflow)
-# Loading work.d_flip_flop(dff)
-# Loading work.memory(mem)
-vsim work.tb_conv_2d_input
-# End time: 10:20:37 on Nov 28,2025, Elapsed time: 0:00:27
-# Errors: 0, Warnings: 1
-# vsim work.tb_conv_2d_input 
-# Start time: 10:20:37 on Nov 28,2025
-# Loading std.standard
-# Loading std.textio(body)
-# Loading ieee.std_logic_1164(body)
-# Loading ieee.numeric_std(body)
-# Loading work.utils(body)
-# Loading work.tb_conv_2d_input(tb)
-# Loading work.conv_2d_input(c2d)
-# Loading work.as_counter(asc)
-# Loading work.ripplecarryadder(rca)
-# Loading work.fulladder(dataflow)
-# Loading work.d_flip_flop(dff)
-# Loading work.memory(mem)
-# Break key hit
-run -all
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_input/UUT/M_MEM
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_input/UUT/F_MEM
-# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
-#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_input/UUT
-# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
-#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_input/UUT
-add wave -position insertpoint sim:/tb_conv_2d_input/*
-add dataflow sim:/tb_conv_2d_input/*
-# WARNING: No extended dataflow license exists
-run -all
-run -all
-vsim work.tb_conv_2d_input
-# End time: 10:22:00 on Nov 28,2025, Elapsed time: 0:01:23
-# Errors: 0, Warnings: 5
-# vsim work.tb_conv_2d_input 
-# Start time: 10:22:00 on Nov 28,2025
-# Loading std.standard
-# Loading std.textio(body)
-# Loading ieee.std_logic_1164(body)
-# Loading ieee.numeric_std(body)
-# Loading work.utils(body)
-# Loading work.tb_conv_2d_input(tb)
-# Loading work.conv_2d_input(c2d)
-# Loading work.as_counter(asc)
-# Loading work.ripplecarryadder(rca)
-# Loading work.fulladder(dataflow)
-# Loading work.d_flip_flop(dff)
-# Loading work.memory(mem)
-restart -f
-vsim work.tb_conv_2d_input
-# End time: 10:24:20 on Nov 28,2025, Elapsed time: 0:02:20
-# Errors: 0, Warnings: 1
-# vsim work.tb_conv_2d_input 
-# Start time: 10:24:20 on Nov 28,2025
-# Loading std.standard
-# Loading std.textio(body)
-# Loading ieee.std_logic_1164(body)
-# Loading ieee.numeric_std(body)
-# Loading work.utils(body)
-# Loading work.tb_conv_2d_input(tb)
-# Loading work.conv_2d_input(c2d)
-# Loading work.as_counter(asc)
-# Loading work.ripplecarryadder(rca)
-# Loading work.fulladder(dataflow)
-# Loading work.d_flip_flop(dff)
-# Loading work.memory(mem)
-add wave -position insertpoint sim:/tb_conv_2d_input/*
-run -all
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_input/UUT/M_MEM
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_input/UUT/F_MEM
-# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
-#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_input/UUT
-# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
-#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_input/UUT
-# Compile of As_Counter.vhd was successful.
-# Compile of D_Flip_Flop.vhd was successful.
-# Compile of fullAdder.vhd was successful.
-# Compile of Memory.vhd was successful.
-# Compile of RippleCarryAdder.vhd was successful.
-# Compile of tb_memory.vhd was successful.
-# Compile of Utils.vhd was successful.
-# Compile of Conv_2d.vhd was successful.
-# Compile of testbench_conv2d_input.vhd was successful.
-# 9 compiles, 0 failed with no errors.
-# Compile of As_Counter.vhd was successful.
-# Compile of D_Flip_Flop.vhd was successful.
-# Compile of fullAdder.vhd was successful.
-# Compile of Memory.vhd was successful.
-# Compile of RippleCarryAdder.vhd was successful.
-# Compile of tb_memory.vhd was successful.
-# Compile of Utils.vhd was successful.
-# Compile of Conv_2d.vhd was successful.
-# Compile of testbench_conv2d_input.vhd was successful.
-# 9 compiles, 0 failed with no errors.
-restart -f
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-# Loading work.utils(body)
-# Loading work.tb_conv_2d_input(tb)
-# Loading work.conv_2d_input(c2d)
-# Loading work.as_counter(asc)
-# Loading work.ripplecarryadder(rca)
-# Loading work.fulladder(dataflow)
-# Loading work.d_flip_flop(dff)
-# Loading work.memory(mem)
-run -all
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_input/UUT/M_MEM
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_input/UUT/F_MEM
-# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
-#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_input/UUT
-# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
-#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_input/UUT
-# Compile of As_Counter.vhd was successful.
-# Compile of D_Flip_Flop.vhd was successful.
-# Compile of fullAdder.vhd was successful.
-# Compile of Memory.vhd was successful.
-# Compile of RippleCarryAdder.vhd was successful.
-# Compile of tb_memory.vhd was successful.
-# Compile of Utils.vhd was successful.
-# Compile of Conv_2d.vhd was successful.
-# Compile of testbench_conv2d_input.vhd was successful.
-# 9 compiles, 0 failed with no errors.
-# Load canceled
-restart -f
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-# Loading work.utils(body)
-# Loading work.tb_conv_2d_input(tb)
-# Loading work.conv_2d_input(c2d)
-# Loading work.as_counter(asc)
-# Loading work.ripplecarryadder(rca)
-# Loading work.fulladder(dataflow)
-# Loading work.d_flip_flop(dff)
-# Loading work.memory(mem)
-run -all
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_input/UUT/M_MEM
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_input/UUT/F_MEM
-# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
-#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_input/UUT
-# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
-#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_input/UUT
-# Compile of As_Counter.vhd was successful.
-# Compile of D_Flip_Flop.vhd was successful.
-# Compile of fullAdder.vhd was successful.
-# Compile of Memory.vhd was successful.
-# Compile of RippleCarryAdder.vhd was successful.
-# Compile of tb_memory.vhd was successful.
-# Compile of Utils.vhd was successful.
-# Compile of Conv_2d.vhd was successful.
-# Compile of testbench_conv2d_input.vhd failed with 1 errors.
-# 9 compiles, 1 failed with 1 error.
-# Load canceled
-restart -f
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-# Loading work.utils(body)
-# Loading work.tb_conv_2d_input(tb)
-# Loading work.conv_2d_input(c2d)
-# Loading work.as_counter(asc)
-# Loading work.ripplecarryadder(rca)
-# Loading work.fulladder(dataflow)
-# Loading work.d_flip_flop(dff)
-# Loading work.memory(mem)
-run -all
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_input/UUT/M_MEM
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_input/UUT/F_MEM
-# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
-#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_input/UUT
-# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
-#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_input/UUT
-# Compile of As_Counter.vhd was successful.
-# Compile of D_Flip_Flop.vhd was successful.
-# Compile of fullAdder.vhd was successful.
-# Compile of Memory.vhd was successful.
-# Compile of RippleCarryAdder.vhd was successful.
-# Compile of tb_memory.vhd was successful.
-# Compile of Utils.vhd was successful.
-# Compile of Conv_2d.vhd was successful.
-# Compile of testbench_conv2d_input.vhd failed with 1 errors.
-# 9 compiles, 1 failed with 1 error.
-restart -f
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-# Loading work.utils(body)
-# Loading work.tb_conv_2d_input(tb)
-# Loading work.conv_2d_input(c2d)
-# Loading work.as_counter(asc)
-# Loading work.ripplecarryadder(rca)
-# Loading work.fulladder(dataflow)
-# Loading work.d_flip_flop(dff)
-# Loading work.memory(mem)
-run -all
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_input/UUT/M_MEM
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_input/UUT/F_MEM
-# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
-#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_input/UUT
-# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
-#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_input/UUT
-vsim work.tb_conv_2d_input
-# End time: 10:30:56 on Nov 28,2025, Elapsed time: 0:06:36
-# Errors: 0, Warnings: 5
-# vsim work.tb_conv_2d_input 
-# Start time: 10:30:56 on Nov 28,2025
-# Loading std.standard
-# Loading std.textio(body)
-# Loading ieee.std_logic_1164(body)
-# Loading ieee.numeric_std(body)
-# Loading work.utils(body)
-# Loading work.tb_conv_2d_input(tb)
-# Loading work.conv_2d_input(c2d)
-# Loading work.as_counter(asc)
-# Loading work.ripplecarryadder(rca)
-# Loading work.fulladder(dataflow)
-# Loading work.d_flip_flop(dff)
-# Loading work.memory(mem)
-add wave -position insertpoint sim:/tb_conv_2d_input/*
-run -all
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_input/UUT/M_MEM
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_input/UUT/F_MEM
-# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
-#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_input/UUT
-# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
-#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_input/UUT
-# Compile of As_Counter.vhd was successful.
-# Compile of D_Flip_Flop.vhd was successful.
-# Compile of fullAdder.vhd was successful.
-# Compile of Memory.vhd was successful.
-# Compile of RippleCarryAdder.vhd was successful.
-# Compile of tb_memory.vhd was successful.
-# Compile of Utils.vhd was successful.
-# Compile of Conv_2d.vhd was successful.
-# Compile of testbench_conv2d_input.vhd failed with 1 errors.
-# 9 compiles, 1 failed with 1 error.
-# Compile of As_Counter.vhd was successful.
-# Compile of D_Flip_Flop.vhd was successful.
-# Compile of fullAdder.vhd was successful.
-# Compile of Memory.vhd was successful.
-# Compile of RippleCarryAdder.vhd was successful.
-# Compile of tb_memory.vhd was successful.
-# Compile of Utils.vhd was successful.
-# Compile of Conv_2d.vhd was successful.
-# Compile of testbench_conv2d_input.vhd failed with 1 errors.
-# 9 compiles, 1 failed with 1 error.
-vsim work.tb_conv_2d_input
-# End time: 10:32:56 on Nov 28,2025, Elapsed time: 0:02:00
-# Errors: 0, Warnings: 7
-# vsim work.tb_conv_2d_input 
-# Start time: 10:32:56 on Nov 28,2025
-# Loading std.standard
-# Loading std.textio(body)
-# Loading ieee.std_logic_1164(body)
-# Loading ieee.numeric_std(body)
-# Loading work.utils(body)
-# Loading work.tb_conv_2d_input(tb)
-# Loading work.conv_2d_input(c2d)
-# Loading work.as_counter(asc)
-# Loading work.ripplecarryadder(rca)
-# Loading work.fulladder(dataflow)
-# Loading work.d_flip_flop(dff)
-# Loading work.memory(mem)
-# Compile of As_Counter.vhd was successful.
-# Compile of D_Flip_Flop.vhd was successful.
-# Compile of fullAdder.vhd was successful.
-# Compile of Memory.vhd was successful.
-# Compile of RippleCarryAdder.vhd was successful.
-# Compile of tb_memory.vhd was successful.
-# Compile of Utils.vhd was successful.
-# Compile of Conv_2d.vhd was successful.
-# Compile of testbench_conv2d_input.vhd failed with 1 errors.
-# 9 compiles, 1 failed with 1 error.
-# Compile of As_Counter.vhd was successful.
-# Compile of D_Flip_Flop.vhd was successful.
-# Compile of fullAdder.vhd was successful.
-# Compile of Memory.vhd was successful.
-# Compile of RippleCarryAdder.vhd was successful.
-# Compile of tb_memory.vhd was successful.
-# Compile of Utils.vhd was successful.
-# Compile of Conv_2d.vhd was successful.
-# Compile of testbench_conv2d_input.vhd was successful.
-# 9 compiles, 0 failed with no errors.
-vsim work.tb_conv_2d_input
-# End time: 10:33:48 on Nov 28,2025, Elapsed time: 0:00:52
-# Errors: 0, Warnings: 3
-# vsim work.tb_conv_2d_input 
-# Start time: 10:33:48 on Nov 28,2025
-# Loading std.standard
-# Loading std.textio(body)
-# Loading ieee.std_logic_1164(body)
-# Loading ieee.numeric_std(body)
-# Loading work.utils(body)
-# Loading work.tb_conv_2d_input(tb)
-# Loading work.conv_2d_input(c2d)
-# Loading work.as_counter(asc)
-# Loading work.ripplecarryadder(rca)
-# Loading work.fulladder(dataflow)
-# Loading work.d_flip_flop(dff)
-# Loading work.memory(mem)
-add wave -position insertpoint sim:/tb_conv_2d_input/*
-run -all
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_input/UUT/M_MEM
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_input/UUT/F_MEM
-# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
-#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_input/UUT
-# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
-#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_input/UUT
-# Compile of As_Counter.vhd was successful.
-# Compile of D_Flip_Flop.vhd was successful.
-# Compile of fullAdder.vhd was successful.
-# Compile of Memory.vhd was successful.
-# Compile of RippleCarryAdder.vhd was successful.
-# Compile of tb_memory.vhd was successful.
-# Compile of Utils.vhd was successful.
-# Compile of Conv_2d.vhd was successful.
-# Compile of testbench_conv2d_input.vhd was successful.
-# 9 compiles, 0 failed with no errors.
-vsim work.tb_conv_2d_input
-# End time: 10:36:13 on Nov 28,2025, Elapsed time: 0:02:25
-# Errors: 0, Warnings: 6
-# vsim work.tb_conv_2d_input 
-# Start time: 10:36:13 on Nov 28,2025
-# Loading std.standard
-# Loading std.textio(body)
-# Loading ieee.std_logic_1164(body)
-# Loading ieee.numeric_std(body)
-# Loading work.utils(body)
-# Loading work.tb_conv_2d_input(tb)
-# Loading work.conv_2d_input(c2d)
-# Loading work.as_counter(asc)
-# Loading work.ripplecarryadder(rca)
-# Loading work.fulladder(dataflow)
-# Loading work.d_flip_flop(dff)
-# Loading work.memory(mem)
-add wave -position insertpoint sim:/tb_conv_2d_input/*
-run -all
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_input/UUT/M_MEM
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_input/UUT/F_MEM
-# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
-#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_input/UUT
-# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
-#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_input/UUT
-# Compile of As_Counter.vhd was successful.
-# Compile of D_Flip_Flop.vhd was successful.
-# Compile of fullAdder.vhd was successful.
-# Compile of Memory.vhd was successful.
-# Compile of RippleCarryAdder.vhd was successful.
-# Compile of tb_memory.vhd was successful.
-# Compile of Utils.vhd was successful.
-# Compile of Conv_2d.vhd was successful.
-# Compile of testbench_conv2d_input.vhd was successful.
-# 9 compiles, 0 failed with no errors.
-vsim work.tb_conv_2d_input
-# End time: 10:39:17 on Nov 28,2025, Elapsed time: 0:03:04
-# Errors: 0, Warnings: 6
-# vsim work.tb_conv_2d_input 
-# Start time: 10:39:17 on Nov 28,2025
-# Loading std.standard
-# Loading std.textio(body)
-# Loading ieee.std_logic_1164(body)
-# Loading ieee.numeric_std(body)
-# Loading work.utils(body)
-# Loading work.tb_conv_2d_input(tb)
-# Loading work.conv_2d_input(c2d)
-# Loading work.as_counter(asc)
-# Loading work.ripplecarryadder(rca)
-# Loading work.fulladder(dataflow)
-# Loading work.d_flip_flop(dff)
-# Loading work.memory(mem)
-add wave -position insertpoint sim:/tb_conv_2d_input/*
-run -all
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_input/UUT/M_MEM
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_input/UUT/F_MEM
-# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
-#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_input/UUT
-# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
-#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_input/UUT
-# Compile of As_Counter.vhd was successful.
-# Compile of D_Flip_Flop.vhd was successful.
-# Compile of fullAdder.vhd was successful.
-# Compile of Memory.vhd was successful.
-# Compile of RippleCarryAdder.vhd was successful.
-# Compile of tb_memory.vhd was successful.
-# Compile of Utils.vhd was successful.
-# Compile of Conv_2d.vhd was successful.
-# Compile of testbench_conv2d_input.vhd was successful.
-# 9 compiles, 0 failed with no errors.
-vsim work.tb_conv_2d_input
-# End time: 10:40:12 on Nov 28,2025, Elapsed time: 0:00:55
-# Errors: 0, Warnings: 6
-# vsim work.tb_conv_2d_input 
-# Start time: 10:40:12 on Nov 28,2025
-# Loading std.standard
-# Loading std.textio(body)
-# Loading ieee.std_logic_1164(body)
-# Loading ieee.numeric_std(body)
-# Loading work.utils(body)
-# Loading work.tb_conv_2d_input(tb)
-# Loading work.conv_2d_input(c2d)
-# Loading work.as_counter(asc)
-# Loading work.ripplecarryadder(rca)
-# Loading work.fulladder(dataflow)
-# Loading work.d_flip_flop(dff)
-# Loading work.memory(mem)
-add wave -position insertpoint sim:/tb_conv_2d_input/*
-run -all
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_input/UUT/M_MEM
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_input/UUT/F_MEM
-# ** Warning: NUMERIC_STD.">=": metavalue detected, returning FALSE
-#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_input/UUT
-# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
-#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_input/UUT
-# Compile of As_Counter.vhd was successful.
-# Compile of D_Flip_Flop.vhd was successful.
-# Compile of fullAdder.vhd was successful.
-# Compile of Memory.vhd was successful.
-# Compile of RippleCarryAdder.vhd was successful.
-# Compile of tb_memory.vhd was successful.
-# Compile of Utils.vhd was successful.
-# Compile of Conv_2d.vhd was successful.
-# Compile of testbench_conv2d_input.vhd was successful.
-# 9 compiles, 0 failed with no errors.
-vsim work.tb_conv_2d_input
-# End time: 10:41:33 on Nov 28,2025, Elapsed time: 0:01:21
-# Errors: 0, Warnings: 6
-# vsim work.tb_conv_2d_input 
-# Start time: 10:41:33 on Nov 28,2025
-# Loading std.standard
-# Loading std.textio(body)
-# Loading ieee.std_logic_1164(body)
-# Loading ieee.numeric_std(body)
-# Loading work.utils(body)
-# Loading work.tb_conv_2d_input(tb)
-# Loading work.conv_2d_input(c2d)
-# Loading work.as_counter(asc)
-# Loading work.ripplecarryadder(rca)
-# Loading work.fulladder(dataflow)
-# Loading work.d_flip_flop(dff)
-# Loading work.memory(mem)
-add wave -position insertpoint sim:/tb_conv_2d_input/*
-run -all
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_input/UUT/M_MEM
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_input/UUT/F_MEM
-# ** Warning: NUMERIC_STD.">=": metavalue detected, returning FALSE
-#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_input/UUT
-# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
-#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_input/UUT
