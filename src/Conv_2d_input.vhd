@@ -92,6 +92,7 @@ architecture C2D of Conv_2d_input is
         end_filter_aus <= not end_filter and i_f and x_valid;
 
         in_aus <= i_f when end_filter = '0' else not i_f;
+        count_in(dim_bit_adder -1 downto 1) <= (others => '0');
         count_in(0) <= x_valid and not end_matrix and in_aus;
         ASC: As_Counter
                 generic map(

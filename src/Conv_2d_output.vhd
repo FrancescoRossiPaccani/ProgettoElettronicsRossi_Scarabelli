@@ -49,15 +49,18 @@ architecture conv_bh of Conv_2d_output is
     signal current_row          : integer := 0;
     signal current_col          : integer := 0;
 
+    signal count_in             : std_logic_vector(OUT_CNT_BITS - 1 downto 0);
+
     -- n bit counter component
-    component counter is
-        generic(
-            N : integer 
+   component As_Counter is 
+        generic (
+            Nbit : positive := 8
         );
-        port(
-            clk : in std_logic;
-            resetn : in std_logic;
-            do : out std_logic_vector(N-1 downto 0)
+        port (
+            N_in        : in  std_logic_vector(Nbit - 1 downto 0);
+            N_out       : out std_logic_vector(Nbit - 1 downto 0);
+            clk         : in  std_logic;
+            resetn      : in  std_logic
         );
     end component;
 
@@ -101,19 +104,24 @@ architecture conv_bh of Conv_2d_output is
         );
     end component;
 begin
-    convolution <= convolution_s;
+    -- convolution <= convolution_s;
     rst_n <= not rst;
 
     -- counting iterations -> one iteration for each output element
     -- ** AS_COUNTER
-    counter_instance: counter
+
+        count_in(OUT_CNT_BITS -1 downto 1) <= (others => '0');
+        count_in(0) <= en;
+
+    counter_instance: As_Counter
         generic map(
-            N => OUT_CNT_BITS
+            Nbit => OUT_CNT_BITS
         )
         port map(
             clk => clk,
             resetn => rst_n,
-            do => output_counter
+            N_out => output_counter,
+            N_in => count_in
         );
     
     -- compute current row and column index
@@ -203,7 +211,7 @@ begin
                 clk => clk,
                 resetn => rst_n,
                 di => adder_to_dff,
-                en => en_dff(i),
+                en =>  en_dff(i),
                 do => convolution((i+1)*Nbit_out - 1 downto i*Nbit_out)
             );
     end generate;
@@ -211,7 +219,7 @@ begin
     conv_process : process(clk, rst)
     begin
         if rst = '1' then
-            convolution_s <= (others => '0');
+            -- convolution_s <= (others => '0');
             en_dff <= (others => '0');
         elsif rising_edge(clk) then
             if en = '1' then

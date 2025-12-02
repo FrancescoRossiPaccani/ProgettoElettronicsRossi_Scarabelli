@@ -1,7 +1,7 @@
 library IEEE;
 use IEEE.std_logic_1164.all;
 use IEEE.numeric_std.all;
-use IEEE.math_real.all;
+use work.Utils.all;
 
 entity mux is
     generic(
@@ -9,7 +9,7 @@ entity mux is
     );
     port (
         input_data : in std_logic_vector(N_input - 1 downto 0);
-        control: in std_logic_vector(integer(ceil(log2(real(N_input)))) - 1 downto 0);
+        control: in std_logic_vector(clog2(N_input) - 1 downto 0);
         output_data: out std_logic
     );
 end entity;

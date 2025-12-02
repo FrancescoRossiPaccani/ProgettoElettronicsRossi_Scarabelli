@@ -479,3 +479,1357 @@ vsim work.tb_conv_2d
 # Error loading design
 # End time: 17:32:28 on Dec 02,2025, Elapsed time: 0:00:00
 # Errors: 1, Warnings: 3
+# Compile of As_Counter.vhd was successful.
+# Compile of Conv_2d.vhdl was successful.
+# Compile of Conv_2d_input.vhd was successful.
+# Compile of Conv_2d_output.vhd was successful with warnings.
+# Compile of counter.vhd was successful.
+# Compile of D_Flip_Flop.vhd was successful.
+# Compile of dff_n.vhd was successful.
+# Compile of full_adder.vhd was successful.
+# Compile of fullAdder.vhd was successful.
+# Compile of matrixMul.vhd was successful.
+# Compile of Memory.vhd was successful.
+# Compile of mux.vhd was successful.
+# Compile of ripple_carry_adder.vhd was successful.
+# Compile of RippleCarryAdder.vhd was successful.
+# Compile of testbench_conv2d_input.vhd was successful.
+# Compile of Utils.vhd was successful.
+# Compile of tb_memory.vhd was successful.
+# Compile of tb_Conv_2d.vhd was successful.
+# 18 compiles, 0 failed with no errors.
+vsim work.tb_conv_2d
+# vsim work.tb_conv_2d 
+# Start time: 17:33:19 on Dec 02,2025
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.utils(body)
+# Loading work.tb_conv_2d(tb)
+# Loading work.conv_2d(c2d)
+# Loading work.conv_2d_input(c2d)
+# Loading work.as_counter(asc)
+# Loading work.ripplecarryadder(rca)
+# Loading work.fulladder(dataflow)
+# Loading work.d_flip_flop(dff)
+# Loading work.memory(mem)
+# Loading work.conv_2d_output(conv_bh)
+# Loading work.counter(counter_bh)
+# Loading ieee.fixed_float_types
+# Loading ieee.math_real(body)
+# Loading ieee.fixed_generic_pkg(body)
+# Loading ieee.fixed_pkg
+# Loading work.ripple_carry_adder(ripple_carry_adder_behaviour)
+# Loading work.full_adder(dataflow)
+# Loading work.dff_n(dff_n_bh)
+# Loading work.mux(mux_bh)
+add wave -position insertpoint  \
+sim:/tb_conv_2d/clk_ext \
+sim:/tb_conv_2d/reset_ext \
+sim:/tb_conv_2d/x_valid \
+sim:/tb_conv_2d/i_f \
+sim:/tb_conv_2d/x \
+sim:/tb_conv_2d/testing \
+sim:/tb_conv_2d/y_ext \
+sim:/tb_conv_2d/y_valid_ext \
+sim:/tb_conv_2d/N \
+sim:/tb_conv_2d/M \
+sim:/tb_conv_2d/Nbit \
+sim:/tb_conv_2d/clk_period
+run -all
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d/UUT/C_OUT/muxs_instances(8)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d/UUT/C_OUT/muxs_instances(7)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d/UUT/C_OUT/muxs_instances(6)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d/UUT/C_OUT/muxs_instances(5)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d/UUT/C_OUT/muxs_instances(4)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d/UUT/C_OUT/muxs_instances(3)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d/UUT/C_OUT/muxs_instances(2)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d/UUT/C_OUT/muxs_instances(1)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d/UUT/C_OUT/muxs_instances(0)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d/UUT/C_OUT
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d/UUT/C_INP/M_MEM
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d/UUT/C_INP/F_MEM
+# ** Warning: NUMERIC_STD.">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d/UUT/C_INP
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d/UUT/C_INP
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 250 ns  Iteration: 3  Instance: /tb_conv_2d/UUT/C_INP
+# ** Warning: NUMERIC_STD.">=": metavalue detected, returning FALSE
+#    Time: 250 ns  Iteration: 3  Instance: /tb_conv_2d/UUT/C_INP
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 250 ns  Iteration: 4  Instance: /tb_conv_2d/UUT/C_INP/M_MEM
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 450 ns  Iteration: 3  Instance: /tb_conv_2d/UUT/C_INP
+# ** Warning: NUMERIC_STD.">=": metavalue detected, returning FALSE
+#    Time: 450 ns  Iteration: 3  Instance: /tb_conv_2d/UUT/C_INP
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 450 ns  Iteration: 4  Instance: /tb_conv_2d/UUT/C_INP/M_MEM
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 550 ns  Iteration: 3  Instance: /tb_conv_2d/UUT/C_INP
+# ** Warning: NUMERIC_STD.">=": metavalue detected, returning FALSE
+#    Time: 550 ns  Iteration: 3  Instance: /tb_conv_2d/UUT/C_INP
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 550 ns  Iteration: 4  Instance: /tb_conv_2d/UUT/C_INP/M_MEM
+# ** Fatal: (vsim-3734) Index value 25 is out of range 24 downto 0.
+#    Time: 1100 ns  Iteration: 5  Process: /tb_conv_2d/UUT/C_OUT/muxs_instances(6)/mux_i/line__19 File: /home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/src/mux.vhd
+# Fatal error in Architecture mux_bh at /home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/src/mux.vhd line 19
+# 
+# HDL call sequence:
+# Stopped at /home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/src/mux.vhd 19 Architecture mux_bh
+# 
+# Can't move the Now cursor.
+# Compile of As_Counter.vhd was successful.
+# Compile of Conv_2d.vhdl was successful.
+# Compile of Conv_2d_input.vhd was successful.
+# Compile of Conv_2d_output.vhd was successful with warnings.
+# Compile of counter.vhd was successful.
+# Compile of D_Flip_Flop.vhd was successful.
+# Compile of dff_n.vhd was successful.
+# Compile of full_adder.vhd was successful.
+# Compile of fullAdder.vhd was successful.
+# Compile of Memory.vhd was successful.
+# Compile of mux.vhd was successful.
+# Compile of ripple_carry_adder.vhd was successful.
+# Compile of RippleCarryAdder.vhd was successful.
+# Compile of testbench_conv2d_input.vhd was successful.
+# Compile of Utils.vhd was successful.
+# Compile of tb_memory.vhd was successful.
+# Compile of tb_Conv_2d.vhd was successful.
+# 17 compiles, 1 failed with no errors.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.utils(body)
+# Loading work.tb_conv_2d(tb)
+# Loading work.conv_2d(c2d)
+# Loading work.conv_2d_input(c2d)
+# Loading work.as_counter(asc)
+# Loading work.ripplecarryadder(rca)
+# Loading work.fulladder(dataflow)
+# Loading work.d_flip_flop(dff)
+# Loading work.memory(mem)
+# Loading work.conv_2d_output(conv_bh)
+# Loading work.counter(counter_bh)
+# Loading work.ripple_carry_adder(ripple_carry_adder_behaviour)
+# Loading work.full_adder(dataflow)
+# Loading work.dff_n(dff_n_bh)
+# Loading work.mux(mux_bh)
+vsim work.tb_conv_2d
+# End time: 17:55:57 on Dec 02,2025, Elapsed time: 0:22:38
+# Errors: 0, Warnings: 1
+# vsim work.tb_conv_2d 
+# Start time: 17:55:57 on Dec 02,2025
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.utils(body)
+# Loading work.tb_conv_2d(tb)
+# Loading work.conv_2d(c2d)
+# Loading work.conv_2d_input(c2d)
+# Loading work.as_counter(asc)
+# Loading work.ripplecarryadder(rca)
+# Loading work.fulladder(dataflow)
+# Loading work.d_flip_flop(dff)
+# Loading work.memory(mem)
+# Loading work.conv_2d_output(conv_bh)
+# Loading work.counter(counter_bh)
+# Loading ieee.fixed_float_types
+# Loading ieee.math_real(body)
+# Loading ieee.fixed_generic_pkg(body)
+# Loading ieee.fixed_pkg
+# Loading work.ripple_carry_adder(ripple_carry_adder_behaviour)
+# Loading work.full_adder(dataflow)
+# Loading work.dff_n(dff_n_bh)
+# Loading work.mux(mux_bh)
+add wave -position insertpoint  \
+sim:/tb_conv_2d/clk_ext \
+sim:/tb_conv_2d/reset_ext \
+sim:/tb_conv_2d/x_valid \
+sim:/tb_conv_2d/i_f \
+sim:/tb_conv_2d/x \
+sim:/tb_conv_2d/testing \
+sim:/tb_conv_2d/y_ext \
+sim:/tb_conv_2d/y_valid_ext \
+sim:/tb_conv_2d/N \
+sim:/tb_conv_2d/M \
+sim:/tb_conv_2d/Nbit \
+sim:/tb_conv_2d/clk_period
+run -all
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d/UUT/C_OUT/muxs_instances(8)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d/UUT/C_OUT/muxs_instances(7)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d/UUT/C_OUT/muxs_instances(6)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d/UUT/C_OUT/muxs_instances(5)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d/UUT/C_OUT/muxs_instances(4)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d/UUT/C_OUT/muxs_instances(3)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d/UUT/C_OUT/muxs_instances(2)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d/UUT/C_OUT/muxs_instances(1)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d/UUT/C_OUT/muxs_instances(0)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d/UUT/C_OUT
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d/UUT/C_INP/M_MEM
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d/UUT/C_INP/F_MEM
+# ** Warning: NUMERIC_STD.">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d/UUT/C_INP
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d/UUT/C_INP
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 250 ns  Iteration: 3  Instance: /tb_conv_2d/UUT/C_INP
+# ** Warning: NUMERIC_STD.">=": metavalue detected, returning FALSE
+#    Time: 250 ns  Iteration: 3  Instance: /tb_conv_2d/UUT/C_INP
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 250 ns  Iteration: 4  Instance: /tb_conv_2d/UUT/C_INP/M_MEM
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 450 ns  Iteration: 3  Instance: /tb_conv_2d/UUT/C_INP
+# ** Warning: NUMERIC_STD.">=": metavalue detected, returning FALSE
+#    Time: 450 ns  Iteration: 3  Instance: /tb_conv_2d/UUT/C_INP
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 450 ns  Iteration: 4  Instance: /tb_conv_2d/UUT/C_INP/M_MEM
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 550 ns  Iteration: 3  Instance: /tb_conv_2d/UUT/C_INP
+# ** Warning: NUMERIC_STD.">=": metavalue detected, returning FALSE
+#    Time: 550 ns  Iteration: 3  Instance: /tb_conv_2d/UUT/C_INP
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 550 ns  Iteration: 4  Instance: /tb_conv_2d/UUT/C_INP/M_MEM
+# ** Fatal: (vsim-3734) Index value 25 is out of range 24 downto 0.
+#    Time: 1100 ns  Iteration: 5  Process: /tb_conv_2d/UUT/C_OUT/muxs_instances(6)/mux_i/line__19 File: /home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/src/mux.vhd
+# Fatal error in Architecture mux_bh at /home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/src/mux.vhd line 19
+# 
+# HDL call sequence:
+# Stopped at /home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/src/mux.vhd 19 Architecture mux_bh
+# 
+# Compile of As_Counter.vhd was successful.
+# Compile of Conv_2d.vhdl was successful.
+# Compile of Conv_2d_input.vhd was successful.
+# Compile of Conv_2d_output.vhd was successful with warnings.
+# Compile of counter.vhd was successful.
+# Compile of D_Flip_Flop.vhd was successful.
+# Compile of dff_n.vhd was successful.
+# Compile of full_adder.vhd was successful.
+# Compile of fullAdder.vhd was successful.
+# Compile of Memory.vhd was successful.
+# Compile of mux.vhd was successful.
+# Compile of ripple_carry_adder.vhd was successful.
+# Compile of RippleCarryAdder.vhd was successful.
+# Compile of testbench_conv2d_input.vhd was successful.
+# Compile of Utils.vhd was successful.
+# Compile of tb_memory.vhd was successful.
+# Compile of tb_Conv_2d.vhd was successful.
+# 17 compiles, 1 failed with no errors.
+# Compile of As_Counter.vhd was successful.
+# Compile of Conv_2d.vhdl was successful.
+# Compile of Conv_2d_input.vhd was successful.
+# Compile of Conv_2d_output.vhd was successful with warnings.
+# Compile of counter.vhd was successful.
+# Compile of D_Flip_Flop.vhd was successful.
+# Compile of dff_n.vhd was successful.
+# Compile of full_adder.vhd was successful.
+# Compile of fullAdder.vhd was successful.
+# Compile of Memory.vhd was successful.
+# Compile of mux.vhd was successful.
+# Compile of ripple_carry_adder.vhd was successful.
+# Compile of RippleCarryAdder.vhd was successful.
+# Compile of testbench_conv2d_input.vhd was successful.
+# Compile of Utils.vhd was successful.
+# Compile of tb_memory.vhd was successful.
+# Compile of tb_Conv_2d.vhd was successful.
+# 17 compiles, 1 failed with no errors.
+vsim work.tb_conv_2d
+# End time: 17:59:13 on Dec 02,2025, Elapsed time: 0:03:16
+# Errors: 1, Warnings: 26
+# vsim work.tb_conv_2d 
+# Start time: 17:59:13 on Dec 02,2025
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.utils(body)
+# Loading work.tb_conv_2d(tb)
+# Loading work.conv_2d(c2d)
+# Loading work.conv_2d_input(c2d)
+# Loading work.as_counter(asc)
+# Loading work.ripplecarryadder(rca)
+# Loading work.fulladder(dataflow)
+# Loading work.d_flip_flop(dff)
+# Loading work.memory(mem)
+# Loading work.conv_2d_output(conv_bh)
+# Loading work.counter(counter_bh)
+# Loading ieee.fixed_float_types
+# Loading ieee.math_real(body)
+# Loading ieee.fixed_generic_pkg(body)
+# Loading ieee.fixed_pkg
+# Loading work.ripple_carry_adder(ripple_carry_adder_behaviour)
+# Loading work.full_adder(dataflow)
+# Loading work.dff_n(dff_n_bh)
+# Loading work.mux(mux_bh)
+add wave -position insertpoint sim:/tb_conv_2d/*
+run -all
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d/UUT/C_OUT/muxs_instances(8)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d/UUT/C_OUT/muxs_instances(7)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d/UUT/C_OUT/muxs_instances(6)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d/UUT/C_OUT/muxs_instances(5)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d/UUT/C_OUT/muxs_instances(4)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d/UUT/C_OUT/muxs_instances(3)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d/UUT/C_OUT/muxs_instances(2)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d/UUT/C_OUT/muxs_instances(1)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d/UUT/C_OUT/muxs_instances(0)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d/UUT/C_OUT
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d/UUT/C_INP/M_MEM
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d/UUT/C_INP/F_MEM
+# ** Warning: NUMERIC_STD.">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d/UUT/C_INP
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d/UUT/C_INP
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 250 ns  Iteration: 3  Instance: /tb_conv_2d/UUT/C_INP
+# ** Warning: NUMERIC_STD.">=": metavalue detected, returning FALSE
+#    Time: 250 ns  Iteration: 3  Instance: /tb_conv_2d/UUT/C_INP
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 250 ns  Iteration: 4  Instance: /tb_conv_2d/UUT/C_INP/M_MEM
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 450 ns  Iteration: 3  Instance: /tb_conv_2d/UUT/C_INP
+# ** Warning: NUMERIC_STD.">=": metavalue detected, returning FALSE
+#    Time: 450 ns  Iteration: 3  Instance: /tb_conv_2d/UUT/C_INP
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 450 ns  Iteration: 4  Instance: /tb_conv_2d/UUT/C_INP/M_MEM
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 550 ns  Iteration: 3  Instance: /tb_conv_2d/UUT/C_INP
+# ** Warning: NUMERIC_STD.">=": metavalue detected, returning FALSE
+#    Time: 550 ns  Iteration: 3  Instance: /tb_conv_2d/UUT/C_INP
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 550 ns  Iteration: 4  Instance: /tb_conv_2d/UUT/C_INP/M_MEM
+# ** Fatal: (vsim-3734) Index value 25 is out of range 24 downto 0.
+#    Time: 1100 ns  Iteration: 5  Process: /tb_conv_2d/UUT/C_OUT/muxs_instances(6)/mux_i/line__19 File: /home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/src/mux.vhd
+# Fatal error in Architecture mux_bh at /home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/src/mux.vhd line 19
+# 
+# HDL call sequence:
+# Stopped at /home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/src/mux.vhd 19 Architecture mux_bh
+# 
+# Compile of As_Counter.vhd was successful.
+# Compile of Conv_2d.vhdl was successful.
+# Compile of Conv_2d_input.vhd was successful.
+# Compile of Conv_2d_output.vhd was successful with warnings.
+# Compile of counter.vhd was successful.
+# Compile of D_Flip_Flop.vhd was successful.
+# Compile of dff_n.vhd was successful.
+# Compile of full_adder.vhd was successful.
+# Compile of fullAdder.vhd was successful.
+# Compile of Memory.vhd was successful.
+# Compile of mux.vhd was successful.
+# Compile of ripple_carry_adder.vhd was successful.
+# Compile of RippleCarryAdder.vhd was successful.
+# Compile of testbench_conv2d_input.vhd was successful.
+# Compile of Utils.vhd was successful.
+# Compile of tb_memory.vhd was successful.
+# Compile of tb_Conv_2d.vhd was successful.
+# 17 compiles, 1 failed with no errors.
+vsim work.tb_conv_2d
+# End time: 18:04:06 on Dec 02,2025, Elapsed time: 0:04:53
+# Errors: 1, Warnings: 25
+# vsim work.tb_conv_2d 
+# Start time: 18:04:06 on Dec 02,2025
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.utils(body)
+# Loading work.tb_conv_2d(tb)
+# Loading work.conv_2d(c2d)
+# Loading work.conv_2d_input(c2d)
+# Loading work.as_counter(asc)
+# Loading work.ripplecarryadder(rca)
+# Loading work.fulladder(dataflow)
+# Loading work.d_flip_flop(dff)
+# Loading work.memory(mem)
+# Loading work.conv_2d_output(conv_bh)
+# Loading work.counter(counter_bh)
+# Loading ieee.fixed_float_types
+# Loading ieee.math_real(body)
+# Loading ieee.fixed_generic_pkg(body)
+# Loading ieee.fixed_pkg
+# Loading work.ripple_carry_adder(ripple_carry_adder_behaviour)
+# Loading work.full_adder(dataflow)
+# Loading work.dff_n(dff_n_bh)
+# Loading work.mux(mux_bh)
+add wave -position insertpoint sim:/tb_conv_2d/*
+run -all
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d/UUT/C_OUT/muxs_instances(8)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d/UUT/C_OUT/muxs_instances(7)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d/UUT/C_OUT/muxs_instances(6)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d/UUT/C_OUT/muxs_instances(5)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d/UUT/C_OUT/muxs_instances(4)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d/UUT/C_OUT/muxs_instances(3)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d/UUT/C_OUT/muxs_instances(2)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d/UUT/C_OUT/muxs_instances(1)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d/UUT/C_OUT/muxs_instances(0)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d/UUT/C_OUT
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d/UUT/C_INP/M_MEM
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d/UUT/C_INP/F_MEM
+# ** Warning: NUMERIC_STD.">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d/UUT/C_INP
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d/UUT/C_INP
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 250 ns  Iteration: 3  Instance: /tb_conv_2d/UUT/C_INP
+# ** Warning: NUMERIC_STD.">=": metavalue detected, returning FALSE
+#    Time: 250 ns  Iteration: 3  Instance: /tb_conv_2d/UUT/C_INP
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 250 ns  Iteration: 4  Instance: /tb_conv_2d/UUT/C_INP/M_MEM
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 450 ns  Iteration: 3  Instance: /tb_conv_2d/UUT/C_INP
+# ** Warning: NUMERIC_STD.">=": metavalue detected, returning FALSE
+#    Time: 450 ns  Iteration: 3  Instance: /tb_conv_2d/UUT/C_INP
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 450 ns  Iteration: 4  Instance: /tb_conv_2d/UUT/C_INP/M_MEM
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 550 ns  Iteration: 3  Instance: /tb_conv_2d/UUT/C_INP
+# ** Warning: NUMERIC_STD.">=": metavalue detected, returning FALSE
+#    Time: 550 ns  Iteration: 3  Instance: /tb_conv_2d/UUT/C_INP
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 550 ns  Iteration: 4  Instance: /tb_conv_2d/UUT/C_INP/M_MEM
+# ** Fatal: (vsim-3734) Index value 25 is out of range 24 downto 0.
+#    Time: 1100 ns  Iteration: 5  Process: /tb_conv_2d/UUT/C_OUT/muxs_instances(6)/mux_i/line__19 File: /home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/src/mux.vhd
+# Fatal error in Architecture mux_bh at /home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/src/mux.vhd line 19
+# 
+# HDL call sequence:
+# Stopped at /home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/src/mux.vhd 19 Architecture mux_bh
+# 
+add wave -position insertpoint sim:/tb_conv_2d/UUT/C_OUT/counter_instance/*
+run -all
+# Cannot continue because of fatal error.
+# HDL call sequence:
+# Stopped at /home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/src/mux.vhd 19 Architecture mux_bh
+# 
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+run -all
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d/UUT/C_OUT/muxs_instances(8)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d/UUT/C_OUT/muxs_instances(7)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d/UUT/C_OUT/muxs_instances(6)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d/UUT/C_OUT/muxs_instances(5)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d/UUT/C_OUT/muxs_instances(4)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d/UUT/C_OUT/muxs_instances(3)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d/UUT/C_OUT/muxs_instances(2)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d/UUT/C_OUT/muxs_instances(1)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d/UUT/C_OUT/muxs_instances(0)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d/UUT/C_OUT
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d/UUT/C_INP/M_MEM
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d/UUT/C_INP/F_MEM
+# ** Warning: NUMERIC_STD.">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d/UUT/C_INP
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d/UUT/C_INP
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 250 ns  Iteration: 3  Instance: /tb_conv_2d/UUT/C_INP
+# ** Warning: NUMERIC_STD.">=": metavalue detected, returning FALSE
+#    Time: 250 ns  Iteration: 3  Instance: /tb_conv_2d/UUT/C_INP
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 250 ns  Iteration: 4  Instance: /tb_conv_2d/UUT/C_INP/M_MEM
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 450 ns  Iteration: 3  Instance: /tb_conv_2d/UUT/C_INP
+# ** Warning: NUMERIC_STD.">=": metavalue detected, returning FALSE
+#    Time: 450 ns  Iteration: 3  Instance: /tb_conv_2d/UUT/C_INP
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 450 ns  Iteration: 4  Instance: /tb_conv_2d/UUT/C_INP/M_MEM
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 550 ns  Iteration: 3  Instance: /tb_conv_2d/UUT/C_INP
+# ** Warning: NUMERIC_STD.">=": metavalue detected, returning FALSE
+#    Time: 550 ns  Iteration: 3  Instance: /tb_conv_2d/UUT/C_INP
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 550 ns  Iteration: 4  Instance: /tb_conv_2d/UUT/C_INP/M_MEM
+# ** Fatal: (vsim-3734) Index value 25 is out of range 24 downto 0.
+#    Time: 1100 ns  Iteration: 5  Process: /tb_conv_2d/UUT/C_OUT/muxs_instances(6)/mux_i/line__19 File: /home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/src/mux.vhd
+# Fatal error in Architecture mux_bh at /home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/src/mux.vhd line 19
+# 
+# HDL call sequence:
+# Stopped at /home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/src/mux.vhd 19 Architecture mux_bh
+# 
+add wave -position insertpoint  \
+sim:/tb_conv_2d/UUT/C_OUT/muxs_instances(0)/mux_i/N_input \
+sim:/tb_conv_2d/UUT/C_OUT/muxs_instances(0)/mux_i/input_data \
+sim:/tb_conv_2d/UUT/C_OUT/muxs_instances(0)/mux_i/control \
+sim:/tb_conv_2d/UUT/C_OUT/muxs_instances(0)/mux_i/output_data
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+run -all
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d/UUT/C_OUT/muxs_instances(8)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d/UUT/C_OUT/muxs_instances(7)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d/UUT/C_OUT/muxs_instances(6)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d/UUT/C_OUT/muxs_instances(5)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d/UUT/C_OUT/muxs_instances(4)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d/UUT/C_OUT/muxs_instances(3)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d/UUT/C_OUT/muxs_instances(2)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d/UUT/C_OUT/muxs_instances(1)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d/UUT/C_OUT/muxs_instances(0)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d/UUT/C_OUT
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d/UUT/C_INP/M_MEM
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d/UUT/C_INP/F_MEM
+# ** Warning: NUMERIC_STD.">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d/UUT/C_INP
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d/UUT/C_INP
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 250 ns  Iteration: 3  Instance: /tb_conv_2d/UUT/C_INP
+# ** Warning: NUMERIC_STD.">=": metavalue detected, returning FALSE
+#    Time: 250 ns  Iteration: 3  Instance: /tb_conv_2d/UUT/C_INP
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 250 ns  Iteration: 4  Instance: /tb_conv_2d/UUT/C_INP/M_MEM
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 450 ns  Iteration: 3  Instance: /tb_conv_2d/UUT/C_INP
+# ** Warning: NUMERIC_STD.">=": metavalue detected, returning FALSE
+#    Time: 450 ns  Iteration: 3  Instance: /tb_conv_2d/UUT/C_INP
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 450 ns  Iteration: 4  Instance: /tb_conv_2d/UUT/C_INP/M_MEM
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 550 ns  Iteration: 3  Instance: /tb_conv_2d/UUT/C_INP
+# ** Warning: NUMERIC_STD.">=": metavalue detected, returning FALSE
+#    Time: 550 ns  Iteration: 3  Instance: /tb_conv_2d/UUT/C_INP
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 550 ns  Iteration: 4  Instance: /tb_conv_2d/UUT/C_INP/M_MEM
+# ** Fatal: (vsim-3734) Index value 25 is out of range 24 downto 0.
+#    Time: 1100 ns  Iteration: 5  Process: /tb_conv_2d/UUT/C_OUT/muxs_instances(6)/mux_i/line__19 File: /home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/src/mux.vhd
+# Fatal error in Architecture mux_bh at /home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/src/mux.vhd line 19
+# 
+# HDL call sequence:
+# Stopped at /home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/src/mux.vhd 19 Architecture mux_bh
+# 
+add wave -position insertpoint  \
+sim:/tb_conv_2d/UUT/C_INP/matrix_out
+add wave -position insertpoint  \
+sim:/tb_conv_2d/UUT/C_INP/filter_out
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+run -all
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d/UUT/C_OUT/muxs_instances(8)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d/UUT/C_OUT/muxs_instances(7)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d/UUT/C_OUT/muxs_instances(6)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d/UUT/C_OUT/muxs_instances(5)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d/UUT/C_OUT/muxs_instances(4)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d/UUT/C_OUT/muxs_instances(3)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d/UUT/C_OUT/muxs_instances(2)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d/UUT/C_OUT/muxs_instances(1)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d/UUT/C_OUT/muxs_instances(0)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d/UUT/C_OUT
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d/UUT/C_INP/M_MEM
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d/UUT/C_INP/F_MEM
+# ** Warning: NUMERIC_STD.">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d/UUT/C_INP
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d/UUT/C_INP
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 250 ns  Iteration: 3  Instance: /tb_conv_2d/UUT/C_INP
+# ** Warning: NUMERIC_STD.">=": metavalue detected, returning FALSE
+#    Time: 250 ns  Iteration: 3  Instance: /tb_conv_2d/UUT/C_INP
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 250 ns  Iteration: 4  Instance: /tb_conv_2d/UUT/C_INP/M_MEM
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 450 ns  Iteration: 3  Instance: /tb_conv_2d/UUT/C_INP
+# ** Warning: NUMERIC_STD.">=": metavalue detected, returning FALSE
+#    Time: 450 ns  Iteration: 3  Instance: /tb_conv_2d/UUT/C_INP
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 450 ns  Iteration: 4  Instance: /tb_conv_2d/UUT/C_INP/M_MEM
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 550 ns  Iteration: 3  Instance: /tb_conv_2d/UUT/C_INP
+# ** Warning: NUMERIC_STD.">=": metavalue detected, returning FALSE
+#    Time: 550 ns  Iteration: 3  Instance: /tb_conv_2d/UUT/C_INP
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 550 ns  Iteration: 4  Instance: /tb_conv_2d/UUT/C_INP/M_MEM
+# ** Fatal: (vsim-3734) Index value 25 is out of range 24 downto 0.
+#    Time: 1100 ns  Iteration: 5  Process: /tb_conv_2d/UUT/C_OUT/muxs_instances(6)/mux_i/line__19 File: /home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/src/mux.vhd
+# Fatal error in Architecture mux_bh at /home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/src/mux.vhd line 19
+# 
+# HDL call sequence:
+# Stopped at /home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/src/mux.vhd 19 Architecture mux_bh
+# 
+# Compile of As_Counter.vhd was successful.
+# Compile of Conv_2d.vhdl was successful.
+# Compile of Conv_2d_input.vhd was successful.
+# Compile of Conv_2d_output.vhd failed with 1 errors.
+# Compile of counter.vhd was successful.
+# Compile of D_Flip_Flop.vhd was successful.
+# Compile of dff_n.vhd was successful.
+# Compile of full_adder.vhd was successful.
+# Compile of fullAdder.vhd was successful.
+# Compile of Memory.vhd was successful.
+# Compile of mux.vhd was successful.
+# Compile of ripple_carry_adder.vhd was successful.
+# Compile of RippleCarryAdder.vhd was successful.
+# Compile of testbench_conv2d_input.vhd was successful.
+# Compile of Utils.vhd was successful.
+# Compile of tb_memory.vhd was successful.
+# Compile of tb_Conv_2d.vhd was successful.
+# 17 compiles, 2 failed with 1 error.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.utils(body)
+# Loading work.tb_conv_2d(tb)
+# Loading work.conv_2d(c2d)
+# Loading work.conv_2d_input(c2d)
+# Loading work.as_counter(asc)
+# Loading work.ripplecarryadder(rca)
+# Loading work.fulladder(dataflow)
+# Loading work.d_flip_flop(dff)
+# Loading work.memory(mem)
+# Loading work.conv_2d_output(conv_bh)
+# Loading work.counter(counter_bh)
+# Loading work.ripple_carry_adder(ripple_carry_adder_behaviour)
+# Loading work.full_adder(dataflow)
+# Loading work.dff_n(dff_n_bh)
+# Loading work.mux(mux_bh)
+run -all
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d/UUT/C_OUT/muxs_instances(8)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d/UUT/C_OUT/muxs_instances(7)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d/UUT/C_OUT/muxs_instances(6)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d/UUT/C_OUT/muxs_instances(5)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d/UUT/C_OUT/muxs_instances(4)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d/UUT/C_OUT/muxs_instances(3)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d/UUT/C_OUT/muxs_instances(2)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d/UUT/C_OUT/muxs_instances(1)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d/UUT/C_OUT/muxs_instances(0)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d/UUT/C_OUT
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d/UUT/C_INP/M_MEM
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d/UUT/C_INP/F_MEM
+# ** Warning: NUMERIC_STD.">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d/UUT/C_INP
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d/UUT/C_INP
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 250 ns  Iteration: 3  Instance: /tb_conv_2d/UUT/C_INP
+# ** Warning: NUMERIC_STD.">=": metavalue detected, returning FALSE
+#    Time: 250 ns  Iteration: 3  Instance: /tb_conv_2d/UUT/C_INP
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 250 ns  Iteration: 4  Instance: /tb_conv_2d/UUT/C_INP/M_MEM
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 450 ns  Iteration: 3  Instance: /tb_conv_2d/UUT/C_INP
+# ** Warning: NUMERIC_STD.">=": metavalue detected, returning FALSE
+#    Time: 450 ns  Iteration: 3  Instance: /tb_conv_2d/UUT/C_INP
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 450 ns  Iteration: 4  Instance: /tb_conv_2d/UUT/C_INP/M_MEM
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 550 ns  Iteration: 3  Instance: /tb_conv_2d/UUT/C_INP
+# ** Warning: NUMERIC_STD.">=": metavalue detected, returning FALSE
+#    Time: 550 ns  Iteration: 3  Instance: /tb_conv_2d/UUT/C_INP
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 550 ns  Iteration: 4  Instance: /tb_conv_2d/UUT/C_INP/M_MEM
+# ** Fatal: (vsim-3734) Index value 25 is out of range 24 downto 0.
+#    Time: 1100 ns  Iteration: 5  Process: /tb_conv_2d/UUT/C_OUT/muxs_instances(6)/mux_i/line__19 File: /home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/src/mux.vhd
+# Fatal error in Architecture mux_bh at /home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/src/mux.vhd line 19
+# 
+# HDL call sequence:
+# Stopped at /home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/src/mux.vhd 19 Architecture mux_bh
+# 
+# Compile of As_Counter.vhd was successful.
+# Compile of Conv_2d.vhdl was successful.
+# Compile of Conv_2d_input.vhd was successful.
+# Compile of Conv_2d_output.vhd failed with 1 errors.
+# Compile of counter.vhd was successful.
+# Compile of D_Flip_Flop.vhd was successful.
+# Compile of dff_n.vhd was successful.
+# Compile of full_adder.vhd was successful.
+# Compile of fullAdder.vhd was successful.
+# Compile of Memory.vhd was successful.
+# Compile of mux.vhd was successful.
+# Compile of ripple_carry_adder.vhd was successful.
+# Compile of RippleCarryAdder.vhd was successful.
+# Compile of testbench_conv2d_input.vhd was successful.
+# Compile of Utils.vhd was successful.
+# Compile of tb_memory.vhd was successful.
+# Compile of tb_Conv_2d.vhd was successful.
+# 17 compiles, 2 failed with 1 error.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.utils(body)
+# Loading work.tb_conv_2d(tb)
+# Loading work.conv_2d(c2d)
+# Loading work.conv_2d_input(c2d)
+# Loading work.as_counter(asc)
+# Loading work.ripplecarryadder(rca)
+# Loading work.fulladder(dataflow)
+# Loading work.d_flip_flop(dff)
+# Loading work.memory(mem)
+# Loading work.conv_2d_output(conv_bh)
+# Loading work.counter(counter_bh)
+# Loading work.ripple_carry_adder(ripple_carry_adder_behaviour)
+# Loading work.full_adder(dataflow)
+# Loading work.dff_n(dff_n_bh)
+# Loading work.mux(mux_bh)
+run -all
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d/UUT/C_OUT/muxs_instances(8)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d/UUT/C_OUT/muxs_instances(7)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d/UUT/C_OUT/muxs_instances(6)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d/UUT/C_OUT/muxs_instances(5)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d/UUT/C_OUT/muxs_instances(4)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d/UUT/C_OUT/muxs_instances(3)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d/UUT/C_OUT/muxs_instances(2)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d/UUT/C_OUT/muxs_instances(1)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d/UUT/C_OUT/muxs_instances(0)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d/UUT/C_OUT
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d/UUT/C_INP/M_MEM
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d/UUT/C_INP/F_MEM
+# ** Warning: NUMERIC_STD.">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d/UUT/C_INP
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d/UUT/C_INP
+# ** Fatal: (vsim-3734) Index value 25 is out of range 24 downto 0.
+#    Time: 1100 ns  Iteration: 5  Process: /tb_conv_2d/UUT/C_OUT/muxs_instances(6)/mux_i/line__19 File: /home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/src/mux.vhd
+# Fatal error in Architecture mux_bh at /home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/src/mux.vhd line 19
+# 
+# HDL call sequence:
+# Stopped at /home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/src/mux.vhd 19 Architecture mux_bh
+# 
+add wave -position end  sim:/tb_conv_2d/UUT/C_INP/en_execution
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+run -all
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d/UUT/C_OUT/muxs_instances(8)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d/UUT/C_OUT/muxs_instances(7)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d/UUT/C_OUT/muxs_instances(6)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d/UUT/C_OUT/muxs_instances(5)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d/UUT/C_OUT/muxs_instances(4)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d/UUT/C_OUT/muxs_instances(3)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d/UUT/C_OUT/muxs_instances(2)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d/UUT/C_OUT/muxs_instances(1)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d/UUT/C_OUT/muxs_instances(0)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d/UUT/C_OUT
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d/UUT/C_INP/M_MEM
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d/UUT/C_INP/F_MEM
+# ** Warning: NUMERIC_STD.">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d/UUT/C_INP
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d/UUT/C_INP
+# ** Fatal: (vsim-3734) Index value 25 is out of range 24 downto 0.
+#    Time: 1100 ns  Iteration: 5  Process: /tb_conv_2d/UUT/C_OUT/muxs_instances(6)/mux_i/line__19 File: /home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/src/mux.vhd
+# Fatal error in Architecture mux_bh at /home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/src/mux.vhd line 19
+# 
+# HDL call sequence:
+# Stopped at /home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/src/mux.vhd 19 Architecture mux_bh
+# 
+vsim work.tb_conv_2d
+# End time: 18:23:30 on Dec 02,2025, Elapsed time: 0:19:24
+# Errors: 1, Warnings: 15
+# vsim work.tb_conv_2d 
+# Start time: 18:23:30 on Dec 02,2025
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.utils(body)
+# Loading work.tb_conv_2d(tb)
+# Loading work.conv_2d(c2d)
+# Loading work.conv_2d_input(c2d)
+# Loading work.as_counter(asc)
+# Loading work.ripplecarryadder(rca)
+# Loading work.fulladder(dataflow)
+# Loading work.d_flip_flop(dff)
+# Loading work.memory(mem)
+# Loading work.conv_2d_output(conv_bh)
+# Loading work.counter(counter_bh)
+# Loading ieee.fixed_float_types
+# Loading ieee.math_real(body)
+# Loading ieee.fixed_generic_pkg(body)
+# Loading ieee.fixed_pkg
+# Loading work.ripple_carry_adder(ripple_carry_adder_behaviour)
+# Loading work.full_adder(dataflow)
+# Loading work.dff_n(dff_n_bh)
+# Loading work.mux(mux_bh)
+add wave -position insertpoint  \
+sim:/tb_conv_2d/clk_ext \
+sim:/tb_conv_2d/reset_ext \
+sim:/tb_conv_2d/x_valid \
+sim:/tb_conv_2d/i_f \
+sim:/tb_conv_2d/x \
+sim:/tb_conv_2d/testing \
+sim:/tb_conv_2d/y_ext \
+sim:/tb_conv_2d/y_valid_ext \
+sim:/tb_conv_2d/N \
+sim:/tb_conv_2d/M \
+sim:/tb_conv_2d/Nbit \
+sim:/tb_conv_2d/clk_period
+run -all
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d/UUT/C_OUT/muxs_instances(8)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d/UUT/C_OUT/muxs_instances(7)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d/UUT/C_OUT/muxs_instances(6)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d/UUT/C_OUT/muxs_instances(5)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d/UUT/C_OUT/muxs_instances(4)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d/UUT/C_OUT/muxs_instances(3)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d/UUT/C_OUT/muxs_instances(2)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d/UUT/C_OUT/muxs_instances(1)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d/UUT/C_OUT/muxs_instances(0)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d/UUT/C_OUT
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d/UUT/C_INP/M_MEM
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d/UUT/C_INP/F_MEM
+# ** Warning: NUMERIC_STD.">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d/UUT/C_INP
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d/UUT/C_INP
+# ** Fatal: (vsim-3734) Index value 25 is out of range 24 downto 0.
+#    Time: 1100 ns  Iteration: 5  Process: /tb_conv_2d/UUT/C_OUT/muxs_instances(6)/mux_i/line__19 File: /home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/src/mux.vhd
+# Fatal error in Architecture mux_bh at /home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/src/mux.vhd line 19
+# 
+# HDL call sequence:
+# Stopped at /home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/src/mux.vhd 19 Architecture mux_bh
+# 
+add wave -position insertpoint  \
+sim:/tb_conv_2d/UUT/C_INP/en_execution
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+run -all
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d/UUT/C_OUT/muxs_instances(8)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d/UUT/C_OUT/muxs_instances(7)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d/UUT/C_OUT/muxs_instances(6)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d/UUT/C_OUT/muxs_instances(5)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d/UUT/C_OUT/muxs_instances(4)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d/UUT/C_OUT/muxs_instances(3)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d/UUT/C_OUT/muxs_instances(2)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d/UUT/C_OUT/muxs_instances(1)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d/UUT/C_OUT/muxs_instances(0)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d/UUT/C_OUT
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d/UUT/C_INP/M_MEM
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d/UUT/C_INP/F_MEM
+# ** Warning: NUMERIC_STD.">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d/UUT/C_INP
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d/UUT/C_INP
+# ** Fatal: (vsim-3734) Index value 25 is out of range 24 downto 0.
+#    Time: 1100 ns  Iteration: 5  Process: /tb_conv_2d/UUT/C_OUT/muxs_instances(6)/mux_i/line__19 File: /home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/src/mux.vhd
+# Fatal error in Architecture mux_bh at /home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/src/mux.vhd line 19
+# 
+# HDL call sequence:
+# Stopped at /home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/src/mux.vhd 19 Architecture mux_bh
+# 
+# Compile of As_Counter.vhd was successful.
+# Compile of Conv_2d.vhdl was successful.
+# Compile of Conv_2d_input.vhd was successful.
+# Compile of Conv_2d_output.vhd failed with 1 errors.
+# Compile of counter.vhd was successful.
+# Compile of D_Flip_Flop.vhd was successful.
+# Compile of dff_n.vhd was successful.
+# Compile of full_adder.vhd was successful.
+# Compile of fullAdder.vhd was successful.
+# Compile of Memory.vhd was successful.
+# Compile of mux.vhd was successful.
+# Compile of ripple_carry_adder.vhd was successful.
+# Compile of RippleCarryAdder.vhd was successful.
+# Compile of testbench_conv2d_input.vhd was successful.
+# Compile of Utils.vhd was successful.
+# Compile of tb_memory.vhd was successful.
+# Compile of tb_Conv_2d.vhd was successful.
+# 17 compiles, 2 failed with 1 error.
+# Compile of As_Counter.vhd was successful.
+# Compile of Conv_2d.vhdl was successful.
+# Compile of Conv_2d_input.vhd was successful.
+# Compile of Conv_2d_output.vhd failed with 1 errors.
+# Compile of counter.vhd was successful.
+# Compile of D_Flip_Flop.vhd was successful.
+# Compile of dff_n.vhd was successful.
+# Compile of full_adder.vhd was successful.
+# Compile of fullAdder.vhd was successful.
+# Compile of Memory.vhd was successful.
+# Compile of mux.vhd was successful.
+# Compile of ripple_carry_adder.vhd was successful.
+# Compile of RippleCarryAdder.vhd was successful.
+# Compile of testbench_conv2d_input.vhd was successful.
+# Compile of Utils.vhd was successful.
+# Compile of tb_memory.vhd was successful.
+# Compile of tb_Conv_2d.vhd was successful.
+# 17 compiles, 2 failed with 1 error.
+vsim work.tb_conv_2d
+# End time: 18:25:51 on Dec 02,2025, Elapsed time: 0:02:21
+# Errors: 1, Warnings: 17
+# vsim work.tb_conv_2d 
+# Start time: 18:25:51 on Dec 02,2025
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.utils(body)
+# Loading work.tb_conv_2d(tb)
+# Loading work.conv_2d(c2d)
+# Loading work.conv_2d_input(c2d)
+# Loading work.as_counter(asc)
+# Loading work.ripplecarryadder(rca)
+# Loading work.fulladder(dataflow)
+# Loading work.d_flip_flop(dff)
+# Loading work.memory(mem)
+# Loading work.conv_2d_output(conv_bh)
+# Loading work.counter(counter_bh)
+# Loading ieee.fixed_float_types
+# Loading ieee.math_real(body)
+# Loading ieee.fixed_generic_pkg(body)
+# Loading ieee.fixed_pkg
+# Loading work.ripple_carry_adder(ripple_carry_adder_behaviour)
+# Loading work.full_adder(dataflow)
+# Loading work.dff_n(dff_n_bh)
+# Loading work.mux(mux_bh)
+add wave -position insertpoint sim:/tb_conv_2d/*
+run -all
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d/UUT/C_OUT/muxs_instances(8)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d/UUT/C_OUT/muxs_instances(7)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d/UUT/C_OUT/muxs_instances(6)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d/UUT/C_OUT/muxs_instances(5)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d/UUT/C_OUT/muxs_instances(4)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d/UUT/C_OUT/muxs_instances(3)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d/UUT/C_OUT/muxs_instances(2)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d/UUT/C_OUT/muxs_instances(1)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d/UUT/C_OUT/muxs_instances(0)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d/UUT/C_OUT
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d/UUT/C_INP/M_MEM
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d/UUT/C_INP/F_MEM
+# ** Warning: NUMERIC_STD.">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d/UUT/C_INP
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d/UUT/C_INP
+# ** Fatal: (vsim-3734) Index value 25 is out of range 24 downto 0.
+#    Time: 1100 ns  Iteration: 5  Process: /tb_conv_2d/UUT/C_OUT/muxs_instances(6)/mux_i/line__19 File: /home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/src/mux.vhd
+# Fatal error in Architecture mux_bh at /home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/src/mux.vhd line 19
+# 
+# HDL call sequence:
+# Stopped at /home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/src/mux.vhd 19 Architecture mux_bh
+# 
+add wave -position insertpoint  \
+sim:/tb_conv_2d/UUT/C_INP/en_execution
+run -all
+# Cannot continue because of fatal error.
+# HDL call sequence:
+# Stopped at /home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/src/mux.vhd 19 Architecture mux_bh
+# 
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+run -all
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d/UUT/C_OUT/muxs_instances(8)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d/UUT/C_OUT/muxs_instances(7)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d/UUT/C_OUT/muxs_instances(6)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d/UUT/C_OUT/muxs_instances(5)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d/UUT/C_OUT/muxs_instances(4)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d/UUT/C_OUT/muxs_instances(3)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d/UUT/C_OUT/muxs_instances(2)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d/UUT/C_OUT/muxs_instances(1)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d/UUT/C_OUT/muxs_instances(0)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d/UUT/C_OUT
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d/UUT/C_INP/M_MEM
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d/UUT/C_INP/F_MEM
+# ** Warning: NUMERIC_STD.">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d/UUT/C_INP
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d/UUT/C_INP
+# ** Fatal: (vsim-3734) Index value 25 is out of range 24 downto 0.
+#    Time: 1100 ns  Iteration: 5  Process: /tb_conv_2d/UUT/C_OUT/muxs_instances(6)/mux_i/line__19 File: /home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/src/mux.vhd
+# Fatal error in Architecture mux_bh at /home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/src/mux.vhd line 19
+# 
+# HDL call sequence:
+# Stopped at /home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/src/mux.vhd 19 Architecture mux_bh
+# 
+add wave -position insertpoint  \
+sim:/tb_conv_2d/UUT/C_INP/filter_out \
+sim:/tb_conv_2d/UUT/C_INP/matrix_out
+add wave -position insertpoint  \
+sim:/tb_conv_2d/UUT/C_INP/stato \
+sim:/tb_conv_2d/UUT/C_INP/end_filter \
+sim:/tb_conv_2d/UUT/C_INP/end_matrix
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+run -all
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d/UUT/C_OUT/muxs_instances(8)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d/UUT/C_OUT/muxs_instances(7)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d/UUT/C_OUT/muxs_instances(6)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d/UUT/C_OUT/muxs_instances(5)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d/UUT/C_OUT/muxs_instances(4)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d/UUT/C_OUT/muxs_instances(3)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d/UUT/C_OUT/muxs_instances(2)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d/UUT/C_OUT/muxs_instances(1)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d/UUT/C_OUT/muxs_instances(0)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d/UUT/C_OUT
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d/UUT/C_INP/M_MEM
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d/UUT/C_INP/F_MEM
+# ** Warning: NUMERIC_STD.">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d/UUT/C_INP
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d/UUT/C_INP
+# ** Fatal: (vsim-3734) Index value 25 is out of range 24 downto 0.
+#    Time: 1100 ns  Iteration: 5  Process: /tb_conv_2d/UUT/C_OUT/muxs_instances(6)/mux_i/line__19 File: /home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/src/mux.vhd
+# Fatal error in Architecture mux_bh at /home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/src/mux.vhd line 19
+# 
+# HDL call sequence:
+# Stopped at /home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/src/mux.vhd 19 Architecture mux_bh
+# 
+add wave -position insertpoint  \
+sim:/tb_conv_2d/UUT/C_OUT/output_counter
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+run -all
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d/UUT/C_OUT/muxs_instances(8)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d/UUT/C_OUT/muxs_instances(7)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d/UUT/C_OUT/muxs_instances(6)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d/UUT/C_OUT/muxs_instances(5)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d/UUT/C_OUT/muxs_instances(4)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d/UUT/C_OUT/muxs_instances(3)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d/UUT/C_OUT/muxs_instances(2)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d/UUT/C_OUT/muxs_instances(1)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d/UUT/C_OUT/muxs_instances(0)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d/UUT/C_OUT
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d/UUT/C_INP/M_MEM
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d/UUT/C_INP/F_MEM
+# ** Warning: NUMERIC_STD.">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d/UUT/C_INP
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d/UUT/C_INP
+# ** Fatal: (vsim-3734) Index value 25 is out of range 24 downto 0.
+#    Time: 1100 ns  Iteration: 5  Process: /tb_conv_2d/UUT/C_OUT/muxs_instances(6)/mux_i/line__19 File: /home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/src/mux.vhd
+# Fatal error in Architecture mux_bh at /home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/src/mux.vhd line 19
+# 
+# HDL call sequence:
+# Stopped at /home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/src/mux.vhd 19 Architecture mux_bh
+# 
+# Compile of As_Counter.vhd was successful.
+# Compile of Conv_2d.vhdl was successful.
+# Compile of Conv_2d_input.vhd was successful.
+# Compile of Conv_2d_output.vhd failed with 1 errors.
+# Compile of counter.vhd was successful.
+# Compile of D_Flip_Flop.vhd was successful.
+# Compile of dff_n.vhd was successful.
+# Compile of full_adder.vhd was successful.
+# Compile of fullAdder.vhd was successful.
+# Compile of Memory.vhd was successful.
+# Compile of mux.vhd was successful.
+# Compile of ripple_carry_adder.vhd was successful.
+# Compile of RippleCarryAdder.vhd was successful.
+# Compile of testbench_conv2d_input.vhd was successful.
+# Compile of Utils.vhd was successful.
+# Compile of tb_memory.vhd was successful.
+# Compile of tb_Conv_2d.vhd was successful.
+# 17 compiles, 2 failed with 1 error.
+quit -sim
+# End time: 18:30:32 on Dec 02,2025, Elapsed time: 0:04:41
+# Errors: 1, Warnings: 16
+# Compile of As_Counter.vhd was successful.
+# Compile of Conv_2d.vhdl was successful.
+# Compile of Conv_2d_input.vhd was successful.
+# Compile of Conv_2d_output.vhd failed with 1 errors.
+# Compile of counter.vhd was successful.
+# Compile of D_Flip_Flop.vhd was successful.
+# Compile of dff_n.vhd was successful.
+# Compile of full_adder.vhd was successful.
+# Compile of fullAdder.vhd was successful.
+# Compile of Memory.vhd was successful.
+# Compile of mux.vhd was successful.
+# Compile of ripple_carry_adder.vhd was successful.
+# Compile of RippleCarryAdder.vhd was successful.
+# Compile of testbench_conv2d_input.vhd was successful.
+# Compile of Utils.vhd was successful.
+# Compile of tb_memory.vhd was successful.
+# Compile of tb_Conv_2d.vhd was successful.
+# 17 compiles, 2 failed with 1 error.
+
+# Compile of As_Counter.vhd was successful.
+# Compile of Conv_2d.vhdl was successful.
+# Compile of Conv_2d_input.vhd was successful.
+# Compile of Conv_2d_output.vhd failed with 1 errors.
+# Compile of counter.vhd was successful.
+# Compile of D_Flip_Flop.vhd was successful.
+# Compile of dff_n.vhd was successful.
+# Compile of full_adder.vhd was successful.
+# Compile of fullAdder.vhd was successful.
+# Compile of Memory.vhd was successful.
+# Compile of mux.vhd was successful.
+# Compile of ripple_carry_adder.vhd was successful.
+# Compile of RippleCarryAdder.vhd was successful.
+# Compile of testbench_conv2d_input.vhd was successful.
+# Compile of Utils.vhd was successful.
+# Compile of tb_memory.vhd was successful.
+# Compile of tb_Conv_2d.vhd was successful.
+# 17 compiles, 2 failed with 1 error.
+# Compile of As_Counter.vhd was successful.
+# Compile of Conv_2d.vhdl was successful.
+# Compile of Conv_2d_input.vhd was successful.
+# Compile of Conv_2d_output.vhd failed with 4 errors.
+# Compile of counter.vhd was successful.
+# Compile of D_Flip_Flop.vhd was successful.
+# Compile of dff_n.vhd was successful.
+# Compile of full_adder.vhd was successful.
+# Compile of fullAdder.vhd was successful.
+# Compile of Memory.vhd was successful.
+# Compile of mux.vhd was successful.
+# Compile of ripple_carry_adder.vhd was successful.
+# Compile of RippleCarryAdder.vhd was successful.
+# Compile of testbench_conv2d_input.vhd was successful.
+# Compile of Utils.vhd was successful.
+# Compile of tb_memory.vhd was successful.
+# Compile of tb_Conv_2d.vhd was successful.
+# 17 compiles, 2 failed with 4 errors.
+# Compile of As_Counter.vhd was successful.
+# Compile of Conv_2d.vhdl was successful.
+# Compile of Conv_2d_input.vhd was successful.
+# Compile of Conv_2d_output.vhd was successful with warnings.
+# Compile of counter.vhd was successful.
+# Compile of D_Flip_Flop.vhd was successful.
+# Compile of dff_n.vhd was successful.
+# Compile of full_adder.vhd was successful.
+# Compile of fullAdder.vhd was successful.
+# Compile of Memory.vhd was successful.
+# Compile of mux.vhd was successful.
+# Compile of ripple_carry_adder.vhd was successful.
+# Compile of RippleCarryAdder.vhd was successful.
+# Compile of testbench_conv2d_input.vhd was successful.
+# Compile of Utils.vhd was successful.
+# Compile of tb_memory.vhd was successful.
+# Compile of tb_Conv_2d.vhd was successful.
+# 17 compiles, 1 failed with no errors.
+vsim work.tb_conv_2d
+# vsim work.tb_conv_2d 
+# Start time: 18:32:54 on Dec 02,2025
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.utils(body)
+# Loading work.tb_conv_2d(tb)
+# Loading work.conv_2d(c2d)
+# Loading work.conv_2d_input(c2d)
+# Loading work.as_counter(asc)
+# Loading work.ripplecarryadder(rca)
+# Loading work.fulladder(dataflow)
+# Loading work.d_flip_flop(dff)
+# Loading work.memory(mem)
+# Loading work.conv_2d_output(conv_bh)
+# Loading work.mux(mux_bh)
+# Loading ieee.fixed_float_types
+# Loading ieee.math_real(body)
+# Loading ieee.fixed_generic_pkg(body)
+# Loading ieee.fixed_pkg
+# Loading work.ripple_carry_adder(ripple_carry_adder_behaviour)
+# Loading work.full_adder(dataflow)
+# Loading work.dff_n(dff_n_bh)
+add wave -position insertpoint sim:/tb_conv_2d/*
+run -all
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d/UUT/C_OUT/muxs_instances(8)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d/UUT/C_OUT/muxs_instances(7)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d/UUT/C_OUT/muxs_instances(6)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d/UUT/C_OUT/muxs_instances(5)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d/UUT/C_OUT/muxs_instances(4)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d/UUT/C_OUT/muxs_instances(3)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d/UUT/C_OUT/muxs_instances(2)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d/UUT/C_OUT/muxs_instances(1)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d/UUT/C_OUT/muxs_instances(0)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d/UUT/C_OUT
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d/UUT/C_INP/M_MEM
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d/UUT/C_INP/F_MEM
+# ** Warning: NUMERIC_STD.">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d/UUT/C_INP
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d/UUT/C_INP
+# ** Fatal: (vsim-3734) Index value 25 is out of range 24 downto 0.
+#    Time: 1950 ns  Iteration: 6  Process: /tb_conv_2d/UUT/C_OUT/muxs_instances(6)/mux_i/line__19 File: /home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/src/mux.vhd
+# Fatal error in Architecture mux_bh at /home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/src/mux.vhd line 19
+# 
+# HDL call sequence:
+# Stopped at /home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/src/mux.vhd 19 Architecture mux_bh
+# 
+# WARNING: No extended dataflow license exists
+# invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# WARNING: No extended dataflow license exists
