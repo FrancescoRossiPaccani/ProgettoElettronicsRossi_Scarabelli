@@ -4,7 +4,7 @@ Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 
 -- Loading package TEXTIO
 -- Loading package std_logic_1164
 -- Compiling entity full_adder
--- Compiling architecture dataflow of full_adder
+-- Compiling architecture beh of full_adder
 
 } {} {}} /home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/src/As_Counter.vhd {1 {vcom -work work -2002 -explicit -stats=none /home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/src/As_Counter.vhd
 Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
@@ -14,15 +14,13 @@ Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 
 -- Compiling entity As_Counter
 -- Compiling architecture ASC of As_Counter
 
-} {} {}} /home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/tb/tb_memory.vhd {1 {vcom -work work -2002 -explicit -stats=none /home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/tb/tb_memory.vhd
+} {} {}} /home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/src/fifo.vhd {1 {vcom -work work -2002 -explicit -stats=none /home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/src/fifo.vhd
 Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
 -- Loading package STANDARD
 -- Loading package TEXTIO
 -- Loading package std_logic_1164
--- Loading package NUMERIC_STD
--- Loading package Utils
--- Compiling entity tb_memory
--- Compiling architecture tb of tb_memory
+-- Compiling entity fifo
+-- Compiling architecture struct of fifo
 
 } {} {}} /home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/src/RippleCarryAdder.vhd {1 {vcom -work work -2002 -explicit -stats=none /home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/src/RippleCarryAdder.vhd
 Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
@@ -50,14 +48,13 @@ Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 
 -- Compiling entity Conv_2d
 -- Compiling architecture C2D of Conv_2d
 
-} {} {}} /home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/src/counter.vhd {1 {vcom -work work -2002 -explicit -stats=none /home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/src/counter.vhd
+} {} {}} /home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/src/Counter.vhd {1 {vcom -work work -2002 -explicit -stats=none /home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/src/Counter.vhd
 Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
 -- Loading package STANDARD
 -- Loading package TEXTIO
 -- Loading package std_logic_1164
--- Loading package NUMERIC_STD
--- Compiling entity counter
--- Compiling architecture counter_bh of counter
+-- Compiling entity Counter
+-- Compiling architecture struct of Counter
 
 } {} {}} /home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/src/Utils.vhd {1 {vcom -work work -2002 -explicit -stats=none /home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/src/Utils.vhd
 Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
@@ -89,16 +86,6 @@ Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 
 -- Compiling entity Conv_2d_input
 -- Compiling architecture C2D of Conv_2d_input
 
-} {} {}} /home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/src/mux.vhd {1 {vcom -work work -2002 -explicit -stats=none /home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/src/mux.vhd
-Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
--- Loading package STANDARD
--- Loading package TEXTIO
--- Loading package std_logic_1164
--- Loading package NUMERIC_STD
--- Loading package Utils
--- Compiling entity mux
--- Compiling architecture mux_bh of mux
-
 } {} {}} /home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/src/testbench_conv2d_input.vhd {1 {vcom -work work -2002 -explicit -stats=none /home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/src/testbench_conv2d_input.vhd
 Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
 -- Loading package STANDARD
@@ -110,7 +97,17 @@ Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 
 -- Compiling architecture tb of tb_Conv_2d_input
 -- Loading entity Conv_2d_input
 
-} {} {}} /home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/src/Conv_2d_output.vhd {0 {vcom -work work -2002 -explicit -stats=none /home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/src/Conv_2d_output.vhd
+} {} {}} /home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/src/mux.vhd {1 {vcom -work work -2002 -explicit -stats=none /home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/src/mux.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package Utils
+-- Compiling entity mux
+-- Compiling architecture mux_bh of mux
+
+} {} {}} /home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/src/Conv_2d_output.vhd {2 {vcom -work work -2002 -explicit -stats=none /home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/src/Conv_2d_output.vhd
 Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
 -- Loading package STANDARD
 -- Loading package TEXTIO
@@ -119,24 +116,16 @@ Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 
 -- Loading package Utils
 -- Compiling entity Conv_2d_output
 -- Compiling architecture conv_bh of Conv_2d_output
-** Error: /home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/src/Conv_2d_output.vhd(124): near "di": (vcom-1576) expecting ',' or ')'.
-** Warning: /home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/src/Conv_2d_output.vhd(138): (vcom-1128) Missing reserved word BEGIN in generate statement.
-** Warning: /home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/src/Conv_2d_output.vhd(159): (vcom-1128) Missing reserved word BEGIN in generate statement.
-** Note: /home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/src/Conv_2d_output.vhd(241): VHDL Compiler exiting
+** Warning: /home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/src/Conv_2d_output.vhd(123): (vcom-1128) Missing reserved word BEGIN in generate statement.
+** Warning: /home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/src/Conv_2d_output.vhd(142): (vcom-1128) Missing reserved word BEGIN in generate statement.
 
-} {10.0 11.0} {}} /home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/src/ripple_carry_adder.vhd {1 {vcom -work work -2002 -explicit -stats=none /home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/src/ripple_carry_adder.vhd
+} {} {}} /home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/src/ripple_carry_adder.vhd {1 {vcom -work work -2002 -explicit -stats=none /home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/src/ripple_carry_adder.vhd
 Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
 -- Loading package STANDARD
 -- Loading package TEXTIO
 -- Loading package std_logic_1164
--- Loading package NUMERIC_STD
--- Loading package instance fixed_pkg
--- Loading package fixed_float_types
--- Loading package fixed_generic_pkg
--- Loading package MATH_REAL
--- Loading package body fixed_generic_pkg
 -- Compiling entity ripple_carry_adder
--- Compiling architecture ripple_carry_adder_behaviour of ripple_carry_adder
+-- Compiling architecture beh of ripple_carry_adder
 
 } {} {}} /home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/src/fullAdder.vhd {1 {vcom -work work -2002 -explicit -stats=none /home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/src/fullAdder.vhd
 Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
@@ -146,27 +135,12 @@ Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 
 -- Compiling entity FullAdder
 -- Compiling architecture dataflow of FullAdder
 
-} {} {}} /home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/src/matrixMul.vhd {1 {vcom -work work -2002 -explicit -stats=none /home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/src/matrixMul.vhd
+} {} {}} /home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/src/DFF_N.vhd {1 {vcom -work work -2002 -explicit -stats=none /home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/src/DFF_N.vhd
 Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
 -- Loading package STANDARD
 -- Loading package TEXTIO
 -- Loading package std_logic_1164
--- Loading package NUMERIC_STD
--- Compiling entity matrixMul
--- Compiling architecture matrixMul_bh of matrixMul
-
-} {} {}} /home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/src/dff_n.vhd {1 {vcom -work work -2002 -explicit -stats=none /home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/src/dff_n.vhd
-Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
--- Loading package STANDARD
--- Loading package TEXTIO
--- Loading package std_logic_1164
--- Loading package NUMERIC_STD
--- Loading package instance fixed_pkg
--- Loading package fixed_float_types
--- Loading package fixed_generic_pkg
--- Loading package MATH_REAL
--- Loading package body fixed_generic_pkg
--- Compiling entity dff_n
--- Compiling architecture dff_n_bh of dff_n
+-- Compiling entity DFF_N
+-- Compiling architecture struct of DFF_N
 
 } {} {}}

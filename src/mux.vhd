@@ -5,7 +5,8 @@ use work.Utils.all;
 
 entity mux is
     generic(
-        N_input : integer
+        -- number of inputs
+        N_input : positive
     );
     port (
         input_data : in std_logic_vector(N_input - 1 downto 0);

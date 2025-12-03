@@ -200,6 +200,99 @@ begin
 
         x_valid <= '0';
 
+        wait for 512 * 10 ns;
+        wait until rising_edge(clk_ext);
+
+         --------------------------------------------------------------------------
+        -- TEST PROCESS: Tutti 1
+        --------------------------------------------------------------------------
+
+        -- 1) RESET iniziale, tutto a zero
+        reset_ext <= '1';
+        x_valid <= '0';
+        i_f <= '0';
+        x <= (others => '0');
+        wait for 200 ns;
+        reset_ext <= '0';
+        wait until rising_edge(clk_ext);
+
+        -- 2) x va a 11011001, x_valid va a 1 ma i/f non cambia
+        wait for 10 ns;
+        i_f <= '0';
+        x_valid <= '1';
+        x <= "11111111"; -- qua le memorie devono rimanere a 0
+        wait until rising_edge(clk_ext);
+
+        -- 2) Caso contrario 
+        wait for 20 ns;
+        x_valid <= '0';
+        i_f <= '1';
+        x <= "11110001"; -- qua le memorie devono rimanere a 0
+        wait until rising_edge(clk_ext);
+
+        -- 3) Caso durante un ciclo di clock x_valid e i/f cambianp
+        wait for 40 ns;
+        x_valid <= '1';
+        wait for 15 ns;
+        i_f <= '0';
+        wait for 30 ns;
+        x_valid <= '0';
+        i_f <= '1';
+        x <= "01010101"; -- qua le memorie devono rimanere a 0
+        wait until rising_edge(clk_ext);
+
+        -- 4) Caso concorrente
+        x_valid <= '0';
+        i_f <= '1';
+        x <= "11111111";
+        wait until rising_edge(clk_ext);
+
+        -- 4) Caso concorrente 2
+        x_valid <= '1';
+        i_f <= '0';
+        x <= "11111111";
+        wait until rising_edge(clk_ext);
+
+        --5) salvo correttamente il filtro
+        i_f <= '1';
+        x_valid <= '1';
+        x <= "11111111";
+        wait until rising_edge(clk_ext);
+
+        i_f <= '1';
+        x_valid <= '1';
+        x <= "11111111";
+        wait until rising_edge(clk_ext);
+
+        --6) attendo un po'
+        wait until rising_edge(clk_ext);
+        wait until rising_edge(clk_ext);
+        wait until rising_edge(clk_ext);
+
+        --7) inziio a salvare la matrice
+        i_f <= '0';
+        x_valid <= '1';
+        x <= "11111111";
+        wait until rising_edge(clk_ext);
+        i_f <= '1';
+        x_valid <= '1';
+        x <= "11111111";
+        wait until rising_edge(clk_ext);
+        i_f <= '0';
+        x_valid <= '0';
+        wait until rising_edge(clk_ext);
+        -- 8) finisco di salvare la matrice
+        x_valid <= '1';
+        x <= "11111111";
+        wait until rising_edge(clk_ext);
+        
+        x <= "11111111";
+        wait until rising_edge(clk_ext);
+
+        x <= "11111111";
+        wait until rising_edge(clk_ext);
+
+        x_valid <= '0';
 
         -- assert false report "FINE SIMULAZIONE" severity failure;
         wait for 4096*100 ns;
