@@ -3,10 +3,10 @@ use IEEE.std_logic_1164.all;
 use IEEE.numeric_std.all;
 use work.Utils.all;  -- se serve per clog2
 
-entity tb_Conv_2d is
+entity AAtb_Conv_2d is
 end entity;
 
-architecture tb of tb_Conv_2d is
+architecture tb of AAtb_Conv_2d is
 
     -- Parametri
     constant N       : positive := 5;
@@ -200,7 +200,7 @@ begin
 
         x_valid <= '0';
 
-        wait for 512 * 10 ns;
+        wait for 32 * 100 ns;
         wait until rising_edge(clk_ext);
 
          --------------------------------------------------------------------------

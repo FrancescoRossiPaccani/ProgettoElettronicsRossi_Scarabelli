@@ -37,7 +37,7 @@ architecture conv_bh of Conv_2d_output is
     signal adder_out_adder_in   : slv(M*M - 2 downto 0);
     signal adder_to_dff         : std_logic_vector(n_bit_output_element - 1 downto 0);
     signal out_dff              : slv(n_output_elements - 1 downto 0);
-    signal en_dff               : std_logic := '1'; -- ** da togliere poi;
+    signal en_dff               : std_logic; 
 
     signal counter_val          : integer := 0;
     signal current_row          : integer := 0;
@@ -221,7 +221,10 @@ begin
 
     conv_process: process(clk, rst)
     begin
-        if rising_edge(clk) then
+        if rst = '1' then
+            en_dff <= '1';
+        
+        elsif rising_edge(clk) then
             if counter_val = n_output_elements - 1 then
                 en_dff <= '0';
                 convolution_ready <= '1';
