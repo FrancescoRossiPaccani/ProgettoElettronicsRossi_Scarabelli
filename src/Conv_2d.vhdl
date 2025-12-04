@@ -18,7 +18,7 @@
             i_f          : in std_logic;
             x            : in std_logic_vector(Nbit-1 downto 0);
             -- output
-            y            : out std_logic_vector(((N - M + 1)*(N - M + 1) * clog2(M*M)) - 1 downto 0);
+            y            : out std_logic_vector(((N - M + 1)*(N - M + 1) * clog2(M*M +1 )) - 1 downto 0);
             y_valid      : out std_logic
         );
     end entity;
@@ -73,9 +73,29 @@
         signal   reset_out      : std_logic;
         signal   y_valid_aus    : std_logic;
         signal   y_reset        : std_logic;
-        begin
+        signal   y_valid_prev   : std_logic;
+        signal   y_pulse        : std_logic;
 
-            reset_in  <= reset; -- or y_reset;
+        begin
+            y_valid_proc: process(clk, reset)
+            begin
+                if reset = '1' then
+                    y_valid_prev  <= '0';
+                    y_pulse <= '0';
+                elsif rising_edge(clk) then
+                    if (y_valid_aus = '1') and (y_valid_prev = '0') then
+                        y_pulse <= '1';
+                    else
+                        y_pulse <= '0';
+                    end if;
+                    y_valid_prev <= y_valid_aus;
+                    y_reset  <= y_pulse;
+                end if;
+            end process;
+
+            y_valid <= y_pulse;
+            
+            reset_in  <= reset or y_reset;
             reset_out <= reset or not en_exe ; 
 
             C_INP:  Conv_2d_input
@@ -84,7 +104,7 @@
                             M    => M,
                             Nbit => Nbit
                         )
-                        port map(
+                        port map( 
                             clk                 => clk,
                             reset               => reset_in, 
                             en_execution        => en_exe,
@@ -110,7 +130,5 @@
                             en                  => en_exe,
                             convolution_ready   => y_valid_aus
                         );    
-
-        y_valid <= y_valid_aus;
         
     end architecture;

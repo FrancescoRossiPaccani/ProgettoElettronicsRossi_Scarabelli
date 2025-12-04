@@ -113,7 +113,7 @@ architecture C2D of Conv_2d_input is
         -- end_filter <= '1' when count_out >= (M*M)/Nbit else '0';
         -- end_matrix <= '1' when count_out >= ((M*M)/Nbit) + ((N*N)/Nbit) else '0';
 
-        end_filter <= '1' when unsigned(count_out) > ((M*M)/Nbit) else '0';
+        end_filter <= '1' when unsigned(count_out) > (((M*M+Nbit-1)/Nbit)-1) else '0';
         end_matrix <= '1' when unsigned(count_out) >= (((M*M + Nbit-1)/Nbit) + ((N*N + Nbit-1)/Nbit)) else '0';
         end_matrix_aus <= end_filter and (not end_matrix) and (not i_f) and x_valid;
         en_execution <= end_matrix;

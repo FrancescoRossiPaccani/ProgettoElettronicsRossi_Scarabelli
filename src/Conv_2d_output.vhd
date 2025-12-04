@@ -223,7 +223,7 @@ begin
     begin
         if rst = '1' then
             en_dff <= '1';
-        
+            convolution_ready <= '0';
         elsif rising_edge(clk) then
             if counter_val = n_output_elements - 1 then
                 en_dff <= '0';
