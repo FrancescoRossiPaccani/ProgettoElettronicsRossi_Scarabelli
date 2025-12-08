@@ -35,7 +35,7 @@ architecture MEM of Memory is
     end component;
     signal en_i         : std_logic_vector(Ncell-1 downto 0);
     --signal sel_int      : integer range 0 to (Ncell + Nbit_in - 1)  /Nbit_in - 1;
-    signal sel_int      : integer range 0 to (Ncell + Nbit_in - 1)/Nbit_in;
+    signal sel_int      : integer; -- range 0 to (Ncell + Nbit_in - 1)/Nbit_in;
 
     begin 
         sel_int <= to_integer(unsigned(selector));

@@ -75,7 +75,7 @@
         signal   y_reset        : std_logic;
         signal   y_valid_prev   : std_logic;
         signal   y_pulse        : std_logic;
-
+        signal   x_valid_aus    : std_logic;
         begin
             y_valid_proc: process(clk, reset)
             begin
@@ -98,6 +98,8 @@
             reset_in  <= reset or y_reset;
             reset_out <= reset or not en_exe ; 
 
+            x_valid_aus <= x_valid when (en_exe = '0' and y_valid_aus = '0') else '0';
+
             C_INP:  Conv_2d_input
                         generic map(
                             N    => N,
@@ -110,7 +112,7 @@
                             en_execution        => en_exe,
                             filter_out          => filter_link,
                             matrix_out          => matrix_link,
-                            x_valid             => x_valid,
+                            x_valid             => x_valid_aus,
                             i_f                 => i_f,
                             x                   => x,
                             stato               => status
