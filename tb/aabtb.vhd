@@ -30,8 +30,8 @@ architecture tb of AABtb_Conv_2d is
     signal y_valid_ext  : std_logic;
 begin
      clk_ext <= not clk_ext after clk_period/2 when testing else '0';
-
-    UUT: entity work.Conv_2d
+    -- Conv_2d
+    UUT: entity work.wrapper_conv_2d 
         generic map(
             N    => N,
             M    => M,

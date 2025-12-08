@@ -33,8 +33,10 @@ architecture MEM of Memory is
         );
 
     end component;
-    signal en_i : std_logic_vector(Ncell-1 downto 0);
-    signal sel_int : integer range 0 to Ncell/Nbit_in;
+    signal en_i         : std_logic_vector(Ncell-1 downto 0);
+    --signal sel_int      : integer range 0 to (Ncell + Nbit_in - 1)  /Nbit_in - 1;
+    signal sel_int      : integer range 0 to (Ncell + Nbit_in - 1)/Nbit_in;
+
     begin 
         sel_int <= to_integer(unsigned(selector));
         enabler: process(sel_int, en)
@@ -49,7 +51,7 @@ architecture MEM of Memory is
                     end loop;
                 end if;
             end process;
-        g_DFF_i:  for i in 0 to Ncell/Nbit_in generate
+        g_DFF_i:  for i in 0 to ((Ncell + Nbit_in - 1)/Nbit_in)-1 generate
             g_DFF_j: for j in 0 to Nbit_in-1 generate
                         g_if: if i*Nbit_in + j < Ncell generate --se non sforo
                             i_DFF: D_Flip_Flop

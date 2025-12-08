@@ -36,7 +36,7 @@ architecture C2D of Conv_2d_input is
         port(
             clk         : in  std_logic;
             resetn      : in  std_logic;
-            en          : in  std_logic;
+            en           : in  std_logic;
             selector    : in  std_logic_vector(clog2((Ncell + Nbit_in -1)/Nbit_in)-1 downto 0);
             d_in        : in  std_logic_vector(Nbit_in-1 downto 0);
             d_out       : out std_logic_vector(Ncell-1   downto 0)
@@ -117,6 +117,7 @@ architecture C2D of Conv_2d_input is
         end_matrix <= '1' when unsigned(count_out) >= (((M*M + Nbit-1)/Nbit) + ((N*N + Nbit-1)/Nbit)) else '0';
         end_matrix_aus <= end_filter and (not end_matrix) and (not i_f) and x_valid;
         en_execution <= end_matrix;
+        -- crasha qua
         SUB_1: RippleCarryAdder
                generic map (
                     Nbit        => dim_bit_adder
@@ -128,7 +129,7 @@ architecture C2D of Conv_2d_input is
                     cout        => cout_s1_aus,
                     fout        => fout_s1_aus
                );
-
+        -- a qua
         F_MEM: Memory
                generic map (
                     Ncell       => M*M,
