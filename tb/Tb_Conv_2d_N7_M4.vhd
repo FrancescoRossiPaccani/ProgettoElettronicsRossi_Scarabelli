@@ -3,10 +3,30 @@ use IEEE.std_logic_1164.all;
 use IEEE.numeric_std.all;
 use work.Utils.all;  -- se serve per clog2
 
-entity AABtb_Conv_2d is
+entity Tb_Conv_2d_N7_M4 is
 end entity;
 
-architecture tb of AABtb_Conv_2d is
+architecture tb of Tb_Conv_2d_N7_M4 is
+
+    component Conv_2d is
+    generic(
+            N       : positive := 5;
+            M       : positive := 3; 
+            Nbit    : positive := 8
+        );
+        port(
+
+            clk          : in std_logic;
+            reset        : in std_logic;         
+            -- input
+            x_valid      : in std_logic;
+            i_f          : in std_logic;
+            x            : in std_logic_vector(Nbit-1 downto 0);
+            -- output
+            y            : out std_logic_vector(((N - M + 1)*(N - M + 1) * clog2(M*M +1 )) - 1 downto 0);
+            y_valid      : out std_logic
+        );
+    end component;
 
     -- Parametri
     constant N       : positive := 7;
@@ -30,8 +50,8 @@ architecture tb of AABtb_Conv_2d is
     signal y_valid_ext  : std_logic;
 begin
      clk_ext <= not clk_ext after clk_period/2 when testing else '0';
-    -- Conv_2d
-    UUT: entity work.wrapper_conv_2d 
+    
+    UUT: Conv_2d
         generic map(
             N    => N,
             M    => M,
