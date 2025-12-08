@@ -14,98 +14,9 @@
 # Compile of testbench_conv2d_input.vhd was successful.
 # Compile of Utils.vhd was successful.
 # Compile of AAtb_Conv_2d.vhd was successful.
-# Compile of aabtb.vhd was successful.
-# 16 compiles, 0 failed with no errors.
-vsim work.aabtb_conv_2d
-# vsim work.aabtb_conv_2d 
-# Start time: 15:14:42 on Dec 08,2025
-# Loading std.standard
-# Loading std.textio(body)
-# Loading ieee.std_logic_1164(body)
-# Loading ieee.numeric_std(body)
-# Loading work.utils(body)
-# Loading work.aabtb_conv_2d(tb)
-# Loading work.conv_2d(c2d)
-# Loading work.conv_2d_input(c2d)
-# Loading work.as_counter(asc)
-# Loading work.ripplecarryadder(rca)
-# Loading work.fulladder(dataflow)
-# Loading work.d_flip_flop(dff)
-# Loading work.memory(mem)
-# Loading work.conv_2d_output(conv_bh)
-# Loading work.counter(struct)
-# Loading work.ripple_carry_adder(beh)
-# Loading work.full_adder(beh)
-# Loading work.dff_n(struct)
-# Loading work.mux(mux_bh)
-add wave -position insertpoint  \
-sim:/aabtb_conv_2d/clk_ext \
-sim:/aabtb_conv_2d/reset_ext \
-sim:/aabtb_conv_2d/x_valid \
-sim:/aabtb_conv_2d/i_f \
-sim:/aabtb_conv_2d/x \
-sim:/aabtb_conv_2d/testing \
-sim:/aabtb_conv_2d/y_ext \
-sim:/aabtb_conv_2d/y_valid_ext \
-sim:/aabtb_conv_2d/N \
-sim:/aabtb_conv_2d/M \
-sim:/aabtb_conv_2d/Nbit \
-sim:/aabtb_conv_2d/clk_period
-run -all
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /aabtb_conv_2d/UUT/C_OUT/mux_istances(15)/mux_i
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /aabtb_conv_2d/UUT/C_OUT/mux_istances(14)/mux_i
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /aabtb_conv_2d/UUT/C_OUT/mux_istances(13)/mux_i
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /aabtb_conv_2d/UUT/C_OUT/mux_istances(12)/mux_i
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /aabtb_conv_2d/UUT/C_OUT/mux_istances(11)/mux_i
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /aabtb_conv_2d/UUT/C_OUT/mux_istances(10)/mux_i
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /aabtb_conv_2d/UUT/C_OUT/mux_istances(9)/mux_i
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /aabtb_conv_2d/UUT/C_OUT/mux_istances(8)/mux_i
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /aabtb_conv_2d/UUT/C_OUT/mux_istances(7)/mux_i
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /aabtb_conv_2d/UUT/C_OUT/mux_istances(6)/mux_i
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /aabtb_conv_2d/UUT/C_OUT/mux_istances(5)/mux_i
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /aabtb_conv_2d/UUT/C_OUT/mux_istances(4)/mux_i
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /aabtb_conv_2d/UUT/C_OUT/mux_istances(3)/mux_i
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /aabtb_conv_2d/UUT/C_OUT/mux_istances(2)/mux_i
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /aabtb_conv_2d/UUT/C_OUT/mux_istances(1)/mux_i
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /aabtb_conv_2d/UUT/C_OUT/mux_istances(0)/mux_i
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /aabtb_conv_2d/UUT/C_OUT
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /aabtb_conv_2d/UUT/C_INP/M_MEM
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /aabtb_conv_2d/UUT/C_INP/F_MEM
-# ** Warning: NUMERIC_STD.">=": metavalue detected, returning FALSE
-#    Time: 0 ps  Iteration: 0  Instance: /aabtb_conv_2d/UUT/C_INP
-# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
-#    Time: 0 ps  Iteration: 0  Instance: /aabtb_conv_2d/UUT/C_INP
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 7  Instance: /aabtb_conv_2d/UUT/C_INP/M_MEM
-# ** Fatal: (vsim-3421) Value 7 is out of range 0 to 6.
-#    Time: 350 ns  Iteration: 4  Process: /aabtb_conv_2d/UUT/C_INP/M_MEM/line__39 File: /home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/src/Memory.vhd Line: 39
-# Fatal error in Architecture MEM at /home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/src/Memory.vhd line 39
-# 
-# HDL call sequence:
-# Stopped at /home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/src/Memory.vhd 39 Architecture MEM
-# 
-quit -sim
-# End time: 15:15:06 on Dec 08,2025, Elapsed time: 0:00:24
-# Errors: 1, Warnings: 24
+# Compile of aabtb.vhd failed with 3 errors.
+# Compile of wrapper_conv_2s.vhd failed with 8 errors.
+# 17 compiles, 2 failed with 11 errors.
 # Compile of As_Counter.vhd was successful.
 # Compile of Conv_2d.vhdl was successful.
 # Compile of Conv_2d_input.vhd was successful.
@@ -122,90 +33,8 @@ quit -sim
 # Compile of Utils.vhd was successful.
 # Compile of AAtb_Conv_2d.vhd was successful.
 # Compile of aabtb.vhd was successful.
-# 16 compiles, 0 failed with no errors.
-vsim work.aabtb_conv_2d
-# vsim work.aabtb_conv_2d 
-# Start time: 15:22:44 on Dec 08,2025
-# Loading std.standard
-# Loading std.textio(body)
-# Loading ieee.std_logic_1164(body)
-# Loading ieee.numeric_std(body)
-# Loading work.utils(body)
-# Loading work.aabtb_conv_2d(tb)
-# Loading work.conv_2d(c2d)
-# Loading work.conv_2d_input(c2d)
-# Loading work.as_counter(asc)
-# Loading work.ripplecarryadder(rca)
-# Loading work.fulladder(dataflow)
-# Loading work.d_flip_flop(dff)
-# Loading work.memory(mem)
-# Loading work.conv_2d_output(conv_bh)
-# Loading work.counter(struct)
-# Loading work.ripple_carry_adder(beh)
-# Loading work.full_adder(beh)
-# Loading work.dff_n(struct)
-# Loading work.mux(mux_bh)
-add wave -position insertpoint  \
-sim:/aabtb_conv_2d/clk_ext \
-sim:/aabtb_conv_2d/reset_ext \
-sim:/aabtb_conv_2d/x_valid \
-sim:/aabtb_conv_2d/i_f \
-sim:/aabtb_conv_2d/x \
-sim:/aabtb_conv_2d/testing \
-sim:/aabtb_conv_2d/y_ext \
-sim:/aabtb_conv_2d/y_valid_ext \
-sim:/aabtb_conv_2d/N \
-sim:/aabtb_conv_2d/M \
-sim:/aabtb_conv_2d/Nbit \
-sim:/aabtb_conv_2d/clk_period
-run -all
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /aabtb_conv_2d/UUT/C_OUT/mux_istances(15)/mux_i
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /aabtb_conv_2d/UUT/C_OUT/mux_istances(14)/mux_i
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /aabtb_conv_2d/UUT/C_OUT/mux_istances(13)/mux_i
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /aabtb_conv_2d/UUT/C_OUT/mux_istances(12)/mux_i
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /aabtb_conv_2d/UUT/C_OUT/mux_istances(11)/mux_i
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /aabtb_conv_2d/UUT/C_OUT/mux_istances(10)/mux_i
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /aabtb_conv_2d/UUT/C_OUT/mux_istances(9)/mux_i
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /aabtb_conv_2d/UUT/C_OUT/mux_istances(8)/mux_i
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /aabtb_conv_2d/UUT/C_OUT/mux_istances(7)/mux_i
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /aabtb_conv_2d/UUT/C_OUT/mux_istances(6)/mux_i
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /aabtb_conv_2d/UUT/C_OUT/mux_istances(5)/mux_i
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /aabtb_conv_2d/UUT/C_OUT/mux_istances(4)/mux_i
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /aabtb_conv_2d/UUT/C_OUT/mux_istances(3)/mux_i
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /aabtb_conv_2d/UUT/C_OUT/mux_istances(2)/mux_i
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /aabtb_conv_2d/UUT/C_OUT/mux_istances(1)/mux_i
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /aabtb_conv_2d/UUT/C_OUT/mux_istances(0)/mux_i
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /aabtb_conv_2d/UUT/C_OUT
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /aabtb_conv_2d/UUT/C_INP/M_MEM
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /aabtb_conv_2d/UUT/C_INP/F_MEM
-# ** Warning: NUMERIC_STD.">=": metavalue detected, returning FALSE
-#    Time: 0 ps  Iteration: 0  Instance: /aabtb_conv_2d/UUT/C_INP
-# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
-#    Time: 0 ps  Iteration: 0  Instance: /aabtb_conv_2d/UUT/C_INP
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 7  Instance: /aabtb_conv_2d/UUT/C_INP/M_MEM
-quit -sim
-# End time: 15:26:57 on Dec 08,2025, Elapsed time: 0:04:13
-# Errors: 0, Warnings: 24
+# Compile of wrapper_conv_2s.vhd failed with 6 errors.
+# 17 compiles, 1 failed with 6 errors.
 # Compile of As_Counter.vhd was successful.
 # Compile of Conv_2d.vhdl was successful.
 # Compile of Conv_2d_input.vhd was successful.
@@ -222,22 +51,42 @@ quit -sim
 # Compile of Utils.vhd was successful.
 # Compile of AAtb_Conv_2d.vhd was successful.
 # Compile of aabtb.vhd was successful.
-# 16 compiles, 0 failed with no errors.
+# Compile of wrapper_conv_2s.vhd failed with 2 errors.
+# 17 compiles, 1 failed with 2 errors.
+# Compile of As_Counter.vhd was successful.
+# Compile of Conv_2d.vhdl was successful.
+# Compile of Conv_2d_input.vhd was successful.
+# Compile of Conv_2d_output.vhd was successful with warnings.
+# Compile of Counter.vhd was successful.
+# Compile of D_Flip_Flop.vhd was successful.
+# Compile of fifo.vhd was successful.
+# Compile of full_adder.vhd was successful.
+# Compile of fullAdder.vhd was successful.
+# Compile of Memory.vhd was successful.
+# Compile of mux.vhd was successful.
+# Compile of RippleCarryAdder.vhd was successful.
+# Compile of testbench_conv2d_input.vhd was successful.
+# Compile of Utils.vhd was successful.
+# Compile of AAtb_Conv_2d.vhd was successful.
+# Compile of aabtb.vhd was successful.
+# Compile of wrapper_conv_2s.vhd was successful.
+# 17 compiles, 0 failed with no errors.
 vsim work.aabtb_conv_2d
 # vsim work.aabtb_conv_2d 
-# Start time: 15:27:12 on Dec 08,2025
+# Start time: 15:54:19 on Dec 08,2025
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
 # Loading ieee.numeric_std(body)
 # Loading work.utils(body)
 # Loading work.aabtb_conv_2d(tb)
+# Loading work.wrapper_conv_2d(wrp)
+# Loading work.d_flip_flop(dff)
 # Loading work.conv_2d(c2d)
 # Loading work.conv_2d_input(c2d)
 # Loading work.as_counter(asc)
 # Loading work.ripplecarryadder(rca)
 # Loading work.fulladder(dataflow)
-# Loading work.d_flip_flop(dff)
 # Loading work.memory(mem)
 # Loading work.conv_2d_output(conv_bh)
 # Loading work.counter(struct)
@@ -260,103 +109,46 @@ sim:/aabtb_conv_2d/Nbit \
 sim:/aabtb_conv_2d/clk_period
 run -all
 # ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /aabtb_conv_2d/UUT/C_OUT/mux_istances(15)/mux_i
+#    Time: 0 ps  Iteration: 0  Instance: /aabtb_conv_2d/UUT/conv/C_OUT/mux_istances(15)/mux_i
 # ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /aabtb_conv_2d/UUT/C_OUT/mux_istances(14)/mux_i
+#    Time: 0 ps  Iteration: 0  Instance: /aabtb_conv_2d/UUT/conv/C_OUT/mux_istances(14)/mux_i
 # ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /aabtb_conv_2d/UUT/C_OUT/mux_istances(13)/mux_i
+#    Time: 0 ps  Iteration: 0  Instance: /aabtb_conv_2d/UUT/conv/C_OUT/mux_istances(13)/mux_i
 # ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /aabtb_conv_2d/UUT/C_OUT/mux_istances(12)/mux_i
+#    Time: 0 ps  Iteration: 0  Instance: /aabtb_conv_2d/UUT/conv/C_OUT/mux_istances(12)/mux_i
 # ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /aabtb_conv_2d/UUT/C_OUT/mux_istances(11)/mux_i
+#    Time: 0 ps  Iteration: 0  Instance: /aabtb_conv_2d/UUT/conv/C_OUT/mux_istances(11)/mux_i
 # ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /aabtb_conv_2d/UUT/C_OUT/mux_istances(10)/mux_i
+#    Time: 0 ps  Iteration: 0  Instance: /aabtb_conv_2d/UUT/conv/C_OUT/mux_istances(10)/mux_i
 # ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /aabtb_conv_2d/UUT/C_OUT/mux_istances(9)/mux_i
+#    Time: 0 ps  Iteration: 0  Instance: /aabtb_conv_2d/UUT/conv/C_OUT/mux_istances(9)/mux_i
 # ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /aabtb_conv_2d/UUT/C_OUT/mux_istances(8)/mux_i
+#    Time: 0 ps  Iteration: 0  Instance: /aabtb_conv_2d/UUT/conv/C_OUT/mux_istances(8)/mux_i
 # ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /aabtb_conv_2d/UUT/C_OUT/mux_istances(7)/mux_i
+#    Time: 0 ps  Iteration: 0  Instance: /aabtb_conv_2d/UUT/conv/C_OUT/mux_istances(7)/mux_i
 # ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /aabtb_conv_2d/UUT/C_OUT/mux_istances(6)/mux_i
+#    Time: 0 ps  Iteration: 0  Instance: /aabtb_conv_2d/UUT/conv/C_OUT/mux_istances(6)/mux_i
 # ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /aabtb_conv_2d/UUT/C_OUT/mux_istances(5)/mux_i
+#    Time: 0 ps  Iteration: 0  Instance: /aabtb_conv_2d/UUT/conv/C_OUT/mux_istances(5)/mux_i
 # ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /aabtb_conv_2d/UUT/C_OUT/mux_istances(4)/mux_i
+#    Time: 0 ps  Iteration: 0  Instance: /aabtb_conv_2d/UUT/conv/C_OUT/mux_istances(4)/mux_i
 # ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /aabtb_conv_2d/UUT/C_OUT/mux_istances(3)/mux_i
+#    Time: 0 ps  Iteration: 0  Instance: /aabtb_conv_2d/UUT/conv/C_OUT/mux_istances(3)/mux_i
 # ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /aabtb_conv_2d/UUT/C_OUT/mux_istances(2)/mux_i
+#    Time: 0 ps  Iteration: 0  Instance: /aabtb_conv_2d/UUT/conv/C_OUT/mux_istances(2)/mux_i
 # ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /aabtb_conv_2d/UUT/C_OUT/mux_istances(1)/mux_i
+#    Time: 0 ps  Iteration: 0  Instance: /aabtb_conv_2d/UUT/conv/C_OUT/mux_istances(1)/mux_i
 # ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /aabtb_conv_2d/UUT/C_OUT/mux_istances(0)/mux_i
+#    Time: 0 ps  Iteration: 0  Instance: /aabtb_conv_2d/UUT/conv/C_OUT/mux_istances(0)/mux_i
 # ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /aabtb_conv_2d/UUT/C_OUT
+#    Time: 0 ps  Iteration: 0  Instance: /aabtb_conv_2d/UUT/conv/C_OUT
 # ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /aabtb_conv_2d/UUT/C_INP/M_MEM
+#    Time: 0 ps  Iteration: 0  Instance: /aabtb_conv_2d/UUT/conv/C_INP/M_MEM
 # ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /aabtb_conv_2d/UUT/C_INP/F_MEM
+#    Time: 0 ps  Iteration: 0  Instance: /aabtb_conv_2d/UUT/conv/C_INP/F_MEM
 # ** Warning: NUMERIC_STD.">=": metavalue detected, returning FALSE
-#    Time: 0 ps  Iteration: 0  Instance: /aabtb_conv_2d/UUT/C_INP
+#    Time: 0 ps  Iteration: 0  Instance: /aabtb_conv_2d/UUT/conv/C_INP
 # ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
-#    Time: 0 ps  Iteration: 0  Instance: /aabtb_conv_2d/UUT/C_INP
+#    Time: 0 ps  Iteration: 0  Instance: /aabtb_conv_2d/UUT/conv/C_INP
 # ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 7  Instance: /aabtb_conv_2d/UUT/C_INP/M_MEM
-quit -sim
-# End time: 15:27:28 on Dec 08,2025, Elapsed time: 0:00:16
-# Errors: 0, Warnings: 24
-vsim work.aatb_conv_2d
-# vsim work.aatb_conv_2d 
-# Start time: 15:27:34 on Dec 08,2025
-# Loading std.standard
-# Loading std.textio(body)
-# Loading ieee.std_logic_1164(body)
-# Loading ieee.numeric_std(body)
-# Loading work.utils(body)
-# Loading work.aatb_conv_2d(tb)
-# Loading work.conv_2d(c2d)
-# Loading work.conv_2d_input(c2d)
-# Loading work.as_counter(asc)
-# Loading work.ripplecarryadder(rca)
-# Loading work.fulladder(dataflow)
-# Loading work.d_flip_flop(dff)
-# Loading work.memory(mem)
-# Loading work.conv_2d_output(conv_bh)
-# Loading work.counter(struct)
-# Loading work.ripple_carry_adder(beh)
-# Loading work.full_adder(beh)
-# Loading work.dff_n(struct)
-# Loading work.mux(mux_bh)
-add wave -position insertpoint sim:/aatb_conv_2d/*
-run -all
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /aatb_conv_2d/UUT/C_OUT/mux_istances(8)/mux_i
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /aatb_conv_2d/UUT/C_OUT/mux_istances(7)/mux_i
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /aatb_conv_2d/UUT/C_OUT/mux_istances(6)/mux_i
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /aatb_conv_2d/UUT/C_OUT/mux_istances(5)/mux_i
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /aatb_conv_2d/UUT/C_OUT/mux_istances(4)/mux_i
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /aatb_conv_2d/UUT/C_OUT/mux_istances(3)/mux_i
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /aatb_conv_2d/UUT/C_OUT/mux_istances(2)/mux_i
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /aatb_conv_2d/UUT/C_OUT/mux_istances(1)/mux_i
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /aatb_conv_2d/UUT/C_OUT/mux_istances(0)/mux_i
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /aatb_conv_2d/UUT/C_OUT
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /aatb_conv_2d/UUT/C_INP/M_MEM
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /aatb_conv_2d/UUT/C_INP/F_MEM
-# ** Warning: NUMERIC_STD.">=": metavalue detected, returning FALSE
-#    Time: 0 ps  Iteration: 0  Instance: /aatb_conv_2d/UUT/C_INP
-# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
-#    Time: 0 ps  Iteration: 0  Instance: /aatb_conv_2d/UUT/C_INP
-# End time: 15:28:28 on Dec 08,2025, Elapsed time: 0:00:54
-# Errors: 0, Warnings: 15
+#    Time: 0 ps  Iteration: 7  Instance: /aabtb_conv_2d/UUT/conv/C_INP/M_MEM

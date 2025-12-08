@@ -60,12 +60,12 @@ entity wrapper_conv_2d is
 
         constant DIM_X          : natural := Nbit;
         constant DIM_Y          : natural := ((N - M + 1)*(N - M + 1) * clog2(M*M +1 ));
-        signal out_reg_x        : std_logic_vector(DIM_X - 1 downto 0);
-        signal out_reg_i_f      : std_logic;
-        signal out_reg_x_valid  : std_logic;
-        signal in_reg_y         : std_logic_vector(DIM_Y  - 1 downto 0);
-        signal in_reg_y_valid   : std_logic;
-        signal reset_aus        : std_logic;
+        signal   out_reg_x        : std_logic_vector(DIM_X - 1 downto 0);
+        signal   out_reg_i_f      : std_logic;
+        signal   out_reg_x_valid  : std_logic;
+        signal   in_reg_y         : std_logic_vector(DIM_Y  - 1 downto 0);
+        signal   in_reg_y_valid   : std_logic;
+        signal   reset_aus        : std_logic;
 
         begin
             reset_aus <= not reset;
@@ -88,12 +88,12 @@ entity wrapper_conv_2d is
                     Nbit => 1
                 )
                 port map(
-                    clk => clk,
-                    resetn => reset_aus,
-                    en => '1',
+                    clk     => clk,
+                    resetn  => reset_aus,
+                    en      => '1',
 
-                    di => i_f,
-                    do => out_reg_i_f
+                    di(0)   => i_f,
+                    do(0)   => out_reg_i_f
                 );
             
              reg_x_valid: D_Flip_Flop
@@ -101,12 +101,12 @@ entity wrapper_conv_2d is
                     Nbit => 1
                 )
                 port map(
-                    clk => clk,
-                    resetn => reset_aus,
-                    en => '1',
+                    clk         => clk,
+                    resetn      => reset_aus,
+                    en          => '1',
 
-                    di => x_valid,
-                    do => out_reg_x_valid
+                    di(0)       => x_valid,
+                    do(0)       => out_reg_x_valid
                 );
             
             reg_y: D_Flip_Flop
@@ -127,14 +127,14 @@ entity wrapper_conv_2d is
                     Nbit => 1
                 )
                 port map(
-                    clk => clk,
-                    resetn => reset_aus,
-                    en => '1',
+                    clk     => clk,
+                    resetn  => reset_aus,
+                    en      => '1',
 
-                    di => in_reg_y_valid,
-                    do => y_valid
+                    di(0)   => in_reg_y_valid,
+                    do(0)   => y_valid
                 );
-            conv_2d: Conv_2d
+            conv: Conv_2d
                 generic map(
                     N      => N,
                     M      => M,
