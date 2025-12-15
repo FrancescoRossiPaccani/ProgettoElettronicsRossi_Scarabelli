@@ -33,12 +33,13 @@ architecture MEM of Memory is
         );
 
     end component;
+    constant SEL_DIM    : natural := 1 + (Ncell + Nbit_in - 1)/Nbit_in;
     signal en_i         : std_logic_vector(Ncell-1 downto 0);
     --signal sel_int      : integer range 0 to (Ncell + Nbit_in - 1)  /Nbit_in - 1;
-    signal sel_int      : integer; -- range 0 to (Ncell + Nbit_in - 1)/Nbit_in;
+    signal sel_int      : integer range 0 to SEL_DIM ;
 
     begin 
-        sel_int <= to_integer(unsigned(selector));
+        sel_int <= to_integer(unsigned(selector)) when en = '1' else SEL_DIM;
         enabler: process(sel_int, en)
             begin
                 if en = '0' then
