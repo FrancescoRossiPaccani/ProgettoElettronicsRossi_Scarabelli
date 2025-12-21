@@ -10,7 +10,6 @@ entity Conv_2d_input is
         Nbit    : positive := 8
     );
     port(
-        -- quando y valid va ad 1 resetto tutto da usare come handshake
         -- condivise con modulo Conv_2d_output
         clk          : in std_logic;
         reset        : in std_logic;
@@ -23,11 +22,12 @@ entity Conv_2d_input is
         x            : in std_logic_vector(Nbit-1 downto 0);
 
         --debug 
-        stato        : out std_logic_vector( clog2((M*M+Nbit-1)/Nbit + (N*N+Nbit-1)/Nbit)-1 downto 0) 
+        -- stato        : out std_logic_vector( clog2((M*M+Nbit-1)/Nbit + (N*N+Nbit-1)/Nbit)-1 downto 0) 
     );
 end entity;
 
 architecture C2D of Conv_2d_input is
+    -- Modulo memoria custom utilizzato per salvare in forma matriciale i bit validi in ingresso
     component Memory 
         generic(
             Ncell   : positive := 9;
@@ -43,6 +43,7 @@ architecture C2D of Conv_2d_input is
         );
     end component;
 
+    -- Registro contatore
     component As_Counter is 
         generic (
             Nbit : positive := 8
@@ -55,6 +56,7 @@ architecture C2D of Conv_2d_input is
         );
     end component;
 
+    -- RCA utilizzato come sottrattore
     component RippleCarryAdder is 
         generic (
             Nbit        : positive := 8
@@ -68,18 +70,17 @@ architecture C2D of Conv_2d_input is
         );
     end component;
 
-    -- mettili in maiuscolo anche i generici
-    constant dim_filter_selector    : natural := clog2((M*M + Nbit - 1)/Nbit);
-    constant dim_matrix_selector    : natural := clog2((N*N + Nbit - 1)/Nbit);
-    constant dim_bit_adder          : natural := clog2((M*M+Nbit-1)/Nbit + (N*N+Nbit-1)/Nbit);
+    constant DIM_FILTER_SELECTOR    : natural := clog2((M*M + Nbit - 1)/Nbit);
+    constant DIM_MATRIX_SELECTOR    : natural := clog2((N*N + Nbit - 1)/Nbit);
+    constant DIM_BIT_ADDER          : natural := clog2((M*M+Nbit-1)/Nbit + (N*N+Nbit-1)/Nbit);
    
-    signal end_filter     :  std_logic;
-    signal end_matrix     :  std_logic;
-    signal count_in       :  std_logic_vector(dim_bit_adder-1 downto 0);
-    signal count_out      :  std_logic_vector(dim_bit_adder-1 downto 0);
+    signal end_filter     :  std_logic; -- 1 quando è finito il salvataggio del filtro, 0 altrimenti
+    signal end_matrix     :  std_logic; -- 1 quando è finito il salvataggio della matrice, 0 altrimenti
+    signal count_in       :  std_logic_vector(DIM_BIT_ADDER-1 downto 0); -- ingresso al contatore
+    signal count_out      :  std_logic_vector(DIM_BIT_ADDER-1 downto 0); -- uscita al contatore
     signal in_aus         :  std_logic;
     signal cout_s1_aus    :  std_logic;
-    signal fout_s1_aus    :  std_logic_vector(dim_bit_adder-1 downto 0);
+    signal fout_s1_aus    :  std_logic_vector(DIM_BIT_ADDER-1 downto 0);
     signal resetn_aus     :  std_logic;
     signal end_filter_aus :  std_logic;
     signal end_matrix_aus :  std_logic;
@@ -88,19 +89,21 @@ architecture C2D of Conv_2d_input is
 
     begin 
 
-        resetn_aus <= not reset;
+        resetn_aus <= not reset; 
         end_filter_aus <= not end_filter and i_f and x_valid;
 
-        in_aus <= i_f when end_filter = '0' else not i_f;
-        count_in(dim_bit_adder -1 downto 1) <= (others => '0');
-        count_in(0) <= x_valid and not end_matrix and in_aus;
+        in_aus <= i_f when end_filter = '0' else not i_f; -- discrimina l'imput valido a seconda dello stato dei filtri, ovvero input valido a quando i_f = '1' se devo salvare il filtro, input valido a quando i_f = '0' se devo salvare la matrice 
+        
+        count_in(DIM_BIT_ADDER -1 downto 1) <= (others => '0'); 
+        count_in(0) <= x_valid and not end_matrix and in_aus; -- tutti bit di ingresso al contatore a 0 tranne quello meno significativo che = '1' se lo stato degli ingressi è valido, serve per contare il numero di ingressi ricevuti validi = stato della rete
+
         ASC: As_Counter
                 generic map(
                     --default 3 bit poichè 
                     -- M*M/Nbit = 9/8 = 1
                     -- N*N/Nbit = 25/8 = 3
                     -- log(4) = 2 ma mi servono almeno 2 + 4 stati => +1
-                    Nbit   => dim_bit_adder
+                    Nbit   => DIM_BIT_ADDER
                 )
                 port map(
                     N_in   => count_in,   
@@ -109,27 +112,27 @@ architecture C2D of Conv_2d_input is
                     resetn => resetn_aus          
                 );
         -- debug
-        stato <= count_out;
-        -- end_filter <= '1' when count_out >= (M*M)/Nbit else '0';
-        -- end_matrix <= '1' when count_out >= ((M*M)/Nbit) + ((N*N)/Nbit) else '0';
+        -- stato <= count_out;
+        
 
         end_filter <= '1' when unsigned(count_out) > (((M*M+Nbit-1)/Nbit)-1) else '0';
         end_matrix <= '1' when unsigned(count_out) >= (((M*M + Nbit-1)/Nbit) + ((N*N + Nbit-1)/Nbit)) else '0';
         end_matrix_aus <= end_filter and (not end_matrix) and (not i_f) and x_valid;
-        en_execution <= end_matrix;
-        -- crasha qua
+        en_execution <= end_matrix; -- quando ho finito di salvare i dati abilito il modulo di calcolo (segnale di handshake)
+
+        -- Sottrattore utilizzato per settare correttamente gli imput della memoria della matrice
         SUB_1: RippleCarryAdder
                generic map (
-                    Nbit        => dim_bit_adder
+                    Nbit        => DIM_BIT_ADDER
                )        
                port map(
-                    a           => count_out,       
-                    b           => std_logic_vector(not to_unsigned((M*M + Nbit -1)/Nbit, dim_bit_adder)),
+                    a           => count_out, -- stato della rete       
+                    b           => std_logic_vector(not to_unsigned((M*M + Nbit -1)/Nbit, DIM_BIT_ADDER)), -- sottraggo dal contatore il numero di stati necessari a "pienare" la memoria del filtro
                     cin         => '1',
                     cout        => cout_s1_aus,
-                    fout        => fout_s1_aus
+                    fout        => fout_s1_aus -- ingresso al selector della memoria della matrice
                );
-        -- a qua
+        -- Memoria del filtro
         F_MEM: Memory
                generic map (
                     Ncell       => M*M,
@@ -139,11 +142,11 @@ architecture C2D of Conv_2d_input is
                     clk         => clk,
                     resetn      => resetn_aus,
                     en          => end_filter_aus,
-                    selector    => count_out(dim_filter_selector-1 downto 0), 
+                    selector    => count_out(DIM_FILTER_SELECTOR-1 downto 0), 
                     d_in        => x,
                     d_out       => filter_out
                );
-        
+        -- Memoria della matrice
         M_MEM:  Memory
                 generic map(
                     Ncell       => N*N,
@@ -153,7 +156,7 @@ architecture C2D of Conv_2d_input is
                     clk         => clk,
                     resetn      => resetn_aus,
                     en          => end_matrix_aus,
-                    selector    => fout_s1_aus(dim_matrix_selector-1 downto 0),
+                    selector    => fout_s1_aus(DIM_MATRIX_SELECTOR-1 downto 0),
                     d_in        => x,
                     d_out       => matrix_out
                 );

@@ -31,7 +31,7 @@
                 Nbit    : positive := 8
             );
             port(
-                -- quando y valid va ad 1 resetto tutto da usare come handshake
+                -- dopo che y_valid va ad 1 resetto tutto, da usare come handshake
                 -- condivise con modulo Conv_2d_output
                 clk          : in std_logic;
                 reset        : in std_logic;
@@ -44,7 +44,7 @@
                 x            : in std_logic_vector(Nbit-1 downto 0);
 
                 --debug 
-                stato        : out std_logic_vector( clog2((M*M+Nbit-1)/Nbit + (N*N+Nbit-1)/Nbit)-1 downto 0) 
+                -- stato        : out std_logic_vector( clog2((M*M+Nbit-1)/Nbit + (N*N+Nbit-1)/Nbit)-1 downto 0) 
             );
         end component;
 
@@ -64,41 +64,47 @@
         );
 
         end component;
-        constant Nbit_out       : natural := clog2(M*M);
+
         signal   en_exe         : std_logic;
         signal   filter_link    : std_logic_vector(M*M - 1 downto 0);
         signal   matrix_link    : std_logic_vector(N*N - 1 downto 0); 
-        signal   status         : std_logic_vector( clog2((M*M+Nbit-1)/Nbit + (N*N+Nbit-1)/Nbit)-1 downto 0);
+        
         signal   reset_in       : std_logic;
         signal   reset_out      : std_logic;
-        signal   y_valid_aus    : std_logic;
-        signal   y_reset        : std_logic;
-        signal   y_valid_prev   : std_logic;
-        signal   y_pulse        : std_logic;
+
+        signal   y_valid_aus    : std_logic; -- segnale interno utile per fare loopback e generare l'impulso
+        signal   y_valid_prev   : std_logic; -- valore di y_valid_aus al clock precedente
+        signal   y_pulse        : std_logic; -- impulso di un clock generato sul fronte di salita di y_valid_aus
+        signal   y_reset        : std_logic; -- segnale di reset sincronizzato, copia registrata di y_pulse (usato per resettare Conv_2d_input)
+        
         signal   x_valid_aus    : std_logic;
+        
         begin
+            -- Generatore di impulzo per y_valid
             y_valid_proc: process(clk, reset)
             begin
                 if reset = '1' then
-                    y_valid_prev  <= '0';
-                    y_pulse <= '0';
+                    y_valid_prev  <= '0'; 
+                    y_pulse       <= '0';
+                    y_reset      <= '0';
                 elsif rising_edge(clk) then
                     if (y_valid_aus = '1') and (y_valid_prev = '0') then
                         y_pulse <= '1';
                     else
                         y_pulse <= '0';
-                    end if;
+                    end if; 
+                    -- memorizzo il valore corrente per il confronto al clock successivo
                     y_valid_prev <= y_valid_aus;
-                    y_reset  <= y_pulse;
+                    y_reset      <= y_pulse;
                 end if;
             end process;
 
             y_valid <= y_pulse;
             
-            reset_in  <= reset or y_reset;
+            reset_in  <= reset or y_reset;  
             reset_out <= reset or not en_exe ; 
 
-            x_valid_aus <= x_valid when (en_exe = '0' and y_valid_aus = '0') else '0';
+            x_valid_aus <= x_valid when (en_exe = '0' and y_valid_aus = '0') else '0'; -- non posso avere stati validi finchè l'esecuzione non è terminata 
 
             C_INP:  Conv_2d_input
                         generic map(
@@ -115,7 +121,7 @@
                             x_valid             => x_valid_aus,
                             i_f                 => i_f,
                             x                   => x,
-                            stato               => status
+                            -- stato               => status
                         );
 
             C_OUT: Conv_2d_output
