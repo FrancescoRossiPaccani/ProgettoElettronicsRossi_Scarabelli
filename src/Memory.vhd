@@ -36,7 +36,7 @@ architecture MEM of Memory is
     constant SEL_DIM    : natural := 1 + (Ncell + Nbit_in - 1)/Nbit_in; -- massimo valore del selettore 
 
     signal en_i         : std_logic_vector(Ncell-1 downto 0);
-    signal sel_int      : integer range 0 to SEL_DIM ;
+    signal sel_int      : natural range 0 to SEL_DIM ;
 
     begin 
         sel_int <= to_integer(unsigned(selector)) when en = '1' else SEL_DIM; -- assegnamento al selettore, per protezione viene posto al valore massimo che non viene usato quando il componente spento (en = '0') 

@@ -24,60 +24,69 @@ end entity;
 
 architecture conv_bh of Conv_2d_output is
     constant OUTPUT_DIMENSION       : natural := N - M + 1;
-    constant N_OUTPUT_ELEMENTS      : natural := OUTPUT_DIMENSION*OUTPUT_DIMENSION;
+    constant N_OUTPUT_ELEMENTS      : natural := OUTPUT_DIMENSION * OUTPUT_DIMENSION;
     constant N_BITS_COUNTER         : natural := clog2(N_OUTPUT_ELEMENTS);
     constant N_BITS_CONTROL_MUX     : natural := clog2(N*N);
     constant N_BIT_OUTPUT_ELEMENT   : natural := clog2(M*M + 1);
 
-    type slv is array (natural range <>) of std_logic_vector(N_BIT_OUTPUT_ELEMENT - 1 downto 0);
+    type muc_cntl is array (0 to M*M - 1) of std_logic_vector(N_BITS_CONTROL_MUX - 1 downto 0);
+    signal mux_control : muc_cntl;
 
+    type a_ext is array (0 to M*M - 1)of std_logic_vector(N_BIT_OUTPUT_ELEMENT - 1 downto 0);
+    signal a_extended : a_ext;
+
+    type aoai is array (0 to M*M-2) of std_logic_vector(N_BIT_OUTPUT_ELEMENT - 1 downto 0);
+    signal adder_out_adder_in   : aoai;
+
+    type odff is array (0 to N_OUTPUT_ELEMENTS-1) of std_logic_vector(N_BIT_OUTPUT_ELEMENT - 1 downto 0);
+    signal out_dff              : odff;
+    
     signal rst_n                : std_logic;
-    signal en_counter           : std_logic;
+    
+    signal input_counter        : std_logic_vector(N_BITS_COUNTER - 1 downto 0);
     signal output_counter       : std_logic_vector(N_BITS_COUNTER - 1 downto 0);
+
     signal mux_to_and           : std_logic_vector(M*M - 1 downto 0);
     signal and_to_adder         : std_logic_vector(M*M - 1 downto 0);
-    signal adder_out_adder_in   : slv(M*M - 2 downto 0);
     signal adder_to_dff         : std_logic_vector(N_BIT_OUTPUT_ELEMENT - 1 downto 0);
-    signal out_dff              : slv(N_OUTPUT_ELEMENTS - 1 downto 0);
     signal en_dff               : std_logic; 
 
-    signal counter_val          : integer := 0;
-    signal current_row          : integer := 0;
-    signal current_col          : integer := 0;
+    signal counter_val          : natural := 0;
+    signal current_row          : natural := 0;
+    signal current_col          : natural := 0;
 
-    -- ** da mettere AS_Counter
-    component Counter is
+    -- Registro contatore
+    component As_Counter is 
         generic (
-            N : natural := 8
+            Nbit        : positive := 8
         );
         port (
-            clk       : in  std_logic;
-            a_rst_n   : in  std_logic;
-            increment : in  std_logic_vector(N - 1 downto 0);
-            en        : in  std_logic;
-            cntr_out  : out std_logic_vector(N - 1 downto 0)
+            N_in        : in  std_logic_vector(Nbit - 1 downto 0);
+            N_out       : out std_logic_vector(Nbit - 1 downto 0);
+            clk         : in  std_logic;
+            resetn      : in  std_logic
         );
     end component;
 
     component mux is
         generic(
-            N_input : positive
+            N_input       : positive
         );
         port (
-            input_data : in std_logic_vector(N_input - 1 downto 0);
-            control: in std_logic_vector(clog2(N_input) - 1 downto 0);
-            output_data: out std_logic
+            input_data    : in std_logic_vector(N_input - 1 downto 0);
+            control       : in std_logic_vector(clog2(N_input) - 1 downto 0);
+            output_data   : out std_logic
         );
     end component;
 
     component RippleCarryAdder is
         generic (
-            Nbit : positive := 8
+            Nbit    : positive := 8
         );
         port (
-            a       : in std_logic_vector(Nbit-1 downto 0);
-            b       : in std_logic_vector(Nbit-1 downto 0);
-            cin     : in std_logic;
+            a       : in  std_logic_vector(Nbit-1 downto 0);
+            b       : in  std_logic_vector(Nbit-1 downto 0);
+            cin     : in  std_logic;
             fout    : out std_logic_vector (Nbit-1 downto 0);
             cout    : out std_logic
         );
@@ -85,54 +94,49 @@ architecture conv_bh of Conv_2d_output is
 
     component D_Flip_Flop is
         generic (
-            Nbit : natural := 8
+            Nbit    : natural := 8
         );
         port (
-            clk     : in std_logic;
-            resetn  : in std_logic;
-            en      : in std_logic;
-            di      : in std_logic_vector(N - 1 downto 0);
+            clk     : in  std_logic;
+            resetn  : in  std_logic;
+            en      : in  std_logic;
+            di      : in  std_logic_vector(N - 1 downto 0);
             do      : out std_logic_vector(N - 1 downto 0)
         );
     end component;
 begin
     rst_n <= not rst;
 
-    counter_val <= to_integer(unsigned(output_counter));
-    current_row <= counter_val / OUTPUT_DIMENSION;
-    current_col <= counter_val mod OUTPUT_DIMENSION;
+    counter_val   <= to_integer(unsigned(output_counter)) when en = '1' and rst = '0' else 0;
+    current_row   <= counter_val / OUTPUT_DIMENSION when en = '1' and rst = '0' else 0;
+    current_col   <= counter_val mod OUTPUT_DIMENSION when en = '1' and rst = '0' else 0;
 
-    en_counter <= '1' when (en = '1' and counter_val < N_OUTPUT_ELEMENTS - 1) else '0';
+    input_counter(N_BITS_COUNTER - 1 downto 1) <= (others => '0');
+    input_counter(0) <= '1' when (en = '1' and counter_val < N_OUTPUT_ELEMENTS - 1) else '0'; -- conto quando il componente è attivo e finchè non termino l'elaborazione
 
-    counter_i: COUNTER
+    counter_i: As_Counter
         generic map(
-            N => N_BITS_COUNTER
+            Nbit     => N_BITS_COUNTER
         )
         port map(
             clk        => clk,
-            a_rst_n    => rst_n,
-            increment  => std_logic_vector(to_unsigned(1, N_BITS_COUNTER)),
-            en         => en_counter,
-            cntr_out   => output_counter
+            resetn     => rst_n,
+            N_in       => input_counter,  
+            N_out      => output_counter
         );
     
     mux_istances: for i in 0 to M*M - 1 generate
-        constant row_offset : integer := i / M;
-        constant col_offset : integer := i mod M;
-        signal mux_control : std_logic_vector(N_BITS_CONTROL_MUX - 1 downto 0);
-        -- vecchia -> ordine dei bit invertito
-        -- mux_control <= std_logic_vector(to_unsigned((current_row + row_offset) * N + (current_col + col_offset), N_BITS_CONTROL_MUX));
-        mux_control <= std_logic_vector(to_unsigned((N*N - 1) - ((current_row + row_offset) * N + (current_col + col_offset)), N_BITS_CONTROL_MUX));
-    
+        -- mux_control(i) <= std_logic_vector(to_unsigned((N*N - 1) - ((current_row + i/M) * N + (current_col + i mod M)), N_BITS_CONTROL_MUX)) when rst = '0' and en = '1' else (others => '0');
+        mux_control(i) <=std_logic_vector(to_unsigned((N*N - 1) -((current_row + i/M) * N + (current_col + i mod M)),N_BITS_CONTROL_MUX)) when (rst = '0' and en = '1' and (current_row + i/M) < N and (current_col + i mod M) < N) else (others => '0');
         mux_i: mux
-        generic map(
-            N_input => N*N
-        )
-        port map(
-            input_data   => matrix,
-            control      => mux_control,
-            output_data  => mux_to_and(i)
-        );
+            generic map(
+                N_input => N*N
+            )
+            port map(
+                input_data   => matrix,
+                control      => mux_control(i),
+                output_data  => mux_to_and(i)
+            );
     end generate;
 
     and_istances: for i in 0 to M*M - 1 generate
@@ -140,8 +144,8 @@ begin
     end generate;
 
     adders_istances: for i in 0 to M*M - 1 generate
-        signal a_extended : std_logic_vector(N_BIT_OUTPUT_ELEMENT - 1 downto 0);
-        a_extended <= std_logic_vector(to_unsigned(0, N_BIT_OUTPUT_ELEMENT - 1)) & and_to_adder(i);
+        a_extended(i)(N_BIT_OUTPUT_ELEMENT - 1 downto 1) <= (others => '0');
+        a_extended(i)(0) <= and_to_adder(i);
 
         adder_first: if i = 0 generate
             adder_0: RippleCarryAdder
@@ -149,7 +153,7 @@ begin
                 Nbit    => N_BIT_OUTPUT_ELEMENT
             )
             port map(
-                a       => a_extended,
+                a       => a_extended(i),
                 b       => (others => '0'),
                 cin     => '0',
                 fout    => adder_out_adder_in(i),
@@ -163,7 +167,7 @@ begin
                 Nbit    => N_BIT_OUTPUT_ELEMENT
             )
             port map(
-                a       => a_extended,
+                a       => a_extended(i),
                 b       => adder_out_adder_in(i-1),
                 cin     => '0',
                 fout    => adder_out_adder_in(i),
@@ -177,7 +181,7 @@ begin
                 Nbit    => N_BIT_OUTPUT_ELEMENT
             )
             port map(
-                a       => a_extended,
+                a       => a_extended(i),
                 b       => adder_out_adder_in(i-1),
                 cin     => '0',
                 fout    => adder_to_dff,
@@ -231,8 +235,6 @@ begin
                 en_dff <= '0';
                 convolution_ready <= '1';
             end if;
-        elsif rst = '1' then
-            convolution_ready <= '0';
         end if;
     end process;
 
