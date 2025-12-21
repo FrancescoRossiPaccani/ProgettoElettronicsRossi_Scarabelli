@@ -42,8 +42,8 @@ begin
             matrix_out   => matrix_out,
             x_valid      => x_valid,
             i_f          => i_f,
-            x            => x,
-            stato => stato_aus
+            x            => x -- ,
+            -- stato => stato_aus
         );
 
     stim_proc: process

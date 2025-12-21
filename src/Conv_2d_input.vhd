@@ -19,7 +19,7 @@ entity Conv_2d_input is
         -- uniche   
         x_valid      : in std_logic;
         i_f          : in std_logic;
-        x            : in std_logic_vector(Nbit-1 downto 0);
+        x            : in std_logic_vector(Nbit-1 downto 0) -- ;
 
         --debug 
         -- stato        : out std_logic_vector( clog2((M*M+Nbit-1)/Nbit + (N*N+Nbit-1)/Nbit)-1 downto 0) 

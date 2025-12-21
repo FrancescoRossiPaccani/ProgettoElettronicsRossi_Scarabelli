@@ -9,34 +9,36 @@ entity Conv_2d_output is
         M : positive := 3
     );
     port(
+        -- condivise con modulo Conv_2d_in
         clk                 : in  std_logic;
         rst                 : in  std_logic;
         matrix              : in  std_logic_vector(N*N - 1 downto 0);
         filter              : in  std_logic_vector(0 to M*M - 1 );
         en                  : in  std_logic;
-        convolution         : out std_logic_vector(((N - M + 1)*(N - M + 1) * clog2(M*M + 1)) - 1 downto 0 );
-        convolution_ready   : out std_logic
+        -- uniche
+        convolution         : out std_logic_vector(((N - M + 1)*(N - M + 1) * clog2(M*M + 1)) - 1 downto 0 ); -- y
+        convolution_ready   : out std_logic -- y_valid
         
     );
 end entity;
 
 architecture conv_bh of Conv_2d_output is
-    constant output_dimension       : positive := N - M + 1;
-    constant n_output_elements      : positive := output_dimension*output_dimension;
-    constant n_bits_counter         : positive := clog2(n_output_elements);
-    constant n_bits_control_mux     : positive := clog2(N*N);
-    constant n_bit_output_element   : positive := clog2(M*M + 1);
+    constant OUTPUT_DIMENSION       : natural := N - M + 1;
+    constant N_OUTPUT_ELEMENTS      : natural := OUTPUT_DIMENSION*OUTPUT_DIMENSION;
+    constant N_BITS_COUNTER         : natural := clog2(N_OUTPUT_ELEMENTS);
+    constant N_BITS_CONTROL_MUX     : natural := clog2(N*N);
+    constant N_BIT_OUTPUT_ELEMENT   : natural := clog2(M*M + 1);
 
-    type slv is array (natural range <>) of std_logic_vector(n_bit_output_element - 1 downto 0);
+    type slv is array (natural range <>) of std_logic_vector(N_BIT_OUTPUT_ELEMENT - 1 downto 0);
 
     signal rst_n                : std_logic;
     signal en_counter           : std_logic;
-    signal output_counter       : std_logic_vector(n_bits_counter - 1 downto 0);
+    signal output_counter       : std_logic_vector(N_BITS_COUNTER - 1 downto 0);
     signal mux_to_and           : std_logic_vector(M*M - 1 downto 0);
     signal and_to_adder         : std_logic_vector(M*M - 1 downto 0);
     signal adder_out_adder_in   : slv(M*M - 2 downto 0);
-    signal adder_to_dff         : std_logic_vector(n_bit_output_element - 1 downto 0);
-    signal out_dff              : slv(n_output_elements - 1 downto 0);
+    signal adder_to_dff         : std_logic_vector(N_BIT_OUTPUT_ELEMENT - 1 downto 0);
+    signal out_dff              : slv(N_OUTPUT_ELEMENTS - 1 downto 0);
     signal en_dff               : std_logic; 
 
     signal counter_val          : integer := 0;
@@ -97,19 +99,19 @@ begin
     rst_n <= not rst;
 
     counter_val <= to_integer(unsigned(output_counter));
-    current_row <= counter_val / output_dimension;
-    current_col <= counter_val mod output_dimension;
+    current_row <= counter_val / OUTPUT_DIMENSION;
+    current_col <= counter_val mod OUTPUT_DIMENSION;
 
-    en_counter <= '1' when (en = '1' and counter_val < n_output_elements - 1) else '0';
+    en_counter <= '1' when (en = '1' and counter_val < N_OUTPUT_ELEMENTS - 1) else '0';
 
     counter_i: COUNTER
         generic map(
-            N => n_bits_counter
+            N => N_BITS_COUNTER
         )
         port map(
             clk        => clk,
             a_rst_n    => rst_n,
-            increment  => std_logic_vector(to_unsigned(1, n_bits_counter)),
+            increment  => std_logic_vector(to_unsigned(1, N_BITS_COUNTER)),
             en         => en_counter,
             cntr_out   => output_counter
         );
@@ -117,10 +119,10 @@ begin
     mux_istances: for i in 0 to M*M - 1 generate
         constant row_offset : integer := i / M;
         constant col_offset : integer := i mod M;
-        signal mux_control : std_logic_vector(n_bits_control_mux - 1 downto 0);
+        signal mux_control : std_logic_vector(N_BITS_CONTROL_MUX - 1 downto 0);
         -- vecchia -> ordine dei bit invertito
-        -- mux_control <= std_logic_vector(to_unsigned((current_row + row_offset) * N + (current_col + col_offset), n_bits_control_mux));
-        mux_control <= std_logic_vector(to_unsigned((N*N - 1) - ((current_row + row_offset) * N + (current_col + col_offset)), n_bits_control_mux));
+        -- mux_control <= std_logic_vector(to_unsigned((current_row + row_offset) * N + (current_col + col_offset), N_BITS_CONTROL_MUX));
+        mux_control <= std_logic_vector(to_unsigned((N*N - 1) - ((current_row + row_offset) * N + (current_col + col_offset)), N_BITS_CONTROL_MUX));
     
         mux_i: mux
         generic map(
@@ -138,13 +140,13 @@ begin
     end generate;
 
     adders_istances: for i in 0 to M*M - 1 generate
-        signal a_extended : std_logic_vector(n_bit_output_element - 1 downto 0);
-        a_extended <= std_logic_vector(to_unsigned(0, n_bit_output_element - 1)) & and_to_adder(i);
+        signal a_extended : std_logic_vector(N_BIT_OUTPUT_ELEMENT - 1 downto 0);
+        a_extended <= std_logic_vector(to_unsigned(0, N_BIT_OUTPUT_ELEMENT - 1)) & and_to_adder(i);
 
         adder_first: if i = 0 generate
             adder_0: RippleCarryAdder
             generic map(
-                Nbit    => n_bit_output_element
+                Nbit    => N_BIT_OUTPUT_ELEMENT
             )
             port map(
                 a       => a_extended,
@@ -158,7 +160,7 @@ begin
         adder_middle: if i > 0 and i < M*M - 1 generate
         adder_i: RippleCarryAdder
             generic map(
-                Nbit    => n_bit_output_element
+                Nbit    => N_BIT_OUTPUT_ELEMENT
             )
             port map(
                 a       => a_extended,
@@ -172,7 +174,7 @@ begin
         adder_last: if i = M*M - 1 generate    
         adder_MM: RippleCarryAdder
             generic map(
-                Nbit    => n_bit_output_element
+                Nbit    => N_BIT_OUTPUT_ELEMENT
             )
             port map(
                 a       => a_extended,
@@ -185,11 +187,11 @@ begin
         end generate;
     end generate;
 
-    dff_istances: for i in 0 to n_output_elements - 1 generate
-        dff_first: if i = n_output_elements - 1 generate
+    dff_istances: for i in 0 to N_OUTPUT_ELEMENTS - 1 generate
+        dff_first: if i = N_OUTPUT_ELEMENTS - 1 generate
             dff_i: D_Flip_Flop
                 generic map ( 
-                    Nbit     => n_bit_output_element 
+                    Nbit     => N_BIT_OUTPUT_ELEMENT 
                 )
                 port map (
                     clk      => clk,
@@ -200,10 +202,10 @@ begin
                 );
         end generate;
 
-        dff_seconds: if i >= 0 and i < n_output_elements-1 generate
+        dff_seconds: if i >= 0 and i < N_OUTPUT_ELEMENTS-1 generate
             dff_i: D_Flip_Flop
                 generic map ( 
-                    Nbit     => n_bit_output_element 
+                    Nbit     => N_BIT_OUTPUT_ELEMENT 
                 )
                 port map (
                     clk      => clk,
@@ -215,8 +217,8 @@ begin
         end generate;
     end generate;
 
-    dff_to_output: for i in n_output_elements - 1 downto 0 generate
-        convolution((n_output_elements - i)*n_bit_output_element - 1 downto (n_output_elements - 1 - i)*n_bit_output_element) <= out_dff(i);
+    dff_to_output: for i in N_OUTPUT_ELEMENTS - 1 downto 0 generate
+        convolution((N_OUTPUT_ELEMENTS - i)*N_BIT_OUTPUT_ELEMENT - 1 downto (N_OUTPUT_ELEMENTS - 1 - i)*N_BIT_OUTPUT_ELEMENT) <= out_dff(i);
     end generate;
 
     conv_process: process(clk, rst)
@@ -225,7 +227,7 @@ begin
             en_dff <= '1';
             convolution_ready <= '0';
         elsif rising_edge(clk) then
-            if counter_val = n_output_elements - 1 then
+            if counter_val = N_OUTPUT_ELEMENTS - 1 then
                 en_dff <= '0';
                 convolution_ready <= '1';
             end if;
