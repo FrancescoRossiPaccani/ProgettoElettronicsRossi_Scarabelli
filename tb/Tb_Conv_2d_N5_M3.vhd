@@ -2,6 +2,8 @@ library IEEE;
 use IEEE.std_logic_1164.all;
 use IEEE.numeric_std.all;
 use work.Utils.all;
+use std.textio.all;
+use IEEE.std_logic_textio.all;
 
 entity Tb_Conv_2d_N5_M3 is
 end entity;
@@ -66,6 +68,7 @@ begin
         );
 
     stim_proc: process
+        variable riga : line;
     begin
         --------------------------------------------------------------------------
         -- TEST PROCESS: Caso d'uso con corretto pilotaggio, esempio consegna
@@ -107,11 +110,11 @@ begin
         x_valid     <= '1';
         i_f         <= '0';
         x           <= "00000001";
-        wait until rising_edge(clk_ext);
 
-        -- fine aspetto un po' e vedo il risutato quando y_vlaid = 1
-        wait for 20*100 ns;
-        wait until rising_edge(clk_ext);
+        -- fine aspetto fino a quando y_vlaid = 1
+        wait until rising_edge(y_valid_ext);
+        write(riga, y_ext);
+        writeline(output, riga);
 
         --------------------------------------------------------------------------
         -- TEST PROCESS: Caso d'uso con corretto pilotaggio, solamente che i bit "scartati" sono ad uno anzich è 0 

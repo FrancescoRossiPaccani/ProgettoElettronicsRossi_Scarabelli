@@ -2,6 +2,8 @@ library IEEE;
 use IEEE.std_logic_1164.all;
 use IEEE.numeric_std.all;
 use work.Utils.all;  -- se serve per clog2
+use std.textio.all;
+use IEEE.std_logic_textio.all;
 
 entity Tb_Conv_2d_N7_M4 is
 end entity;
@@ -70,9 +72,10 @@ begin
         );
 
     stim_proc: process
+        variable riga : line;
     begin
         --------------------------------------------------------------------------
-        -- TEST PROCESS: Caso d'uso con corretto pilotaggio
+        -- TEST 1: Caso d'uso con corretto pilotaggio
         --------------------------------------------------------------------------
         -- 1) RESET iniziale, tutto a zero
         reset_ext <= '1';
@@ -82,60 +85,455 @@ begin
         wait for 200 ns;
         reset_ext <= '0';
         wait until rising_edge(clk_ext);
-        x <= "11111111";
-        i_f <= '1';
-        x_valid <= '1';
+        -- 2) Inserimento filtro
+        --  FILTRO 1/2
+        x_valid     <= '1';
+        i_f         <= '1';
+        x           <= "10101100";
         wait until rising_edge(clk_ext);
-        x <= "11111111";
-        i_f <= '1';
-        x_valid <= '1';
-        --wait until rising_edge(clk_ext);
-        --x <= "11111111";
-        --i_f <= '1';
-        x_valid <= '1';
+        --  FILTRO 2/2
+        x_valid     <= '1';
+        i_f         <= '1';
+        x           <= "10011011";
         wait until rising_edge(clk_ext);
-        x <= "11111111";
-        i_f <= '0';
-        x_valid <= '1';
+        -- 3) Inserimento matrice
+        -- MATRICE 1/7
+        x_valid     <= '1';
+        i_f         <= '0';
+        x           <= "01010011";
         wait until rising_edge(clk_ext);
-         x <= "11111111";
-        i_f <= '0';
-        x_valid <= '1';
+        -- MATRICE 2/7
+        x_valid     <= '1';
+        i_f         <= '0';
+        x           <= "10111110";
         wait until rising_edge(clk_ext);
-         x <= "11111111";
-        i_f <= '0';
-        x_valid <= '1';
+        -- MATRICE 3/7
+        x_valid     <= '1';
+        i_f         <= '0';
+        x           <= "11110100";
         wait until rising_edge(clk_ext);
-         x <= "11111111";
-        i_f <= '0';
-        x_valid <= '1';
+        -- MATRICE 4/7
+        x_valid     <= '1';
+        i_f         <= '0';
+        x           <= "10001000";
         wait until rising_edge(clk_ext);
-         x <= "11111111";
-        i_f <= '0';
-        x_valid <= '1';
+        -- MATRICE 5/7
+        x_valid     <= '1';
+        i_f         <= '0';
+        x           <= "11100111";
         wait until rising_edge(clk_ext);
-         x <= "11111111";
-        i_f <= '0';
-        x_valid <= '1';
+        -- MATRICE 6/7
+        x_valid     <= '1';
+        i_f         <= '0';
+        x           <= "10111110";
         wait until rising_edge(clk_ext);
-         x <= "11111111";
-        i_f <= '0';
-        x_valid <= '1';
-        wait until rising_edge(clk_ext);
-         x <= "11111111";
-        i_f <= '0';
-        x_valid <= '1';
-        wait until rising_edge(clk_ext);
+        -- MATRICE 7/7
+        x_valid     <= '1';
+        i_f         <= '0';
+        x           <= "00000001";
+        wait until rising_edge(y_valid_ext);
+        write(riga, y_ext);
+        writeline(output, riga);
 
-        --10) Fine 1
-        wait for 4096*100 ns;
+        --------------------------------------------------------------------------
+        -- TEST 2: Come test 1 ma i bit "scartati" sono ad 1 anzichè a 0
+        --------------------------------------------------------------------------
+        -- 1) RESET iniziale, tutto a zero
+        reset_ext <= '1';
+        x_valid <= '0';
+        i_f <= '0';
+        x <= (others => '0');
+        wait for 200 ns;
+        reset_ext <= '0';
         wait until rising_edge(clk_ext);
+        -- 2) Inserimento filtro
+        --  FILTRO 1/2
+        x_valid     <= '1';
+        i_f         <= '1';
+        x           <= "10101100";
+        wait until rising_edge(clk_ext);
+        --  FILTRO 2/2
+        x_valid     <= '1';
+        i_f         <= '1';
+        x           <= "10011011";
+        wait until rising_edge(clk_ext);
+        -- 3) Inserimento matrice
+        -- MATRICE 1/7
+        x_valid     <= '1';
+        i_f         <= '0';
+        x           <= "01010011";
+        wait until rising_edge(clk_ext);
+        -- MATRICE 2/7
+        x_valid     <= '1';
+        i_f         <= '0';
+        x           <= "10111110";
+        wait until rising_edge(clk_ext);
+        -- MATRICE 3/7
+        x_valid     <= '1';
+        i_f         <= '0';
+        x           <= "11110100";
+        wait until rising_edge(clk_ext);
+        -- MATRICE 4/7
+        x_valid     <= '1';
+        i_f         <= '0';
+        x           <= "10001000";
+        wait until rising_edge(clk_ext);
+        -- MATRICE 5/7
+        x_valid     <= '1';
+        i_f         <= '0';
+        x           <= "11100111";
+        wait until rising_edge(clk_ext);
+        -- MATRICE 6/7
+        x_valid     <= '1';
+        i_f         <= '0';
+        x           <= "10111110";
+        wait until rising_edge(clk_ext);
+        -- MATRICE 7/7
+        x_valid     <= '1';
+        i_f         <= '0';
+        x           <= "11111111";
+        wait until rising_edge(y_valid_ext);
+        write(riga, y_ext);
+        writeline(output, riga);
 
+        --------------------------------------------------------------------------
+        -- TEST 3: Caso limite tutti 1
+        --------------------------------------------------------------------------
+        -- 1) RESET iniziale, tutto a zero
+        reset_ext <= '1';
+        x_valid <= '0';
+        i_f <= '0';
+        x <= (others => '0');
+        wait for 200 ns;
+        reset_ext <= '0';
+        wait until rising_edge(clk_ext);
+        -- 2) Inserimento filtro
+        --  FILTRO 1/2
+        x_valid     <= '1';
+        i_f         <= '1';
+        x           <= "11111111";
+        wait until rising_edge(clk_ext);
+        --  FILTRO 2/2
+        x_valid     <= '1';
+        i_f         <= '1';
+        x           <= "11111111";
+        wait until rising_edge(clk_ext);
+        -- 3) Inserimento matrice
+        -- MATRICE 1/7
+        x_valid     <= '1';
+        i_f         <= '0';
+        x           <= "11111111";
+        wait until rising_edge(clk_ext);
+        -- MATRICE 2/7
+        x_valid     <= '1';
+        i_f         <= '0';
+        x           <= "11111111";
+        wait until rising_edge(clk_ext);
+        -- MATRICE 3/7
+        x_valid     <= '1';
+        i_f         <= '0';
+        x           <= "11111111";
+        wait until rising_edge(clk_ext);
+        -- MATRICE 4/7
+        x_valid     <= '1';
+        i_f         <= '0';
+        x           <= "11111111";
+        wait until rising_edge(clk_ext);
+        -- MATRICE 5/7
+        x_valid     <= '1';
+        i_f         <= '0';
+        x           <= "11111111";
+        wait until rising_edge(clk_ext);
+        -- MATRICE 6/7
+        x_valid     <= '1';
+        i_f         <= '0';
+        x           <= "11111111";
+        wait until rising_edge(clk_ext);
+        -- MATRICE 7/7
+        x_valid     <= '1';
+        i_f         <= '0';
+        x           <= "11111111";
+        wait until rising_edge(y_valid_ext);
+        write(riga, y_ext);
+        writeline(output, riga);
 
-        -- assert false report "FINE SIMULAZIONE" severity failure;
-        wait for 4096*100 ns;
+        --------------------------------------------------------------------------
+        -- TEST 4: Caso limite tutti 0
+        --------------------------------------------------------------------------
+        -- 1) RESET iniziale, tutto a zero
+        reset_ext <= '1';
+        x_valid <= '0';
+        i_f <= '0';
+        x <= (others => '0');
+        wait for 200 ns;
+        reset_ext <= '0';
+        wait until rising_edge(clk_ext);
+        -- 2) Inserimento filtro
+        --  FILTRO 1/2
+        x_valid     <= '1';
+        i_f         <= '1';
+        x           <= "00000000";
+        wait until rising_edge(clk_ext);
+        --  FILTRO 2/2
+        x_valid     <= '1';
+        i_f         <= '1';
+        x           <= "00000000";
+        wait until rising_edge(clk_ext);
+        -- 3) Inserimento matrice
+        -- MATRICE 1/7
+        x_valid     <= '1';
+        i_f         <= '0';
+        x           <= "00000000";
+        wait until rising_edge(clk_ext);
+        -- MATRICE 2/7
+        x_valid     <= '1';
+        i_f         <= '0';
+        x           <= "00000000";
+        wait until rising_edge(clk_ext);
+        -- MATRICE 3/7
+        x_valid     <= '1';
+        i_f         <= '0';
+        x           <= "00000000";
+        wait until rising_edge(clk_ext);
+        -- MATRICE 4/7
+        x_valid     <= '1';
+        i_f         <= '0';
+        x           <= "00000000";
+        wait until rising_edge(clk_ext);
+        -- MATRICE 5/7
+        x_valid     <= '1';
+        i_f         <= '0';
+        x           <= "00000000";
+        wait until rising_edge(clk_ext);
+        -- MATRICE 6/7
+        x_valid     <= '1';
+        i_f         <= '0';
+        x           <= "00000000";
+        wait until rising_edge(clk_ext);
+        -- MATRICE 7/7
+        x_valid     <= '1';
+        i_f         <= '0';
+        x           <= "00000000";
+        wait until rising_edge(y_valid_ext);
+        write(riga, y_ext);
+        writeline(output, riga);
+
+        --------------------------------------------------------------------------
+        -- TEST 5: Come TEST 1 ma con pilotaggio scorretto
+        -- La rete è resistente ai pilotaggi scorretti
+        --------------------------------------------------------------------------
+        -- 1) RESET iniziale, tutto a zero
+        reset_ext <= '1';
+        x_valid <= '0';
+        i_f <= '0';
+        x <= (others => '0');
+        wait for 200 ns;
+        reset_ext <= '0';
+        wait until rising_edge(clk_ext);
+        -- 2) Inserimento filtro
+        --  FILTRO 1/2
+        x_valid     <= '1';
+        i_f         <= '1';
+        x           <= "10101100";
+        wait until rising_edge(clk_ext);
+        --  Pilotaggio scorretto -> x_valid e i_f scorretti
+        x_valid     <= '0';
+        i_f         <= '0';
+        x           <= "00000000";
+        wait until rising_edge(clk_ext);
+        --  Pilotaggio scorretto -> i_f scorretto
+        x_valid     <= '1';
+        i_f         <= '0';
+        x           <= "00000000";
+        wait until rising_edge(clk_ext);
+        --  Pilotaggio scorretto -> x_valid corretto
+        x_valid     <= '0';
+        i_f         <= '1';
+        x           <= "00000000";
+        wait until rising_edge(clk_ext);
+        --  FILTRO 2/2
+        x_valid     <= '1';
+        i_f         <= '1';
+        x           <= "10011011";
+        wait until rising_edge(clk_ext);
+        -- 3) Inserimento matrice
+        -- pilotaggio scorretto -> i_f scorretto
+        x_valid     <= '1';
+        i_f         <= '1';
+        x           <= "00000000";
+        wait until rising_edge(clk_ext);
+        -- MATRICE 1/7
+        x_valid     <= '1';
+        i_f         <= '0';
+        x           <= "01010011";
+        wait until rising_edge(clk_ext);
+        -- pilotaggio scorretto -> x_valid e i_f scorretti
+        x_valid     <= '0';
+        i_f         <= '1';
+        x           <= "00000000";
+        wait until rising_edge(clk_ext);
+        -- pilotaggio scorretto -> i_f scorretto
+        x_valid     <= '1';
+        i_f         <= '1';
+        x           <= "00000000";
+        wait until rising_edge(clk_ext);
+        -- pilotaggio scorretto -> x_valid scorretto
+        x_valid     <= '0';
+        i_f         <= '0';
+        x           <= "00000000";
+        wait until rising_edge(clk_ext);
+        -- MATRICE 2/7
+        x_valid     <= '1';
+        i_f         <= '0';
+        x           <= "10111110";
+        wait until rising_edge(clk_ext);
+        -- MATRICE 3/7
+        x_valid     <= '1';
+        i_f         <= '0';
+        x           <= "11110100";
+        wait until rising_edge(clk_ext);
+        -- MATRICE 4/7
+        x_valid     <= '1';
+        i_f         <= '0';
+        x           <= "10001000";
+        wait until rising_edge(clk_ext);
+        -- MATRICE 5/7
+        x_valid     <= '1';
+        i_f         <= '0';
+        x           <= "11100111";
+        wait until rising_edge(clk_ext);
+        -- MATRICE 6/7
+        x_valid     <= '1';
+        i_f         <= '0';
+        x           <= "10111110";
+        wait until rising_edge(clk_ext);
+        -- MATRICE 7/7
+        x_valid     <= '1';
+        i_f         <= '0';
+        x           <= "00000001";
+        wait until rising_edge(y_valid_ext);
+        write(riga, y_ext);
+        writeline(output, riga);
+
+        --------------------------------------------------------------------------
+        -- TEST 6: Come TEST 5 ma con input non validi durante l'elaborazione del risultato
+        --------------------------------------------------------------------------
+        -- 1) RESET iniziale, tutto a zero
+        reset_ext <= '1';
+        x_valid <= '0';
+        i_f <= '0';
+        x <= (others => '0');
+        wait for 200 ns;
+        reset_ext <= '0';
+        wait until rising_edge(clk_ext);
+        -- 2) Inserimento filtro
+        --  FILTRO 1/2
+        x_valid     <= '1';
+        i_f         <= '1';
+        x           <= "10101100";
+        wait until rising_edge(clk_ext);
+        --  Pilotaggio scorretto -> x_valid e i_f scorretti
+        x_valid     <= '0';
+        i_f         <= '0';
+        x           <= "00000000";
+        wait until rising_edge(clk_ext);
+        --  Pilotaggio scorretto -> i_f scorretto
+        x_valid     <= '1';
+        i_f         <= '0';
+        x           <= "00000000";
+        wait until rising_edge(clk_ext);
+        --  Pilotaggio scorretto -> x_valid corretto
+        x_valid     <= '0';
+        i_f         <= '1';
+        x           <= "00000000";
+        wait until rising_edge(clk_ext);
+        --  FILTRO 2/2
+        x_valid     <= '1';
+        i_f         <= '1';
+        x           <= "10011011";
+        wait until rising_edge(clk_ext);
+        -- 3) Inserimento matrice
+        -- pilotaggio scorretto -> i_f scorretto
+        x_valid     <= '1';
+        i_f         <= '1';
+        x           <= "00000000";
+        wait until rising_edge(clk_ext);
+        -- MATRICE 1/7
+        x_valid     <= '1';
+        i_f         <= '0';
+        x           <= "01010011";
+        wait until rising_edge(clk_ext);
+        -- pilotaggio scorretto -> x_valid e i_f scorretti
+        x_valid     <= '0';
+        i_f         <= '1';
+        x           <= "00000000";
+        wait until rising_edge(clk_ext);
+        -- pilotaggio scorretto -> i_f scorretto
+        x_valid     <= '1';
+        i_f         <= '1';
+        x           <= "00000000";
+        wait until rising_edge(clk_ext);
+        -- pilotaggio scorretto -> x_valid scorretto
+        x_valid     <= '0';
+        i_f         <= '0';
+        x           <= "00000000";
+        wait until rising_edge(clk_ext);
+        -- MATRICE 2/7
+        x_valid     <= '1';
+        i_f         <= '0';
+        x           <= "10111110";
+        wait until rising_edge(clk_ext);
+        -- MATRICE 3/7
+        x_valid     <= '1';
+        i_f         <= '0';
+        x           <= "11110100";
+        wait until rising_edge(clk_ext);
+        -- MATRICE 4/7
+        x_valid     <= '1';
+        i_f         <= '0';
+        x           <= "10001000";
+        wait until rising_edge(clk_ext);
+        -- MATRICE 5/7
+        x_valid     <= '1';
+        i_f         <= '0';
+        x           <= "11100111";
+        wait until rising_edge(clk_ext);
+        -- MATRICE 6/7
+        x_valid     <= '1';
+        i_f         <= '0';
+        x           <= "10111110";
+        wait until rising_edge(clk_ext);
+        -- MATRICE 7/7
+        x_valid     <= '1';
+        i_f         <= '0';
+        x           <= "00000001";
+        wait until rising_edge(clk_ext);
+        -- inserimento scorretto durante elaborazione
+        x_valid     <= '1';
+        i_f         <= '0';
+        x           <= "00000000";
+        wait until rising_edge(clk_ext);
+        -- inserimento scorretto durante elaborazione
+        x_valid     <= '1';
+        i_f         <= '1';
+        x           <= "00000000";
+        wait until rising_edge(clk_ext);
+        -- inserimento scorretto durante elaborazione
+        x_valid     <= '0';
+        i_f         <= '1';
+        x           <= "00000000";
+        wait until rising_edge(clk_ext);
+        -- inserimento scorretto durante elaborazione
+        x_valid     <= '0';
+        i_f         <= '0';
+        x           <= "00000000";
+        wait until rising_edge(y_valid_ext);
+        write(riga, y_ext);
+        writeline(output, riga);
+
+        -- FINE TEST
         testing <= false;
-        wait for clk_period;
+        wait until rising_edge(clk_ext);
     end process;
 
 end architecture;
