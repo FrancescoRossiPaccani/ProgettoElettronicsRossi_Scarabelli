@@ -112,8 +112,8 @@ architecture conv_bh of Conv_2d_output is
             clk     : in  std_logic;
             resetn  : in  std_logic;
             en      : in  std_logic;
-            di      : in  std_logic_vector(N - 1 downto 0);
-            do      : out std_logic_vector(N - 1 downto 0)
+            di      : in  std_logic_vector(Nbit - 1 downto 0);
+            do      : out std_logic_vector(Nbit - 1 downto 0)
         );
     end component;
 begin

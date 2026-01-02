@@ -34,6 +34,7 @@ architecture MEM of Memory is
 
     end component;
     constant SEL_DIM    : natural := 1 + (Ncell + Nbit_in - 1)/Nbit_in; -- massimo valore del selettore 
+ 
 
     signal en_i         : std_logic_vector(Ncell-1 downto 0);
     signal sel_int      : natural range 0 to SEL_DIM ;
@@ -42,18 +43,33 @@ architecture MEM of Memory is
         sel_int <= to_integer(unsigned(selector)) when en = '1' else SEL_DIM; -- assegnamento al selettore, per protezione viene posto al valore massimo che non viene usato quando il componente spento (en = '0') 
         
         -- Processo di selezione di memorie
-        enabler: process(sel_int, en)
-            begin
-                if en = '0' then
-                    en_i <= (others => '0');
-                elsif en = '1' then
-                    en_i <= (others => '0');
-                    for i in sel_int * Nbit_in to sel_int * Nbit_in + Nbit_in-1 loop -- attivo le Nbit in memorie da 1 bit che devono salvare il dato in ingresso
-                        exit when i >= Ncell;      -- In caso di sforo (per esempio quando devo salvare un numero di bit in ingresso < nbit ovvero quando il numero di elementi da salvare != multiplo inero di Nbit in) 
-                        en_i(i) <= '1';
-                    end loop;
-                end if;
-            end process;
+        -- enabler: process(sel_int, en)
+        --     begin
+        --         if en = '0' then
+        --             en_i <= (others => '0');
+        --         elsif en = '1' then
+        --             en_i <= (others => '0');
+        --             for i in sel_int * Nbit_in to sel_int * Nbit_in + Nbit_in-1 loop -- attivo le Nbit in memorie da 1 bit che devono salvare il dato in ingresso
+        --                 exit when i >= Ncell;      -- In caso di sforo (per esempio quando devo salvare un numero di bit in ingresso < nbit ovvero quando il numero di elementi da salvare != multiplo inero di Nbit in) 
+        --                 en_i(i) <= '1';
+        --             end loop;
+        --         end if;
+        --     end process;
+
+        --  Processo di selezione di memorie
+         enabler: process(sel_int, en)
+             begin
+                 if en = '0' then
+                     en_i <= (others => '0');
+                 elsif en = '1' then
+                     en_i <= (others => '0');
+                     for i in 0 to  Nbit_in-1 loop -- attivo le Nbit in memorie da 1 bit che devono salvare il dato in ingresso
+                        if (sel_int * Nbit_in + i) < Ncell then
+                            en_i(sel_int * Nbit_in + i) <= '1';
+                        end if;
+                     end loop;
+                 end if;
+             end process;
     
         -- Generazione memorie
         g_DFF_i:  for i in 0 to ((Ncell + Nbit_in - 1)/Nbit_in)-1 generate
