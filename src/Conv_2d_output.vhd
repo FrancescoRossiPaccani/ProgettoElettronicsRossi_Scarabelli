@@ -124,6 +124,7 @@ begin
     current_index <= ((counter_val / M) * N) + counter_val mod M when en = '1' and rst = '0' else 0;
 
     input_counter(N_BITS_COUNTER - 1 downto 1) <= (others => '0');
+    -- ** va sospeso finche l'as counter conta
     input_counter(0) <= '1' when (en = '1' and counter_val < N_OUTPUT_ELEMENTS - 1) else '0'; -- conto quando il componente è attivo e finchè non termino l'elaborazione
 
     counter_i: As_Counter
@@ -154,10 +155,13 @@ begin
     and_istances: for i in 0 to M*M - 1 generate
         and_to_adder(i) <= mux_to_and(i) and filter(i);
     end generate;
-
+    
+-- ** da qua
     adders_istances: for i in 0 to M*M - 1 generate
-        a_extended(i)(N_BIT_OUTPUT_ELEMENT - 1 downto 1) <= (others => '0');
-        a_extended(i)(0) <= and_to_adder(i);
+        -- a_extended(i)(N_BIT_OUTPUT_ELEMENT - 1 downto 1) <= (others => '0');
+        -- a_extended(i)(0) <= and_to_adder(i);
+
+        a_extended(i) <= (0 => and_to_adder(i), others => '0'); 
 
         adder_first: if i = 0 generate
             adder_0: RippleCarryAdder
@@ -186,7 +190,7 @@ begin
                 cout    => open
             );
         end generate;
-
+    
         adder_last: if i = M*M - 1 generate    
         adder_MM: RippleCarryAdder
             generic map(
@@ -202,6 +206,8 @@ begin
             
         end generate;
     end generate;
+
+    -- ** qua
 
     dff_istances: for i in 0 to N_OUTPUT_ELEMENTS - 1 generate
         dff_first: if i = N_OUTPUT_ELEMENTS - 1 generate
@@ -234,7 +240,7 @@ begin
     end generate;
 
     dff_to_output: for i in N_OUTPUT_ELEMENTS - 1 downto 0 generate
-        convolution( ((i + 1) * N_BIT_OUTPUT_ELEMENT) - 1 downto (i * N_BIT_OUTPUT_ELEMENT) ) <= out_dff(i);
+        convolution(((i + 1) * N_BIT_OUTPUT_ELEMENT) - 1 downto (i * N_BIT_OUTPUT_ELEMENT) +) <= out_dff(i);
     end generate;
 
     conv_process: process(clk, rst)

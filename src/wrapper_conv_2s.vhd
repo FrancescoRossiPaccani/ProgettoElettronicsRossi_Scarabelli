@@ -60,7 +60,7 @@ entity wrapper_conv_2d is
 
         constant DIM_X          : natural := Nbit;
         constant DIM_Y          : natural := ((N - M + 1)*(N - M + 1) * clog2(M*M +1 ));
-        signal      out_reg_x        : std_logic_vector(DIM_X - 1 downto 0);
+        signal   out_reg_x        : std_logic_vector(DIM_X - 1 downto 0);
         signal   out_reg_i_f      : std_logic;
         signal   out_reg_x_valid  : std_logic;
         signal   in_reg_y         : std_logic_vector(DIM_Y  - 1 downto 0);

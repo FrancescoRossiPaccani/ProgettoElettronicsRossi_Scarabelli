@@ -8,46 +8,6 @@
 # Compile of fifo.vhd was successful.
 # Compile of full_adder.vhd was successful.
 # Compile of fullAdder.vhd was successful.
-# Compile of Memory.vhd failed with 5 errors.
-# Compile of mux.vhd was successful.
-# Compile of RippleCarryAdder.vhd was successful.
-# Compile of testbench_conv2d_input.vhd was successful.
-# Compile of Utils.vhd was successful.
-# Compile of wrapper_conv_2s.vhd was successful.
-# Compile of long_tb.vhdl was successful.
-# Compile of Tb_Conv_2d_N5_M3.vhd was successful.
-# Compile of Tb_Conv_2d_N7_M4.vhd was successful.
-# Compile of tb_memory.vhd was successful.
-# 19 compiles, 1 failed with 5 errors.
-# Compile of As_Counter.vhd was successful.
-# Compile of Conv_2d.vhdl was successful.
-# Compile of Conv_2d_input.vhd was successful.
-# Compile of Conv_2d_output.vhd was successful.
-# Compile of Counter.vhd was successful.
-# Compile of D_Flip_Flop.vhd was successful.
-# Compile of fifo.vhd was successful.
-# Compile of full_adder.vhd was successful.
-# Compile of fullAdder.vhd was successful.
-# Compile of Memory.vhd failed with 5 errors.
-# Compile of mux.vhd was successful.
-# Compile of RippleCarryAdder.vhd was successful.
-# Compile of testbench_conv2d_input.vhd was successful.
-# Compile of Utils.vhd was successful.
-# Compile of wrapper_conv_2s.vhd was successful.
-# Compile of long_tb.vhdl was successful.
-# Compile of Tb_Conv_2d_N5_M3.vhd was successful.
-# Compile of Tb_Conv_2d_N7_M4.vhd was successful.
-# Compile of tb_memory.vhd was successful.
-# 19 compiles, 1 failed with 5 errors.
-# Compile of As_Counter.vhd was successful.
-# Compile of Conv_2d.vhdl was successful.
-# Compile of Conv_2d_input.vhd was successful.
-# Compile of Conv_2d_output.vhd was successful.
-# Compile of Counter.vhd was successful.
-# Compile of D_Flip_Flop.vhd was successful.
-# Compile of fifo.vhd was successful.
-# Compile of full_adder.vhd was successful.
-# Compile of fullAdder.vhd was successful.
 # Compile of Memory.vhd was successful.
 # Compile of mux.vhd was successful.
 # Compile of RippleCarryAdder.vhd was successful.
@@ -59,49 +19,3 @@
 # Compile of Tb_Conv_2d_N7_M4.vhd was successful.
 # Compile of tb_memory.vhd was successful.
 # 19 compiles, 0 failed with no errors.
-vsim work.tb_conv_2d_n5_m3
-# vsim work.tb_conv_2d_n5_m3 
-# Start time: 16:58:15 on Jan 02,2026
-# Loading std.standard
-# Loading std.textio(body)
-# Loading ieee.std_logic_1164(body)
-# Loading ieee.numeric_std(body)
-# Loading work.utils(body)
-# Loading ieee.std_logic_textio(body)
-# Loading work.tb_conv_2d_n5_m3(tb)
-# Loading work.conv_2d(c2d)
-# Loading work.conv_2d_input(c2d)
-# Loading work.as_counter(asc)
-# Loading work.ripplecarryadder(rca)
-# Loading work.fulladder(dataflow)
-# Loading work.d_flip_flop(dff)
-# Loading work.memory(mem)
-# Loading work.conv_2d_output(conv_bh)
-# Loading work.mux(mux_bh)
-add wave -position insertpoint sim:/tb_conv_2d_n5_m3/*
-run -all
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_n5_m3/UUT/C_OUT/mux_istances(8)/mux_i
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_n5_m3/UUT/C_OUT/mux_istances(7)/mux_i
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_n5_m3/UUT/C_OUT/mux_istances(6)/mux_i
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_n5_m3/UUT/C_OUT/mux_istances(5)/mux_i
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_n5_m3/UUT/C_OUT/mux_istances(4)/mux_i
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_n5_m3/UUT/C_OUT/mux_istances(3)/mux_i
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_n5_m3/UUT/C_OUT/mux_istances(2)/mux_i
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_n5_m3/UUT/C_OUT/mux_istances(1)/mux_i
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_n5_m3/UUT/C_OUT/mux_istances(0)/mux_i
-# ** Warning: NUMERIC_STD.">=": metavalue detected, returning FALSE
-#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_n5_m3/UUT/C_INP
-# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
-#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_n5_m3/UUT/C_INP
-# 010000110100001001000011001000110100
-# End time: 17:49:32 on Jan 02,2026, Elapsed time: 0:51:17
-# Errors: 0, Warnings: 15
