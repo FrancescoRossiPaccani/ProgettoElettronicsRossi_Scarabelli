@@ -3,7 +3,7 @@ use IEEE.std_logic_1164.all;
 
 -- this shift register load the data on the rising edge of the clock if load = '1' and shift the previus loaded data (after the rising edge of the clock) if load = '0'
 
-entity Shift_Register is
+entity SHIFT_REGISTER is
     generic(
         Nbit : positive := 8
     );
@@ -16,7 +16,7 @@ entity Shift_Register is
     );
 end entity;
 
-architecture rtl of Shift_Register is
+architecture rtl of SHIFT_REGISTER is
     signal q_reg : std_logic_vector(Nbit-1 downto 0);
 begin
     process(clk, resetn)
