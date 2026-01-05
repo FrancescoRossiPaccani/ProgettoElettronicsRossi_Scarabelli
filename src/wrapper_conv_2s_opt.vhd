@@ -24,7 +24,7 @@ entity wrapper_conv_2d_opt is
     end entity;
 
     architecture wrp of wrapper_conv_2d_opt is
-        component Conv_2d is
+        component Conv_2d_opt is
             generic(
                     N       : positive := 5;
                     M       : positive := 3; 

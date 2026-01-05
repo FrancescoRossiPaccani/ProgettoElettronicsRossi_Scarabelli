@@ -124,7 +124,7 @@
                             -- stato               => status
                         );
 
-            C_OUT: Conv_2d_output
+            C_OUT: Conv_2d_output_opt
                         generic map(
                             N                   => N,
                             M                   => M

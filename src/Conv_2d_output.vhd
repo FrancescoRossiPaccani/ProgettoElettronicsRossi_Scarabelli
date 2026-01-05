@@ -240,7 +240,7 @@ begin
     end generate;
 
     dff_to_output: for i in N_OUTPUT_ELEMENTS - 1 downto 0 generate
-        convolution(((i + 1) * N_BIT_OUTPUT_ELEMENT) - 1 downto (i * N_BIT_OUTPUT_ELEMENT) +) <= out_dff(i);
+        convolution(((i + 1) * N_BIT_OUTPUT_ELEMENT) - 1 downto (i * N_BIT_OUTPUT_ELEMENT)) <= out_dff(i);
     end generate;
 
     conv_process: process(clk, rst)

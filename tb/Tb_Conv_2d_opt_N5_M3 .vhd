@@ -5,10 +5,10 @@ use work.Utils.all;
 use std.textio.all;
 use IEEE.std_logic_textio.all;
 
-entity Tb_Conv_2d_N5_M3 is
+entity Tb_Conv_2d_opt_N5_M3 is
 end entity;
 
-architecture tb of Tb_Conv_2d_N5_M3 is
+architecture tb of Tb_Conv_2d_opt_N5_M3 is
 
     component Conv_2d_opt is
     generic(
@@ -106,15 +106,14 @@ begin
         i_f         <= '0';
         x           <= "11000111";
         wait until rising_edge(clk_ext);
-
         x_valid     <= '1';
         i_f         <= '0';
         x           <= "00000001";
-
-        -- fine aspetto fino a quando y_vlaid = 1
+        -- fine aspetto fino a quando y_valid = 1
         wait until rising_edge(y_valid_ext);
         write(riga, y_ext);
         writeline(output, riga);
+        wait for 256*100 ns;
 
         --------------------------------------------------------------------------
         -- TEST PROCESS: Caso d'uso con corretto pilotaggio, solamente che i bit "scartati" sono ad uno anzich è 0 
@@ -159,8 +158,8 @@ begin
         x           <= "11111111";   -- <--- Cambia qua
         wait until rising_edge(clk_ext);
 
-        -- fine aspetto un po' e vedo il risutato quando y_vlaid = 1
-        wait for 20*100 ns;
+        -- fine aspetto un po' e vedo il risutato quando y_valid = 1
+        wait for 200*100 ns;
         wait until rising_edge(clk_ext);
 
         --------------------------------------------------------------------------
@@ -206,7 +205,7 @@ begin
         wait until rising_edge(clk_ext);
 
         -- fine aspetto un po' e vedo il risutato quando y_vlaid = 1
-        wait for 20*100 ns;
+        wait for 200*100 ns;
         wait until rising_edge(clk_ext);
 
         --------------------------------------------------------------------------
@@ -252,7 +251,7 @@ begin
         wait until rising_edge(clk_ext);
 
         -- fine aspetto un po' e vedo il risutato quando y_vlaid = 1
-        wait for 30*100 ns;
+        wait for 200*100 ns;
         wait until rising_edge(clk_ext);
 
         --------------------------------------------------------------------------
@@ -345,7 +344,7 @@ begin
 
         -- 10) Output atteso in hex 454 - 545 - 454
         --     Se almeno un input inatteso fosse stato salvato l'output sarebbe diverso
-        wait for 30*100 ns;
+        wait for 200*100 ns;
         wait until rising_edge(clk_ext);
         --------------------------------------------------------------------------
         -- TEST PROCESS: Stesso esempio di prima ma provo a cambiare il filtro durante l'esecuzione

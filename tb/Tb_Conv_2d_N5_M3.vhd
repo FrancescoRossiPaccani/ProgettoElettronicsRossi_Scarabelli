@@ -111,10 +111,14 @@ begin
         i_f         <= '0';
         x           <= "00000001";
 
-        -- fine aspetto fino a quando y_vlaid = 1
-        wait until rising_edge(y_valid_ext);
-        write(riga, y_ext);
-        writeline(output, riga);
+        wait for 30*100 ns;
+        wait until rising_edge(clk_ext);
+
+        -- -- fine aspetto fino a quando y_vlaid = 1
+        -- wait until rising_edge(y_valid_ext);
+        -- write(riga, y_ext);
+        -- writeline(output, riga);
+
 
         --------------------------------------------------------------------------
         -- TEST PROCESS: Caso d'uso con corretto pilotaggio, solamente che i bit "scartati" sono ad uno anzich è 0 

@@ -2,8 +2,7 @@
 # Compile of As_Counter.vhd was successful.
 # Compile of Conv_2d.vhdl was successful.
 # Compile of Conv_2d_input.vhd was successful.
-# Compile of Conv_2d_output.vhd was successful.
-# Compile of Counter.vhd was successful.
+# Compile of Conv_2d_output.vhd was successful with warnings.
 # Compile of D_Flip_Flop.vhd was successful.
 # Compile of fifo.vhd was successful.
 # Compile of full_adder.vhd was successful.
@@ -18,4 +17,2866 @@
 # Compile of Tb_Conv_2d_N5_M3.vhd was successful.
 # Compile of Tb_Conv_2d_N7_M4.vhd was successful.
 # Compile of tb_memory.vhd was successful.
-# 19 compiles, 0 failed with no errors.
+# Compile of Conv_2d _opt.vhdl was successful.
+# Compile of Conv_2d_output_opt.vhd was successful.
+# Compile of COUNTER_OPT.vhd was successful with warnings.
+# Compile of SHIFT_REGISTER.vhd was successful.
+# Compile of wrapper_conv_2s_opt.vhd was successful.
+# Compile of Tb_Conv_2d_opt_N5_M3 .vhd was successful.
+# 24 compiles, 0 failed with no errors.
+vsim work.tb_conv_2d_opt_n5_m3
+# vsim work.tb_conv_2d_opt_n5_m3 
+# Start time: 14:59:49 on Jan 05,2026
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.utils(body)
+# Loading ieee.std_logic_textio(body)
+# Loading work.tb_conv_2d_opt_n5_m3(tb)
+# Loading work.conv_2d_opt(c2d)
+# Loading work.conv_2d_input(c2d)
+# Loading work.as_counter(asc)
+# Loading work.ripplecarryadder(rca)
+# Loading work.fulladder(dataflow)
+# Loading work.d_flip_flop(dff)
+# Loading work.memory(mem)
+# Loading work.conv_2d_output_opt(conv_bh)
+# Loading work.mux(mux_bh)
+# Loading work.counter_opt(copt)
+# Loading work.shift_register(rtl)
+add wave -position insertpoint  \
+sim:/tb_conv_2d_opt_n5_m3/clk_ext \
+sim:/tb_conv_2d_opt_n5_m3/reset_ext \
+sim:/tb_conv_2d_opt_n5_m3/x_valid \
+sim:/tb_conv_2d_opt_n5_m3/i_f \
+sim:/tb_conv_2d_opt_n5_m3/x \
+sim:/tb_conv_2d_opt_n5_m3/testing \
+sim:/tb_conv_2d_opt_n5_m3/y_ext \
+sim:/tb_conv_2d_opt_n5_m3/y_valid_ext \
+sim:/tb_conv_2d_opt_n5_m3/N \
+sim:/tb_conv_2d_opt_n5_m3/M \
+sim:/tb_conv_2d_opt_n5_m3/Nbit \
+sim:/tb_conv_2d_opt_n5_m3/clk_period
+run -all
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_OUT/mux_istances(8)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_OUT/mux_istances(7)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_OUT/mux_istances(6)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_OUT/mux_istances(5)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_OUT/mux_istances(4)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_OUT/mux_istances(3)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_OUT/mux_istances(2)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_OUT/mux_istances(1)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_OUT/mux_istances(0)/mux_i
+# ** Warning: NUMERIC_STD.">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_INP
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_INP
+add wave -position insertpoint  \
+sim:/tb_conv_2d_opt_n5_m3/UUT/C_OUT/c_opt/N_input \
+sim:/tb_conv_2d_opt_n5_m3/UUT/C_OUT/c_opt/clk \
+sim:/tb_conv_2d_opt_n5_m3/UUT/C_OUT/c_opt/rst \
+sim:/tb_conv_2d_opt_n5_m3/UUT/C_OUT/c_opt/x_in \
+sim:/tb_conv_2d_opt_n5_m3/UUT/C_OUT/c_opt/x_out \
+sim:/tb_conv_2d_opt_n5_m3/UUT/C_OUT/c_opt/load \
+sim:/tb_conv_2d_opt_n5_m3/UUT/C_OUT/c_opt/end_flag \
+sim:/tb_conv_2d_opt_n5_m3/UUT/C_OUT/c_opt/counter_output \
+sim:/tb_conv_2d_opt_n5_m3/UUT/C_OUT/c_opt/shift_register_output \
+sim:/tb_conv_2d_opt_n5_m3/UUT/C_OUT/c_opt/status_input \
+sim:/tb_conv_2d_opt_n5_m3/UUT/C_OUT/c_opt/counter_input \
+sim:/tb_conv_2d_opt_n5_m3/UUT/C_OUT/c_opt/resetn_shr \
+sim:/tb_conv_2d_opt_n5_m3/UUT/C_OUT/c_opt/reset_counter \
+sim:/tb_conv_2d_opt_n5_m3/UUT/C_OUT/c_opt/resetn_counter \
+sim:/tb_conv_2d_opt_n5_m3/UUT/C_OUT/c_opt/N_BIT_OUTPUT
+run -all
+quit -sim
+# End time: 15:05:48 on Jan 05,2026, Elapsed time: 0:05:59
+# Errors: 0, Warnings: 13
+# Compile of As_Counter.vhd was successful.
+# Compile of Conv_2d.vhdl was successful.
+# Compile of Conv_2d_input.vhd was successful.
+# Compile of Conv_2d_output.vhd was successful with warnings.
+# Compile of D_Flip_Flop.vhd was successful.
+# Compile of fifo.vhd was successful.
+# Compile of full_adder.vhd was successful.
+# Compile of fullAdder.vhd was successful.
+# Compile of Memory.vhd was successful.
+# Compile of mux.vhd was successful.
+# Compile of RippleCarryAdder.vhd was successful.
+# Compile of testbench_conv2d_input.vhd was successful.
+# Compile of Utils.vhd was successful.
+# Compile of wrapper_conv_2s.vhd was successful.
+# Compile of long_tb.vhdl was successful.
+# Compile of Tb_Conv_2d_N5_M3.vhd was successful.
+# Compile of Tb_Conv_2d_N7_M4.vhd was successful.
+# Compile of tb_memory.vhd was successful.
+# Compile of Conv_2d _opt.vhdl was successful.
+# Compile of Conv_2d_output_opt.vhd was successful.
+# Compile of COUNTER_OPT.vhd was successful with warnings.
+# Compile of SHIFT_REGISTER.vhd was successful.
+# Compile of wrapper_conv_2s_opt.vhd was successful.
+# Compile of Tb_Conv_2d_opt_N5_M3 .vhd was successful.
+# 24 compiles, 0 failed with no errors.
+vsim work.tb_conv_2d_opt_n5_m3
+# vsim work.tb_conv_2d_opt_n5_m3 
+# Start time: 15:06:30 on Jan 05,2026
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.utils(body)
+# Loading ieee.std_logic_textio(body)
+# Loading work.tb_conv_2d_opt_n5_m3(tb)
+# Loading work.conv_2d_opt(c2d)
+# Loading work.conv_2d_input(c2d)
+# Loading work.as_counter(asc)
+# Loading work.ripplecarryadder(rca)
+# Loading work.fulladder(dataflow)
+# Loading work.d_flip_flop(dff)
+# Loading work.memory(mem)
+# Loading work.conv_2d_output_opt(conv_bh)
+# Loading work.mux(mux_bh)
+# Loading work.counter_opt(copt)
+# Loading work.shift_register(rtl)
+add wave -position insertpoint  \
+sim:/tb_conv_2d_opt_n5_m3/clk_ext \
+sim:/tb_conv_2d_opt_n5_m3/reset_ext \
+sim:/tb_conv_2d_opt_n5_m3/x_valid \
+sim:/tb_conv_2d_opt_n5_m3/i_f \
+sim:/tb_conv_2d_opt_n5_m3/x \
+sim:/tb_conv_2d_opt_n5_m3/testing \
+sim:/tb_conv_2d_opt_n5_m3/y_ext \
+sim:/tb_conv_2d_opt_n5_m3/y_valid_ext \
+sim:/tb_conv_2d_opt_n5_m3/N \
+sim:/tb_conv_2d_opt_n5_m3/M \
+sim:/tb_conv_2d_opt_n5_m3/Nbit \
+sim:/tb_conv_2d_opt_n5_m3/clk_period
+run -all
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_OUT/mux_istances(8)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_OUT/mux_istances(7)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_OUT/mux_istances(6)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_OUT/mux_istances(5)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_OUT/mux_istances(4)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_OUT/mux_istances(3)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_OUT/mux_istances(2)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_OUT/mux_istances(1)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_OUT/mux_istances(0)/mux_i
+# ** Warning: NUMERIC_STD.">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_INP
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_INP
+# 001100110010001000100010000100010001
+add wave -position insertpoint  \
+sim:/tb_conv_2d_opt_n5_m3/UUT/C_INP/en_execution
+add wave -position insertpoint  \
+sim:/tb_conv_2d_opt_n5_m3/UUT/C_OUT/output_counter \
+sim:/tb_conv_2d_opt_n5_m3/UUT/C_OUT/output_counter_prev
+add wave -position insertpoint  \
+sim:/tb_conv_2d_opt_n5_m3/UUT/C_OUT/c_opt/N_input \
+sim:/tb_conv_2d_opt_n5_m3/UUT/C_OUT/c_opt/clk \
+sim:/tb_conv_2d_opt_n5_m3/UUT/C_OUT/c_opt/rst \
+sim:/tb_conv_2d_opt_n5_m3/UUT/C_OUT/c_opt/x_in \
+sim:/tb_conv_2d_opt_n5_m3/UUT/C_OUT/c_opt/x_out \
+sim:/tb_conv_2d_opt_n5_m3/UUT/C_OUT/c_opt/load \
+sim:/tb_conv_2d_opt_n5_m3/UUT/C_OUT/c_opt/end_flag \
+sim:/tb_conv_2d_opt_n5_m3/UUT/C_OUT/c_opt/counter_output \
+sim:/tb_conv_2d_opt_n5_m3/UUT/C_OUT/c_opt/shift_register_output \
+sim:/tb_conv_2d_opt_n5_m3/UUT/C_OUT/c_opt/status_input \
+sim:/tb_conv_2d_opt_n5_m3/UUT/C_OUT/c_opt/counter_input \
+sim:/tb_conv_2d_opt_n5_m3/UUT/C_OUT/c_opt/resetn_shr \
+sim:/tb_conv_2d_opt_n5_m3/UUT/C_OUT/c_opt/reset_counter \
+sim:/tb_conv_2d_opt_n5_m3/UUT/C_OUT/c_opt/resetn_counter \
+sim:/tb_conv_2d_opt_n5_m3/UUT/C_OUT/c_opt/N_BIT_OUTPUT
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+run -all
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_OUT/mux_istances(8)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_OUT/mux_istances(7)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_OUT/mux_istances(6)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_OUT/mux_istances(5)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_OUT/mux_istances(4)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_OUT/mux_istances(3)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_OUT/mux_istances(2)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_OUT/mux_istances(1)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_OUT/mux_istances(0)/mux_i
+# ** Warning: NUMERIC_STD.">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_INP
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_INP
+# 001100110010001000100010000100010001
+quit -sim
+# End time: 15:12:57 on Jan 05,2026, Elapsed time: 0:06:27
+# Errors: 0, Warnings: 12
+# Compile of As_Counter.vhd was successful.
+# Compile of Conv_2d.vhdl was successful.
+# Compile of Conv_2d_input.vhd was successful.
+# Compile of Conv_2d_output.vhd was successful with warnings.
+# Compile of D_Flip_Flop.vhd was successful.
+# Compile of fifo.vhd was successful.
+# Compile of full_adder.vhd was successful.
+# Compile of fullAdder.vhd was successful.
+# Compile of Memory.vhd was successful.
+# Compile of mux.vhd was successful.
+# Compile of RippleCarryAdder.vhd was successful.
+# Compile of testbench_conv2d_input.vhd was successful.
+# Compile of Utils.vhd was successful.
+# Compile of wrapper_conv_2s.vhd was successful.
+# Compile of long_tb.vhdl was successful.
+# Compile of Tb_Conv_2d_N5_M3.vhd was successful.
+# Compile of Tb_Conv_2d_N7_M4.vhd was successful.
+# Compile of tb_memory.vhd was successful.
+# Compile of Conv_2d _opt.vhdl was successful.
+# Compile of Conv_2d_output_opt.vhd was successful.
+# Compile of COUNTER_OPT.vhd was successful with warnings.
+# Compile of SHIFT_REGISTER.vhd was successful.
+# Compile of wrapper_conv_2s_opt.vhd was successful.
+# Compile of Tb_Conv_2d_opt_N5_M3 .vhd was successful.
+# 24 compiles, 0 failed with no errors.
+vsim work.tb_conv_2d_opt_n5_m3
+# vsim work.tb_conv_2d_opt_n5_m3 
+# Start time: 15:14:02 on Jan 05,2026
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.utils(body)
+# Loading ieee.std_logic_textio(body)
+# Loading work.tb_conv_2d_opt_n5_m3(tb)
+# Loading work.conv_2d_opt(c2d)
+# Loading work.conv_2d_input(c2d)
+# Loading work.as_counter(asc)
+# Loading work.ripplecarryadder(rca)
+# Loading work.fulladder(dataflow)
+# Loading work.d_flip_flop(dff)
+# Loading work.memory(mem)
+# Loading work.conv_2d_output_opt(conv_bh)
+# Loading work.mux(mux_bh)
+# Loading work.counter_opt(copt)
+# Loading work.shift_register(rtl)
+add wave -position insertpoint  \
+sim:/tb_conv_2d_opt_n5_m3/clk_ext \
+sim:/tb_conv_2d_opt_n5_m3/reset_ext \
+sim:/tb_conv_2d_opt_n5_m3/x_valid \
+sim:/tb_conv_2d_opt_n5_m3/i_f \
+sim:/tb_conv_2d_opt_n5_m3/x \
+sim:/tb_conv_2d_opt_n5_m3/testing \
+sim:/tb_conv_2d_opt_n5_m3/y_ext \
+sim:/tb_conv_2d_opt_n5_m3/y_valid_ext \
+sim:/tb_conv_2d_opt_n5_m3/N \
+sim:/tb_conv_2d_opt_n5_m3/M \
+sim:/tb_conv_2d_opt_n5_m3/Nbit \
+sim:/tb_conv_2d_opt_n5_m3/clk_period
+add wave -position insertpoint  \
+sim:/tb_conv_2d_opt_n5_m3/UUT/C_OUT/N \
+sim:/tb_conv_2d_opt_n5_m3/UUT/C_OUT/M \
+sim:/tb_conv_2d_opt_n5_m3/UUT/C_OUT/clk \
+sim:/tb_conv_2d_opt_n5_m3/UUT/C_OUT/rst \
+sim:/tb_conv_2d_opt_n5_m3/UUT/C_OUT/matrix \
+sim:/tb_conv_2d_opt_n5_m3/UUT/C_OUT/filter \
+sim:/tb_conv_2d_opt_n5_m3/UUT/C_OUT/en \
+sim:/tb_conv_2d_opt_n5_m3/UUT/C_OUT/convolution \
+sim:/tb_conv_2d_opt_n5_m3/UUT/C_OUT/convolution_ready \
+sim:/tb_conv_2d_opt_n5_m3/UUT/C_OUT/mux_control \
+sim:/tb_conv_2d_opt_n5_m3/UUT/C_OUT/a_extended \
+sim:/tb_conv_2d_opt_n5_m3/UUT/C_OUT/adder_out_adder_in \
+sim:/tb_conv_2d_opt_n5_m3/UUT/C_OUT/out_dff \
+sim:/tb_conv_2d_opt_n5_m3/UUT/C_OUT/rst_n \
+sim:/tb_conv_2d_opt_n5_m3/UUT/C_OUT/input_counter \
+sim:/tb_conv_2d_opt_n5_m3/UUT/C_OUT/output_counter \
+sim:/tb_conv_2d_opt_n5_m3/UUT/C_OUT/mux_to_and \
+sim:/tb_conv_2d_opt_n5_m3/UUT/C_OUT/and_to_adder \
+sim:/tb_conv_2d_opt_n5_m3/UUT/C_OUT/adder_to_dff \
+sim:/tb_conv_2d_opt_n5_m3/UUT/C_OUT/en_dff \
+sim:/tb_conv_2d_opt_n5_m3/UUT/C_OUT/counter_val \
+sim:/tb_conv_2d_opt_n5_m3/UUT/C_OUT/current_index \
+sim:/tb_conv_2d_opt_n5_m3/UUT/C_OUT/load \
+sim:/tb_conv_2d_opt_n5_m3/UUT/C_OUT/end_flag \
+sim:/tb_conv_2d_opt_n5_m3/UUT/C_OUT/output_counter_prev \
+sim:/tb_conv_2d_opt_n5_m3/UUT/C_OUT/x_in_ret \
+sim:/tb_conv_2d_opt_n5_m3/UUT/C_OUT/OUTPUT_DIMENSION \
+sim:/tb_conv_2d_opt_n5_m3/UUT/C_OUT/N_OUTPUT_ELEMENTS \
+sim:/tb_conv_2d_opt_n5_m3/UUT/C_OUT/N_BITS_COUNTER \
+sim:/tb_conv_2d_opt_n5_m3/UUT/C_OUT/N_BITS_CONTROL_MUX \
+sim:/tb_conv_2d_opt_n5_m3/UUT/C_OUT/N_BIT_OUTPUT_ELEMENT
+add wave -position insertpoint  \
+sim:/tb_conv_2d_opt_n5_m3/UUT/C_OUT/c_opt/N_input \
+sim:/tb_conv_2d_opt_n5_m3/UUT/C_OUT/c_opt/clk \
+sim:/tb_conv_2d_opt_n5_m3/UUT/C_OUT/c_opt/rst \
+sim:/tb_conv_2d_opt_n5_m3/UUT/C_OUT/c_opt/x_in \
+sim:/tb_conv_2d_opt_n5_m3/UUT/C_OUT/c_opt/x_out \
+sim:/tb_conv_2d_opt_n5_m3/UUT/C_OUT/c_opt/load \
+sim:/tb_conv_2d_opt_n5_m3/UUT/C_OUT/c_opt/end_flag \
+sim:/tb_conv_2d_opt_n5_m3/UUT/C_OUT/c_opt/counter_output \
+sim:/tb_conv_2d_opt_n5_m3/UUT/C_OUT/c_opt/shift_register_output \
+sim:/tb_conv_2d_opt_n5_m3/UUT/C_OUT/c_opt/status_input \
+sim:/tb_conv_2d_opt_n5_m3/UUT/C_OUT/c_opt/counter_input \
+sim:/tb_conv_2d_opt_n5_m3/UUT/C_OUT/c_opt/resetn_shr \
+sim:/tb_conv_2d_opt_n5_m3/UUT/C_OUT/c_opt/reset_counter \
+sim:/tb_conv_2d_opt_n5_m3/UUT/C_OUT/c_opt/resetn_counter \
+sim:/tb_conv_2d_opt_n5_m3/UUT/C_OUT/c_opt/N_BIT_OUTPUT
+run -continue
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_OUT/mux_istances(8)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_OUT/mux_istances(7)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_OUT/mux_istances(6)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_OUT/mux_istances(5)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_OUT/mux_istances(4)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_OUT/mux_istances(3)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_OUT/mux_istances(2)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_OUT/mux_istances(1)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_OUT/mux_istances(0)/mux_i
+# ** Warning: NUMERIC_STD.">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_INP
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_INP
+run -all
+# 001100110010001000100010000100010001
+quit -sim
+# End time: 15:18:44 on Jan 05,2026, Elapsed time: 0:04:42
+# Errors: 0, Warnings: 13
+# Compile of As_Counter.vhd was successful.
+# Compile of Conv_2d.vhdl was successful.
+# Compile of Conv_2d_input.vhd was successful.
+# Compile of Conv_2d_output.vhd was successful with warnings.
+# Compile of D_Flip_Flop.vhd was successful.
+# Compile of fifo.vhd was successful.
+# Compile of full_adder.vhd was successful.
+# Compile of fullAdder.vhd was successful.
+# Compile of Memory.vhd was successful.
+# Compile of mux.vhd was successful.
+# Compile of RippleCarryAdder.vhd was successful.
+# Compile of testbench_conv2d_input.vhd was successful.
+# Compile of Utils.vhd was successful.
+# Compile of wrapper_conv_2s.vhd was successful.
+# Compile of long_tb.vhdl was successful.
+# Compile of Tb_Conv_2d_N5_M3.vhd was successful.
+# Compile of Tb_Conv_2d_N7_M4.vhd was successful.
+# Compile of tb_memory.vhd was successful.
+# Compile of Conv_2d _opt.vhdl was successful.
+# Compile of Conv_2d_output_opt.vhd was successful.
+# Compile of COUNTER_OPT.vhd was successful with warnings.
+# Compile of SHIFT_REGISTER.vhd was successful.
+# Compile of wrapper_conv_2s_opt.vhd was successful.
+# Compile of Tb_Conv_2d_opt_N5_M3 .vhd was successful.
+# 24 compiles, 0 failed with no errors.
+vsim work.tb_conv_2d_opt_n5_m3
+# vsim work.tb_conv_2d_opt_n5_m3 
+# Start time: 15:18:56 on Jan 05,2026
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.utils(body)
+# Loading ieee.std_logic_textio(body)
+# Loading work.tb_conv_2d_opt_n5_m3(tb)
+# Loading work.conv_2d_opt(c2d)
+# Loading work.conv_2d_input(c2d)
+# Loading work.as_counter(asc)
+# Loading work.ripplecarryadder(rca)
+# Loading work.fulladder(dataflow)
+# Loading work.d_flip_flop(dff)
+# Loading work.memory(mem)
+# Loading work.conv_2d_output_opt(conv_bh)
+# Loading work.mux(mux_bh)
+# Loading work.counter_opt(copt)
+# Loading work.shift_register(rtl)
+add wave -position insertpoint  \
+sim:/tb_conv_2d_opt_n5_m3/clk_ext \
+sim:/tb_conv_2d_opt_n5_m3/reset_ext \
+sim:/tb_conv_2d_opt_n5_m3/x_valid \
+sim:/tb_conv_2d_opt_n5_m3/i_f \
+sim:/tb_conv_2d_opt_n5_m3/x \
+sim:/tb_conv_2d_opt_n5_m3/testing \
+sim:/tb_conv_2d_opt_n5_m3/y_ext \
+sim:/tb_conv_2d_opt_n5_m3/y_valid_ext \
+sim:/tb_conv_2d_opt_n5_m3/N \
+sim:/tb_conv_2d_opt_n5_m3/M \
+sim:/tb_conv_2d_opt_n5_m3/Nbit \
+sim:/tb_conv_2d_opt_n5_m3/clk_period
+run -continue
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_OUT/mux_istances(8)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_OUT/mux_istances(7)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_OUT/mux_istances(6)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_OUT/mux_istances(5)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_OUT/mux_istances(4)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_OUT/mux_istances(3)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_OUT/mux_istances(2)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_OUT/mux_istances(1)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_OUT/mux_istances(0)/mux_i
+# ** Warning: NUMERIC_STD.">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_INP
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_INP
+run -continue
+run -all
+# 001100110010001000100010000100010001
+add wave -position insertpoint  \
+sim:/tb_conv_2d_opt_n5_m3/UUT/C_OUT/c_opt/N_input \
+sim:/tb_conv_2d_opt_n5_m3/UUT/C_OUT/c_opt/clk \
+sim:/tb_conv_2d_opt_n5_m3/UUT/C_OUT/c_opt/rst \
+sim:/tb_conv_2d_opt_n5_m3/UUT/C_OUT/c_opt/x_in \
+sim:/tb_conv_2d_opt_n5_m3/UUT/C_OUT/c_opt/x_out \
+sim:/tb_conv_2d_opt_n5_m3/UUT/C_OUT/c_opt/load \
+sim:/tb_conv_2d_opt_n5_m3/UUT/C_OUT/c_opt/end_flag \
+sim:/tb_conv_2d_opt_n5_m3/UUT/C_OUT/c_opt/counter_output \
+sim:/tb_conv_2d_opt_n5_m3/UUT/C_OUT/c_opt/shift_register_output \
+sim:/tb_conv_2d_opt_n5_m3/UUT/C_OUT/c_opt/status_input \
+sim:/tb_conv_2d_opt_n5_m3/UUT/C_OUT/c_opt/counter_input \
+sim:/tb_conv_2d_opt_n5_m3/UUT/C_OUT/c_opt/resetn_shr \
+sim:/tb_conv_2d_opt_n5_m3/UUT/C_OUT/c_opt/reset_counter \
+sim:/tb_conv_2d_opt_n5_m3/UUT/C_OUT/c_opt/resetn_counter \
+sim:/tb_conv_2d_opt_n5_m3/UUT/C_OUT/c_opt/N_BIT_OUTPUT
+run -all
+# Load canceled
+run -all
+run -all
+# Break key hit
+run -all
+add wave -position insertpoint  \
+sim:/tb_conv_2d_opt_n5_m3/UUT/C_OUT/c_opt/N_input \
+sim:/tb_conv_2d_opt_n5_m3/UUT/C_OUT/c_opt/clk \
+sim:/tb_conv_2d_opt_n5_m3/UUT/C_OUT/c_opt/rst \
+sim:/tb_conv_2d_opt_n5_m3/UUT/C_OUT/c_opt/x_in \
+sim:/tb_conv_2d_opt_n5_m3/UUT/C_OUT/c_opt/x_out \
+sim:/tb_conv_2d_opt_n5_m3/UUT/C_OUT/c_opt/load \
+sim:/tb_conv_2d_opt_n5_m3/UUT/C_OUT/c_opt/end_flag \
+sim:/tb_conv_2d_opt_n5_m3/UUT/C_OUT/c_opt/counter_output \
+sim:/tb_conv_2d_opt_n5_m3/UUT/C_OUT/c_opt/shift_register_output \
+sim:/tb_conv_2d_opt_n5_m3/UUT/C_OUT/c_opt/status_input \
+sim:/tb_conv_2d_opt_n5_m3/UUT/C_OUT/c_opt/counter_input \
+sim:/tb_conv_2d_opt_n5_m3/UUT/C_OUT/c_opt/resetn_shr \
+sim:/tb_conv_2d_opt_n5_m3/UUT/C_OUT/c_opt/reset_counter \
+sim:/tb_conv_2d_opt_n5_m3/UUT/C_OUT/c_opt/resetn_counter \
+sim:/tb_conv_2d_opt_n5_m3/UUT/C_OUT/c_opt/N_BIT_OUTPUT
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+run -all
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_OUT/mux_istances(8)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_OUT/mux_istances(7)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_OUT/mux_istances(6)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_OUT/mux_istances(5)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_OUT/mux_istances(4)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_OUT/mux_istances(3)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_OUT/mux_istances(2)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_OUT/mux_istances(1)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_OUT/mux_istances(0)/mux_i
+# ** Warning: NUMERIC_STD.">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_INP
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_INP
+# 001100110010001000100010000100010001
+add wave -position insertpoint  \
+sim:/tb_conv_2d_opt_n5_m3/UUT/C_OUT/output_counter \
+sim:/tb_conv_2d_opt_n5_m3/UUT/C_OUT/output_counter_prev
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+run -all
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_OUT/mux_istances(8)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_OUT/mux_istances(7)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_OUT/mux_istances(6)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_OUT/mux_istances(5)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_OUT/mux_istances(4)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_OUT/mux_istances(3)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_OUT/mux_istances(2)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_OUT/mux_istances(1)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_OUT/mux_istances(0)/mux_i
+# ** Warning: NUMERIC_STD.">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_INP
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_INP
+# 001100110010001000100010000100010001
+# WARNING: No extended dataflow license exists
+quit -sim
+# End time: 15:28:25 on Jan 05,2026, Elapsed time: 0:09:29
+# Errors: 0, Warnings: 12
+# Compile of As_Counter.vhd was successful.
+# Compile of Conv_2d.vhdl was successful.
+# Compile of Conv_2d_input.vhd was successful.
+# Compile of Conv_2d_output.vhd was successful with warnings.
+# Compile of D_Flip_Flop.vhd was successful.
+# Compile of fifo.vhd was successful.
+# Compile of full_adder.vhd was successful.
+# Compile of fullAdder.vhd was successful.
+# Compile of Memory.vhd was successful.
+# Compile of mux.vhd was successful.
+# Compile of RippleCarryAdder.vhd was successful.
+# Compile of testbench_conv2d_input.vhd was successful.
+# Compile of Utils.vhd was successful.
+# Compile of wrapper_conv_2s.vhd was successful.
+# Compile of long_tb.vhdl was successful.
+# Compile of Tb_Conv_2d_N5_M3.vhd was successful.
+# Compile of Tb_Conv_2d_N7_M4.vhd was successful.
+# Compile of tb_memory.vhd was successful.
+# Compile of Conv_2d _opt.vhdl was successful.
+# Compile of Conv_2d_output_opt.vhd was successful.
+# Compile of COUNTER_OPT.vhd was successful with warnings.
+# Compile of SHIFT_REGISTER.vhd was successful.
+# Compile of wrapper_conv_2s_opt.vhd was successful.
+# Compile of Tb_Conv_2d_opt_N5_M3 .vhd was successful.
+# 24 compiles, 0 failed with no errors.
+vsim work.tb_conv_2d_opt_n5_m3
+# vsim work.tb_conv_2d_opt_n5_m3 
+# Start time: 15:28:51 on Jan 05,2026
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.utils(body)
+# Loading ieee.std_logic_textio(body)
+# Loading work.tb_conv_2d_opt_n5_m3(tb)
+# Loading work.conv_2d_opt(c2d)
+# Loading work.conv_2d_input(c2d)
+# Loading work.as_counter(asc)
+# Loading work.ripplecarryadder(rca)
+# Loading work.fulladder(dataflow)
+# Loading work.d_flip_flop(dff)
+# Loading work.memory(mem)
+# Loading work.conv_2d_output_opt(conv_bh)
+# Loading work.mux(mux_bh)
+# Loading work.counter_opt(copt)
+# Loading work.shift_register(rtl)
+# WARNING: No extended dataflow license exists
+add wave -position insertpoint  \
+sim:/tb_conv_2d_opt_n5_m3/clk_ext \
+sim:/tb_conv_2d_opt_n5_m3/reset_ext \
+sim:/tb_conv_2d_opt_n5_m3/x_valid \
+sim:/tb_conv_2d_opt_n5_m3/i_f \
+sim:/tb_conv_2d_opt_n5_m3/x \
+sim:/tb_conv_2d_opt_n5_m3/testing \
+sim:/tb_conv_2d_opt_n5_m3/y_ext \
+sim:/tb_conv_2d_opt_n5_m3/y_valid_ext \
+sim:/tb_conv_2d_opt_n5_m3/N \
+sim:/tb_conv_2d_opt_n5_m3/M \
+sim:/tb_conv_2d_opt_n5_m3/Nbit \
+sim:/tb_conv_2d_opt_n5_m3/clk_period
+run -all
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_OUT/mux_istances(8)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_OUT/mux_istances(7)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_OUT/mux_istances(6)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_OUT/mux_istances(5)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_OUT/mux_istances(4)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_OUT/mux_istances(3)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_OUT/mux_istances(2)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_OUT/mux_istances(1)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_OUT/mux_istances(0)/mux_i
+# ** Warning: NUMERIC_STD.">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_INP
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_INP
+# 001100110010001000100010000100010001
+add wave -position insertpoint  \
+sim:/tb_conv_2d_opt_n5_m3/UUT/C_OUT/c_opt/N_input \
+sim:/tb_conv_2d_opt_n5_m3/UUT/C_OUT/c_opt/clk \
+sim:/tb_conv_2d_opt_n5_m3/UUT/C_OUT/c_opt/rst \
+sim:/tb_conv_2d_opt_n5_m3/UUT/C_OUT/c_opt/x_in \
+sim:/tb_conv_2d_opt_n5_m3/UUT/C_OUT/c_opt/x_out \
+sim:/tb_conv_2d_opt_n5_m3/UUT/C_OUT/c_opt/load \
+sim:/tb_conv_2d_opt_n5_m3/UUT/C_OUT/c_opt/end_flag \
+sim:/tb_conv_2d_opt_n5_m3/UUT/C_OUT/c_opt/counter_output \
+sim:/tb_conv_2d_opt_n5_m3/UUT/C_OUT/c_opt/shift_register_output \
+sim:/tb_conv_2d_opt_n5_m3/UUT/C_OUT/c_opt/status_input \
+sim:/tb_conv_2d_opt_n5_m3/UUT/C_OUT/c_opt/counter_input \
+sim:/tb_conv_2d_opt_n5_m3/UUT/C_OUT/c_opt/resetn_shr \
+sim:/tb_conv_2d_opt_n5_m3/UUT/C_OUT/c_opt/reset_counter \
+sim:/tb_conv_2d_opt_n5_m3/UUT/C_OUT/c_opt/resetn_counter \
+sim:/tb_conv_2d_opt_n5_m3/UUT/C_OUT/c_opt/N_BIT_OUTPUT
+run -all
+run -all
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+run -continue
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_OUT/mux_istances(8)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_OUT/mux_istances(7)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_OUT/mux_istances(6)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_OUT/mux_istances(5)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_OUT/mux_istances(4)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_OUT/mux_istances(3)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_OUT/mux_istances(2)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_OUT/mux_istances(1)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_OUT/mux_istances(0)/mux_i
+# ** Warning: NUMERIC_STD.">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_INP
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_INP
+# 001100110010001000100010000100010001
+# Compile of As_Counter.vhd was successful.
+# Compile of Conv_2d.vhdl was successful.
+# Compile of Conv_2d_input.vhd was successful.
+# Compile of Conv_2d_output.vhd was successful with warnings.
+# Compile of D_Flip_Flop.vhd was successful.
+# Compile of fifo.vhd was successful.
+# Compile of full_adder.vhd was successful.
+# Compile of fullAdder.vhd was successful.
+# Compile of Memory.vhd was successful.
+# Compile of mux.vhd was successful.
+# Compile of RippleCarryAdder.vhd was successful.
+# Compile of testbench_conv2d_input.vhd was successful.
+# Compile of Utils.vhd was successful.
+# Compile of wrapper_conv_2s.vhd was successful.
+# Compile of long_tb.vhdl was successful.
+# Compile of Tb_Conv_2d_N5_M3.vhd was successful.
+# Compile of Tb_Conv_2d_N7_M4.vhd was successful.
+# Compile of tb_memory.vhd was successful.
+# Compile of Conv_2d _opt.vhdl was successful.
+# Compile of Conv_2d_output_opt.vhd was successful.
+# Compile of COUNTER_OPT.vhd was successful with warnings.
+# Compile of SHIFT_REGISTER.vhd was successful.
+# Compile of wrapper_conv_2s_opt.vhd was successful.
+# Compile of Tb_Conv_2d_opt_N5_M3 .vhd was successful.
+# 24 compiles, 0 failed with no errors.
+quit -sim
+# End time: 15:34:58 on Jan 05,2026, Elapsed time: 0:06:07
+# Errors: 0, Warnings: 13
+# Compile of As_Counter.vhd was successful.
+# Compile of Conv_2d.vhdl was successful.
+# Compile of Conv_2d_input.vhd was successful.
+# Compile of Conv_2d_output.vhd was successful with warnings.
+# Compile of D_Flip_Flop.vhd was successful.
+# Compile of fifo.vhd was successful.
+# Compile of full_adder.vhd was successful.
+# Compile of fullAdder.vhd was successful.
+# Compile of Memory.vhd was successful.
+# Compile of mux.vhd was successful.
+# Compile of RippleCarryAdder.vhd was successful.
+# Compile of testbench_conv2d_input.vhd was successful.
+# Compile of Utils.vhd was successful.
+# Compile of wrapper_conv_2s.vhd was successful.
+# Compile of long_tb.vhdl was successful.
+# Compile of Tb_Conv_2d_N5_M3.vhd was successful.
+# Compile of Tb_Conv_2d_N7_M4.vhd was successful.
+# Compile of tb_memory.vhd was successful.
+# Compile of Conv_2d _opt.vhdl was successful.
+# Compile of Conv_2d_output_opt.vhd was successful.
+# Compile of COUNTER_OPT.vhd was successful with warnings.
+# Compile of SHIFT_REGISTER.vhd was successful.
+# Compile of wrapper_conv_2s_opt.vhd was successful.
+# Compile of Tb_Conv_2d_opt_N5_M3 .vhd was successful.
+# 24 compiles, 0 failed with no errors.
+vsim work.tb_conv_2d_opt_n5_m3
+# vsim work.tb_conv_2d_opt_n5_m3 
+# Start time: 15:35:19 on Jan 05,2026
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.utils(body)
+# Loading ieee.std_logic_textio(body)
+# Loading work.tb_conv_2d_opt_n5_m3(tb)
+# Loading work.conv_2d_opt(c2d)
+# Loading work.conv_2d_input(c2d)
+# Loading work.as_counter(asc)
+# Loading work.ripplecarryadder(rca)
+# Loading work.fulladder(dataflow)
+# Loading work.d_flip_flop(dff)
+# Loading work.memory(mem)
+# Loading work.conv_2d_output_opt(conv_bh)
+# Loading work.mux(mux_bh)
+# Loading work.counter_opt(copt)
+# Loading work.shift_register(rtl)
+# WARNING: No extended dataflow license exists
+add wave -position insertpoint  \
+sim:/tb_conv_2d_opt_n5_m3/clk_ext \
+sim:/tb_conv_2d_opt_n5_m3/reset_ext \
+sim:/tb_conv_2d_opt_n5_m3/x_valid \
+sim:/tb_conv_2d_opt_n5_m3/i_f \
+sim:/tb_conv_2d_opt_n5_m3/x \
+sim:/tb_conv_2d_opt_n5_m3/testing \
+sim:/tb_conv_2d_opt_n5_m3/y_ext \
+sim:/tb_conv_2d_opt_n5_m3/y_valid_ext \
+sim:/tb_conv_2d_opt_n5_m3/N \
+sim:/tb_conv_2d_opt_n5_m3/M \
+sim:/tb_conv_2d_opt_n5_m3/Nbit \
+sim:/tb_conv_2d_opt_n5_m3/clk_period
+run -all
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_OUT/mux_istances(8)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_OUT/mux_istances(7)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_OUT/mux_istances(6)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_OUT/mux_istances(5)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_OUT/mux_istances(4)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_OUT/mux_istances(3)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_OUT/mux_istances(2)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_OUT/mux_istances(1)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_OUT/mux_istances(0)/mux_i
+# ** Warning: NUMERIC_STD.">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_INP
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_INP
+# 001100110010001000100010000100010001
+quit -sim
+# End time: 15:44:39 on Jan 05,2026, Elapsed time: 0:09:20
+# Errors: 0, Warnings: 13
+# Compile of As_Counter.vhd was successful.
+# Compile of Conv_2d.vhdl was successful.
+# Compile of Conv_2d_input.vhd was successful.
+# Compile of Conv_2d_output.vhd was successful with warnings.
+# Compile of D_Flip_Flop.vhd was successful.
+# Compile of fifo.vhd was successful.
+# Compile of full_adder.vhd was successful.
+# Compile of fullAdder.vhd was successful.
+# Compile of Memory.vhd was successful.
+# Compile of mux.vhd was successful.
+# Compile of RippleCarryAdder.vhd was successful.
+# Compile of testbench_conv2d_input.vhd was successful.
+# Compile of Utils.vhd was successful.
+# Compile of wrapper_conv_2s.vhd was successful.
+# Compile of long_tb.vhdl was successful.
+# Compile of Tb_Conv_2d_N5_M3.vhd was successful.
+# Compile of Tb_Conv_2d_N7_M4.vhd was successful.
+# Compile of tb_memory.vhd was successful.
+# Compile of Conv_2d _opt.vhdl was successful.
+# Compile of Conv_2d_output_opt.vhd was successful.
+# Compile of COUNTER_OPT.vhd was successful with warnings.
+# Compile of SHIFT_REGISTER.vhd was successful.
+# Compile of wrapper_conv_2s_opt.vhd was successful.
+# Compile of Tb_Conv_2d_opt_N5_M3 .vhd was successful.
+# 24 compiles, 0 failed with no errors.
+vsim work.tb_conv_2d_opt_n5_m3
+# vsim work.tb_conv_2d_opt_n5_m3 
+# Start time: 15:44:51 on Jan 05,2026
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.utils(body)
+# Loading ieee.std_logic_textio(body)
+# Loading work.tb_conv_2d_opt_n5_m3(tb)
+# Loading work.conv_2d_opt(c2d)
+# Loading work.conv_2d_input(c2d)
+# Loading work.as_counter(asc)
+# Loading work.ripplecarryadder(rca)
+# Loading work.fulladder(dataflow)
+# Loading work.d_flip_flop(dff)
+# Loading work.memory(mem)
+# Loading work.conv_2d_output_opt(conv_bh)
+# Loading work.mux(mux_bh)
+# Loading work.counter_opt(copt)
+# Loading work.shift_register(rtl)
+# WARNING: No extended dataflow license exists
+add wave -position insertpoint  \
+sim:/tb_conv_2d_opt_n5_m3/clk_ext \
+sim:/tb_conv_2d_opt_n5_m3/reset_ext \
+sim:/tb_conv_2d_opt_n5_m3/x_valid \
+sim:/tb_conv_2d_opt_n5_m3/i_f \
+sim:/tb_conv_2d_opt_n5_m3/x \
+sim:/tb_conv_2d_opt_n5_m3/testing \
+sim:/tb_conv_2d_opt_n5_m3/y_ext \
+sim:/tb_conv_2d_opt_n5_m3/y_valid_ext \
+sim:/tb_conv_2d_opt_n5_m3/N \
+sim:/tb_conv_2d_opt_n5_m3/M \
+sim:/tb_conv_2d_opt_n5_m3/Nbit \
+sim:/tb_conv_2d_opt_n5_m3/clk_period
+run -all
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_OUT/mux_istances(8)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_OUT/mux_istances(7)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_OUT/mux_istances(6)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_OUT/mux_istances(5)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_OUT/mux_istances(4)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_OUT/mux_istances(3)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_OUT/mux_istances(2)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_OUT/mux_istances(1)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_OUT/mux_istances(0)/mux_i
+# ** Warning: NUMERIC_STD.">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_INP
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_INP
+# 010001000100010001000100010001000100
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Break key hit
+run -all
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_OUT/mux_istances(8)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_OUT/mux_istances(7)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_OUT/mux_istances(6)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_OUT/mux_istances(5)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_OUT/mux_istances(4)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_OUT/mux_istances(3)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_OUT/mux_istances(2)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_OUT/mux_istances(1)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_OUT/mux_istances(0)/mux_i
+# ** Warning: NUMERIC_STD.">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_INP
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_INP
+# 010001000100010001000100010001000100
+# Compile of As_Counter.vhd was successful.
+# Compile of Conv_2d.vhdl was successful.
+# Compile of Conv_2d_input.vhd was successful.
+# Compile of Conv_2d_output.vhd was successful with warnings.
+# Compile of D_Flip_Flop.vhd was successful.
+# Compile of fifo.vhd was successful.
+# Compile of full_adder.vhd was successful.
+# Compile of fullAdder.vhd was successful.
+# Compile of Memory.vhd was successful.
+# Compile of mux.vhd was successful.
+# Compile of RippleCarryAdder.vhd was successful.
+# Compile of testbench_conv2d_input.vhd was successful.
+# Compile of Utils.vhd was successful.
+# Compile of wrapper_conv_2s.vhd was successful.
+# Compile of long_tb.vhdl was successful.
+# Compile of Tb_Conv_2d_N5_M3.vhd was successful.
+# Compile of Tb_Conv_2d_N7_M4.vhd was successful.
+# Compile of tb_memory.vhd was successful.
+# Compile of Conv_2d _opt.vhdl was successful.
+# Compile of Conv_2d_output_opt.vhd was successful.
+# Compile of COUNTER_OPT.vhd was successful with warnings.
+# Compile of SHIFT_REGISTER.vhd was successful.
+# Compile of wrapper_conv_2s_opt.vhd was successful.
+# Compile of Tb_Conv_2d_opt_N5_M3 .vhd was successful.
+# 24 compiles, 0 failed with no errors.
+quit -sim
+# End time: 15:46:45 on Jan 05,2026, Elapsed time: 0:01:54
+# Errors: 0, Warnings: 13
+vsim work.tb_conv_2d_opt_n5_m3
+# vsim work.tb_conv_2d_opt_n5_m3 
+# Start time: 15:46:52 on Jan 05,2026
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.utils(body)
+# Loading ieee.std_logic_textio(body)
+# Loading work.tb_conv_2d_opt_n5_m3(tb)
+# Loading work.conv_2d_opt(c2d)
+# Loading work.conv_2d_input(c2d)
+# Loading work.as_counter(asc)
+# Loading work.ripplecarryadder(rca)
+# Loading work.fulladder(dataflow)
+# Loading work.d_flip_flop(dff)
+# Loading work.memory(mem)
+# Loading work.conv_2d_output_opt(conv_bh)
+# Loading work.mux(mux_bh)
+# Loading work.counter_opt(copt)
+# Loading work.shift_register(rtl)
+# WARNING: No extended dataflow license exists
+add wave -position insertpoint  \
+sim:/tb_conv_2d_opt_n5_m3/clk_ext \
+sim:/tb_conv_2d_opt_n5_m3/reset_ext \
+sim:/tb_conv_2d_opt_n5_m3/x_valid \
+sim:/tb_conv_2d_opt_n5_m3/i_f \
+sim:/tb_conv_2d_opt_n5_m3/x \
+sim:/tb_conv_2d_opt_n5_m3/testing \
+sim:/tb_conv_2d_opt_n5_m3/y_ext \
+sim:/tb_conv_2d_opt_n5_m3/y_valid_ext \
+sim:/tb_conv_2d_opt_n5_m3/N \
+sim:/tb_conv_2d_opt_n5_m3/M \
+sim:/tb_conv_2d_opt_n5_m3/Nbit \
+sim:/tb_conv_2d_opt_n5_m3/clk_period
+run -all
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_OUT/mux_istances(8)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_OUT/mux_istances(7)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_OUT/mux_istances(6)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_OUT/mux_istances(5)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_OUT/mux_istances(4)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_OUT/mux_istances(3)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_OUT/mux_istances(2)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_OUT/mux_istances(1)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_OUT/mux_istances(0)/mux_i
+# ** Warning: NUMERIC_STD.">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_INP
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_INP
+# 001100110010001000100010000100010001
+add wave -position insertpoint  \
+sim:/tb_conv_2d_opt_n5_m3/UUT/C_OUT/N \
+sim:/tb_conv_2d_opt_n5_m3/UUT/C_OUT/M \
+sim:/tb_conv_2d_opt_n5_m3/UUT/C_OUT/clk \
+sim:/tb_conv_2d_opt_n5_m3/UUT/C_OUT/rst \
+sim:/tb_conv_2d_opt_n5_m3/UUT/C_OUT/matrix \
+sim:/tb_conv_2d_opt_n5_m3/UUT/C_OUT/filter \
+sim:/tb_conv_2d_opt_n5_m3/UUT/C_OUT/en \
+sim:/tb_conv_2d_opt_n5_m3/UUT/C_OUT/convolution \
+sim:/tb_conv_2d_opt_n5_m3/UUT/C_OUT/convolution_ready \
+sim:/tb_conv_2d_opt_n5_m3/UUT/C_OUT/mux_control \
+sim:/tb_conv_2d_opt_n5_m3/UUT/C_OUT/a_extended \
+sim:/tb_conv_2d_opt_n5_m3/UUT/C_OUT/adder_out_adder_in \
+sim:/tb_conv_2d_opt_n5_m3/UUT/C_OUT/out_dff \
+sim:/tb_conv_2d_opt_n5_m3/UUT/C_OUT/rst_n \
+sim:/tb_conv_2d_opt_n5_m3/UUT/C_OUT/input_counter \
+sim:/tb_conv_2d_opt_n5_m3/UUT/C_OUT/output_counter \
+sim:/tb_conv_2d_opt_n5_m3/UUT/C_OUT/mux_to_and \
+sim:/tb_conv_2d_opt_n5_m3/UUT/C_OUT/and_to_adder \
+sim:/tb_conv_2d_opt_n5_m3/UUT/C_OUT/adder_to_dff \
+sim:/tb_conv_2d_opt_n5_m3/UUT/C_OUT/en_dff \
+sim:/tb_conv_2d_opt_n5_m3/UUT/C_OUT/counter_val \
+sim:/tb_conv_2d_opt_n5_m3/UUT/C_OUT/current_index \
+sim:/tb_conv_2d_opt_n5_m3/UUT/C_OUT/load \
+sim:/tb_conv_2d_opt_n5_m3/UUT/C_OUT/end_flag \
+sim:/tb_conv_2d_opt_n5_m3/UUT/C_OUT/output_counter_prev \
+sim:/tb_conv_2d_opt_n5_m3/UUT/C_OUT/x_in_ret \
+sim:/tb_conv_2d_opt_n5_m3/UUT/C_OUT/OUTPUT_DIMENSION \
+sim:/tb_conv_2d_opt_n5_m3/UUT/C_OUT/N_OUTPUT_ELEMENTS \
+sim:/tb_conv_2d_opt_n5_m3/UUT/C_OUT/N_BITS_COUNTER \
+sim:/tb_conv_2d_opt_n5_m3/UUT/C_OUT/N_BITS_CONTROL_MUX \
+sim:/tb_conv_2d_opt_n5_m3/UUT/C_OUT/N_BIT_OUTPUT_ELEMENT
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+run -all
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_OUT/mux_istances(8)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_OUT/mux_istances(7)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_OUT/mux_istances(6)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_OUT/mux_istances(5)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_OUT/mux_istances(4)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_OUT/mux_istances(3)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_OUT/mux_istances(2)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_OUT/mux_istances(1)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_OUT/mux_istances(0)/mux_i
+# ** Warning: NUMERIC_STD.">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_INP
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_INP
+# 001100110010001000100010000100010001
+add wave -position insertpoint  \
+sim:/tb_conv_2d_opt_n5_m3/UUT/C_OUT/out_dff
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+run -all
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_OUT/mux_istances(8)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_OUT/mux_istances(7)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_OUT/mux_istances(6)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_OUT/mux_istances(5)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_OUT/mux_istances(4)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_OUT/mux_istances(3)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_OUT/mux_istances(2)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_OUT/mux_istances(1)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_OUT/mux_istances(0)/mux_i
+# ** Warning: NUMERIC_STD.">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_INP
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_INP
+# 001100110010001000100010000100010001
+quit -sim
+# End time: 16:03:31 on Jan 05,2026, Elapsed time: 0:16:39
+# Errors: 0, Warnings: 12
+# Compile of As_Counter.vhd was successful.
+# Compile of Conv_2d.vhdl was successful.
+# Compile of Conv_2d_input.vhd was successful.
+# Compile of Conv_2d_output.vhd was successful with warnings.
+# Compile of D_Flip_Flop.vhd was successful.
+# Compile of fifo.vhd was successful.
+# Compile of full_adder.vhd was successful.
+# Compile of fullAdder.vhd was successful.
+# Compile of Memory.vhd was successful.
+# Compile of mux.vhd was successful.
+# Compile of RippleCarryAdder.vhd was successful.
+# Compile of testbench_conv2d_input.vhd was successful.
+# Compile of Utils.vhd was successful.
+# Compile of wrapper_conv_2s.vhd was successful.
+# Compile of long_tb.vhdl was successful.
+# Compile of Tb_Conv_2d_N5_M3.vhd was successful.
+# Compile of Tb_Conv_2d_N7_M4.vhd was successful.
+# Compile of tb_memory.vhd was successful.
+# Compile of Conv_2d _opt.vhdl was successful.
+# Compile of Conv_2d_output_opt.vhd was successful.
+# Compile of COUNTER_OPT.vhd was successful with warnings.
+# Compile of SHIFT_REGISTER.vhd was successful.
+# Compile of wrapper_conv_2s_opt.vhd was successful.
+# Compile of Tb_Conv_2d_opt_N5_M3 .vhd was successful.
+# 24 compiles, 0 failed with no errors.
+vsim work.tb_conv_2d_opt_n5_m3
+# vsim work.tb_conv_2d_opt_n5_m3 
+# Start time: 16:04:02 on Jan 05,2026
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.utils(body)
+# Loading ieee.std_logic_textio(body)
+# Loading work.tb_conv_2d_opt_n5_m3(tb)
+# Loading work.conv_2d_opt(c2d)
+# Loading work.conv_2d_input(c2d)
+# Loading work.as_counter(asc)
+# Loading work.ripplecarryadder(rca)
+# Loading work.fulladder(dataflow)
+# Loading work.d_flip_flop(dff)
+# Loading work.memory(mem)
+# Loading work.conv_2d_output_opt(conv_bh)
+# Loading work.mux(mux_bh)
+# Loading work.counter_opt(copt)
+# Loading work.shift_register(rtl)
+# WARNING: No extended dataflow license exists
+add wave -position insertpoint  \
+sim:/tb_conv_2d_opt_n5_m3/clk_ext \
+sim:/tb_conv_2d_opt_n5_m3/reset_ext \
+sim:/tb_conv_2d_opt_n5_m3/x_valid \
+sim:/tb_conv_2d_opt_n5_m3/i_f \
+sim:/tb_conv_2d_opt_n5_m3/x \
+sim:/tb_conv_2d_opt_n5_m3/testing \
+sim:/tb_conv_2d_opt_n5_m3/y_ext \
+sim:/tb_conv_2d_opt_n5_m3/y_valid_ext \
+sim:/tb_conv_2d_opt_n5_m3/N \
+sim:/tb_conv_2d_opt_n5_m3/M \
+sim:/tb_conv_2d_opt_n5_m3/Nbit \
+sim:/tb_conv_2d_opt_n5_m3/clk_period
+run -all
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_OUT/mux_istances(8)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_OUT/mux_istances(7)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_OUT/mux_istances(6)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_OUT/mux_istances(5)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_OUT/mux_istances(4)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_OUT/mux_istances(3)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_OUT/mux_istances(2)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_OUT/mux_istances(1)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_OUT/mux_istances(0)/mux_i
+# ** Warning: NUMERIC_STD.">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_INP
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_INP
+# 001101000010010000110010001100000000
+add wave -position insertpoint  \
+sim:/tb_conv_2d_opt_n5_m3/UUT/C_OUT/N \
+sim:/tb_conv_2d_opt_n5_m3/UUT/C_OUT/M \
+sim:/tb_conv_2d_opt_n5_m3/UUT/C_OUT/clk \
+sim:/tb_conv_2d_opt_n5_m3/UUT/C_OUT/rst \
+sim:/tb_conv_2d_opt_n5_m3/UUT/C_OUT/matrix \
+sim:/tb_conv_2d_opt_n5_m3/UUT/C_OUT/filter \
+sim:/tb_conv_2d_opt_n5_m3/UUT/C_OUT/en \
+sim:/tb_conv_2d_opt_n5_m3/UUT/C_OUT/convolution \
+sim:/tb_conv_2d_opt_n5_m3/UUT/C_OUT/convolution_ready \
+sim:/tb_conv_2d_opt_n5_m3/UUT/C_OUT/mux_control \
+sim:/tb_conv_2d_opt_n5_m3/UUT/C_OUT/a_extended \
+sim:/tb_conv_2d_opt_n5_m3/UUT/C_OUT/adder_out_adder_in \
+sim:/tb_conv_2d_opt_n5_m3/UUT/C_OUT/out_dff \
+sim:/tb_conv_2d_opt_n5_m3/UUT/C_OUT/rst_n \
+sim:/tb_conv_2d_opt_n5_m3/UUT/C_OUT/input_counter \
+sim:/tb_conv_2d_opt_n5_m3/UUT/C_OUT/output_counter \
+sim:/tb_conv_2d_opt_n5_m3/UUT/C_OUT/mux_to_and \
+sim:/tb_conv_2d_opt_n5_m3/UUT/C_OUT/and_to_adder \
+sim:/tb_conv_2d_opt_n5_m3/UUT/C_OUT/adder_to_dff \
+sim:/tb_conv_2d_opt_n5_m3/UUT/C_OUT/en_dff \
+sim:/tb_conv_2d_opt_n5_m3/UUT/C_OUT/counter_val \
+sim:/tb_conv_2d_opt_n5_m3/UUT/C_OUT/current_index \
+sim:/tb_conv_2d_opt_n5_m3/UUT/C_OUT/load \
+sim:/tb_conv_2d_opt_n5_m3/UUT/C_OUT/end_flag \
+sim:/tb_conv_2d_opt_n5_m3/UUT/C_OUT/output_counter_prev \
+sim:/tb_conv_2d_opt_n5_m3/UUT/C_OUT/x_in_ret \
+sim:/tb_conv_2d_opt_n5_m3/UUT/C_OUT/OUTPUT_DIMENSION \
+sim:/tb_conv_2d_opt_n5_m3/UUT/C_OUT/N_OUTPUT_ELEMENTS \
+sim:/tb_conv_2d_opt_n5_m3/UUT/C_OUT/N_BITS_COUNTER \
+sim:/tb_conv_2d_opt_n5_m3/UUT/C_OUT/N_BITS_CONTROL_MUX \
+sim:/tb_conv_2d_opt_n5_m3/UUT/C_OUT/N_BIT_OUTPUT_ELEMENT
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+run -all
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_OUT/mux_istances(8)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_OUT/mux_istances(7)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_OUT/mux_istances(6)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_OUT/mux_istances(5)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_OUT/mux_istances(4)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_OUT/mux_istances(3)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_OUT/mux_istances(2)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_OUT/mux_istances(1)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_OUT/mux_istances(0)/mux_i
+# ** Warning: NUMERIC_STD.">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_INP
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_INP
+# 001101000010010000110010001100000000
+quit -sim
+# End time: 16:08:14 on Jan 05,2026, Elapsed time: 0:04:12
+# Errors: 0, Warnings: 12
+# Compile of As_Counter.vhd was successful.
+# Compile of Conv_2d.vhdl was successful.
+# Compile of Conv_2d_input.vhd was successful.
+# Compile of Conv_2d_output.vhd was successful with warnings.
+# Compile of D_Flip_Flop.vhd was successful.
+# Compile of fifo.vhd was successful.
+# Compile of full_adder.vhd was successful.
+# Compile of fullAdder.vhd was successful.
+# Compile of Memory.vhd was successful.
+# Compile of mux.vhd was successful.
+# Compile of RippleCarryAdder.vhd was successful.
+# Compile of testbench_conv2d_input.vhd was successful.
+# Compile of Utils.vhd was successful.
+# Compile of wrapper_conv_2s.vhd was successful.
+# Compile of long_tb.vhdl was successful.
+# Compile of Tb_Conv_2d_N5_M3.vhd failed with 1 errors.
+# Compile of Tb_Conv_2d_N7_M4.vhd was successful.
+# Compile of tb_memory.vhd was successful.
+# Compile of Conv_2d _opt.vhdl was successful.
+# Compile of Conv_2d_output_opt.vhd was successful.
+# Compile of COUNTER_OPT.vhd was successful with warnings.
+# Compile of SHIFT_REGISTER.vhd was successful.
+# Compile of wrapper_conv_2s_opt.vhd was successful.
+# Compile of Tb_Conv_2d_opt_N5_M3 .vhd was successful.
+# 24 compiles, 1 failed with 1 error.
+# Compile of As_Counter.vhd was successful.
+# Compile of Conv_2d.vhdl was successful.
+# Compile of Conv_2d_input.vhd was successful.
+# Compile of Conv_2d_output.vhd was successful with warnings.
+# Compile of D_Flip_Flop.vhd was successful.
+# Compile of fifo.vhd was successful.
+# Compile of full_adder.vhd was successful.
+# Compile of fullAdder.vhd was successful.
+# Compile of Memory.vhd was successful.
+# Compile of mux.vhd was successful.
+# Compile of RippleCarryAdder.vhd was successful.
+# Compile of testbench_conv2d_input.vhd was successful.
+# Compile of Utils.vhd was successful.
+# Compile of wrapper_conv_2s.vhd was successful.
+# Compile of long_tb.vhdl was successful.
+# Compile of Tb_Conv_2d_N5_M3.vhd was successful.
+# Compile of Tb_Conv_2d_N7_M4.vhd was successful.
+# Compile of tb_memory.vhd was successful.
+# Compile of Conv_2d _opt.vhdl was successful.
+# Compile of Conv_2d_output_opt.vhd was successful.
+# Compile of COUNTER_OPT.vhd was successful with warnings.
+# Compile of SHIFT_REGISTER.vhd was successful.
+# Compile of wrapper_conv_2s_opt.vhd was successful.
+# Compile of Tb_Conv_2d_opt_N5_M3 .vhd was successful.
+# 24 compiles, 0 failed with no errors.
+vsim work.tb_conv_2d_opt_n5_m3
+# vsim work.tb_conv_2d_opt_n5_m3 
+# Start time: 16:09:34 on Jan 05,2026
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.utils(body)
+# Loading ieee.std_logic_textio(body)
+# Loading work.tb_conv_2d_opt_n5_m3(tb)
+# Loading work.conv_2d_opt(c2d)
+# Loading work.conv_2d_input(c2d)
+# Loading work.as_counter(asc)
+# Loading work.ripplecarryadder(rca)
+# Loading work.fulladder(dataflow)
+# Loading work.d_flip_flop(dff)
+# Loading work.memory(mem)
+# Loading work.conv_2d_output_opt(conv_bh)
+# Loading work.mux(mux_bh)
+# Loading work.counter_opt(copt)
+# Loading work.shift_register(rtl)
+# WARNING: No extended dataflow license exists
+add wave -position insertpoint  \
+sim:/tb_conv_2d_opt_n5_m3/clk_ext \
+sim:/tb_conv_2d_opt_n5_m3/reset_ext \
+sim:/tb_conv_2d_opt_n5_m3/x_valid \
+sim:/tb_conv_2d_opt_n5_m3/i_f \
+sim:/tb_conv_2d_opt_n5_m3/x \
+sim:/tb_conv_2d_opt_n5_m3/testing \
+sim:/tb_conv_2d_opt_n5_m3/y_ext \
+sim:/tb_conv_2d_opt_n5_m3/y_valid_ext \
+sim:/tb_conv_2d_opt_n5_m3/N \
+sim:/tb_conv_2d_opt_n5_m3/M \
+sim:/tb_conv_2d_opt_n5_m3/Nbit \
+sim:/tb_conv_2d_opt_n5_m3/clk_period
+run -all
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_OUT/mux_istances(8)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_OUT/mux_istances(7)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_OUT/mux_istances(6)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_OUT/mux_istances(5)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_OUT/mux_istances(4)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_OUT/mux_istances(3)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_OUT/mux_istances(2)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_OUT/mux_istances(1)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_OUT/mux_istances(0)/mux_i
+# ** Warning: NUMERIC_STD.">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_INP
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_INP
+quit -sim
+# End time: 16:11:42 on Jan 05,2026, Elapsed time: 0:02:08
+# Errors: 0, Warnings: 14
+# Compile of Tb_Conv_2d_N7_M4.vhd was successful.
+# Compile of As_Counter.vhd was successful.
+# Compile of Conv_2d.vhdl was successful.
+# Compile of Conv_2d_input.vhd was successful.
+# Compile of Conv_2d_output.vhd was successful with warnings.
+# Compile of D_Flip_Flop.vhd was successful.
+# Compile of fifo.vhd was successful.
+# Compile of full_adder.vhd was successful.
+# Compile of fullAdder.vhd was successful.
+# Compile of Memory.vhd was successful.
+# Compile of mux.vhd was successful.
+# Compile of RippleCarryAdder.vhd was successful.
+# Compile of testbench_conv2d_input.vhd was successful.
+# Compile of Utils.vhd was successful.
+# Compile of wrapper_conv_2s.vhd was successful.
+# Compile of long_tb.vhdl was successful.
+# Compile of Tb_Conv_2d_N5_M3.vhd was successful.
+# Compile of Tb_Conv_2d_N7_M4.vhd was successful.
+# Compile of tb_memory.vhd was successful.
+# Compile of Conv_2d _opt.vhdl was successful.
+# Compile of Conv_2d_output_opt.vhd was successful.
+# Compile of COUNTER_OPT.vhd was successful with warnings.
+# Compile of SHIFT_REGISTER.vhd was successful.
+# Compile of wrapper_conv_2s_opt.vhd was successful.
+# Compile of Tb_Conv_2d_opt_N5_M3 .vhd was successful.
+# 24 compiles, 0 failed with no errors.
+vsim work.tb_conv_2d_opt_n5_m3
+# vsim work.tb_conv_2d_opt_n5_m3 
+# Start time: 16:12:06 on Jan 05,2026
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.utils(body)
+# Loading ieee.std_logic_textio(body)
+# Loading work.tb_conv_2d_opt_n5_m3(tb)
+# Loading work.conv_2d_opt(c2d)
+# Loading work.conv_2d_input(c2d)
+# Loading work.as_counter(asc)
+# Loading work.ripplecarryadder(rca)
+# Loading work.fulladder(dataflow)
+# Loading work.d_flip_flop(dff)
+# Loading work.memory(mem)
+# Loading work.conv_2d_output_opt(conv_bh)
+# Loading work.mux(mux_bh)
+# Loading work.counter_opt(copt)
+# Loading work.shift_register(rtl)
+# WARNING: No extended dataflow license exists
+add wave -position insertpoint  \
+sim:/tb_conv_2d_opt_n5_m3/clk_ext \
+sim:/tb_conv_2d_opt_n5_m3/reset_ext \
+sim:/tb_conv_2d_opt_n5_m3/x_valid \
+sim:/tb_conv_2d_opt_n5_m3/i_f \
+sim:/tb_conv_2d_opt_n5_m3/x \
+sim:/tb_conv_2d_opt_n5_m3/testing \
+sim:/tb_conv_2d_opt_n5_m3/y_ext \
+sim:/tb_conv_2d_opt_n5_m3/y_valid_ext \
+sim:/tb_conv_2d_opt_n5_m3/N \
+sim:/tb_conv_2d_opt_n5_m3/M \
+sim:/tb_conv_2d_opt_n5_m3/Nbit \
+sim:/tb_conv_2d_opt_n5_m3/clk_period
+run -all
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_OUT/mux_istances(8)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_OUT/mux_istances(7)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_OUT/mux_istances(6)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_OUT/mux_istances(5)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_OUT/mux_istances(4)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_OUT/mux_istances(3)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_OUT/mux_istances(2)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_OUT/mux_istances(1)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_OUT/mux_istances(0)/mux_i
+# ** Warning: NUMERIC_STD.">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_INP
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_INP
+quit -sim
+# End time: 16:12:36 on Jan 05,2026, Elapsed time: 0:00:30
+# Errors: 0, Warnings: 14
+vsim work.tb_conv_2d_opt_n5_m3
+# vsim work.tb_conv_2d_opt_n5_m3 
+# Start time: 16:12:58 on Jan 05,2026
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.utils(body)
+# Loading ieee.std_logic_textio(body)
+# Loading work.tb_conv_2d_opt_n5_m3(tb)
+# Loading work.conv_2d_opt(c2d)
+# Loading work.conv_2d_input(c2d)
+# Loading work.as_counter(asc)
+# Loading work.ripplecarryadder(rca)
+# Loading work.fulladder(dataflow)
+# Loading work.d_flip_flop(dff)
+# Loading work.memory(mem)
+# Loading work.conv_2d_output_opt(conv_bh)
+# Loading work.mux(mux_bh)
+# Loading work.counter_opt(copt)
+# Loading work.shift_register(rtl)
+add wave -position insertpoint  \
+sim:/tb_conv_2d_opt_n5_m3/clk_ext \
+sim:/tb_conv_2d_opt_n5_m3/reset_ext \
+sim:/tb_conv_2d_opt_n5_m3/x_valid \
+sim:/tb_conv_2d_opt_n5_m3/i_f \
+sim:/tb_conv_2d_opt_n5_m3/x \
+sim:/tb_conv_2d_opt_n5_m3/testing \
+sim:/tb_conv_2d_opt_n5_m3/y_ext \
+sim:/tb_conv_2d_opt_n5_m3/y_valid_ext \
+sim:/tb_conv_2d_opt_n5_m3/N \
+sim:/tb_conv_2d_opt_n5_m3/M \
+sim:/tb_conv_2d_opt_n5_m3/Nbit \
+sim:/tb_conv_2d_opt_n5_m3/clk_period
+run -all
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_OUT/mux_istances(8)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_OUT/mux_istances(7)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_OUT/mux_istances(6)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_OUT/mux_istances(5)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_OUT/mux_istances(4)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_OUT/mux_istances(3)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_OUT/mux_istances(2)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_OUT/mux_istances(1)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_OUT/mux_istances(0)/mux_i
+# ** Warning: NUMERIC_STD.">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_INP
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_INP
+quit -sim
+# End time: 16:13:35 on Jan 05,2026, Elapsed time: 0:00:37
+# Errors: 0, Warnings: 12
+# Compile of As_Counter.vhd was successful.
+# Compile of Conv_2d.vhdl was successful.
+# Compile of Conv_2d_input.vhd was successful.
+# Compile of Conv_2d_output.vhd was successful with warnings.
+# Compile of D_Flip_Flop.vhd was successful.
+# Compile of fifo.vhd was successful.
+# Compile of full_adder.vhd was successful.
+# Compile of fullAdder.vhd was successful.
+# Compile of Memory.vhd was successful.
+# Compile of mux.vhd was successful.
+# Compile of RippleCarryAdder.vhd was successful.
+# Compile of testbench_conv2d_input.vhd was successful.
+# Compile of Utils.vhd was successful.
+# Compile of wrapper_conv_2s.vhd was successful.
+# Compile of long_tb.vhdl was successful.
+# Compile of Tb_Conv_2d_N5_M3.vhd was successful.
+# Compile of Tb_Conv_2d_N7_M4.vhd was successful.
+# Compile of tb_memory.vhd was successful.
+# Compile of Conv_2d _opt.vhdl was successful.
+# Compile of Conv_2d_output_opt.vhd was successful.
+# Compile of COUNTER_OPT.vhd was successful with warnings.
+# Compile of SHIFT_REGISTER.vhd was successful.
+# Compile of wrapper_conv_2s_opt.vhd was successful.
+# Compile of Tb_Conv_2d_opt_N5_M3 .vhd was successful.
+# 24 compiles, 0 failed with no errors.
+vsim work.tb_conv_2d_opt_n5_m3
+# vsim work.tb_conv_2d_opt_n5_m3 
+# Start time: 16:13:50 on Jan 05,2026
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.utils(body)
+# Loading ieee.std_logic_textio(body)
+# Loading work.tb_conv_2d_opt_n5_m3(tb)
+# Loading work.conv_2d_opt(c2d)
+# Loading work.conv_2d_input(c2d)
+# Loading work.as_counter(asc)
+# Loading work.ripplecarryadder(rca)
+# Loading work.fulladder(dataflow)
+# Loading work.d_flip_flop(dff)
+# Loading work.memory(mem)
+# Loading work.conv_2d_output_opt(conv_bh)
+# Loading work.mux(mux_bh)
+# Loading work.counter_opt(copt)
+# Loading work.shift_register(rtl)
+add wave -position insertpoint  \
+sim:/tb_conv_2d_opt_n5_m3/clk_ext \
+sim:/tb_conv_2d_opt_n5_m3/reset_ext \
+sim:/tb_conv_2d_opt_n5_m3/x_valid \
+sim:/tb_conv_2d_opt_n5_m3/i_f \
+sim:/tb_conv_2d_opt_n5_m3/x \
+sim:/tb_conv_2d_opt_n5_m3/testing \
+sim:/tb_conv_2d_opt_n5_m3/y_ext \
+sim:/tb_conv_2d_opt_n5_m3/y_valid_ext \
+sim:/tb_conv_2d_opt_n5_m3/N \
+sim:/tb_conv_2d_opt_n5_m3/M \
+sim:/tb_conv_2d_opt_n5_m3/Nbit \
+sim:/tb_conv_2d_opt_n5_m3/clk_period
+add wave -position insertpoint  \
+sim:/tb_conv_2d_opt_n5_m3/UUT/C_OUT/N \
+sim:/tb_conv_2d_opt_n5_m3/UUT/C_OUT/M \
+sim:/tb_conv_2d_opt_n5_m3/UUT/C_OUT/clk \
+sim:/tb_conv_2d_opt_n5_m3/UUT/C_OUT/rst \
+sim:/tb_conv_2d_opt_n5_m3/UUT/C_OUT/matrix \
+sim:/tb_conv_2d_opt_n5_m3/UUT/C_OUT/filter \
+sim:/tb_conv_2d_opt_n5_m3/UUT/C_OUT/en \
+sim:/tb_conv_2d_opt_n5_m3/UUT/C_OUT/convolution \
+sim:/tb_conv_2d_opt_n5_m3/UUT/C_OUT/convolution_ready \
+sim:/tb_conv_2d_opt_n5_m3/UUT/C_OUT/mux_control \
+sim:/tb_conv_2d_opt_n5_m3/UUT/C_OUT/a_extended \
+sim:/tb_conv_2d_opt_n5_m3/UUT/C_OUT/adder_out_adder_in \
+sim:/tb_conv_2d_opt_n5_m3/UUT/C_OUT/out_dff \
+sim:/tb_conv_2d_opt_n5_m3/UUT/C_OUT/rst_n \
+sim:/tb_conv_2d_opt_n5_m3/UUT/C_OUT/input_counter \
+sim:/tb_conv_2d_opt_n5_m3/UUT/C_OUT/output_counter \
+sim:/tb_conv_2d_opt_n5_m3/UUT/C_OUT/mux_to_and \
+sim:/tb_conv_2d_opt_n5_m3/UUT/C_OUT/and_to_adder \
+sim:/tb_conv_2d_opt_n5_m3/UUT/C_OUT/adder_to_dff \
+sim:/tb_conv_2d_opt_n5_m3/UUT/C_OUT/en_dff \
+sim:/tb_conv_2d_opt_n5_m3/UUT/C_OUT/counter_val \
+sim:/tb_conv_2d_opt_n5_m3/UUT/C_OUT/current_index \
+sim:/tb_conv_2d_opt_n5_m3/UUT/C_OUT/load \
+sim:/tb_conv_2d_opt_n5_m3/UUT/C_OUT/end_flag \
+sim:/tb_conv_2d_opt_n5_m3/UUT/C_OUT/output_counter_prev \
+sim:/tb_conv_2d_opt_n5_m3/UUT/C_OUT/x_in_ret \
+sim:/tb_conv_2d_opt_n5_m3/UUT/C_OUT/OUTPUT_DIMENSION \
+sim:/tb_conv_2d_opt_n5_m3/UUT/C_OUT/N_OUTPUT_ELEMENTS \
+sim:/tb_conv_2d_opt_n5_m3/UUT/C_OUT/N_BITS_COUNTER \
+sim:/tb_conv_2d_opt_n5_m3/UUT/C_OUT/N_BITS_CONTROL_MUX \
+sim:/tb_conv_2d_opt_n5_m3/UUT/C_OUT/N_BIT_OUTPUT_ELEMENT
+run -all
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_OUT/mux_istances(8)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_OUT/mux_istances(7)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_OUT/mux_istances(6)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_OUT/mux_istances(5)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_OUT/mux_istances(4)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_OUT/mux_istances(3)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_OUT/mux_istances(2)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_OUT/mux_istances(1)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_OUT/mux_istances(0)/mux_i
+# ** Warning: NUMERIC_STD.">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_INP
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_INP
+quit -sim
+# End time: 16:16:37 on Jan 05,2026, Elapsed time: 0:02:47
+# Errors: 0, Warnings: 13
+# Compile of As_Counter.vhd was successful.
+# Compile of Conv_2d.vhdl was successful.
+# Compile of Conv_2d_input.vhd was successful.
+# Compile of Conv_2d_output.vhd was successful with warnings.
+# Compile of D_Flip_Flop.vhd was successful.
+# Compile of fifo.vhd was successful.
+# Compile of full_adder.vhd was successful.
+# Compile of fullAdder.vhd was successful.
+# Compile of Memory.vhd was successful.
+# Compile of mux.vhd was successful.
+# Compile of RippleCarryAdder.vhd was successful.
+# Compile of testbench_conv2d_input.vhd was successful.
+# Compile of Utils.vhd was successful.
+# Compile of wrapper_conv_2s.vhd was successful.
+# Compile of long_tb.vhdl was successful.
+# Compile of Tb_Conv_2d_N5_M3.vhd was successful.
+# Compile of Tb_Conv_2d_N7_M4.vhd was successful.
+# Compile of tb_memory.vhd was successful.
+# Compile of Conv_2d _opt.vhdl was successful.
+# Compile of Conv_2d_output_opt.vhd was successful.
+# Compile of COUNTER_OPT.vhd was successful with warnings.
+# Compile of SHIFT_REGISTER.vhd was successful.
+# Compile of wrapper_conv_2s_opt.vhd was successful.
+# Compile of Tb_Conv_2d_opt_N5_M3 .vhd was successful.
+# 24 compiles, 0 failed with no errors.
+vsim work.tb_conv_2d_opt_n5_m3
+# vsim work.tb_conv_2d_opt_n5_m3 
+# Start time: 16:16:49 on Jan 05,2026
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.utils(body)
+# Loading ieee.std_logic_textio(body)
+# Loading work.tb_conv_2d_opt_n5_m3(tb)
+# Loading work.conv_2d_opt(c2d)
+# Loading work.conv_2d_input(c2d)
+# Loading work.as_counter(asc)
+# Loading work.ripplecarryadder(rca)
+# Loading work.fulladder(dataflow)
+# Loading work.d_flip_flop(dff)
+# Loading work.memory(mem)
+# Loading work.conv_2d_output_opt(conv_bh)
+# Loading work.mux(mux_bh)
+# Loading work.counter_opt(copt)
+# Loading work.shift_register(rtl)
+add wave -position insertpoint  \
+sim:/tb_conv_2d_opt_n5_m3/clk_ext \
+sim:/tb_conv_2d_opt_n5_m3/reset_ext \
+sim:/tb_conv_2d_opt_n5_m3/x_valid \
+sim:/tb_conv_2d_opt_n5_m3/i_f \
+sim:/tb_conv_2d_opt_n5_m3/x \
+sim:/tb_conv_2d_opt_n5_m3/testing \
+sim:/tb_conv_2d_opt_n5_m3/y_ext \
+sim:/tb_conv_2d_opt_n5_m3/y_valid_ext \
+sim:/tb_conv_2d_opt_n5_m3/N \
+sim:/tb_conv_2d_opt_n5_m3/M \
+sim:/tb_conv_2d_opt_n5_m3/Nbit \
+sim:/tb_conv_2d_opt_n5_m3/clk_period
+run -all
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_OUT/mux_istances(8)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_OUT/mux_istances(7)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_OUT/mux_istances(6)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_OUT/mux_istances(5)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_OUT/mux_istances(4)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_OUT/mux_istances(3)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_OUT/mux_istances(2)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_OUT/mux_istances(1)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_OUT/mux_istances(0)/mux_i
+# ** Warning: NUMERIC_STD.">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_INP
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_INP
+add wave -position insertpoint  \
+sim:/tb_conv_2d_opt_n5_m3/UUT/C_OUT/N \
+sim:/tb_conv_2d_opt_n5_m3/UUT/C_OUT/M \
+sim:/tb_conv_2d_opt_n5_m3/UUT/C_OUT/clk \
+sim:/tb_conv_2d_opt_n5_m3/UUT/C_OUT/rst \
+sim:/tb_conv_2d_opt_n5_m3/UUT/C_OUT/matrix \
+sim:/tb_conv_2d_opt_n5_m3/UUT/C_OUT/filter \
+sim:/tb_conv_2d_opt_n5_m3/UUT/C_OUT/en \
+sim:/tb_conv_2d_opt_n5_m3/UUT/C_OUT/convolution \
+sim:/tb_conv_2d_opt_n5_m3/UUT/C_OUT/convolution_ready \
+sim:/tb_conv_2d_opt_n5_m3/UUT/C_OUT/mux_control \
+sim:/tb_conv_2d_opt_n5_m3/UUT/C_OUT/a_extended \
+sim:/tb_conv_2d_opt_n5_m3/UUT/C_OUT/adder_out_adder_in \
+sim:/tb_conv_2d_opt_n5_m3/UUT/C_OUT/out_dff \
+sim:/tb_conv_2d_opt_n5_m3/UUT/C_OUT/rst_n \
+sim:/tb_conv_2d_opt_n5_m3/UUT/C_OUT/input_counter \
+sim:/tb_conv_2d_opt_n5_m3/UUT/C_OUT/output_counter \
+sim:/tb_conv_2d_opt_n5_m3/UUT/C_OUT/mux_to_and \
+sim:/tb_conv_2d_opt_n5_m3/UUT/C_OUT/and_to_adder \
+sim:/tb_conv_2d_opt_n5_m3/UUT/C_OUT/adder_to_dff \
+sim:/tb_conv_2d_opt_n5_m3/UUT/C_OUT/en_dff \
+sim:/tb_conv_2d_opt_n5_m3/UUT/C_OUT/counter_val \
+sim:/tb_conv_2d_opt_n5_m3/UUT/C_OUT/current_index \
+sim:/tb_conv_2d_opt_n5_m3/UUT/C_OUT/load \
+sim:/tb_conv_2d_opt_n5_m3/UUT/C_OUT/end_flag \
+sim:/tb_conv_2d_opt_n5_m3/UUT/C_OUT/output_counter_prev \
+sim:/tb_conv_2d_opt_n5_m3/UUT/C_OUT/x_in_ret \
+sim:/tb_conv_2d_opt_n5_m3/UUT/C_OUT/OUTPUT_DIMENSION \
+sim:/tb_conv_2d_opt_n5_m3/UUT/C_OUT/N_OUTPUT_ELEMENTS \
+sim:/tb_conv_2d_opt_n5_m3/UUT/C_OUT/N_BITS_COUNTER \
+sim:/tb_conv_2d_opt_n5_m3/UUT/C_OUT/N_BITS_CONTROL_MUX \
+sim:/tb_conv_2d_opt_n5_m3/UUT/C_OUT/N_BIT_OUTPUT_ELEMENT
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+run -all
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_OUT/mux_istances(8)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_OUT/mux_istances(7)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_OUT/mux_istances(6)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_OUT/mux_istances(5)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_OUT/mux_istances(4)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_OUT/mux_istances(3)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_OUT/mux_istances(2)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_OUT/mux_istances(1)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_OUT/mux_istances(0)/mux_i
+# ** Warning: NUMERIC_STD.">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_INP
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_INP
+# Compile of As_Counter.vhd was successful.
+# Compile of Conv_2d.vhdl was successful.
+# Compile of Conv_2d_input.vhd was successful.
+# Compile of Conv_2d_output.vhd was successful with warnings.
+# Compile of D_Flip_Flop.vhd was successful.
+# Compile of fifo.vhd was successful.
+# Compile of full_adder.vhd was successful.
+# Compile of fullAdder.vhd was successful.
+# Compile of Memory.vhd was successful.
+# Compile of mux.vhd was successful.
+# Compile of RippleCarryAdder.vhd was successful.
+# Compile of testbench_conv2d_input.vhd was successful.
+# Compile of Utils.vhd was successful.
+# Compile of wrapper_conv_2s.vhd was successful.
+# Compile of long_tb.vhdl was successful.
+# Compile of Tb_Conv_2d_N5_M3.vhd was successful.
+# Compile of Tb_Conv_2d_N7_M4.vhd was successful.
+# Compile of tb_memory.vhd was successful.
+# Compile of Conv_2d _opt.vhdl was successful.
+# Compile of Conv_2d_output_opt.vhd was successful.
+# Compile of COUNTER_OPT.vhd was successful with warnings.
+# Compile of SHIFT_REGISTER.vhd was successful.
+# Compile of wrapper_conv_2s_opt.vhd was successful.
+# Compile of Tb_Conv_2d_opt_N5_M3 .vhd was successful.
+# 24 compiles, 0 failed with no errors.
+quit -sim
+# End time: 16:31:20 on Jan 05,2026, Elapsed time: 0:14:31
+# Errors: 0, Warnings: 13
+# Compile of As_Counter.vhd was successful.
+# Compile of Conv_2d.vhdl was successful.
+# Compile of Conv_2d_input.vhd was successful.
+# Compile of Conv_2d_output.vhd was successful with warnings.
+# Compile of D_Flip_Flop.vhd was successful.
+# Compile of fifo.vhd was successful.
+# Compile of full_adder.vhd was successful.
+# Compile of fullAdder.vhd was successful.
+# Compile of Memory.vhd was successful.
+# Compile of mux.vhd was successful.
+# Compile of RippleCarryAdder.vhd was successful.
+# Compile of testbench_conv2d_input.vhd was successful.
+# Compile of Utils.vhd was successful.
+# Compile of wrapper_conv_2s.vhd was successful.
+# Compile of long_tb.vhdl was successful.
+# Compile of Tb_Conv_2d_N5_M3.vhd was successful.
+# Compile of Tb_Conv_2d_N7_M4.vhd was successful.
+# Compile of tb_memory.vhd was successful.
+# Compile of Conv_2d _opt.vhdl was successful.
+# Compile of Conv_2d_output_opt.vhd was successful.
+# Compile of COUNTER_OPT.vhd was successful with warnings.
+# Compile of SHIFT_REGISTER.vhd was successful.
+# Compile of wrapper_conv_2s_opt.vhd was successful.
+# Compile of Tb_Conv_2d_opt_N5_M3 .vhd was successful.
+# 24 compiles, 0 failed with no errors.
+vsim work.tb_conv_2d_opt_n5_m3
+# vsim work.tb_conv_2d_opt_n5_m3 
+# Start time: 16:31:30 on Jan 05,2026
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.utils(body)
+# Loading ieee.std_logic_textio(body)
+# Loading work.tb_conv_2d_opt_n5_m3(tb)
+# Loading work.conv_2d_opt(c2d)
+# Loading work.conv_2d_input(c2d)
+# Loading work.as_counter(asc)
+# Loading work.ripplecarryadder(rca)
+# Loading work.fulladder(dataflow)
+# Loading work.d_flip_flop(dff)
+# Loading work.memory(mem)
+# Loading work.conv_2d_output_opt(conv_bh)
+# Loading work.mux(mux_bh)
+# Loading work.counter_opt(copt)
+# Loading work.shift_register(rtl)
+add wave -position insertpoint  \
+sim:/tb_conv_2d_opt_n5_m3/clk_ext \
+sim:/tb_conv_2d_opt_n5_m3/reset_ext \
+sim:/tb_conv_2d_opt_n5_m3/x_valid \
+sim:/tb_conv_2d_opt_n5_m3/i_f \
+sim:/tb_conv_2d_opt_n5_m3/x \
+sim:/tb_conv_2d_opt_n5_m3/testing \
+sim:/tb_conv_2d_opt_n5_m3/y_ext \
+sim:/tb_conv_2d_opt_n5_m3/y_valid_ext \
+sim:/tb_conv_2d_opt_n5_m3/N \
+sim:/tb_conv_2d_opt_n5_m3/M \
+sim:/tb_conv_2d_opt_n5_m3/Nbit \
+sim:/tb_conv_2d_opt_n5_m3/clk_period
+run -all
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_OUT/mux_instances(8)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_OUT/mux_instances(7)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_OUT/mux_instances(6)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_OUT/mux_instances(5)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_OUT/mux_instances(4)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_OUT/mux_instances(3)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_OUT/mux_instances(2)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_OUT/mux_instances(1)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_OUT/mux_instances(0)/mux_i
+# ** Warning: NUMERIC_STD.">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_INP
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_INP
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 1950 ns  Iteration: 3  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_OUT
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 3150 ns  Iteration: 3  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_OUT
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 4350 ns  Iteration: 3  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_OUT
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 5550 ns  Iteration: 3  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_OUT
+quit -sim
+# End time: 16:31:59 on Jan 05,2026, Elapsed time: 0:00:29
+# Errors: 0, Warnings: 17
+# Compile of As_Counter.vhd was successful.
+# Compile of Conv_2d.vhdl was successful.
+# Compile of Conv_2d_input.vhd was successful.
+# Compile of Conv_2d_output.vhd was successful with warnings.
+# Compile of D_Flip_Flop.vhd was successful.
+# Compile of fifo.vhd was successful.
+# Compile of full_adder.vhd was successful.
+# Compile of fullAdder.vhd was successful.
+# Compile of Memory.vhd was successful.
+# Compile of mux.vhd was successful.
+# Compile of RippleCarryAdder.vhd was successful.
+# Compile of testbench_conv2d_input.vhd was successful.
+# Compile of Utils.vhd was successful.
+# Compile of wrapper_conv_2s.vhd was successful.
+# Compile of long_tb.vhdl was successful.
+# Compile of Tb_Conv_2d_N5_M3.vhd was successful.
+# Compile of Tb_Conv_2d_N7_M4.vhd was successful.
+# Compile of tb_memory.vhd was successful.
+# Compile of Conv_2d _opt.vhdl was successful.
+# Compile of Conv_2d_output_opt.vhd was successful.
+# Compile of COUNTER_OPT.vhd was successful with warnings.
+# Compile of SHIFT_REGISTER.vhd was successful.
+# Compile of wrapper_conv_2s_opt.vhd was successful.
+# Compile of Tb_Conv_2d_opt_N5_M3 .vhd was successful.
+# 24 compiles, 0 failed with no errors.
+vsim work.tb_conv_2d_opt_n5_m3
+# vsim work.tb_conv_2d_opt_n5_m3 
+# Start time: 16:34:27 on Jan 05,2026
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.utils(body)
+# Loading ieee.std_logic_textio(body)
+# Loading work.tb_conv_2d_opt_n5_m3(tb)
+# Loading work.conv_2d_opt(c2d)
+# Loading work.conv_2d_input(c2d)
+# Loading work.as_counter(asc)
+# Loading work.ripplecarryadder(rca)
+# Loading work.fulladder(dataflow)
+# Loading work.d_flip_flop(dff)
+# Loading work.memory(mem)
+# Loading work.conv_2d_output_opt(conv_bh)
+# Loading work.mux(mux_bh)
+# Loading work.counter_opt(copt)
+# Loading work.shift_register(rtl)
+add wave -position insertpoint  \
+sim:/tb_conv_2d_opt_n5_m3/clk_ext \
+sim:/tb_conv_2d_opt_n5_m3/reset_ext \
+sim:/tb_conv_2d_opt_n5_m3/x_valid \
+sim:/tb_conv_2d_opt_n5_m3/i_f \
+sim:/tb_conv_2d_opt_n5_m3/x \
+sim:/tb_conv_2d_opt_n5_m3/testing \
+sim:/tb_conv_2d_opt_n5_m3/y_ext \
+sim:/tb_conv_2d_opt_n5_m3/y_valid_ext \
+sim:/tb_conv_2d_opt_n5_m3/N \
+sim:/tb_conv_2d_opt_n5_m3/M \
+sim:/tb_conv_2d_opt_n5_m3/Nbit \
+sim:/tb_conv_2d_opt_n5_m3/clk_period
+run -all
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_OUT/mux_istances(8)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_OUT/mux_istances(7)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_OUT/mux_istances(6)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_OUT/mux_istances(5)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_OUT/mux_istances(4)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_OUT/mux_istances(3)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_OUT/mux_istances(2)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_OUT/mux_istances(1)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_OUT/mux_istances(0)/mux_i
+# ** Warning: NUMERIC_STD.">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_INP
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_INP
+quit -sim
+# End time: 16:36:27 on Jan 05,2026, Elapsed time: 0:02:00
+# Errors: 0, Warnings: 13
+# Compile of As_Counter.vhd was successful.
+# Compile of Conv_2d.vhdl was successful.
+# Compile of Conv_2d_input.vhd was successful.
+# Compile of Conv_2d_output.vhd was successful with warnings.
+# Compile of D_Flip_Flop.vhd was successful.
+# Compile of fifo.vhd was successful.
+# Compile of full_adder.vhd was successful.
+# Compile of fullAdder.vhd was successful.
+# Compile of Memory.vhd was successful.
+# Compile of mux.vhd was successful.
+# Compile of RippleCarryAdder.vhd was successful.
+# Compile of testbench_conv2d_input.vhd was successful.
+# Compile of Utils.vhd was successful.
+# Compile of wrapper_conv_2s.vhd was successful.
+# Compile of long_tb.vhdl was successful.
+# Compile of Tb_Conv_2d_N5_M3.vhd was successful.
+# Compile of Tb_Conv_2d_N7_M4.vhd was successful.
+# Compile of tb_memory.vhd was successful.
+# Compile of Conv_2d _opt.vhdl was successful.
+# Compile of Conv_2d_output_opt.vhd was successful.
+# Compile of COUNTER_OPT.vhd was successful with warnings.
+# Compile of SHIFT_REGISTER.vhd was successful.
+# Compile of wrapper_conv_2s_opt.vhd was successful.
+# Compile of Tb_Conv_2d_opt_N5_M3 .vhd was successful.
+# 24 compiles, 0 failed with no errors.
+vsim work.tb_conv_2d_opt_n5_m3
+# vsim work.tb_conv_2d_opt_n5_m3 
+# Start time: 16:36:38 on Jan 05,2026
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.utils(body)
+# Loading ieee.std_logic_textio(body)
+# Loading work.tb_conv_2d_opt_n5_m3(tb)
+# Loading work.conv_2d_opt(c2d)
+# Loading work.conv_2d_input(c2d)
+# Loading work.as_counter(asc)
+# Loading work.ripplecarryadder(rca)
+# Loading work.fulladder(dataflow)
+# Loading work.d_flip_flop(dff)
+# Loading work.memory(mem)
+# Loading work.conv_2d_output_opt(conv_bh)
+# Loading work.mux(mux_bh)
+# Loading work.counter_opt(copt)
+# Loading work.shift_register(rtl)
+add wave -position insertpoint  \
+sim:/tb_conv_2d_opt_n5_m3/clk_ext \
+sim:/tb_conv_2d_opt_n5_m3/reset_ext \
+sim:/tb_conv_2d_opt_n5_m3/x_valid \
+sim:/tb_conv_2d_opt_n5_m3/i_f \
+sim:/tb_conv_2d_opt_n5_m3/x \
+sim:/tb_conv_2d_opt_n5_m3/testing \
+sim:/tb_conv_2d_opt_n5_m3/y_ext \
+sim:/tb_conv_2d_opt_n5_m3/y_valid_ext \
+sim:/tb_conv_2d_opt_n5_m3/N \
+sim:/tb_conv_2d_opt_n5_m3/M \
+sim:/tb_conv_2d_opt_n5_m3/Nbit \
+sim:/tb_conv_2d_opt_n5_m3/clk_period
+run -all
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_OUT/mux_istances(8)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_OUT/mux_istances(7)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_OUT/mux_istances(6)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_OUT/mux_istances(5)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_OUT/mux_istances(4)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_OUT/mux_istances(3)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_OUT/mux_istances(2)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_OUT/mux_istances(1)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_OUT/mux_istances(0)/mux_i
+# ** Warning: NUMERIC_STD.">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_INP
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_INP
+quit -sim
+# End time: 16:37:28 on Jan 05,2026, Elapsed time: 0:00:50
+# Errors: 0, Warnings: 13
+# Break key hit
+# Compile of As_Counter.vhd was successful.
+# Compile of Conv_2d.vhdl was successful.
+# Compile of Conv_2d_input.vhd was successful.
+# Compile of Conv_2d_output.vhd was successful with warnings.
+# Compile of D_Flip_Flop.vhd was successful.
+# Compile of fifo.vhd was successful.
+# Compile of full_adder.vhd was successful.
+# Compile of fullAdder.vhd was successful.
+# Compile of Memory.vhd was successful.
+# Compile of mux.vhd was successful.
+# Compile of RippleCarryAdder.vhd was successful.
+# Compile of testbench_conv2d_input.vhd was successful.
+# Compile of Utils.vhd was successful.
+# Compile of wrapper_conv_2s.vhd was successful.
+# Compile of long_tb.vhdl was successful.
+# Compile of Tb_Conv_2d_N5_M3.vhd was successful.
+# Compile of Tb_Conv_2d_N7_M4.vhd was successful.
+# Compile of tb_memory.vhd was successful.
+# Compile of Conv_2d _opt.vhdl was successful.
+# Compile of Conv_2d_output_opt.vhd was successful.
+# Compile of COUNTER_OPT.vhd was successful with warnings.
+# Compile of SHIFT_REGISTER.vhd was successful.
+# Compile of wrapper_conv_2s_opt.vhd was successful.
+# Compile of Tb_Conv_2d_opt_N5_M3 .vhd was successful.
+# 24 compiles, 0 failed with no errors.
+vsim work.tb_conv_2d_opt_n5_m3
+# vsim work.tb_conv_2d_opt_n5_m3 
+# Start time: 16:38:44 on Jan 05,2026
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.utils(body)
+# Loading ieee.std_logic_textio(body)
+# Loading work.tb_conv_2d_opt_n5_m3(tb)
+# Loading work.conv_2d_opt(c2d)
+# Loading work.conv_2d_input(c2d)
+# Loading work.as_counter(asc)
+# Loading work.ripplecarryadder(rca)
+# Loading work.fulladder(dataflow)
+# Loading work.d_flip_flop(dff)
+# Loading work.memory(mem)
+# Loading work.conv_2d_output_opt(conv_bh)
+# Loading work.mux(mux_bh)
+# Loading work.counter_opt(copt)
+# Loading work.shift_register(rtl)
+add wave -position insertpoint  \
+sim:/tb_conv_2d_opt_n5_m3/clk_ext \
+sim:/tb_conv_2d_opt_n5_m3/reset_ext \
+sim:/tb_conv_2d_opt_n5_m3/x_valid \
+sim:/tb_conv_2d_opt_n5_m3/i_f \
+sim:/tb_conv_2d_opt_n5_m3/x \
+sim:/tb_conv_2d_opt_n5_m3/testing \
+sim:/tb_conv_2d_opt_n5_m3/y_ext \
+sim:/tb_conv_2d_opt_n5_m3/y_valid_ext \
+sim:/tb_conv_2d_opt_n5_m3/N \
+sim:/tb_conv_2d_opt_n5_m3/M \
+sim:/tb_conv_2d_opt_n5_m3/Nbit \
+sim:/tb_conv_2d_opt_n5_m3/clk_period
+run -all
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_OUT/mux_istances(8)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_OUT/mux_istances(7)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_OUT/mux_istances(6)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_OUT/mux_istances(5)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_OUT/mux_istances(4)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_OUT/mux_istances(3)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_OUT/mux_istances(2)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_OUT/mux_istances(1)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_OUT/mux_istances(0)/mux_i
+# ** Warning: NUMERIC_STD.">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_INP
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_INP
+# ** Fatal: (vsim-3734) Index value 25 is out of range 24 downto 0.
+#    Time: 11550 ns  Iteration: 6  Process: /tb_conv_2d_opt_n5_m3/UUT/C_OUT/mux_istances(6)/mux_i/line__20 File: /home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/src/mux.vhd
+# Fatal error in Architecture mux_bh at /home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/src/mux.vhd line 20
+# 
+# HDL call sequence:
+# Stopped at /home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/src/mux.vhd 20 Architecture mux_bh
+# 
+quit -sim
+# End time: 16:39:50 on Jan 05,2026, Elapsed time: 0:01:06
+# Errors: 1, Warnings: 13
+# Compile of As_Counter.vhd was successful.
+# Compile of Conv_2d.vhdl was successful.
+# Compile of Conv_2d_input.vhd was successful.
+# Compile of Conv_2d_output.vhd was successful with warnings.
+# Compile of D_Flip_Flop.vhd was successful.
+# Compile of fifo.vhd was successful.
+# Compile of full_adder.vhd was successful.
+# Compile of fullAdder.vhd was successful.
+# Compile of Memory.vhd was successful.
+# Compile of mux.vhd was successful.
+# Compile of RippleCarryAdder.vhd was successful.
+# Compile of testbench_conv2d_input.vhd was successful.
+# Compile of Utils.vhd was successful.
+# Compile of wrapper_conv_2s.vhd was successful.
+# Compile of long_tb.vhdl was successful.
+# Compile of Tb_Conv_2d_N5_M3.vhd was successful.
+# Compile of Tb_Conv_2d_N7_M4.vhd was successful.
+# Compile of tb_memory.vhd was successful.
+# Compile of Conv_2d _opt.vhdl was successful.
+# Compile of Conv_2d_output_opt.vhd was successful.
+# Compile of COUNTER_OPT.vhd was successful with warnings.
+# Compile of SHIFT_REGISTER.vhd was successful.
+# Compile of wrapper_conv_2s_opt.vhd was successful.
+# Compile of Tb_Conv_2d_opt_N5_M3 .vhd was successful.
+# 24 compiles, 0 failed with no errors.
+# Compile of As_Counter.vhd was successful.
+# Compile of Conv_2d.vhdl was successful.
+# Compile of Conv_2d_input.vhd was successful.
+# Compile of Conv_2d_output.vhd was successful with warnings.
+# Compile of D_Flip_Flop.vhd was successful.
+# Compile of fifo.vhd was successful.
+# Compile of full_adder.vhd was successful.
+# Compile of fullAdder.vhd was successful.
+# Compile of Memory.vhd was successful.
+# Compile of mux.vhd was successful.
+# Compile of RippleCarryAdder.vhd was successful.
+# Compile of testbench_conv2d_input.vhd was successful.
+# Compile of Utils.vhd was successful.
+# Compile of wrapper_conv_2s.vhd was successful.
+# Compile of long_tb.vhdl was successful.
+# Compile of Tb_Conv_2d_N5_M3.vhd was successful.
+# Compile of Tb_Conv_2d_N7_M4.vhd was successful.
+# Compile of tb_memory.vhd was successful.
+# Compile of Conv_2d _opt.vhdl was successful.
+# Compile of Conv_2d_output_opt.vhd was successful.
+# Compile of COUNTER_OPT.vhd was successful with warnings.
+# Compile of SHIFT_REGISTER.vhd was successful.
+# Compile of wrapper_conv_2s_opt.vhd was successful.
+# Compile of Tb_Conv_2d_opt_N5_M3 .vhd was successful.
+# 24 compiles, 0 failed with no errors.
+vsim work.tb_conv_2d_opt_n5_m3
+# vsim work.tb_conv_2d_opt_n5_m3 
+# Start time: 16:47:08 on Jan 05,2026
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.utils(body)
+# Loading ieee.std_logic_textio(body)
+# Loading work.tb_conv_2d_opt_n5_m3(tb)
+# Loading work.conv_2d_opt(c2d)
+# Loading work.conv_2d_input(c2d)
+# Loading work.as_counter(asc)
+# Loading work.ripplecarryadder(rca)
+# Loading work.fulladder(dataflow)
+# Loading work.d_flip_flop(dff)
+# Loading work.memory(mem)
+# Loading work.conv_2d_output_opt(conv_bh)
+# Loading work.mux(mux_bh)
+# Loading work.counter_opt(copt)
+# Loading work.shift_register(rtl)
+add wave -position insertpoint  \
+sim:/tb_conv_2d_opt_n5_m3/clk_ext \
+sim:/tb_conv_2d_opt_n5_m3/reset_ext \
+sim:/tb_conv_2d_opt_n5_m3/x_valid \
+sim:/tb_conv_2d_opt_n5_m3/i_f \
+sim:/tb_conv_2d_opt_n5_m3/x \
+sim:/tb_conv_2d_opt_n5_m3/testing \
+sim:/tb_conv_2d_opt_n5_m3/y_ext \
+sim:/tb_conv_2d_opt_n5_m3/y_valid_ext \
+sim:/tb_conv_2d_opt_n5_m3/N \
+sim:/tb_conv_2d_opt_n5_m3/M \
+sim:/tb_conv_2d_opt_n5_m3/Nbit \
+sim:/tb_conv_2d_opt_n5_m3/clk_period
+run -all
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_OUT/mux_istances(8)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_OUT/mux_istances(7)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_OUT/mux_istances(6)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_OUT/mux_istances(5)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_OUT/mux_istances(4)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_OUT/mux_istances(3)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_OUT/mux_istances(2)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_OUT/mux_istances(1)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_OUT/mux_istances(0)/mux_i
+# ** Warning: NUMERIC_STD.">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_INP
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_INP
+add wave -position insertpoint  \
+sim:/tb_conv_2d_opt_n5_m3/UUT/C_OUT/N \
+sim:/tb_conv_2d_opt_n5_m3/UUT/C_OUT/M \
+sim:/tb_conv_2d_opt_n5_m3/UUT/C_OUT/clk \
+sim:/tb_conv_2d_opt_n5_m3/UUT/C_OUT/rst \
+sim:/tb_conv_2d_opt_n5_m3/UUT/C_OUT/matrix \
+sim:/tb_conv_2d_opt_n5_m3/UUT/C_OUT/filter \
+sim:/tb_conv_2d_opt_n5_m3/UUT/C_OUT/en \
+sim:/tb_conv_2d_opt_n5_m3/UUT/C_OUT/convolution \
+sim:/tb_conv_2d_opt_n5_m3/UUT/C_OUT/convolution_ready \
+sim:/tb_conv_2d_opt_n5_m3/UUT/C_OUT/mux_control \
+sim:/tb_conv_2d_opt_n5_m3/UUT/C_OUT/a_extended \
+sim:/tb_conv_2d_opt_n5_m3/UUT/C_OUT/adder_out_adder_in \
+sim:/tb_conv_2d_opt_n5_m3/UUT/C_OUT/out_dff \
+sim:/tb_conv_2d_opt_n5_m3/UUT/C_OUT/rst_n \
+sim:/tb_conv_2d_opt_n5_m3/UUT/C_OUT/input_counter \
+sim:/tb_conv_2d_opt_n5_m3/UUT/C_OUT/output_counter \
+sim:/tb_conv_2d_opt_n5_m3/UUT/C_OUT/mux_to_and \
+sim:/tb_conv_2d_opt_n5_m3/UUT/C_OUT/and_to_adder \
+sim:/tb_conv_2d_opt_n5_m3/UUT/C_OUT/adder_to_dff \
+sim:/tb_conv_2d_opt_n5_m3/UUT/C_OUT/en_dff \
+sim:/tb_conv_2d_opt_n5_m3/UUT/C_OUT/counter_val \
+sim:/tb_conv_2d_opt_n5_m3/UUT/C_OUT/current_index \
+sim:/tb_conv_2d_opt_n5_m3/UUT/C_OUT/load \
+sim:/tb_conv_2d_opt_n5_m3/UUT/C_OUT/end_flag \
+sim:/tb_conv_2d_opt_n5_m3/UUT/C_OUT/output_counter_prev \
+sim:/tb_conv_2d_opt_n5_m3/UUT/C_OUT/x_in_ret \
+sim:/tb_conv_2d_opt_n5_m3/UUT/C_OUT/OUTPUT_DIMENSION \
+sim:/tb_conv_2d_opt_n5_m3/UUT/C_OUT/N_OUTPUT_ELEMENTS \
+sim:/tb_conv_2d_opt_n5_m3/UUT/C_OUT/N_BITS_COUNTER \
+sim:/tb_conv_2d_opt_n5_m3/UUT/C_OUT/N_BITS_CONTROL_MUX \
+sim:/tb_conv_2d_opt_n5_m3/UUT/C_OUT/N_BIT_OUTPUT_ELEMENT
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+run -all
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_OUT/mux_istances(8)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_OUT/mux_istances(7)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_OUT/mux_istances(6)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_OUT/mux_istances(5)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_OUT/mux_istances(4)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_OUT/mux_istances(3)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_OUT/mux_istances(2)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_OUT/mux_istances(1)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_OUT/mux_istances(0)/mux_i
+# ** Warning: NUMERIC_STD.">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_INP
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_INP
+quit -sim
+# End time: 16:48:50 on Jan 05,2026, Elapsed time: 0:01:42
+# Errors: 0, Warnings: 12
+# Compile of As_Counter.vhd was successful.
+# Compile of Conv_2d.vhdl was successful.
+# Compile of Conv_2d_input.vhd was successful.
+# Compile of Conv_2d_output.vhd was successful with warnings.
+# Compile of D_Flip_Flop.vhd was successful.
+# Compile of fifo.vhd was successful.
+# Compile of full_adder.vhd was successful.
+# Compile of fullAdder.vhd was successful.
+# Compile of Memory.vhd was successful.
+# Compile of mux.vhd was successful.
+# Compile of RippleCarryAdder.vhd was successful.
+# Compile of testbench_conv2d_input.vhd was successful.
+# Compile of Utils.vhd was successful.
+# Compile of wrapper_conv_2s.vhd was successful.
+# Compile of long_tb.vhdl was successful.
+# Compile of Tb_Conv_2d_N5_M3.vhd was successful.
+# Compile of Tb_Conv_2d_N7_M4.vhd was successful.
+# Compile of tb_memory.vhd was successful.
+# Compile of Conv_2d _opt.vhdl was successful.
+# Compile of Conv_2d_output_opt.vhd was successful.
+# Compile of COUNTER_OPT.vhd was successful with warnings.
+# Compile of SHIFT_REGISTER.vhd was successful.
+# Compile of wrapper_conv_2s_opt.vhd was successful.
+# Compile of Tb_Conv_2d_opt_N5_M3 .vhd was successful.
+# 24 compiles, 0 failed with no errors.
+vsim work.tb_conv_2d_opt_n5_m3
+# vsim work.tb_conv_2d_opt_n5_m3 
+# Start time: 16:49:29 on Jan 05,2026
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.utils(body)
+# Loading ieee.std_logic_textio(body)
+# Loading work.tb_conv_2d_opt_n5_m3(tb)
+# Loading work.conv_2d_opt(c2d)
+# Loading work.conv_2d_input(c2d)
+# Loading work.as_counter(asc)
+# Loading work.ripplecarryadder(rca)
+# Loading work.fulladder(dataflow)
+# Loading work.d_flip_flop(dff)
+# Loading work.memory(mem)
+# Loading work.conv_2d_output_opt(conv_bh)
+# Loading work.mux(mux_bh)
+# Loading work.counter_opt(copt)
+# Loading work.shift_register(rtl)
+add wave -position insertpoint  \
+sim:/tb_conv_2d_opt_n5_m3/clk_ext \
+sim:/tb_conv_2d_opt_n5_m3/reset_ext \
+sim:/tb_conv_2d_opt_n5_m3/x_valid \
+sim:/tb_conv_2d_opt_n5_m3/i_f \
+sim:/tb_conv_2d_opt_n5_m3/x \
+sim:/tb_conv_2d_opt_n5_m3/testing \
+sim:/tb_conv_2d_opt_n5_m3/y_ext \
+sim:/tb_conv_2d_opt_n5_m3/y_valid_ext \
+sim:/tb_conv_2d_opt_n5_m3/N \
+sim:/tb_conv_2d_opt_n5_m3/M \
+sim:/tb_conv_2d_opt_n5_m3/Nbit \
+sim:/tb_conv_2d_opt_n5_m3/clk_period
+run -all
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_OUT/mux_istances(8)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_OUT/mux_istances(7)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_OUT/mux_istances(6)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_OUT/mux_istances(5)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_OUT/mux_istances(4)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_OUT/mux_istances(3)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_OUT/mux_istances(2)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_OUT/mux_istances(1)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_OUT/mux_istances(0)/mux_i
+# ** Warning: NUMERIC_STD.">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_INP
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_INP
+# Compile of As_Counter.vhd was successful.
+# Compile of Conv_2d.vhdl was successful.
+# Compile of Conv_2d_input.vhd was successful.
+# Compile of Conv_2d_output.vhd was successful with warnings.
+# Compile of D_Flip_Flop.vhd was successful.
+# Compile of fifo.vhd was successful.
+# Compile of full_adder.vhd was successful.
+# Compile of fullAdder.vhd was successful.
+# Compile of Memory.vhd was successful.
+# Compile of mux.vhd was successful.
+# Compile of RippleCarryAdder.vhd was successful.
+# Compile of testbench_conv2d_input.vhd was successful.
+# Compile of Utils.vhd was successful.
+# Compile of wrapper_conv_2s.vhd was successful.
+# Compile of long_tb.vhdl was successful.
+# Compile of Tb_Conv_2d_N5_M3.vhd was successful.
+# Compile of Tb_Conv_2d_N7_M4.vhd was successful.
+# Compile of tb_memory.vhd was successful.
+# Compile of Conv_2d _opt.vhdl was successful.
+# Compile of Conv_2d_output_opt.vhd was successful.
+# Compile of COUNTER_OPT.vhd was successful with warnings.
+# Compile of SHIFT_REGISTER.vhd was successful.
+# Compile of wrapper_conv_2s_opt.vhd was successful.
+# Compile of Tb_Conv_2d_opt_N5_M3 .vhd was successful.
+# 24 compiles, 0 failed with no errors.
+quit -sim
+# End time: 16:56:47 on Jan 05,2026, Elapsed time: 0:07:18
+# Errors: 0, Warnings: 14
+# Compile of As_Counter.vhd was successful.
+# Compile of Conv_2d.vhdl was successful.
+# Compile of Conv_2d_input.vhd was successful.
+# Compile of Conv_2d_output.vhd was successful with warnings.
+# Compile of D_Flip_Flop.vhd was successful.
+# Compile of fifo.vhd was successful.
+# Compile of full_adder.vhd was successful.
+# Compile of fullAdder.vhd was successful.
+# Compile of Memory.vhd was successful.
+# Compile of mux.vhd was successful.
+# Compile of RippleCarryAdder.vhd was successful.
+# Compile of testbench_conv2d_input.vhd was successful.
+# Compile of Utils.vhd was successful.
+# Compile of wrapper_conv_2s.vhd was successful.
+# Compile of long_tb.vhdl was successful.
+# Compile of Tb_Conv_2d_N5_M3.vhd was successful.
+# Compile of Tb_Conv_2d_N7_M4.vhd was successful.
+# Compile of tb_memory.vhd was successful.
+# Compile of Conv_2d _opt.vhdl was successful.
+# Compile of Conv_2d_output_opt.vhd was successful.
+# Compile of COUNTER_OPT.vhd was successful with warnings.
+# Compile of SHIFT_REGISTER.vhd was successful.
+# Compile of wrapper_conv_2s_opt.vhd was successful.
+# Compile of Tb_Conv_2d_opt_N5_M3 .vhd was successful.
+# 24 compiles, 0 failed with no errors.
+vsim work.tb_conv_2d_opt_n5_m3
+# vsim work.tb_conv_2d_opt_n5_m3 
+# Start time: 16:56:57 on Jan 05,2026
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.utils(body)
+# Loading ieee.std_logic_textio(body)
+# Loading work.tb_conv_2d_opt_n5_m3(tb)
+# Loading work.conv_2d_opt(c2d)
+# Loading work.conv_2d_input(c2d)
+# Loading work.as_counter(asc)
+# Loading work.ripplecarryadder(rca)
+# Loading work.fulladder(dataflow)
+# Loading work.d_flip_flop(dff)
+# Loading work.memory(mem)
+# Loading work.conv_2d_output_opt(conv_bh)
+# Loading work.mux(mux_bh)
+# Loading work.counter_opt(copt)
+# Loading work.shift_register(rtl)
+add wave -position insertpoint  \
+sim:/tb_conv_2d_opt_n5_m3/clk_ext \
+sim:/tb_conv_2d_opt_n5_m3/reset_ext \
+sim:/tb_conv_2d_opt_n5_m3/x_valid \
+sim:/tb_conv_2d_opt_n5_m3/i_f \
+sim:/tb_conv_2d_opt_n5_m3/x \
+sim:/tb_conv_2d_opt_n5_m3/testing \
+sim:/tb_conv_2d_opt_n5_m3/y_ext \
+sim:/tb_conv_2d_opt_n5_m3/y_valid_ext \
+sim:/tb_conv_2d_opt_n5_m3/N \
+sim:/tb_conv_2d_opt_n5_m3/M \
+sim:/tb_conv_2d_opt_n5_m3/Nbit \
+sim:/tb_conv_2d_opt_n5_m3/clk_period
+run -all
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_OUT/mux_instances(8)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_OUT/mux_instances(7)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_OUT/mux_instances(6)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_OUT/mux_instances(5)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_OUT/mux_instances(4)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_OUT/mux_instances(3)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_OUT/mux_instances(2)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_OUT/mux_instances(1)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_OUT/mux_instances(0)/mux_i
+# ** Warning: NUMERIC_STD.">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_INP
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_INP
+quit -sim
+# End time: 17:02:40 on Jan 05,2026, Elapsed time: 0:05:43
+# Errors: 0, Warnings: 13
+# Compile of As_Counter.vhd was successful.
+# Compile of Conv_2d.vhdl was successful.
+# Compile of Conv_2d_input.vhd was successful.
+# Compile of Conv_2d_output.vhd was successful with warnings.
+# Compile of D_Flip_Flop.vhd was successful.
+# Compile of fifo.vhd was successful.
+# Compile of full_adder.vhd was successful.
+# Compile of fullAdder.vhd was successful.
+# Compile of Memory.vhd was successful.
+# Compile of mux.vhd was successful.
+# Compile of RippleCarryAdder.vhd was successful.
+# Compile of testbench_conv2d_input.vhd was successful.
+# Compile of Utils.vhd was successful.
+# Compile of wrapper_conv_2s.vhd was successful.
+# Compile of long_tb.vhdl was successful.
+# Compile of Tb_Conv_2d_N5_M3.vhd was successful.
+# Compile of Tb_Conv_2d_N7_M4.vhd was successful.
+# Compile of tb_memory.vhd was successful.
+# Compile of Conv_2d _opt.vhdl was successful.
+# Compile of Conv_2d_output_opt.vhd was successful.
+# Compile of COUNTER_OPT.vhd was successful with warnings.
+# Compile of SHIFT_REGISTER.vhd was successful.
+# Compile of wrapper_conv_2s_opt.vhd was successful.
+# Compile of Tb_Conv_2d_opt_N5_M3 .vhd failed with 1 errors.
+# 24 compiles, 1 failed with 1 error.
+# Compile of As_Counter.vhd was successful.
+# Compile of Conv_2d.vhdl was successful.
+# Compile of Conv_2d_input.vhd was successful.
+# Compile of Conv_2d_output.vhd was successful with warnings.
+# Compile of D_Flip_Flop.vhd was successful.
+# Compile of fifo.vhd was successful.
+# Compile of full_adder.vhd was successful.
+# Compile of fullAdder.vhd was successful.
+# Compile of Memory.vhd was successful.
+# Compile of mux.vhd was successful.
+# Compile of RippleCarryAdder.vhd was successful.
+# Compile of testbench_conv2d_input.vhd was successful.
+# Compile of Utils.vhd was successful.
+# Compile of wrapper_conv_2s.vhd was successful.
+# Compile of long_tb.vhdl was successful.
+# Compile of Tb_Conv_2d_N5_M3.vhd was successful.
+# Compile of Tb_Conv_2d_N7_M4.vhd was successful.
+# Compile of tb_memory.vhd was successful.
+# Compile of Conv_2d _opt.vhdl was successful.
+# Compile of Conv_2d_output_opt.vhd was successful.
+# Compile of COUNTER_OPT.vhd was successful with warnings.
+# Compile of SHIFT_REGISTER.vhd was successful.
+# Compile of wrapper_conv_2s_opt.vhd was successful.
+# Compile of Tb_Conv_2d_opt_N5_M3 .vhd was successful.
+# 24 compiles, 0 failed with no errors.
+vsim work.tb_conv_2d_opt_n5_m3
+# vsim work.tb_conv_2d_opt_n5_m3 
+# Start time: 17:03:14 on Jan 05,2026
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.utils(body)
+# Loading ieee.std_logic_textio(body)
+# Loading work.tb_conv_2d_opt_n5_m3(tb)
+# Loading work.conv_2d_opt(c2d)
+# Loading work.conv_2d_input(c2d)
+# Loading work.as_counter(asc)
+# Loading work.ripplecarryadder(rca)
+# Loading work.fulladder(dataflow)
+# Loading work.d_flip_flop(dff)
+# Loading work.memory(mem)
+# Loading work.conv_2d_output_opt(conv_bh)
+# Loading work.mux(mux_bh)
+# Loading work.counter_opt(copt)
+# Loading work.shift_register(rtl)
+add wave -position insertpoint  \
+sim:/tb_conv_2d_opt_n5_m3/clk_ext \
+sim:/tb_conv_2d_opt_n5_m3/reset_ext \
+sim:/tb_conv_2d_opt_n5_m3/x_valid \
+sim:/tb_conv_2d_opt_n5_m3/i_f \
+sim:/tb_conv_2d_opt_n5_m3/x \
+sim:/tb_conv_2d_opt_n5_m3/testing \
+sim:/tb_conv_2d_opt_n5_m3/y_ext \
+sim:/tb_conv_2d_opt_n5_m3/y_valid_ext \
+sim:/tb_conv_2d_opt_n5_m3/N \
+sim:/tb_conv_2d_opt_n5_m3/M \
+sim:/tb_conv_2d_opt_n5_m3/Nbit \
+sim:/tb_conv_2d_opt_n5_m3/clk_period
+run -all
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_OUT/mux_instances(8)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_OUT/mux_instances(7)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_OUT/mux_instances(6)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_OUT/mux_instances(5)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_OUT/mux_instances(4)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_OUT/mux_instances(3)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_OUT/mux_instances(2)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_OUT/mux_instances(1)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_OUT/mux_instances(0)/mux_i
+# ** Warning: NUMERIC_STD.">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_INP
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_INP
+# 010000110100001001000011001000110100
+quit -sim
+# End time: 17:06:13 on Jan 05,2026, Elapsed time: 0:02:59
+# Errors: 0, Warnings: 14
+# Compile of As_Counter.vhd was successful.
+# Compile of Conv_2d.vhdl was successful.
+# Compile of Conv_2d_input.vhd was successful.
+# Compile of Conv_2d_output.vhd was successful with warnings.
+# Compile of D_Flip_Flop.vhd was successful.
+# Compile of fifo.vhd was successful.
+# Compile of full_adder.vhd was successful.
+# Compile of fullAdder.vhd was successful.
+# Compile of Memory.vhd was successful.
+# Compile of mux.vhd was successful.
+# Compile of RippleCarryAdder.vhd was successful.
+# Compile of testbench_conv2d_input.vhd was successful.
+# Compile of Utils.vhd was successful.
+# Compile of wrapper_conv_2s.vhd was successful.
+# Compile of long_tb.vhdl was successful.
+# Compile of Tb_Conv_2d_N5_M3.vhd was successful.
+# Compile of Tb_Conv_2d_N7_M4.vhd was successful.
+# Compile of tb_memory.vhd was successful.
+# Compile of Conv_2d _opt.vhdl was successful.
+# Compile of Conv_2d_output_opt.vhd was successful.
+# Compile of COUNTER_OPT.vhd was successful with warnings.
+# Compile of SHIFT_REGISTER.vhd was successful.
+# Compile of wrapper_conv_2s_opt.vhd was successful.
+# Compile of Tb_Conv_2d_opt_N5_M3 .vhd was successful.
+# 24 compiles, 0 failed with no errors.
+vsim work.tb_conv_2d_opt_n5_m3
+# vsim work.tb_conv_2d_opt_n5_m3 
+# Start time: 17:06:21 on Jan 05,2026
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.utils(body)
+# Loading ieee.std_logic_textio(body)
+# Loading work.tb_conv_2d_opt_n5_m3(tb)
+# Loading work.conv_2d_opt(c2d)
+# Loading work.conv_2d_input(c2d)
+# Loading work.as_counter(asc)
+# Loading work.ripplecarryadder(rca)
+# Loading work.fulladder(dataflow)
+# Loading work.d_flip_flop(dff)
+# Loading work.memory(mem)
+# Loading work.conv_2d_output_opt(conv_bh)
+# Loading work.mux(mux_bh)
+# Loading work.counter_opt(copt)
+# Loading work.shift_register(rtl)
+add wave -position insertpoint  \
+sim:/tb_conv_2d_opt_n5_m3/clk_ext \
+sim:/tb_conv_2d_opt_n5_m3/reset_ext \
+sim:/tb_conv_2d_opt_n5_m3/x_valid \
+sim:/tb_conv_2d_opt_n5_m3/i_f \
+sim:/tb_conv_2d_opt_n5_m3/x \
+sim:/tb_conv_2d_opt_n5_m3/testing \
+sim:/tb_conv_2d_opt_n5_m3/y_ext \
+sim:/tb_conv_2d_opt_n5_m3/y_valid_ext \
+sim:/tb_conv_2d_opt_n5_m3/N \
+sim:/tb_conv_2d_opt_n5_m3/M \
+sim:/tb_conv_2d_opt_n5_m3/Nbit \
+sim:/tb_conv_2d_opt_n5_m3/clk_period
+run -all
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_OUT/mux_instances(8)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_OUT/mux_instances(7)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_OUT/mux_instances(6)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_OUT/mux_instances(5)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_OUT/mux_instances(4)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_OUT/mux_instances(3)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_OUT/mux_instances(2)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_OUT/mux_instances(1)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_OUT/mux_instances(0)/mux_i
+# ** Warning: NUMERIC_STD.">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_INP
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_INP
+# 010000110100001001000011001000110100
+quit -sim
+# End time: 17:32:10 on Jan 05,2026, Elapsed time: 0:25:49
+# Errors: 0, Warnings: 13
+# Compile of As_Counter.vhd was successful.
+# Compile of Conv_2d.vhdl was successful.
+# Compile of Conv_2d_input.vhd was successful.
+# Compile of Conv_2d_output.vhd was successful with warnings.
+# Compile of D_Flip_Flop.vhd was successful.
+# Compile of fifo.vhd was successful.
+# Compile of full_adder.vhd was successful.
+# Compile of fullAdder.vhd was successful.
+# Compile of Memory.vhd was successful.
+# Compile of mux.vhd was successful.
+# Compile of RippleCarryAdder.vhd was successful.
+# Compile of testbench_conv2d_input.vhd was successful.
+# Compile of Utils.vhd was successful.
+# Compile of wrapper_conv_2s.vhd was successful.
+# Compile of long_tb.vhdl was successful.
+# Compile of Tb_Conv_2d_N5_M3.vhd was successful.
+# Compile of Tb_Conv_2d_N7_M4.vhd was successful.
+# Compile of tb_memory.vhd was successful.
+# Compile of Conv_2d _opt.vhdl was successful.
+# Compile of Conv_2d_output_opt.vhd was successful.
+# Compile of COUNTER_OPT.vhd was successful with warnings.
+# Compile of SHIFT_REGISTER.vhd was successful.
+# Compile of wrapper_conv_2s_opt.vhd was successful.
+# Compile of Tb_Conv_2d_opt_N5_M3 .vhd was successful.
+# 24 compiles, 0 failed with no errors.
+vsim work.tb_conv_2d_opt_n5_m3
+# vsim work.tb_conv_2d_opt_n5_m3 
+# Start time: 17:32:20 on Jan 05,2026
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.utils(body)
+# Loading ieee.std_logic_textio(body)
+# Loading work.tb_conv_2d_opt_n5_m3(tb)
+# Loading work.conv_2d_opt(c2d)
+# Loading work.conv_2d_input(c2d)
+# Loading work.as_counter(asc)
+# Loading work.ripplecarryadder(rca)
+# Loading work.fulladder(dataflow)
+# Loading work.d_flip_flop(dff)
+# Loading work.memory(mem)
+# Loading work.conv_2d_output_opt(conv_bh)
+# Loading work.mux(mux_bh)
+# Loading work.counter_opt(copt)
+# Loading work.shift_register(rtl)
+add wave -position insertpoint  \
+sim:/tb_conv_2d_opt_n5_m3/clk_ext \
+sim:/tb_conv_2d_opt_n5_m3/reset_ext \
+sim:/tb_conv_2d_opt_n5_m3/x_valid \
+sim:/tb_conv_2d_opt_n5_m3/i_f \
+sim:/tb_conv_2d_opt_n5_m3/x \
+sim:/tb_conv_2d_opt_n5_m3/testing \
+sim:/tb_conv_2d_opt_n5_m3/y_ext \
+sim:/tb_conv_2d_opt_n5_m3/y_valid_ext \
+sim:/tb_conv_2d_opt_n5_m3/N \
+sim:/tb_conv_2d_opt_n5_m3/M \
+sim:/tb_conv_2d_opt_n5_m3/Nbit \
+sim:/tb_conv_2d_opt_n5_m3/clk_period
+run -all
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_OUT/mux_instances(8)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_OUT/mux_instances(7)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_OUT/mux_instances(6)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_OUT/mux_instances(5)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_OUT/mux_instances(4)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_OUT/mux_instances(3)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_OUT/mux_instances(2)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_OUT/mux_instances(1)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_OUT/mux_instances(0)/mux_i
+# ** Warning: NUMERIC_STD.">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_INP
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_INP
+# 010000110100001001000011001000110100
+add wave -position insertpoint  \
+sim:/tb_conv_2d_opt_n5_m3/UUT/C_OUT/output_counter
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+run -all
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_OUT/mux_instances(8)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_OUT/mux_instances(7)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_OUT/mux_instances(6)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_OUT/mux_instances(5)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_OUT/mux_instances(4)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_OUT/mux_instances(3)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_OUT/mux_instances(2)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_OUT/mux_instances(1)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_OUT/mux_instances(0)/mux_i
+# ** Warning: NUMERIC_STD.">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_INP
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_INP
+# 010000110100001001000011001000110100
+quit -sim
+# End time: 17:35:31 on Jan 05,2026, Elapsed time: 0:03:11
+# Errors: 0, Warnings: 12
+# Compile of As_Counter.vhd was successful.
+# Compile of Conv_2d.vhdl was successful.
+# Compile of Conv_2d_input.vhd was successful.
+# Compile of Conv_2d_output.vhd was successful with warnings.
+# Compile of D_Flip_Flop.vhd was successful.
+# Compile of fifo.vhd was successful.
+# Compile of full_adder.vhd was successful.
+# Compile of fullAdder.vhd was successful.
+# Compile of Memory.vhd was successful.
+# Compile of mux.vhd was successful.
+# Compile of RippleCarryAdder.vhd was successful.
+# Compile of testbench_conv2d_input.vhd was successful.
+# Compile of Utils.vhd was successful.
+# Compile of wrapper_conv_2s.vhd was successful.
+# Compile of long_tb.vhdl was successful.
+# Compile of Tb_Conv_2d_N5_M3.vhd was successful.
+# Compile of Tb_Conv_2d_N7_M4.vhd was successful.
+# Compile of tb_memory.vhd was successful.
+# Compile of Conv_2d _opt.vhdl was successful.
+# Compile of Conv_2d_output_opt.vhd was successful.
+# Compile of COUNTER_OPT.vhd was successful with warnings.
+# Compile of SHIFT_REGISTER.vhd was successful.
+# Compile of wrapper_conv_2s_opt.vhd was successful.
+# Compile of Tb_Conv_2d_opt_N5_M3 .vhd was successful.
+# 24 compiles, 0 failed with no errors.
+vsim work.tb_conv_2d_opt_n5_m3
+# vsim work.tb_conv_2d_opt_n5_m3 
+# Start time: 17:35:44 on Jan 05,2026
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.utils(body)
+# Loading ieee.std_logic_textio(body)
+# Loading work.tb_conv_2d_opt_n5_m3(tb)
+# Loading work.conv_2d_opt(c2d)
+# Loading work.conv_2d_input(c2d)
+# Loading work.as_counter(asc)
+# Loading work.ripplecarryadder(rca)
+# Loading work.fulladder(dataflow)
+# Loading work.d_flip_flop(dff)
+# Loading work.memory(mem)
+# Loading work.conv_2d_output_opt(conv_bh)
+# Loading work.mux(mux_bh)
+# Loading work.counter_opt(copt)
+# Loading work.shift_register(rtl)
+add wave -position insertpoint  \
+sim:/tb_conv_2d_opt_n5_m3/clk_ext \
+sim:/tb_conv_2d_opt_n5_m3/reset_ext \
+sim:/tb_conv_2d_opt_n5_m3/x_valid \
+sim:/tb_conv_2d_opt_n5_m3/i_f \
+sim:/tb_conv_2d_opt_n5_m3/x \
+sim:/tb_conv_2d_opt_n5_m3/testing \
+sim:/tb_conv_2d_opt_n5_m3/y_ext \
+sim:/tb_conv_2d_opt_n5_m3/y_valid_ext \
+sim:/tb_conv_2d_opt_n5_m3/N \
+sim:/tb_conv_2d_opt_n5_m3/M \
+sim:/tb_conv_2d_opt_n5_m3/Nbit \
+sim:/tb_conv_2d_opt_n5_m3/clk_period
+run -all
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_OUT/mux_instances(8)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_OUT/mux_instances(7)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_OUT/mux_instances(6)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_OUT/mux_instances(5)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_OUT/mux_instances(4)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_OUT/mux_instances(3)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_OUT/mux_instances(2)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_OUT/mux_instances(1)/mux_i
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_OUT/mux_instances(0)/mux_i
+# ** Warning: NUMERIC_STD.">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_INP
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv_2d_opt_n5_m3/UUT/C_INP
+# 010000110100001001000011001000110100
