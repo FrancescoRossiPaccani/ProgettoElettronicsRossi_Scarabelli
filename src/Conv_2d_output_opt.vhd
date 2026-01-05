@@ -116,20 +116,6 @@ architecture conv_bh of Conv_2d_output_opt is
             do      : out std_logic_vector(Nbit - 1 downto 0)
         );
     end component;
-
-    component Counter_opt is 
-        generic (
-            N_input     : positive := 9
-        );
-        port (
-            clk         : in std_logic;
-            reset       : in std_logic;       
-            x_in        : in std_logic_vector(N_input - 1 downto 0);
-            x_out       : in std_logic_vector(clog2(N_input*N_input + 1) - 1 downto 0);
-            end_flag    : in std_logic
-        );
-    end component;
-    
 begin
     -- not reset
     rst_n <= not rst;
@@ -171,57 +157,57 @@ begin
     end generate;
     
 -- ** da qua
---    adders_istances: for i in 0 to M*M - 1 generate
---        -- a_extended(i)(N_BIT_OUTPUT_ELEMENT - 1 downto 1) <= (others => '0');
---        -- a_extended(i)(0) <= and_to_adder(i);
---
---        a_extended(i) <= (0 => and_to_adder(i), others => '0'); 
---
---        adder_first: if i = 0 generate
---            adder_0: RippleCarryAdder
---            generic map(
---                Nbit    => N_BIT_OUTPUT_ELEMENT
---            )
---            port map(
---                a       => a_extended(i),
---                b       => (others => '0'),
---                cin     => '0',
---                fout    => adder_out_adder_in(i),
---                cout    => open
---            );
---        end generate;
---
---        adder_middle: if i > 0 and i < M*M - 1 generate
---        adder_i: RippleCarryAdder
---            generic map(
---                Nbit    => N_BIT_OUTPUT_ELEMENT
---            )
---            port map(
---                a       => a_extended(i),
---                b       => adder_out_adder_in(i-1),
---                cin     => '0',
---                fout    => adder_out_adder_in(i),
---                cout    => open
---            );
---        end generate;
---    
---        adder_last: if i = M*M - 1 generate    
---        adder_MM: RippleCarryAdder
---            generic map(
---                Nbit    => N_BIT_OUTPUT_ELEMENT
---            )
---            port map(
---                a       => a_extended(i),
---                b       => adder_out_adder_in(i-1),
---                cin     => '0',
---                fout    => adder_to_dff,
---                cout    => open
---            );
---            
---        end generate;
---    end generate;
---
---    -- ** qua
+    adders_istances: for i in 0 to M*M - 1 generate
+        -- a_extended(i)(N_BIT_OUTPUT_ELEMENT - 1 downto 1) <= (others => '0');
+        -- a_extended(i)(0) <= and_to_adder(i);
+
+        a_extended(i) <= (0 => and_to_adder(i), others => '0'); 
+
+        adder_first: if i = 0 generate
+            adder_0: RippleCarryAdder
+            generic map(
+                Nbit    => N_BIT_OUTPUT_ELEMENT
+            )
+            port map(
+                a       => a_extended(i),
+                b       => (others => '0'),
+                cin     => '0',
+                fout    => adder_out_adder_in(i),
+                cout    => open
+            );
+        end generate;
+
+        adder_middle: if i > 0 and i < M*M - 1 generate
+        adder_i: RippleCarryAdder
+            generic map(
+                Nbit    => N_BIT_OUTPUT_ELEMENT
+            )
+            port map(
+                a       => a_extended(i),
+                b       => adder_out_adder_in(i-1),
+                cin     => '0',
+                fout    => adder_out_adder_in(i),
+                cout    => open
+            );
+        end generate;
+    
+        adder_last: if i = M*M - 1 generate    
+        adder_MM: RippleCarryAdder
+            generic map(
+                Nbit    => N_BIT_OUTPUT_ELEMENT
+            )
+            port map(
+                a       => a_extended(i),
+                b       => adder_out_adder_in(i-1),
+                cin     => '0',
+                fout    => adder_to_dff,
+                cout    => open
+            );
+            
+        end generate;
+    end generate;
+
+    -- ** qua
 
     dff_istances: for i in 0 to N_OUTPUT_ELEMENTS - 1 generate
         dff_first: if i = N_OUTPUT_ELEMENTS - 1 generate
