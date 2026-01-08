@@ -8,7 +8,7 @@ end entity;
 
 architecture tb of tb_Conv_2d_input is
 
-    -- Parametri
+    -- Parameters
     constant N       : positive := 5;
     constant M       : positive := 3;
     constant Nbit    : positive := 8;
@@ -49,9 +49,9 @@ begin
     stim_proc: process
     begin
         --------------------------------------------------------------------------
-        -- TEST PROCESS: Caso d'uso con corretto pilotaggio
+        -- TEST PROCESS: Use case with correct piloting
         --------------------------------------------------------------------------
-        -- 1) RESET iniziale, tutto a zero
+        -- 1) RESET 
         reset_ext <= '1';
         x_valid <= '0';
         i_f <= '0';
@@ -60,23 +60,23 @@ begin
         reset_ext <= '0';
         wait until rising_edge(clk_ext);
 
-        -- 2) i_f va a 1 e x va a 11011001
+        -- 2) i_f -> 1 e x -> 11011001
         wait for 10 ns;
         i_f <= '1';
         x <= "01010101";
         wait until rising_edge(clk_ext);
 
-        -- 3) x_valid va a 1
+        -- 3) x_valid -> 1
         wait for 10 ns;
         x_valid <= '1';
         wait until rising_edge(clk_ext);
 
-        -- 4) x cambia a 00000001
+        -- 4) x -> 00000001
         wait for 10 ns;
         x <= "00000001";
         wait until rising_edge(clk_ext);
 
-        -- 5) x_valid torna a 0
+        -- 5) x_valid -> 0
         wait for 10 ns;
         x_valid <= '0';
         wait until rising_edge(clk_ext);
@@ -107,10 +107,10 @@ begin
         wait until rising_edge(clk_ext);
 
         --------------------------------------------------------------------------
-        -- TEST PROCESS: Caso d'uso con corretto pilotaggio
+        -- TEST PROCESS: Use case with correct piloting
         --------------------------------------------------------------------------
 
-        -- 1) RESET iniziale, tutto a zero
+        -- 1) RESET 
         reset_ext <= '1';
         x_valid <= '0';
         i_f <= '0';
@@ -119,21 +119,21 @@ begin
         reset_ext <= '0';
         wait until rising_edge(clk_ext);
 
-        -- 2) x va a 11011001, x_valid va a 1 ma i/f non cambia
+        -- 2) x -> 11011001, x_valid -> 1  i/f doesn't change
         wait for 10 ns;
         i_f <= '0';
         x_valid <= '1';
-        x <= "11111111"; -- qua le memorie devono rimanere a 0
+        x <= "11111111"; -- memory still empty
         wait until rising_edge(clk_ext);
 
         -- 2) Caso contrario 
         wait for 20 ns;
         x_valid <= '0';
         i_f <= '1';
-        x <= "11110001"; -- qua le memorie devono rimanere a 0
+        x <= "11110001"; -- memory still empty
         wait until rising_edge(clk_ext);
 
-        -- 3) Caso durante un ciclo di clock x_valid e i/f cambianp
+        -- 3) glitch i_f e x_valid
         wait for 40 ns;
         x_valid <= '1';
         wait for 15 ns;
@@ -141,22 +141,22 @@ begin
         wait for 30 ns;
         x_valid <= '0';
         i_f <= '1';
-        x <= "01010101"; -- qua le memorie devono rimanere a 0
+        x <= "01010101"; -- memory still empty
         wait until rising_edge(clk_ext);
 
-        -- 4) Caso concorrente
+        -- 4) concurrent input
         x_valid <= '0';
         i_f <= '1';
         x <= "11111111";
         wait until rising_edge(clk_ext);
 
-        -- 4) Caso concorrente 2
+        -- 4) concurrent inputs
         x_valid <= '1';
         i_f <= '0';
         x <= "11111111";
         wait until rising_edge(clk_ext);
 
-        --5) salvo correttamente il filtro
+        --5) input in a valid state, saving the filter
         i_f <= '1';
         x_valid <= '1';
         x <= "01010101";
@@ -167,12 +167,12 @@ begin
         x <= "00000001";
         wait until rising_edge(clk_ext);
 
-        --6) attendo un po'
+        --6)
         wait until rising_edge(clk_ext);
         wait until rising_edge(clk_ext);
         wait until rising_edge(clk_ext);
 
-        --7) inziio a salvare la matrice
+        --7) start saving the matrix
         i_f <= '0';
         x_valid <= '1';
         x <= "11001100";
@@ -184,7 +184,7 @@ begin
         i_f <= '0';
         x_valid <= '0';
         wait until rising_edge(clk_ext);
-        -- 8) finisco di salvare la matrice
+        -- 8) 
         x_valid <= '1';
         x <= "00011100";
         wait until rising_edge(clk_ext);
@@ -198,7 +198,6 @@ begin
         x_valid <= '0';
 
 
-        -- assert false report "FINE SIMULAZIONE" severity failure;
         wait for 4096*100 ns;
         testing <= false;
         wait for clk_period;
