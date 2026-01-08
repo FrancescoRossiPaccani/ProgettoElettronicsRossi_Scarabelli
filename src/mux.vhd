@@ -9,9 +9,9 @@ entity mux is
         N_input : positive
     );
     port (
-        input_data : in std_logic_vector(N_input - 1 downto 0);
-        control: in std_logic_vector(clog2(N_input) - 1 downto 0);
-        output_data: out std_logic
+        input_data      : in std_logic_vector(N_input - 1 downto 0);
+        control         : in std_logic_vector(clog2(N_input) - 1 downto 0);
+        output_data     : out std_logic
     );
 end entity;
 

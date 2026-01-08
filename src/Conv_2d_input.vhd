@@ -10,13 +10,13 @@ entity Conv_2d_input is
         Nbit    : positive := 8
     );
     port(
-        -- condivise con modulo Conv_2d_output
+        -- shared with Conv_2d_output
         clk          : in std_logic;
         reset        : in std_logic;
         en_execution : out std_logic;
         filter_out   : out std_logic_vector(M*M - 1 downto 0);
         matrix_out   : out std_logic_vector(N*N - 1 downto 0);
-        -- uniche   
+        -- unique   
         x_valid      : in std_logic;
         i_f          : in std_logic;
         x            : in std_logic_vector(Nbit-1 downto 0) -- ;
@@ -27,7 +27,7 @@ entity Conv_2d_input is
 end entity;
 
 architecture C2D of Conv_2d_input is
-    -- Modulo memoria custom utilizzato per salvare in forma matriciale i bit validi in ingresso
+    -- Custom memory used to save correctly the input data in a matrix form
     component Memory 
         generic(
             Ncell   : positive := 9;
@@ -43,7 +43,7 @@ architecture C2D of Conv_2d_input is
         );
     end component;
 
-    -- Registro contatore
+    -- Counter register
     component As_Counter is 
         generic (
             Nbit : positive := 8
@@ -56,7 +56,7 @@ architecture C2D of Conv_2d_input is
         );
     end component;
 
-    -- RCA utilizzato come sottrattore
+    -- RCA used as subtractor
     component RippleCarryAdder is 
         generic (
             Nbit        : positive := 8
@@ -74,10 +74,10 @@ architecture C2D of Conv_2d_input is
     constant DIM_MATRIX_SELECTOR    : natural := clog2((N*N + Nbit - 1)/Nbit);
     constant DIM_BIT_ADDER          : natural := clog2((M*M+Nbit-1)/Nbit + (N*N+Nbit-1)/Nbit);
    
-    signal end_filter     :  std_logic; -- 1 quando è finito il salvataggio del filtro, 0 altrimenti
-    signal end_matrix     :  std_logic; -- 1 quando è finito il salvataggio della matrice, 0 altrimenti
-    signal count_in       :  std_logic_vector(DIM_BIT_ADDER-1 downto 0); -- ingresso al contatore
-    signal count_out      :  std_logic_vector(DIM_BIT_ADDER-1 downto 0); -- uscita al contatore
+    signal end_filter     :  std_logic; -- 1 when filter loading is complete, 0 otherwise
+    signal end_matrix     :  std_logic; -- 1 when matrix loading is complete, 0 altrimenti
+    signal count_in       :  std_logic_vector(DIM_BIT_ADDER-1 downto 0); -- counter register's input
+    signal count_out      :  std_logic_vector(DIM_BIT_ADDER-1 downto 0); -- counter register's output
     signal in_aus         :  std_logic;
     signal cout_s1_aus    :  std_logic;
     signal fout_s1_aus    :  std_logic_vector(DIM_BIT_ADDER-1 downto 0);
@@ -92,10 +92,10 @@ architecture C2D of Conv_2d_input is
         resetn_aus <= not reset; 
         end_filter_aus <= not end_filter and i_f and x_valid;
 
-        in_aus <= i_f when end_filter = '0' else not i_f; -- discrimina l'imput valido a seconda dello stato dei filtri, ovvero input valido a quando i_f = '1' se devo salvare il filtro, input valido a quando i_f = '0' se devo salvare la matrice 
+        in_aus <= i_f when end_filter = '0' else not i_f; --discriminates valid input depending on filter state: input is valid when i_f = '1' for filter loading, and when i_f = '0' for matrix loading
         
         count_in(DIM_BIT_ADDER -1 downto 1) <= (others => '0'); 
-        count_in(0) <= x_valid and not end_matrix and in_aus; -- tutti bit di ingresso al contatore a 0 tranne quello meno significativo che = '1' se lo stato degli ingressi è valido, serve per contare il numero di ingressi ricevuti validi = stato della rete
+        count_in(0) <= x_valid and not end_matrix and in_aus; -- used to count the number of correct input recived
 
         ASC: As_Counter
                 generic map(
@@ -118,21 +118,21 @@ architecture C2D of Conv_2d_input is
         end_filter <= '1' when unsigned(count_out) > (((M*M+Nbit-1)/Nbit)-1) else '0';
         end_matrix <= '1' when unsigned(count_out) >= (((M*M + Nbit-1)/Nbit) + ((N*N + Nbit-1)/Nbit)) else '0';
         end_matrix_aus <= end_filter and (not end_matrix) and (not i_f) and x_valid;
-        en_execution <= end_matrix; -- quando ho finito di salvare i dati abilito il modulo di calcolo (segnale di handshake)
-
-        -- Sottrattore utilizzato per settare correttamente gli imput della memoria della matrice
+        en_execution <= end_matrix; -- enables the computation module (handshake signal) once data saving is complete
+        
+        --Subtractor used to correctly set the matrix memory inputs
         SUB_1: RippleCarryAdder
                generic map (
                     Nbit        => DIM_BIT_ADDER
                )        
                port map(
-                    a           => count_out, -- stato della rete       
-                    b           => std_logic_vector(not to_unsigned((M*M + Nbit -1)/Nbit, DIM_BIT_ADDER)), -- sottraggo dal contatore il numero di stati necessari a "pienare" la memoria del filtro
+                    a           => count_out, -- status       
+                    b           => std_logic_vector(not to_unsigned((M*M + Nbit -1)/Nbit, DIM_BIT_ADDER)), -- subtract from the status the number of states needed to fill the filter 
                     cin         => '1',
                     cout        => cout_s1_aus,
-                    fout        => fout_s1_aus -- ingresso al selector della memoria della matrice
+                    fout        => fout_s1_aus -- input to the matrix memory selector
                );
-        -- Memoria del filtro
+        -- Filer's memory
         F_MEM: Memory
                generic map (
                     Ncell       => M*M,
@@ -146,7 +146,7 @@ architecture C2D of Conv_2d_input is
                     d_in        => x,
                     d_out       => filter_out
                );
-        -- Memoria della matrice
+        -- MAtrix's memory
         M_MEM:  Memory
                 generic map(
                     Ncell       => N*N,

@@ -2,11 +2,13 @@ library IEEE;
 use IEEE.std_logic_1164.all;
 use IEEE.numeric_std.all;
 use work.Utils.all;
+use std.textio.all;
+use IEEE.std_logic_textio.all;
 
-entity long_tb is
+entity Tb_large_data is
 end entity;
 
-architecture tb of long_tb is
+architecture tb of Tb_large_data is
 
     component Conv_2d is
     generic(
@@ -44,6 +46,8 @@ architecture tb of long_tb is
 
     signal y_ext        : std_logic_vector(((N - M + 1)*(N - M + 1) * clog2(M*M + 1)) - 1 downto 0);
     signal y_valid_ext  : std_logic;
+
+  
 begin
      clk_ext <= not clk_ext after clk_period/2 when testing else '0';
 
@@ -66,11 +70,12 @@ begin
         );
 
     stim_proc: process
+    variable riga : line;
     begin
         --------------------------------------------------------------------------
-        -- TEST PROCESS: Caso d'uso con corretto pilotaggio, esempio consegna
+        -- TEST PROCESS: Use case with correct piloting, all input data = 1
         --------------------------------------------------------------------------
-        -- 1) RESET iniziale, tutto a zero
+        -- 1) RESET 
         reset_ext   <= '1';
         x_valid     <= '0';
         i_f         <= '0';
@@ -89,8 +94,15 @@ begin
         i_f         <= '0';
         x           <= "11111111";
         wait for 2048*100 ns;
-
-        -- 1) RESET iniziale, tutto a zero
+        -- END of this test, witing until y_valid rise to 1 and print in the termnal the output.
+        wait until rising_edge(y_valid_ext);
+        write(riga, y_ext);
+        writeline(output, riga);
+        wait until rising_edge(clk_ext);
+    --------------------------------------------------------------------------
+    -- TEST PROCESS: Use case with correct piloting
+    --------------------------------------------------------------------------
+        -- 1) RESET 
         reset_ext   <= '1';
         x_valid     <= '0';
         i_f         <= '0';
@@ -109,6 +121,11 @@ begin
         i_f         <= '0';
         x           <= "10101010";
         wait for 2048*100 ns;
+        -- END of this test, witing until y_valid rise to 1 and print in the termnal the output.
+        wait until rising_edge(y_valid_ext);
+        write(riga, y_ext);
+        writeline(output, riga);
+        wait until rising_edge(clk_ext);
 
         wait for 5096*100 ns;
         testing <= false;

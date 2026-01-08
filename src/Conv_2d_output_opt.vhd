@@ -3,12 +3,6 @@ use IEEE.std_logic_1164.all;
 use IEEE.numeric_std.all;
 use work.Utils.all;
 
--- ============================================================
---  2D Convolution Output Module (Optimized)
---  - Supports pipeline warm-up and flush
---  - Correctly computes ALL output elements
---  - convolution_ready asserted only when data is valid
--- ============================================================
 
 entity Conv_2d_output_opt is
     generic (
@@ -33,26 +27,22 @@ end entity;
 
 architecture conv_bh of Conv_2d_output_opt is
 
-    -- ============================================================
-    -- Constants
-    -- ============================================================
-
+    -- dimension of output matrix
     constant OUTPUT_DIMENSION       : natural := N - M + 1;
     constant N_OUTPUT_ELEMENTS      : natural := OUTPUT_DIMENSION * OUTPUT_DIMENSION;
+    -- number of bits of the counter
     constant N_BITS_COUNTER         : natural := clog2(N_OUTPUT_ELEMENTS) + 1;
+     -- number of bits required in order to control the multiplexers
     constant N_BITS_CONTROL_MUX     : natural := clog2(N*N);
+    -- number of bits required in order to rapresent one output element
     constant N_BIT_OUTPUT_ELEMENT   : natural := clog2(M*M + 1);
 
-    -- ============================================================
-    -- Types and Signals
-    -- ============================================================
-
-    type muc_cntl is array (0 to M*M - 1)
-        of std_logic_vector(N_BITS_CONTROL_MUX - 1 downto 0);
+    -- signal used in order to control the multiplexers
+    type muc_cntl is array (0 to M*M - 1) of std_logic_vector(N_BITS_CONTROL_MUX - 1 downto 0);
     signal mux_control : muc_cntl;
 
-    type odff is array (0 to N_OUTPUT_ELEMENTS-1)
-        of std_logic_vector(N_BIT_OUTPUT_ELEMENT - 1 downto 0);
+    -- wires connected to the dffs' output
+    type odff is array (0 to N_OUTPUT_ELEMENTS-1) of std_logic_vector(N_BIT_OUTPUT_ELEMENT - 1 downto 0);
     signal out_dff : odff;
 
     signal rst_n           : std_logic;
@@ -68,14 +58,12 @@ architecture conv_bh of Conv_2d_output_opt is
     signal end_flag       : std_logic;
 
     signal counter_val    : natural := 0;
+    -- index of matrix used to select the right submatrix in order to perform the convolution
     signal current_index  : natural := 0;
 
     signal output_counter_prev : std_logic_vector(N_BITS_COUNTER - 1 downto 0);
 
-    -- ============================================================
-    -- Components
-    -- ============================================================
-
+    -- counter register
     component As_Counter is 
         generic ( Nbit : positive := 8 );
         port (
@@ -86,6 +74,7 @@ architecture conv_bh of Conv_2d_output_opt is
         );
     end component;
 
+    -- multiplexer used in order to select the right submatrix in order to perform the convolution
     component mux is
         generic ( N_input : positive );
         port (
@@ -95,6 +84,7 @@ architecture conv_bh of Conv_2d_output_opt is
         );
     end component;
 
+    -- d flip flop used to store the output of the convolution
     component D_Flip_Flop is
         generic ( Nbit : natural := 8 );
         port (
@@ -106,6 +96,7 @@ architecture conv_bh of Conv_2d_output_opt is
         );
     end component;
 
+    -- Asyncronus counter with internal states to optimize the Ripple Carry Adder chain 
     component COUNTER_OPT is
         generic ( N_input : positive := 9 );
         port(
@@ -120,28 +111,10 @@ architecture conv_bh of Conv_2d_output_opt is
 
 begin
 
-    -- ============================================================
-    -- Reset handling
-    -- ============================================================
-
     rst_n <= not rst;
 
-    -- ============================================================
-    -- Output counter and index computation
-    -- ============================================================
-
-    counter_val <= to_integer(unsigned(output_counter))
-                   when (en = '1' and rst = '0') else 0;
-
-    -- Valid index only while computing real outputs
-    current_index <=
-        ((counter_val / M) * N) + (counter_val mod M)
-        when (en = '1' and rst = '0' and counter_val < N_OUTPUT_ELEMENTS)
-        else 0;
-
-    -- ============================================================
-    -- Main counter (allows extra cycle for pipeline flush)
-    -- ============================================================
+    counter_val <= to_integer(unsigned(output_counter)) when (en = '1' and rst = '0') else 0;
+    current_index <= ((counter_val / M) * N) + (counter_val mod M) when (en = '1' and rst = '0' and counter_val < N_OUTPUT_ELEMENTS) else 0;
 
     input_counter(N_BITS_COUNTER - 1 downto 1) <= (others => '0');
     input_counter(0) <= '1' when (en = '1' and end_flag = '1') else '0';
@@ -155,18 +128,8 @@ begin
             N_out => output_counter
         );
 
-    -- ============================================================
-    -- MUXes (safe indexing)
-    -- ============================================================
-
     mux_instances : for i in 0 to M*M - 1 generate
-        mux_control(i) <= std_logic_vector(
-            to_unsigned(
-                current_index + (N * (i / M)) + (i mod M),
-                N_BITS_CONTROL_MUX
-            ))
-            when (rst = '0' and en = '1' and counter_val < N_OUTPUT_ELEMENTS)
-            else (others => '0');
+        mux_control(i) <= std_logic_vector(to_unsigned(current_index + (N * (i / M)) + (i mod M), N_BITS_CONTROL_MUX)) when (rst = '0' and en = '1' and counter_val < N_OUTPUT_ELEMENTS) else (others => '0');
 
         mux_i : mux
             generic map ( N_input => N*N )
@@ -177,17 +140,12 @@ begin
             );
     end generate;
 
-    -- ============================================================
-    -- AND stage (filter application)
-    -- ============================================================
 
     and_instances : for i in 0 to M*M - 1 generate
         and_to_adder(i) <= mux_to_and(i) and filter(i);
     end generate;
 
-    -- ============================================================
-    -- Optimized counter / adder
-    -- ============================================================
+    -- Optimized 
 
     c_opt : COUNTER_OPT
         generic map ( N_input => M*M )
@@ -199,10 +157,6 @@ begin
             load     => load,
             end_flag => end_flag
         );
-
-    -- ============================================================
-    -- Output pipeline registers
-    -- ============================================================
 
     dff_instances : for i in 0 to N_OUTPUT_ELEMENTS - 1 generate
 
@@ -232,9 +186,6 @@ begin
 
     end generate;
 
-    -- ============================================================
-    -- Output mapping
-    -- ============================================================
 
     dff_to_output : for i in N_OUTPUT_ELEMENTS - 1 downto 0 generate
         convolution(
@@ -243,15 +194,8 @@ begin
         ) <= out_dff(i);
     end generate;
 
-    -- ============================================================
-    -- Enable DFFs when computation step ends
-    -- ============================================================
-
     en_dff <= '1' when (rst = '1' or end_flag = '1') else '0';
 
-    -- ============================================================
-    -- Convolution ready (ASSERTED AFTER FLUSH)
-    -- ============================================================
 
     conv_process : process(clk, rst)
     begin
@@ -265,10 +209,6 @@ begin
             end if;
         end if;
     end process;
-
-    -- ============================================================
-    -- Load control for optimized counter
-    -- ============================================================
 
     load_process : process(clk, rst)
     begin

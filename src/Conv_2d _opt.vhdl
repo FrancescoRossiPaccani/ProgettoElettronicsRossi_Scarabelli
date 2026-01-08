@@ -3,7 +3,7 @@
     use IEEE.numeric_std.all;
     use work.Utils.all; 
 
-    entity Conv_2d_opt is
+    entity Conv_2d is
     generic(
             N       : positive := 5;
             M       : positive := 3; 
@@ -23,7 +23,7 @@
         );
     end entity;
 
-    architecture C2D of Conv_2d_opt is
+    architecture C2D of Conv_2d is
         component Conv_2d_input 
             generic(
                 N       : positive := 5;
@@ -31,14 +31,14 @@
                 Nbit    : positive := 8
             );
             port(
-                -- dopo che y_valid va ad 1 resetto tutto, da usare come handshake
-                -- condivise con modulo Conv_2d_output
+                -- -- after y_valid goes high reset everything (used as handshake)
+                -- shared with Conv_2d_output
                 clk          : in std_logic;
                 reset        : in std_logic;
                 en_execution : out std_logic;
                 filter_out   : out std_logic_vector(M*M - 1 downto 0);
                 matrix_out   : out std_logic_vector(N*N - 1 downto 0);
-                -- uniche   
+                -- unique
                 x_valid      : in std_logic;
                 i_f          : in std_logic;
                 x            : in std_logic_vector(Nbit-1 downto 0) -- ;
@@ -72,15 +72,15 @@
         signal   reset_in       : std_logic;
         signal   reset_out      : std_logic;
 
-        signal   y_valid_aus    : std_logic; -- segnale interno utile per fare loopback e generare l'impulso
-        signal   y_valid_prev   : std_logic; -- valore di y_valid_aus al clock precedente
-        signal   y_pulse        : std_logic; -- impulso di un clock generato sul fronte di salita di y_valid_aus
-        signal   y_reset        : std_logic; -- segnale di reset sincronizzato, copia registrata di y_pulse (usato per resettare Conv_2d_input)
+        signal   y_valid_aus    : std_logic; -- internal signal used for loopback and pulse generation
+        signal   y_valid_prev   : std_logic; -- value of y_valid_aus at the previous clock
+        signal   y_pulse        : std_logic; -- clock pulse generated on the rising edge of y_valid_aus
+        signal   y_reset        : std_logic; -- synchronized reset signal, registered (previus clock) copy of y_pulse (used to reset Conv_2d_input)
         
         signal   x_valid_aus    : std_logic;
         
         begin
-            -- Generatore di impulzo per y_valid
+            -- Pulse generator for y_valid
             y_valid_proc: process(clk, reset)
             begin
                 if reset = '1' then
@@ -93,7 +93,7 @@
                     else
                         y_pulse <= '0';
                     end if; 
-                    -- memorizzo il valore corrente per il confronto al clock successivo
+                    -- store the current value for comparison at the next clock 
                     y_valid_prev <= y_valid_aus;
                     y_reset      <= y_pulse;
                 end if;

@@ -1,12 +1,23 @@
-{/home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/src/Conv_2d _opt.vhdl} {1 {vcom -work work -2002 -explicit -stats=none {/home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/src/Conv_2d _opt.vhdl}
+{/home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/tb/Tb_Conv_2d_opt_N5_M3 .vhd} {1 {vcom -work work -2002 -explicit -stats=none {/home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/tb/Tb_Conv_2d_opt_N5_M3 .vhd}
 Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
 -- Loading package STANDARD
 -- Loading package TEXTIO
 -- Loading package std_logic_1164
 -- Loading package NUMERIC_STD
 -- Loading package Utils
--- Compiling entity Conv_2d_opt
--- Compiling architecture C2D of Conv_2d_opt
+-- Loading package std_logic_textio
+-- Compiling entity Tb_Conv_2d_opt_N5_M3
+-- Compiling architecture tb of Tb_Conv_2d_opt_N5_M3
+
+} {} {}} {/home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/src/Conv_2d _opt.vhdl} {1 {vcom -work work -2002 -explicit -stats=none {/home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/src/Conv_2d _opt.vhdl}
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package Utils
+-- Compiling entity Conv_2d
+-- Compiling architecture C2D of Conv_2d
 
 } {} {}} /home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/src/COUNTER_OPT.vhd {2 {vcom -work work -2002 -explicit -stats=none /home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/src/COUNTER_OPT.vhd
 Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
@@ -26,6 +37,17 @@ Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 
 -- Loading package std_logic_1164
 -- Compiling entity full_adder
 -- Compiling architecture beh of full_adder
+
+} {} {}} /home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/tb/Tb_large_data.vhdl {1 {vcom -work work -2002 -explicit -stats=none /home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/tb/Tb_large_data.vhdl
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package Utils
+-- Loading package std_logic_textio
+-- Compiling entity Tb_large_data
+-- Compiling architecture tb of Tb_large_data
 
 } {} {}} /home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/src/As_Counter.vhd {1 {vcom -work work -2002 -explicit -stats=none /home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/src/As_Counter.vhd
 Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
@@ -110,15 +132,15 @@ Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 
 -- Compiling entity Conv_2d
 -- Compiling architecture C2D of Conv_2d
 
-} {} {}} /home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/tb/long_tb.vhdl {1 {vcom -work work -2002 -explicit -stats=none /home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/tb/long_tb.vhdl
+} {} {}} /home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/src/Memory.vhd {1 {vcom -work work -2002 -explicit -stats=none /home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/src/Memory.vhd
 Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
 -- Loading package STANDARD
 -- Loading package TEXTIO
 -- Loading package std_logic_1164
 -- Loading package NUMERIC_STD
 -- Loading package Utils
--- Compiling entity long_tb
--- Compiling architecture tb of long_tb
+-- Compiling entity Memory
+-- Compiling architecture MEM of Memory
 
 } {} {}} /home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/src/Utils.vhd {1 {vcom -work work -2002 -explicit -stats=none /home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/src/Utils.vhd
 Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
@@ -130,26 +152,43 @@ Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 
 -- Compiling package body Utils
 -- Loading package Utils
 
-} {} {}} /home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/src/Memory.vhd {1 {vcom -work work -2002 -explicit -stats=none /home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/src/Memory.vhd
+} {} {}} /home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/src/SHIFT_REGISTER.vhd {1 {vcom -work work -2002 -explicit -stats=none /home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/src/SHIFT_REGISTER.vhd
 Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
 -- Loading package STANDARD
 -- Loading package TEXTIO
 -- Loading package std_logic_1164
--- Loading package NUMERIC_STD
--- Loading package Utils
--- Compiling entity Memory
--- Compiling architecture MEM of Memory
+-- Compiling entity SHIFT_REGISTER
+-- Compiling architecture rtl of SHIFT_REGISTER
 
-} {} {}} /home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/tb/Tb_Conv_2d_N7_M4.vhd {1 {vcom -work work -2002 -explicit -stats=none /home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/tb/Tb_Conv_2d_N7_M4.vhd
+} {} {}} /home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/src/wrapper_conv_2s.vhd {1 {vcom -work work -2002 -explicit -stats=none /home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/src/wrapper_conv_2s.vhd
 Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
 -- Loading package STANDARD
 -- Loading package TEXTIO
 -- Loading package std_logic_1164
 -- Loading package NUMERIC_STD
 -- Loading package Utils
--- Loading package std_logic_textio
--- Compiling entity Tb_Conv_2d_N7_M4
--- Compiling architecture tb of Tb_Conv_2d_N7_M4
+-- Compiling entity wrapper_conv_2d
+-- Compiling architecture wrp of wrapper_conv_2d
+
+} {} {}} /home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/src/mux.vhd {1 {vcom -work work -2002 -explicit -stats=none /home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/src/mux.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package Utils
+-- Compiling entity mux
+-- Compiling architecture mux_bh of mux
+
+} {} {}} /home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/src/Conv_2d_input.vhd {1 {vcom -work work -2002 -explicit -stats=none /home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/src/Conv_2d_input.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package Utils
+-- Compiling entity Conv_2d_input
+-- Compiling architecture C2D of Conv_2d_input
 
 } {} {}} /home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/src/testbench_conv2d_input.vhd {1 {vcom -work work -2002 -explicit -stats=none /home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/src/testbench_conv2d_input.vhd
 Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
@@ -162,51 +201,16 @@ Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 
 -- Compiling architecture tb of tb_Conv_2d_input
 -- Loading entity Conv_2d_input
 
-} {} {}} /home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/src/Conv_2d_input.vhd {1 {vcom -work work -2002 -explicit -stats=none /home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/src/Conv_2d_input.vhd
+} {} {}} /home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/tb/Tb_Conv_2d_N7_M4.vhd {1 {vcom -work work -2002 -explicit -stats=none /home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/tb/Tb_Conv_2d_N7_M4.vhd
 Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
 -- Loading package STANDARD
 -- Loading package TEXTIO
 -- Loading package std_logic_1164
 -- Loading package NUMERIC_STD
 -- Loading package Utils
--- Compiling entity Conv_2d_input
--- Compiling architecture C2D of Conv_2d_input
-
-} {} {}} /home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/src/mux.vhd {1 {vcom -work work -2002 -explicit -stats=none /home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/src/mux.vhd
-Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
--- Loading package STANDARD
--- Loading package TEXTIO
--- Loading package std_logic_1164
--- Loading package NUMERIC_STD
--- Loading package Utils
--- Compiling entity mux
--- Compiling architecture mux_bh of mux
-
-} {} {}} /home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/src/wrapper_conv_2s.vhd {1 {vcom -work work -2002 -explicit -stats=none /home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/src/wrapper_conv_2s.vhd
-Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
--- Loading package STANDARD
--- Loading package TEXTIO
--- Loading package std_logic_1164
--- Loading package NUMERIC_STD
--- Loading package Utils
--- Compiling entity wrapper_conv_2d
--- Compiling architecture wrp of wrapper_conv_2d
-
-} {} {}} /home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/src/SHIFT_REGISTER.vhd {1 {vcom -work work -2002 -explicit -stats=none /home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/src/SHIFT_REGISTER.vhd
-Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
--- Loading package STANDARD
--- Loading package TEXTIO
--- Loading package std_logic_1164
--- Compiling entity SHIFT_REGISTER
--- Compiling architecture rtl of SHIFT_REGISTER
-
-} {} {}} /home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/src/fullAdder.vhd {1 {vcom -work work -2002 -explicit -stats=none /home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/src/fullAdder.vhd
-Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
--- Loading package STANDARD
--- Loading package TEXTIO
--- Loading package std_logic_1164
--- Compiling entity FullAdder
--- Compiling architecture dataflow of FullAdder
+-- Loading package std_logic_textio
+-- Compiling entity Tb_Conv_2d_N7_M4
+-- Compiling architecture tb of Tb_Conv_2d_N7_M4
 
 } {} {}} /home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/src/Conv_2d_output.vhd {2 {vcom -work work -2002 -explicit -stats=none /home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/src/Conv_2d_output.vhd
 Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
@@ -217,6 +221,14 @@ Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 
 -- Loading package Utils
 -- Compiling entity Conv_2d_output
 -- Compiling architecture conv_bh of Conv_2d_output
-** Warning: /home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/src/Conv_2d_output.vhd(164): (vcom-1074) Non-locally static OTHERS choice is allowed only if it is the only choice of the only association.
+** Warning: /home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/src/Conv_2d_output.vhd(159): (vcom-1074) Non-locally static OTHERS choice is allowed only if it is the only choice of the only association.
+
+} {} {}} /home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/src/fullAdder.vhd {1 {vcom -work work -2002 -explicit -stats=none /home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/src/fullAdder.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity FullAdder
+-- Compiling architecture dataflow of FullAdder
 
 } {} {}}
