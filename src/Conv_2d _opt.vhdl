@@ -3,7 +3,7 @@
     use IEEE.numeric_std.all;
     use work.Utils.all; 
 
-    entity Conv_2d is
+    entity Conv_2d_opt is
     generic(
             N       : positive := 5;
             M       : positive := 3; 
@@ -23,7 +23,7 @@
         );
     end entity;
 
-    architecture C2D of Conv_2d is
+    architecture C2D of Conv_2d_opt is
         component Conv_2d_input 
             generic(
                 N       : positive := 5;
