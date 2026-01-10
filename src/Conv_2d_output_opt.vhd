@@ -69,12 +69,9 @@ architecture conv_bh of Conv_2d_output_opt is
     signal state                 : state_t;
 
     -- counter signal used by the shift register
-    signal shift_counter             : integer range 0 to M;
-    signal counter_val          : natural;
+    signal shift_counter        : integer range 0 to M;
 
-    ----------------------------------------------------------------------------
-    -- Components
-    ----------------------------------------------------------------------------
+
     component As_Counter is
         generic ( Nbit : positive := 8 );
         port (
@@ -130,7 +127,9 @@ begin
     input_counter(0) <= '1' when (en = '1' and end_flag = '1') else '0';
 
     counter_i : As_Counter
-        generic map ( Nbit => N_BITS_COUNTER )
+        generic map ( 
+            Nbit => N_BITS_COUNTER 
+            )
         port map (
             clk    => clk,
             resetn => rst_n,
@@ -139,7 +138,9 @@ begin
         );
 
     Shift_register_i: SHIFT_REGISTER
-        generic map( Nbit => N*N )
+        generic map(
+            Nbit => N*N
+            )
         port map(
             clk    => clk,
             resetn => rst_n,
@@ -154,7 +155,9 @@ begin
     end generate;
 
     c_opt : COUNTER_OPT
-        generic map ( N_input => M*M )
+        generic map (
+            N_input => M*M
+            )
         port map (
             clk      => clk,
             rst      => rst,
@@ -165,10 +168,11 @@ begin
         );
 
     dff_instances : for i in 0 to N_OUTPUT_ELEMENTS - 1 generate
-
         dff_last : if i = N_OUTPUT_ELEMENTS - 1 generate
             dff_i : D_Flip_Flop
-                generic map ( Nbit => N_BIT_OUTPUT_ELEMENT )
+                generic map (
+                    Nbit => N_BIT_OUTPUT_ELEMENT
+                    )
                 port map (
                     clk    => clk,
                     resetn => rst_n,
@@ -180,7 +184,9 @@ begin
 
         dff_shift : if i < N_OUTPUT_ELEMENTS - 1 generate
             dff_i : D_Flip_Flop
-                generic map ( Nbit => N_BIT_OUTPUT_ELEMENT )
+                generic map (
+                    Nbit => N_BIT_OUTPUT_ELEMENT
+                    )
                 port map (
                     clk    => clk,
                     resetn => rst_n,
@@ -189,14 +195,10 @@ begin
                     do     => out_dff(i)
                 );
         end generate;
-
     end generate;
 
     dff_to_output : for i in N_OUTPUT_ELEMENTS - 1 downto 0 generate
-        convolution(
-            ((i + 1) * N_BIT_OUTPUT_ELEMENT) - 1 downto
-            (i * N_BIT_OUTPUT_ELEMENT)
-        ) <= out_dff(i);
+        convolution(((i + 1) * N_BIT_OUTPUT_ELEMENT) - 1 downto (i * N_BIT_OUTPUT_ELEMENT)) <= out_dff(i);
     end generate;
 
     en_dff <= '1' when (rst = '1' or end_flag = '1') else '0';
@@ -217,11 +219,11 @@ begin
     fsm_proc : process(clk, rst)
     begin
         if rst = '1' then
-            state     <= INACTIVE;
-            shift_counter <= 0;
-            load      <= '0';
-            load_shr  <= '1';
-            en_shr    <= '1';
+            state           <= INACTIVE;
+            shift_counter   <=  0 ;
+            load            <= '0';
+            load_shr        <= '1';
+            en_shr          <= '1';
             
         elsif rising_edge(clk) then
             load     <= '0';
@@ -241,7 +243,7 @@ begin
                     if end_flag = '1' then
                         if counter_val < N_OUTPUT_ELEMENTS - 1 then
                             state <= SHIFTING;
-                            
+                            -- number of clock that en_shr had to stay = 1
                             if ((counter_val + 1) mod OUTPUT_DIMENSION) = 0 then
                                 shift_counter <= M; -- not valid shift register state
                             else
@@ -258,7 +260,7 @@ begin
                     else
                         state <= WAIT_OUTPUT; 
                     end if;
-
+                -- Wait a clock to be sure that the Counter_opt store the correct data
                 when WAIT_OUTPUT => 
                     en_shr <= '0';
                     load   <= '1';

@@ -57,6 +57,16 @@ Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 
 -- Compiling entity As_Counter
 -- Compiling architecture ASC of As_Counter
 
+} {} {}} /home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/src/wrapper_conv_2s_opt.vhd {1 {vcom -work work -2002 -explicit -stats=none /home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/src/wrapper_conv_2s_opt.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package Utils
+-- Compiling entity wrapper_conv_2d_opt
+-- Compiling architecture wrp of wrapper_conv_2d_opt
+
 } {} {}} /home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/tb/tb_memory.vhd {1 {vcom -work work -2002 -explicit -stats=none /home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/tb/tb_memory.vhd
 Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
 -- Loading package STANDARD
@@ -131,6 +141,27 @@ Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 
 -- Loading package Utils
 -- Compiling entity Memory
 -- Compiling architecture MEM of Memory
+
+} {} {}} /home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/tb/Tb_Conv_2d_N7_M4.vhd {1 {vcom -work work -2002 -explicit -stats=none /home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/tb/Tb_Conv_2d_N7_M4.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package Utils
+-- Loading package std_logic_textio
+-- Compiling entity Tb_Conv_2d_N7_M4
+-- Compiling architecture tb of Tb_Conv_2d_N7_M4
+
+} {} {}} /home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/src/wrapper_conv_2s.vhd {1 {vcom -work work -2002 -explicit -stats=none /home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/src/wrapper_conv_2s.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package Utils
+-- Compiling entity wrapper_conv_2d
+-- Compiling architecture wrp of wrapper_conv_2d
 
 } {} {}} /home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/src/SHIFT_REGISTER.vhd {1 {vcom -work work -2002 -explicit -stats=none /home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/src/SHIFT_REGISTER.vhd
 Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
