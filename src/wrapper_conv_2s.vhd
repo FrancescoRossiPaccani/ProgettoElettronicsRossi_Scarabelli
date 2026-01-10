@@ -5,8 +5,8 @@ use work.Utils.all;
 
 entity wrapper_conv_2d is
      generic(
-            N       : positive := 5;
-            M       : positive := 3; 
+            N       : positive := 43;
+            M       : positive := 32; 
             Nbit    : positive := 8
         );
         port(

@@ -13,7 +13,7 @@ Eas_counter
 Z0 w1764064479
 Z1 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
 Z2 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
-!i122 7000
+!i122 7345
 Z3 d/home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/modelsim
 Z4 8/home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/src/As_Counter.vhd
 Z5 F/home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/src/As_Counter.vhd
@@ -23,9 +23,9 @@ VGPiXa9FmdcogkPag?hNFB0
 !s100 MJ>MMO85EZ`=OaeP>PJ1=1
 Z6 OV;C;2020.1;71
 32
-Z7 !s110 1767885498
+Z7 !s110 1768053428
 !i10b 1
-Z8 !s108 1767885498.000000
+Z8 !s108 1768053428.000000
 Z9 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/src/As_Counter.vhd|
 Z10 !s107 /home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/src/As_Counter.vhd|
 !i113 1
@@ -35,7 +35,7 @@ Aasc
 R1
 R2
 DEx4 work 10 as_counter 0 22 GPiXa9FmdcogkPag?hNFB0
-!i122 7000
+!i122 7345
 l47
 L16 59
 V0V2ZU[Mlbl[<EIkgk<EB:1
@@ -51,26 +51,26 @@ R10
 R11
 R12
 Econv_2d
-Z13 w1767885079
+Z13 w1767883844
 Z14 DPx4 work 5 utils 0 22 CPHUXk2K]FNZCL93XJh9[1
 Z15 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
 R1
 R2
-!i122 7016
+!i122 7346
 R3
-Z16 8/home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/src/Conv_2d _opt.vhdl
-Z17 F/home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/src/Conv_2d _opt.vhdl
+Z16 8/home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/src/Conv_2d.vhdl
+Z17 F/home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/src/Conv_2d.vhdl
 l0
 L6 1
 VOgR5F0fD]1BCHJliikHzg2
 !s100 jfnA;N0oa`MWz:l^o=gIY0
 R6
 32
-Z18 !s110 1767885501
+R7
 !i10b 1
-Z19 !s108 1767885501.000000
-Z20 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/src/Conv_2d _opt.vhdl|
-Z21 !s107 /home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/src/Conv_2d _opt.vhdl|
+R8
+Z18 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/src/Conv_2d.vhdl|
+Z19 !s107 /home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/src/Conv_2d.vhdl|
 !i113 1
 R11
 R12
@@ -80,31 +80,31 @@ R15
 R1
 R2
 DEx4 work 7 conv_2d 0 22 OgR5F0fD]1BCHJliikHzg2
-!i122 7016
+!i122 7346
 l82
-Z22 L26 117
-Vi]Ra70LDR_?GNg<]nBT963
-!s100 nGl5TWgVId[RBeLKQf6zn0
+Z20 L26 117
+VMcA[mWeH?UTODAmEPOKI]3
+!s100 ?RZajh7Wn_E?e0;FU?KZT1
 R6
 32
-R18
+R7
 !i10b 1
+R8
+R18
 R19
-R20
-R21
 !i113 1
 R11
 R12
 Econv_2d_input
-Z23 w1767884228
+Z21 w1767884228
 R14
 R15
 R1
 R2
-!i122 7002
+!i122 7347
 R3
-Z24 8/home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/src/Conv_2d_input.vhd
-Z25 F/home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/src/Conv_2d_input.vhd
+Z22 8/home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/src/Conv_2d_input.vhd
+Z23 F/home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/src/Conv_2d_input.vhd
 l0
 L6 1
 VcmAi61GG9n>85ce=Hc]F^2
@@ -114,8 +114,8 @@ R6
 R7
 !i10b 1
 R8
-Z26 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/src/Conv_2d_input.vhd|
-Z27 !s107 /home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/src/Conv_2d_input.vhd|
+Z24 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/src/Conv_2d_input.vhd|
+Z25 !s107 /home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/src/Conv_2d_input.vhd|
 !i113 1
 R11
 R12
@@ -124,8 +124,8 @@ R14
 R15
 R1
 R2
-Z28 DEx4 work 13 conv_2d_input 0 22 cmAi61GG9n>85ce=Hc]F^2
-!i122 7002
+Z26 DEx4 work 13 conv_2d_input 0 22 cmAi61GG9n>85ce=Hc]F^2
+!i122 7347
 l90
 L29 138
 V5M@C9;LA>5@;PkL>[GZ1T0
@@ -135,32 +135,32 @@ R6
 R7
 !i10b 1
 R8
-R26
-R27
+R24
+R25
 !i113 1
 R11
 R12
 Econv_2d_opt
-Z29 w1767616945
+Z27 w1767890927
 R14
 R15
 R1
 R2
-!i122 6836
+!i122 7361
 R3
-R16
-R17
+Z28 8/home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/src/Conv_2d _opt.vhdl
+Z29 F/home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/src/Conv_2d _opt.vhdl
 l0
 L6 1
 V^e=YHK;Pn2BW>JQVHDA>O3
 !s100 oMPAfZZnJ4mXeYbLBZlhL1
 R6
 32
-Z30 !s110 1767881431
+Z30 !s110 1768053429
 !i10b 1
-Z31 !s108 1767881431.000000
-R20
-R21
+Z31 !s108 1768053429.000000
+Z32 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/src/Conv_2d _opt.vhdl|
+Z33 !s107 /home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/src/Conv_2d _opt.vhdl|
 !i113 1
 R11
 R12
@@ -170,9 +170,9 @@ R15
 R1
 R2
 DEx4 work 11 conv_2d_opt 0 22 ^e=YHK;Pn2BW>JQVHDA>O3
-!i122 6836
+!i122 7361
 l82
-R22
+R20
 V1QSgd6Gck8d@NfZXQHVDn3
 !s100 XcjAVG3HUWSZ:b5Ae=NVg1
 R6
@@ -180,21 +180,21 @@ R6
 R30
 !i10b 1
 R31
-R20
-R21
+R32
+R33
 !i113 1
 R11
 R12
 Econv_2d_output
-Z32 w1767884937
+Z34 w1767884937
 R14
 R15
 R1
 R2
-!i122 7003
+!i122 7348
 R3
-Z33 8/home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/src/Conv_2d_output.vhd
-Z34 F/home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/src/Conv_2d_output.vhd
+Z35 8/home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/src/Conv_2d_output.vhd
+Z36 F/home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/src/Conv_2d_output.vhd
 l0
 L6 1
 VTbEoXZ?9ng]lCgne;;UK80
@@ -204,8 +204,8 @@ R6
 R7
 !i10b 1
 R8
-Z35 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/src/Conv_2d_output.vhd|
-Z36 !s107 /home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/src/Conv_2d_output.vhd|
+Z37 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/src/Conv_2d_output.vhd|
+Z38 !s107 /home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/src/Conv_2d_output.vhd|
 !i113 1
 R11
 R12
@@ -215,7 +215,7 @@ R15
 R1
 R2
 DEx4 work 14 conv_2d_output 0 22 TbEoXZ?9ng]lCgne;;UK80
-!i122 7003
+!i122 7348
 l119
 L25 228
 VL9V@OSg=O6EPn;@`P0NMA0
@@ -225,32 +225,32 @@ R6
 R7
 !i10b 1
 R8
-R35
-R36
+R37
+R38
 !i113 1
 R11
 R12
 Econv_2d_output_opt
-Z37 w1767884980
+Z39 w1768053263
 R14
 R15
 R1
 R2
-!i122 7017
+!i122 7362
 R3
-Z38 8/home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/src/Conv_2d_output_opt.vhd
-Z39 F/home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/src/Conv_2d_output_opt.vhd
+Z40 8/home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/src/Conv_2d_output_opt.vhd
+Z41 F/home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/src/Conv_2d_output_opt.vhd
 l0
-L7 1
-ViPo1CY3GgC54=dK`7cP0X0
-!s100 ;8kd;W?D1PSbIhb2Y1hPf2
+L6 1
+Vg1YIQ;b:mkNPVIl`ce]QH2
+!s100 ABL2ZS3G@ZmOLUY9ozCID3
 R6
 32
-R18
+R30
 !i10b 1
-R19
-Z40 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/src/Conv_2d_output_opt.vhd|
-Z41 !s107 /home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/src/Conv_2d_output_opt.vhd|
+R31
+Z42 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/src/Conv_2d_output_opt.vhd|
+Z43 !s107 /home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/src/Conv_2d_output_opt.vhd|
 !i113 1
 R11
 R12
@@ -259,41 +259,41 @@ R14
 R15
 R1
 R2
-DEx4 work 18 conv_2d_output_opt 0 22 iPo1CY3GgC54=dK`7cP0X0
-!i122 7017
-l112
-L28 201
-V=2M3CC_UhJa[e_0Jh2N2D0
-!s100 JcMZOiP_l6K6=dIdAGUUR1
+DEx4 work 18 conv_2d_output_opt 0 22 g1YIQ;b:mkNPVIl`ce]QH2
+!i122 7362
+l129
+L25 280
+VMS`^b14ZcbUF;[@:ZWlY<2
+!s100 VYHAA6`3:iei9zQ_0oIH80
 R6
 32
-R18
+R30
 !i10b 1
-R19
-R40
-R41
+R31
+R42
+R43
 !i113 1
 R11
 R12
 Ecounter
-Z42 w1766506137
+Z44 w1766506137
 R1
 R2
 !i122 5004
 R3
-Z43 8/home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/src/Counter.vhd
-Z44 F/home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/src/Counter.vhd
+Z45 8/home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/src/Counter.vhd
+Z46 F/home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/src/Counter.vhd
 l0
 L4 1
 V1?U<Ei_OaM<[K2FJEP>_X3
 !s100 jcKRkMXIHma2`hN<ZAA;]3
 R6
 32
-Z45 !s110 1767546502
+Z47 !s110 1767546502
 !i10b 1
-Z46 !s108 1767546502.000000
-Z47 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/src/Counter.vhd|
-Z48 !s107 /home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/src/Counter.vhd|
+Z48 !s108 1767546502.000000
+Z49 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/src/Counter.vhd|
+Z50 !s107 /home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/src/Counter.vhd|
 !i113 1
 R11
 R12
@@ -308,11 +308,11 @@ Vhmk=_a8TDjLYln>9nWjmk2
 !s100 d^6UnV=UWO]]6_<7ZB_;>3
 R6
 32
-R45
-!i10b 1
-R46
 R47
+!i10b 1
 R48
+R49
+R50
 !i113 1
 R11
 R12
@@ -328,38 +328,38 @@ V2BYTGm1TVB88D1jcYI23h2
 !s100 N3@^6>]KT]bJLjYCJ7zdN1
 R6
 32
-Z49 !s110 1764696746
+Z51 !s110 1764696746
 !i10b 1
-Z50 !s108 1764696746.000000
+Z52 !s108 1764696746.000000
 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/src/counter.vhd|
 !s107 /home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/src/counter.vhd|
 !i113 1
 R11
 R12
 F/home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/src/counter.vhd
-Z51 w1764688479
+Z53 w1764688479
 8/home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/src/counter.vhd
 Ecounter_opt
-Z52 w1767622623
+Z54 w1768051732
 R14
 R15
 R1
 R2
-!i122 7018
+!i122 7363
 R3
-Z53 8/home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/src/COUNTER_OPT.vhd
-Z54 F/home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/src/COUNTER_OPT.vhd
+Z55 8/home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/src/COUNTER_OPT.vhd
+Z56 F/home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/src/COUNTER_OPT.vhd
 l0
 L6 1
 VaEX:YjC^nbK5>LN:lhjN;3
 !s100 hA3ZKb1RT7Q5V928]3jki2
 R6
 32
-Z55 !s110 1767885502
+R30
 !i10b 1
-R19
-Z56 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/src/COUNTER_OPT.vhd|
-Z57 !s107 /home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/src/COUNTER_OPT.vhd|
+R31
+Z57 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/src/COUNTER_OPT.vhd|
+Z58 !s107 /home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/src/COUNTER_OPT.vhd|
 !i113 1
 R11
 R12
@@ -369,29 +369,29 @@ R15
 R1
 R2
 DEx4 work 11 counter_opt 0 22 aEX:YjC^nbK5>LN:lhjN;3
-!i122 7018
-l56
-L20 92
-V2h@fFTgaUha3nLB?3F<L52
-!s100 4XL4o<jSXjP>DmeS5hM131
+!i122 7363
+l57
+L20 94
+V=l]2bdzNfTO8Ci8nOiGIN3
+!s100 oXCi9C1Na58X`eLWb6`g50
 R6
 32
-R55
+R30
 !i10b 1
-R19
-R56
+R31
 R57
+R58
 !i113 1
 R11
 R12
 Ed_flip_flop
-Z58 w1767608449
+Z59 w1767608449
 R1
 R2
-!i122 7004
+!i122 7349
 R3
-Z59 8/home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/src/D_Flip_Flop.vhd
-Z60 F/home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/src/D_Flip_Flop.vhd
+Z60 8/home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/src/D_Flip_Flop.vhd
+Z61 F/home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/src/D_Flip_Flop.vhd
 l0
 L4 1
 V8P9<IPIgEhZiEj8CCo]Ko3
@@ -401,8 +401,8 @@ R6
 R7
 !i10b 1
 R8
-Z61 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/src/D_Flip_Flop.vhd|
-Z62 !s107 /home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/src/D_Flip_Flop.vhd|
+Z62 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/src/D_Flip_Flop.vhd|
+Z63 !s107 /home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/src/D_Flip_Flop.vhd|
 !i113 1
 R11
 R12
@@ -410,7 +410,7 @@ Adff
 R1
 R2
 DEx4 work 11 d_flip_flop 0 22 8P9<IPIgEhZiEj8CCo]Ko3
-!i122 7004
+!i122 7349
 l22
 L18 17
 V>gZl@dM4A6nd3<U:d3iA>0
@@ -420,30 +420,30 @@ R6
 R7
 !i10b 1
 R8
-R61
 R62
+R63
 !i113 1
 R11
 R12
 Edff_n
-Z63 w1764007140
+Z64 w1764007140
 R1
 R2
 !i122 1641
 R3
-Z64 8/home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/src/DFF_N.vhd
-Z65 F/home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/src/DFF_N.vhd
+Z65 8/home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/src/DFF_N.vhd
+Z66 F/home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/src/DFF_N.vhd
 l0
 L4 1
 VSYKjV5E]FAM0jTHC?ZH:D2
 !s100 nWVXe]R:>GWV=X_IkE`h51
 R6
 32
-Z66 !s110 1764758952
+Z67 !s110 1764758952
 !i10b 1
-Z67 !s108 1764758952.000000
-Z68 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/src/DFF_N.vhd|
-Z69 !s107 /home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/src/DFF_N.vhd|
+Z68 !s108 1764758952.000000
+Z69 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/src/DFF_N.vhd|
+Z70 !s107 /home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/src/DFF_N.vhd|
 !i113 1
 R11
 R12
@@ -458,11 +458,11 @@ VYZ^inolj8<3U4T5]H2;cm0
 !s100 AAT1:JcLQUan^>X6m79c^3
 R6
 32
-R66
-!i10b 1
 R67
+!i10b 1
 R68
 R69
+R70
 !i113 1
 R11
 R12
@@ -482,32 +482,32 @@ VK8AMH[bXh=U=aX_9DK9TI0
 !s100 c<8_2OD27fUbBadFjbOJC0
 R6
 32
-R49
+R51
 !i10b 1
-R50
+R52
 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/src/dff_n.vhd|
 !s107 /home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/src/dff_n.vhd|
 !i113 1
 R11
 R12
 F/home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/src/dff_n.vhd
-R51
+R53
 8/home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/src/dff_n.vhd
 Efifo
-Z70 w1764734484
+Z71 w1764734484
 R1
 R2
-!i122 7005
+!i122 7350
 R3
-Z71 8/home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/src/fifo.vhd
-Z72 F/home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/src/fifo.vhd
+Z72 8/home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/src/fifo.vhd
+Z73 F/home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/src/fifo.vhd
 l0
 L4 1
 V]CG>T;8GPhZ5e:SC81H9g3
 !s100 nSgc:84z6gSOajMZ^J4:31
 R6
 32
-Z73 !s110 1767885499
+R7
 !i10b 1
 R8
 Z74 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/src/fifo.vhd|
@@ -519,14 +519,14 @@ Astruct
 R1
 R2
 DEx4 work 4 fifo 0 22 ]CG>T;8GPhZ5e:SC81H9g3
-!i122 7005
+!i122 7350
 l38
 L17 55
 VJF:D]GOI@gkGL]Gj:;7[^1
 !s100 ]S1<FkK<R9KT5OfXmMEdj0
 R6
 32
-R73
+R7
 !i10b 1
 R8
 R74
@@ -535,10 +535,10 @@ R75
 R11
 R12
 Efull_adder
-R63
+R64
 R1
 R2
-!i122 7006
+!i122 7351
 R3
 Z76 8/home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/src/full_adder.vhd
 Z77 F/home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/src/full_adder.vhd
@@ -548,11 +548,11 @@ V6E`C_L8PY9BEToE4AEinX2
 !s100 ]6aSe`f5Y6US@n:?L_zXD2
 R6
 32
-R73
+R7
 !i10b 1
-Z78 !s108 1767885499.000000
-Z79 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/src/full_adder.vhd|
-Z80 !s107 /home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/src/full_adder.vhd|
+R8
+Z78 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/src/full_adder.vhd|
+Z79 !s107 /home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/src/full_adder.vhd|
 !i113 1
 R11
 R12
@@ -560,18 +560,18 @@ Abeh
 R1
 R2
 DEx4 work 10 full_adder 0 22 6E`C_L8PY9BEToE4AEinX2
-!i122 7006
+!i122 7351
 l15
 L14 27
 VTJBn^KnIVzHa6IgGSFH2O3
 !s100 VPl9`zH3[0jZIL`lSQjQ_3
 R6
 32
-R73
+R7
 !i10b 1
+R8
 R78
 R79
-R80
 !i113 1
 R11
 R12
@@ -586,34 +586,34 @@ Vn5OWG7G=8^U8D]e>40^0>3
 !s100 5FzziFabfPDOZAzJSPinZ0
 R6
 32
-R49
+R51
 !i10b 1
-R50
+R52
+R78
 R79
-R80
 !i113 1
 R11
 R12
-R51
+R53
 Efulladder
-Z81 w1764064405
+Z80 w1764064405
 R1
 R2
-!i122 7007
+!i122 7352
 R3
-Z82 8/home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/src/fullAdder.vhd
-Z83 F/home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/src/fullAdder.vhd
+Z81 8/home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/src/fullAdder.vhd
+Z82 F/home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/src/fullAdder.vhd
 l0
 L4 1
 VVEDgV:Zo^Gz7f_7NCTk<e0
 !s100 kO]V^P]_aMlR[LgE2_@:h3
 R6
 32
-R73
+R7
 !i10b 1
-R78
-Z84 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/src/fullAdder.vhd|
-Z85 !s107 /home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/src/fullAdder.vhd|
+R8
+Z83 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/src/fullAdder.vhd|
+Z84 !s107 /home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/src/fullAdder.vhd|
 !i113 1
 R11
 R12
@@ -621,42 +621,42 @@ Adataflow
 R1
 R2
 DEx4 work 9 fulladder 0 22 VEDgV:Zo^Gz7f_7NCTk<e0
-!i122 7007
+!i122 7352
 l15
 L14 6
 VD1Pb6MO82S]Oi3A3SaCTX3
 !s100 1gD6@X[]1zN_?m5SC9WLT0
 R6
 32
-R73
+R7
 !i10b 1
-R78
+R8
+R83
 R84
-R85
 !i113 1
 R11
 R12
 Elong_tb
-Z86 w1765215911
+Z85 w1765215911
 R14
 R15
 R1
 R2
 !i122 6832
 R3
-Z87 8/home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/tb/long_tb.vhdl
-Z88 F/home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/tb/long_tb.vhdl
+Z86 8/home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/tb/long_tb.vhdl
+Z87 F/home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/tb/long_tb.vhdl
 l0
 L6 1
 VTeSPN0MY1KA6KEFHjRO=41
 !s100 Q[OeboUk?<NDN6BNFTIG03
 R6
 32
-R30
+Z88 !s110 1767881431
 !i10b 1
-R31
-Z89 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/tb/long_tb.vhdl|
-Z90 !s107 /home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/tb/long_tb.vhdl|
+Z89 !s108 1767881431.000000
+Z90 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/tb/long_tb.vhdl|
+Z91 !s107 /home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/tb/long_tb.vhdl|
 !i113 1
 R11
 R12
@@ -673,35 +673,35 @@ Vd==PfjaHNS?gfi8;IYlZ62
 !s100 ^0OI1XD4Ih4Y1`SkJbEfL1
 R6
 32
-R30
+R88
 !i10b 1
-R31
 R89
 R90
+R91
 !i113 1
 R11
 R12
 Ememory
-Z91 w1767883496
+Z92 w1767883496
 R14
 R15
 R1
 R2
-!i122 7008
+!i122 7353
 R3
-Z92 8/home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/src/Memory.vhd
-Z93 F/home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/src/Memory.vhd
+Z93 8/home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/src/Memory.vhd
+Z94 F/home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/src/Memory.vhd
 l0
 L6 1
 VY<eCC<65a@7[R9D:aE8<O2
 !s100 Hflo6jQ1RWS20J@O3oJbc1
 R6
 32
-R73
+R7
 !i10b 1
-R78
-Z94 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/src/Memory.vhd|
-Z95 !s107 /home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/src/Memory.vhd|
+R8
+Z95 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/src/Memory.vhd|
+Z96 !s107 /home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/src/Memory.vhd|
 !i113 1
 R11
 R12
@@ -711,42 +711,42 @@ R15
 R1
 R2
 DEx4 work 6 memory 0 22 Y<eCC<65a@7[R9D:aE8<O2
-!i122 7008
+!i122 7353
 l42
 L21 58
 VU:kDYez15:<`JGOFge=9l2
 !s100 4G1ldO4cG`Whf1eIQSCPU0
 R6
 32
-R73
+R7
 !i10b 1
-R78
-R94
+R8
 R95
+R96
 !i113 1
 R11
 R12
 Emux
-Z96 w1767883145
+Z97 w1767883145
 R14
 R15
 R1
 R2
-!i122 7009
+!i122 7354
 R3
-Z97 8/home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/src/mux.vhd
-Z98 F/home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/src/mux.vhd
+Z98 8/home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/src/mux.vhd
+Z99 F/home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/src/mux.vhd
 l0
 L6 1
 VW4[@IX2]dXSh_Q3OID0Dk1
 !s100 DQ_ijMOiOBno3O2mgVMKf2
 R6
 32
-R73
+R7
 !i10b 1
-R78
-Z99 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/src/mux.vhd|
-Z100 !s107 /home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/src/mux.vhd|
+R8
+Z100 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/src/mux.vhd|
+Z101 !s107 /home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/src/mux.vhd|
 !i113 1
 R11
 R12
@@ -756,40 +756,40 @@ R15
 R1
 R2
 DEx4 work 3 mux 0 22 W4[@IX2]dXSh_Q3OID0Dk1
-!i122 7009
+!i122 7354
 l19
 L18 4
 VXi6oHKJ6BOSh6087b]WL_2
 !s100 HNCf2VFHX=@73KkI7i5YX3
 R6
 32
-R73
+R7
 !i10b 1
-R78
-R99
+R8
 R100
+R101
 !i113 1
 R11
 R12
 Eripple_carry_adder
-Z101 w1764758279
+Z102 w1764758279
 R1
 R2
 !i122 1614
 R3
-Z102 8/home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/src/ripple_carry_adder.vhd
-Z103 F/home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/src/ripple_carry_adder.vhd
+Z103 8/home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/src/ripple_carry_adder.vhd
+Z104 F/home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/src/ripple_carry_adder.vhd
 l0
 L4 1
 V?CS`de1Ha`V;OAno1L:PF2
 !s100 =Fkk[L<Fkal0?h475oN101
 R6
 32
-Z104 !s110 1764758624
+Z105 !s110 1764758624
 !i10b 1
-Z105 !s108 1764758624.000000
-Z106 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/src/ripple_carry_adder.vhd|
-Z107 !s107 /home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/src/ripple_carry_adder.vhd|
+Z106 !s108 1764758624.000000
+Z107 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/src/ripple_carry_adder.vhd|
+Z108 !s107 /home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/src/ripple_carry_adder.vhd|
 !i113 1
 R11
 R12
@@ -804,33 +804,33 @@ VfZ@:@W_0Jel[36R^z9>YK0
 !s100 k^W>HRhDk4?6od7eb>=KX2
 R6
 32
-R104
-!i10b 1
 R105
+!i10b 1
 R106
 R107
+R108
 !i113 1
 R11
 R12
 Eripplecarryadder
-Z108 w1764758618
+Z109 w1764758618
 R1
 R2
-!i122 7010
+!i122 7355
 R3
-Z109 8/home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/src/RippleCarryAdder.vhd
-Z110 F/home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/src/RippleCarryAdder.vhd
+Z110 8/home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/src/RippleCarryAdder.vhd
+Z111 F/home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/src/RippleCarryAdder.vhd
 l0
 L4 1
 VHd<d=Lng24SiL5cH_E26V3
 !s100 jM=ogeMKiMCg5^lz2W]X]3
 R6
 32
-R73
+R7
 !i10b 1
-R78
-Z111 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/src/RippleCarryAdder.vhd|
-Z112 !s107 /home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/src/RippleCarryAdder.vhd|
+R8
+Z112 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/src/RippleCarryAdder.vhd|
+Z113 !s107 /home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/src/RippleCarryAdder.vhd|
 !i113 1
 R11
 R12
@@ -838,38 +838,38 @@ Arca
 R1
 R2
 DEx4 work 16 ripplecarryadder 0 22 Hd<d=Lng24SiL5cH_E26V3
-!i122 7010
+!i122 7355
 l31
 L17 41
 V[>C52L;Fe;F5bMzHWBf@F2
 !s100 LP0?oZRaQ:5<PZdUUZMCm0
 R6
 32
-R73
+R7
 !i10b 1
-R78
-R111
+R8
 R112
+R113
 !i113 1
 R11
 R12
 Eshift_register
-Z113 w1767609481
+Z114 w1768051574
 R1
 R2
-!i122 7019
+!i122 7364
 R3
-Z114 8/home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/src/SHIFT_REGISTER.vhd
-Z115 F/home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/src/SHIFT_REGISTER.vhd
+Z115 8/home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/src/SHIFT_REGISTER.vhd
+Z116 F/home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/src/SHIFT_REGISTER.vhd
 l0
 L6 1
-VJa0>aI>9SB<Ho6j6]IA9B2
-!s100 a6TJz]4j58W:Dk05B0b[C0
+V]@[e3d^zK6e]Va[`=i>]g0
+!s100 ;b3];hNzP?B=>Gc61m>iO3
 R6
 32
-R55
+R30
 !i10b 1
-Z116 !s108 1767885502.000000
+R31
 Z117 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/src/SHIFT_REGISTER.vhd|
 Z118 !s107 /home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/src/SHIFT_REGISTER.vhd|
 !i113 1
@@ -878,17 +878,17 @@ R12
 Artl
 R1
 R2
-DEx4 work 14 shift_register 0 22 Ja0>aI>9SB<Ho6j6]IA9B2
-!i122 7019
-l21
-L19 20
-V2gQc2l[jdeGG]S>gYGDP=3
-!s100 14k7j[:ai`IWnMZP7VdY73
+DEx4 work 14 shift_register 0 22 ]@[e3d^zK6e]Va[`=i>]g0
+!i122 7364
+l22
+L20 24
+V[]_IHh0CZaeF>h`7KOUk@3
+!s100 eIRIRVmW_`9m@>NYgk>m`3
 R6
 32
-R55
+R30
 !i10b 1
-R116
+R31
 R117
 R118
 !i113 1
@@ -919,7 +919,7 @@ Z125 !s107 /home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scara
 R11
 R12
 Atb
-R28
+R26
 R14
 R15
 R1
@@ -947,7 +947,7 @@ R14
 R15
 R1
 R2
-!i122 7013
+!i122 7358
 R3
 Z128 8/home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/tb/Tb_Conv_2d_N5_M3.vhd
 Z129 F/home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/tb/Tb_Conv_2d_N5_M3.vhd
@@ -957,9 +957,9 @@ VMQ?C@8QfAP0mjYUBeRahV0
 !s100 jJXXchZaga<e7YK0EbkY73
 R6
 32
-R18
+R30
 !i10b 1
-R19
+R31
 Z130 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/tb/Tb_Conv_2d_N5_M3.vhd|
 Z131 !s107 /home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/tb/Tb_Conv_2d_N5_M3.vhd|
 !i113 1
@@ -972,29 +972,29 @@ R15
 R1
 R2
 DEx4 work 16 tb_conv_2d_n5_m3 0 22 MQ?C@8QfAP0mjYUBeRahV0
-!i122 7013
+!i122 7358
 l49
 L11 537
 VQC3FKJebD=09B<Q>G`anb2
 !s100 9Lm4N;<1Z>]:@mM?=hDnf0
 R6
 32
-R18
+R30
 !i10b 1
-R19
+R31
 R130
 R131
 !i113 1
 R11
 R12
 Etb_conv_2d_n7_m4
-Z132 w1767882612
+Z132 w1768053421
 R127
 R14
 R15
 R1
 R2
-!i122 7014
+!i122 7359
 R3
 Z133 8/home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/tb/Tb_Conv_2d_N7_M4.vhd
 Z134 F/home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/tb/Tb_Conv_2d_N7_M4.vhd
@@ -1004,9 +1004,9 @@ V8g9hAAK2]TfN_F`@h8i:51
 !s100 2BCR?BaabLWe8i6VDOYRA0
 R6
 32
-R18
+R30
 !i10b 1
-R19
+R31
 Z135 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/tb/Tb_Conv_2d_N7_M4.vhd|
 Z136 !s107 /home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/tb/Tb_Conv_2d_N7_M4.vhd|
 !i113 1
@@ -1019,16 +1019,16 @@ R15
 R1
 R2
 DEx4 work 16 tb_conv_2d_n7_m4 0 22 8g9hAAK2]TfN_F`@h8i:51
-!i122 7014
+!i122 7359
 l48
 L11 534
-VWfkeV<:zbDGWd0DE6A]9C3
-!s100 ^Xae?:dg]M1F<Q2<i=:IM3
+VLjmE`DI24N=;RXgN?hIJ=1
+!s100 A>Hz@Q>d>kW=kMQ8NG=1U3
 R6
 32
-R18
+R30
 !i10b 1
-R19
+R31
 R135
 R136
 !i113 1
@@ -1041,7 +1041,7 @@ R14
 R15
 R1
 R2
-!i122 7021
+!i122 7366
 R3
 Z138 8/home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/tb/Tb_Conv_2d_opt_N5_M3 .vhd
 Z139 F/home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/tb/Tb_Conv_2d_opt_N5_M3 .vhd
@@ -1051,9 +1051,9 @@ VSLc4LU=PWEY8YIn5Aa^Gd1
 !s100 K20mT^?oDWWC?JZMWWdD]2
 R6
 32
-R55
+R30
 !i10b 1
-R116
+R31
 Z140 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/tb/Tb_Conv_2d_opt_N5_M3 .vhd|
 Z141 !s107 /home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/tb/Tb_Conv_2d_opt_N5_M3 .vhd|
 !i113 1
@@ -1066,16 +1066,16 @@ R15
 R1
 R2
 DEx4 work 20 tb_conv_2d_opt_n5_m3 0 22 SLc4LU=PWEY8YIn5Aa^Gd1
-!i122 7021
+!i122 7366
 l50
 L11 538
 VKgiJ31=QfMGeeW0Di3kAJ3
 !s100 `NX]7K9P<Tk_m`EOE^:Y23
 R6
 32
-R55
+R30
 !i10b 1
-R116
+R31
 R140
 R141
 !i113 1
@@ -1088,7 +1088,7 @@ R14
 R15
 R1
 R2
-!i122 7022
+!i122 7367
 R3
 Z143 8/home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/tb/Tb_large_data.vhdl
 Z144 F/home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/tb/Tb_large_data.vhdl
@@ -1098,11 +1098,11 @@ VS[jk@Sn=0c8UH=Qho@icj0
 !s100 jcF3M[dNeO1aVgOj_a6nG0
 R6
 32
-R55
+R30
 !i10b 1
-R116
+R31
 Z145 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/tb/Tb_large_data.vhdl|
-!s107 /home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/tb/Tb_large_data.vhdl|
+Z146 !s107 /home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/tb/Tb_large_data.vhdl|
 !i113 1
 R11
 R12
@@ -1112,43 +1112,43 @@ R14
 R15
 R1
 R2
-DEx4 work 13 tb_large_data 0 22 S[jk@Sn=0c8UH=Qho@icj0
-!i122 7022
+Z147 DEx4 work 13 tb_large_data 0 22 S[jk@Sn=0c8UH=Qho@icj0
+!i122 7367
 l51
-L11 125
-V_zaNJlegXzGB5lT_BS@?C3
-!s100 d`TQhzZAFD3Z;0TF;RO^G2
+Z148 L11 125
+Z149 V_zaNJlegXzGB5lT_BS@?C3
+Z150 !s100 d`TQhzZAFD3Z;0TF;RO^G2
 R6
 32
-R55
+R30
 !i10b 1
-R116
+R31
 R145
-Z146 !s107 /home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/tb/Tb_large_data.vhdl|
+R146
 !i113 1
 R11
 R12
 Etb_memory
-Z147 w1764263648
+Z151 w1764263648
 R14
 R15
 R1
 R2
-!i122 7015
+!i122 7360
 R3
-Z148 8/home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/tb/tb_memory.vhd
-Z149 F/home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/tb/tb_memory.vhd
+Z152 8/home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/tb/tb_memory.vhd
+Z153 F/home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/tb/tb_memory.vhd
 l0
 L6 1
 Va]^zZldB9d^o]SaA<JzzY0
 !s100 HgW=zLK>03aMPBjmdVJGg3
 R6
 32
-R18
+R30
 !i10b 1
-R19
-Z150 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/tb/tb_memory.vhd|
-Z151 !s107 /home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/tb/tb_memory.vhd|
+R31
+Z154 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/tb/tb_memory.vhd|
+Z155 !s107 /home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/tb/tb_memory.vhd|
 !i113 1
 R11
 R12
@@ -1158,18 +1158,18 @@ R15
 R1
 R2
 DEx4 work 9 tb_memory 0 22 a]^zZldB9d^o]SaA<JzzY0
-!i122 7015
+!i122 7360
 l41
 L9 123
 VcFgHWEBbbkc9A?OIR2eme1
 !s100 WnMhmmf_9KNiE9g=NP6oX3
 R6
 32
-R18
+R30
 !i10b 1
-R19
-R150
-R151
+R31
+R154
+R155
 !i113 1
 R11
 R12
@@ -1177,11 +1177,11 @@ Putils
 R15
 R1
 R2
-!i122 7011
-Z152 w1766504429
+!i122 7356
+Z156 w1766504429
 R3
-Z153 8/home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/src/Utils.vhd
-Z154 F/home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/src/Utils.vhd
+Z157 8/home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/src/Utils.vhd
+Z158 F/home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/src/Utils.vhd
 l0
 L5 1
 VCPHUXk2K]FNZCL93XJh9[1
@@ -1189,11 +1189,11 @@ VCPHUXk2K]FNZCL93XJh9[1
 R6
 32
 b1
-R18
+R30
 !i10b 1
-Z155 !s108 1767885500.000000
-Z156 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/src/Utils.vhd|
-Z157 !s107 /home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/src/Utils.vhd|
+R31
+Z159 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/src/Utils.vhd|
+Z160 !s107 /home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/src/Utils.vhd|
 !i113 1
 R11
 R12
@@ -1202,42 +1202,42 @@ R14
 R15
 R1
 R2
-!i122 7011
+!i122 7356
 l0
 L10 1
 VnYjoIg8EUQ96ffbb1dMo13
 !s100 k;FiDX1DlcFE79VkVVmkL3
 R6
 32
-R18
+R30
 !i10b 1
-R155
-R156
-R157
+R31
+R159
+R160
 !i113 1
 R11
 R12
 Ewrapper_conv_2d
-Z158 w1767548887
+Z161 w1768036279
 R14
 R15
 R1
 R2
-!i122 7012
+!i122 7357
 R3
-Z159 8/home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/src/wrapper_conv_2s.vhd
-Z160 F/home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/src/wrapper_conv_2s.vhd
+Z162 8/home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/src/wrapper_conv_2s.vhd
+Z163 F/home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/src/wrapper_conv_2s.vhd
 l0
 L6 1
-VA[:eDeogJMLb846m0YN[@3
-!s100 TWe7_Ae_B<>9nWQHe9;m83
+V>@LDiXnHkmbmBTC`jX7F31
+!s100 4L;^?CX:gG@OfXch6TkZi3
 R6
 32
-R18
+R30
 !i10b 1
-R19
-Z161 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/src/wrapper_conv_2s.vhd|
-Z162 !s107 /home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/src/wrapper_conv_2s.vhd|
+R31
+Z164 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/src/wrapper_conv_2s.vhd|
+Z165 !s107 /home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/src/wrapper_conv_2s.vhd|
 !i113 1
 R11
 R12
@@ -1246,43 +1246,43 @@ R14
 R15
 R1
 R2
-DEx4 work 15 wrapper_conv_2d 0 22 A[:eDeogJMLb846m0YN[@3
-!i122 7012
+DEx4 work 15 wrapper_conv_2d 0 22 >@LDiXnHkmbmBTC`jX7F31
+!i122 7357
 l70
-Z163 L26 131
+Z166 L26 131
 VBYBZ@dcL`COL3UgLo9LjH2
 !s100 Ei?OF@gLmHdVIo60``fd92
 R6
 32
-R18
+R30
 !i10b 1
-R19
-R161
-R162
+R31
+R164
+R165
 !i113 1
 R11
 R12
 Ewrapper_conv_2d_opt
-Z164 w1767616996
+Z167 w1768041336
 R14
 R15
 R1
 R2
-!i122 7020
+!i122 7365
 R3
-Z165 8/home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/src/wrapper_conv_2s_opt.vhd
-Z166 F/home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/src/wrapper_conv_2s_opt.vhd
+Z168 8/home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/src/wrapper_conv_2s_opt.vhd
+Z169 F/home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/src/wrapper_conv_2s_opt.vhd
 l0
 L6 1
-VoLLL2l[<L9i39EZX5j>Q]2
-!s100 JZaEiD==B@dn^=6k2]S3H0
+VO8kca<M^>86mTYeW8ZNPK0
+!s100 dF_^MEb;Y;KfeZUcemSQi3
 R6
 32
-R55
+R30
 !i10b 1
-R116
-Z167 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/src/wrapper_conv_2s_opt.vhd|
-Z168 !s107 /home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/src/wrapper_conv_2s_opt.vhd|
+R31
+Z170 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/src/wrapper_conv_2s_opt.vhd|
+Z171 !s107 /home/pacca/Desktop/Magistrale/Moretti/ProgettoElettronicsRossi_Scarabelli/src/wrapper_conv_2s_opt.vhd|
 !i113 1
 R11
 R12
@@ -1291,19 +1291,19 @@ R14
 R15
 R1
 R2
-DEx4 work 19 wrapper_conv_2d_opt 0 22 oLLL2l[<L9i39EZX5j>Q]2
-!i122 7020
+DEx4 work 19 wrapper_conv_2d_opt 0 22 O8kca<M^>86mTYeW8ZNPK0
+!i122 7365
 l70
-R163
-V>hF`G?6@mMDJi_5lf:75Z2
-!s100 ooCe2ka2?@gdg`RK?1[IJ2
+R166
+VK@>6ZnS[FLoL3`0Vfzc]<2
+!s100 _4@TCFI_d7lm?FmJc<TdP0
 R6
 32
-R55
+R30
 !i10b 1
-R116
-R167
-R168
+R31
+R170
+R171
 !i113 1
 R11
 R12

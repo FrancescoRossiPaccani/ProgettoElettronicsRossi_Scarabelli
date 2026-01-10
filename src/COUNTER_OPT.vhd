@@ -33,6 +33,7 @@ architecture copt of COUNTER_OPT is
             clk    : in  std_logic;
             resetn : in  std_logic;
             load   : in  std_logic;
+            en     : in  std_logic;
             di     : in  std_logic_vector(Nbit-1 downto 0);
             q      : out std_logic_vector(Nbit-1 downto 0)
         );
@@ -67,6 +68,7 @@ begin
             clk => clk,
             resetn => resetn_shr,
             load => load,
+            en => '1',
             di => x_in,
             q => shift_register_output
         );

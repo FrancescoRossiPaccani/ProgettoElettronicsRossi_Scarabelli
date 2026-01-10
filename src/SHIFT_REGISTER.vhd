@@ -11,6 +11,7 @@ entity SHIFT_REGISTER is
         clk    : in  std_logic;
         resetn : in  std_logic;
         load   : in  std_logic;
+        en     : in  std_logic; 
         di     : in  std_logic_vector(Nbit-1 downto 0);
         q      : out std_logic_vector(Nbit-1 downto 0)
     );
@@ -25,10 +26,14 @@ begin
             q_reg <= (others => '0');
 
         elsif rising_edge(clk) then
-            if load = '1' then
-                q_reg <= di;  --load
-            else
-                q_reg <= '0' & q_reg(Nbit-1 downto 1); -- right shift
+            if en = '1' then
+                if load = '1' then
+                    q_reg <= di;  --load
+                else
+                    q_reg <= '0' & q_reg(Nbit-1 downto 1); -- right shift
+                end if;
+            else 
+                    q_reg <= q_reg;
             end if;
         end if;
     end process;

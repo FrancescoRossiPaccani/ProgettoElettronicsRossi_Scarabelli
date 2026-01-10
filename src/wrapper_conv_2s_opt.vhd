@@ -5,8 +5,8 @@ use work.Utils.all;
 
 entity wrapper_conv_2d_opt is
      generic(
-            N       : positive := 5;
-            M       : positive := 3; 
+            N       : positive := 10;
+            M       : positive := 5; 
             Nbit    : positive := 8
         );
         port(
@@ -26,8 +26,8 @@ entity wrapper_conv_2d_opt is
     architecture wrp of wrapper_conv_2d_opt is
         component Conv_2d_opt is
             generic(
-                    N       : positive := 5;
-                    M       : positive := 3; 
+                    N       : positive := 43;
+                    M       : positive := 32; 
                     Nbit    : positive := 8
                 );
                 port(
