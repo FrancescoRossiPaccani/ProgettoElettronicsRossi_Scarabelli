@@ -10,7 +10,7 @@ end entity;
 
 architecture tb of Tb_Conv_2d_N7_M4 is
 
-    component Conv_2d_opt is
+    component Conv_2d is
     generic(
             N       : positive := 5;
             M       : positive := 3; 
@@ -48,7 +48,7 @@ architecture tb of Tb_Conv_2d_N7_M4 is
 begin
      clk_ext <= not clk_ext after clk_period/2 when testing else '0';
     
-    UUT: Conv_2d_opt
+    UUT: Conv_2d
         generic map(
             N    => N,
             M    => M,
