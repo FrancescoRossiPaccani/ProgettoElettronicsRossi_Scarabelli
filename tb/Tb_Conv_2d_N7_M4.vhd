@@ -70,7 +70,7 @@ begin
         variable riga : line;
     begin
         --------------------------------------------------------------------------
-        --  TEST PROCESS 1: Use case with correct piloting
+        -- TEST PROCESS 1: Use case with correct piloting, example with the assignments data
         --------------------------------------------------------------------------
         -- 1) RESET iniziale, tutto a zero
         reset_ext <= '1';

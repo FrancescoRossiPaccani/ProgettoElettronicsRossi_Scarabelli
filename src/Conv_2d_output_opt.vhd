@@ -58,25 +58,19 @@ architecture conv_bh of Conv_2d_output_opt is
     signal end_flag              : std_logic;
 
     signal counter_val           : natural := 0;
-    -- Index of matrix used to select the right submatrix
-    signal current_index         : natural := 0;
 
     signal output_counter_prev   : std_logic_vector(N_BITS_COUNTER - 1 downto 0);
 
     signal load_shr              : std_logic;
     signal en_shr                : std_logic;
 
-    -- Costante larghezza riga output
-    constant ROW_LEN             : natural := N - M + 1;
-
-    -- Stati della FSM
-    type state_t is (IDLE, CALC_WAIT, SHIFTING, WAIT_OUT);
+    -- FSM states
+    type state_t is (INACTIVE, WAIT_ELABORATION, SHIFTING, WAIT_OUTPUT);
     signal state                 : state_t;
 
-    -- Segnale contatore per lo shift
-    signal shift_cnt             : integer range 0 to M;
-    -- Segnale di comodo per leggere il counter come intero
-    signal curr_idx_int          : natural;
+    -- counter signal used by the shift register
+    signal shift_counter             : integer range 0 to M;
+    signal counter_val          : natural;
 
     ----------------------------------------------------------------------------
     -- Components
@@ -130,16 +124,11 @@ begin
 
     rst_n <= not rst;
 
-    -- Conversioni concorrenti
     counter_val <= to_integer(unsigned(output_counter)) when (en = '1' and rst = '0') else 0;
-    
-    curr_idx_int <= to_integer(unsigned(output_counter));
 
-    -- Input Counter Setup
     input_counter(N_BITS_COUNTER - 1 downto 1) <= (others => '0');
     input_counter(0) <= '1' when (en = '1' and end_flag = '1') else '0';
 
-    -- Istanza Counter
     counter_i : As_Counter
         generic map ( Nbit => N_BITS_COUNTER )
         port map (
@@ -148,10 +137,6 @@ begin
             N_in   => input_counter,
             N_out  => output_counter
         );
-
-    -- ATTENZIONE: Questa riga è stata commentata perché 'load_shr' 
-    -- è ora pilotato dal processo 'fsm_proc'. Non possono esserci due driver.
-    -- load_shr <= '1' when to_integer(unsigned(output_counter)) = 0 else '0';
 
     Shift_register_i: SHIFT_REGISTER
         generic map( Nbit => N*N )
@@ -164,14 +149,10 @@ begin
             q      => shift_register_output
         );
 
-    -- Logical mapping (AND array)
     and_instances : for i in 0 to M*M - 1 generate
-        -- Nota: divisioni e moduli costanti (M è generic), quindi sintetizzabili come wire
         and_to_adder(i) <= shift_register_output(((i / M) * N) + (i mod M)) and filter(i);
     end generate;
 
-
-    -- Optimized Adder/Counter
     c_opt : COUNTER_OPT
         generic map ( N_input => M*M )
         port map (
@@ -183,7 +164,6 @@ begin
             end_flag => end_flag
         );
 
-    -- Shift Register per l'output (DFF chain)
     dff_instances : for i in 0 to N_OUTPUT_ELEMENTS - 1 generate
 
         dff_last : if i = N_OUTPUT_ELEMENTS - 1 generate
@@ -212,7 +192,6 @@ begin
 
     end generate;
 
-    -- Output Mapping
     dff_to_output : for i in N_OUTPUT_ELEMENTS - 1 downto 0 generate
         convolution(
             ((i + 1) * N_BIT_OUTPUT_ELEMENT) - 1 downto
@@ -222,7 +201,6 @@ begin
 
     en_dff <= '1' when (rst = '1' or end_flag = '1') else '0';
 
-    -- Ready Flag Logic
     conv_process : process(clk, rst)
     begin
         if rst = '1' then
@@ -236,66 +214,55 @@ begin
         end if;
     end process;
 
-    ----------------------------------------------------------------------------
-    -- FSM Control Process
-    ----------------------------------------------------------------------------
     fsm_proc : process(clk, rst)
     begin
         if rst = '1' then
-            state     <= IDLE;
-            shift_cnt <= 0;
+            state     <= INACTIVE;
+            shift_counter <= 0;
             load      <= '0';
             load_shr  <= '1';
             en_shr    <= '1';
             
         elsif rising_edge(clk) then
-            -- Default: segnali impulsivi a 0
             load     <= '0';
             load_shr <= '0';
             en_shr   <= '0';
 
             case state is
-                -- 1. Stato Iniziale: aspetta abilitazione
-                when IDLE =>
+                when INACTIVE =>
                     if en = '1' then
-                        load_shr <= '1'; -- Carica matrice iniziale
-                        load     <= '1'; -- Start primo calcolo
-                        state    <= CALC_WAIT;
+                        load_shr <= '1'; -- loading matrix
+                        load     <= '1';
+                        state    <= WAIT_ELABORATION;
                     end if;
 
-                -- 2. Stato di Attesa Calcolo
-                when CALC_WAIT =>
+                -- wait for end of elaboration
+                when WAIT_ELABORATION =>
                     if end_flag = '1' then
-                        -- Se non abbiamo finito l'immagine
-                        if curr_idx_int < N_OUTPUT_ELEMENTS - 1 then
-                            -- Passiamo allo shift
+                        if counter_val < N_OUTPUT_ELEMENTS - 1 then
                             state <= SHIFTING;
                             
-                            -- Nota: L'uso di MOD qui potrebbe rallentare il timing se ROW_LEN non è potenza di 2
-                            if ((curr_idx_int + 1) mod ROW_LEN) = 0 then
-                                shift_cnt <= M; -- Salto riga
+                            if ((counter_val + 1) mod OUTPUT_DIMENSION) = 0 then
+                                shift_counter <= M; -- not valid shift register state
                             else
-                                shift_cnt <= 1; -- Shift normale
+                                shift_counter <= 1; -- valid shift register state
                             end if;
                         end if;
                     end if;
 
-                -- 3. Stato di Shift attivo
                 when SHIFTING =>
-                    en_shr <= '1'; -- Abilita lo shift register
+                    en_shr <= '1';
                     
-                    if shift_cnt > 1 then
-                        shift_cnt <= shift_cnt - 1;
+                    if shift_counter > 1 then
+                        shift_counter <= shift_counter - 1;
                     else
-                        -- Ultimo shift completato
-                        state <= WAIT_OUT; 
+                        state <= WAIT_OUTPUT; 
                     end if;
 
-                -- 4. Stato di transizione (per sincronizzare il load)
-                when WAIT_OUT => 
+                when WAIT_OUTPUT => 
                     en_shr <= '0';
-                    load   <= '1'; -- Riavvia il calcolo
-                    state  <= CALC_WAIT;
+                    load   <= '1';
+                    state  <= WAIT_ELABORATION;
 
             end case;
         end if;
